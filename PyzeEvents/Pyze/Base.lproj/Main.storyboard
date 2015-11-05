@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eFC-eQ-hY7">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--PyzeEvents-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="eventsvc" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="VKV-17-nV8">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell tag="100" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="cn1-r0-vrC" imageView="q9y-gY-den" style="IBUITableViewCellStyleDefault" id="joo-yo-dwV">
+                                        <rect key="frame" x="0.0" y="86" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="joo-yo-dwV" id="8NP-8l-bn9">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cn1-r0-vrC">
+                                                    <rect key="frame" x="62" y="0.0" width="503" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="pyzeicon" id="q9y-gY-den">
+                                                    <rect key="frame" x="15" y="5" width="32" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="B6K-DH-FYU" kind="push" identifier="push" id="4yZ-X4-mzr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="wDh-nG-4ks"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="kLE-Lm-LXg"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VKV-17-nV8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="baF-A5-JdF"/>
+                            <constraint firstItem="VKV-17-nV8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mxr-Re-FPC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VKV-17-nV8" secondAttribute="bottom" id="xzh-Cn-IFz"/>
+                            <constraint firstAttribute="trailing" secondItem="VKV-17-nV8" secondAttribute="trailing" id="zUD-dc-Tox"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PyzeEvents" id="SRz-04-9jK"/>
+                    <connections>
+                        <outlet property="tableView" destination="VKV-17-nV8" id="wbn-N6-NSI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1472" y="1095"/>
+        </scene>
+        <!--About Pyze-->
+        <scene sceneID="dKn-LX-GjA">
+            <objects>
+                <tableViewController storyboardIdentifier="aboutvc" id="iMz-GA-Z8h" customClass="AboutTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Cvr-PN-o5C">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" tag="110" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="textCell" textLabel="Ccc-kH-12F" style="IBUITableViewCellStyleDefault" id="XOt-Ur-cgX">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XOt-Ur-cgX" id="FEu-AT-uxR">
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ccc-kH-12F">
+                                            <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="iMz-GA-Z8h" id="wLu-VX-csa"/>
+                            <outlet property="delegate" destination="iMz-GA-Z8h" id="dxi-eq-WCr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="About Pyze" id="ycI-3i-C23"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ARt-Id-Cjt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2404" y="1095"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pi9-vt-nOc">
+            <objects>
+                <viewController storyboardIdentifier="dummy" modalPresentationStyle="currentContext" id="EBw-mn-ZfZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3De-ho-K8b"/>
+                        <viewControllerLayoutGuide type="bottom" id="KRP-Kh-2sz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HFo-4w-ph0">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="115"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.015686274510000001" green="0.32549019610000002" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="160" height="115"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p6W-rr-wWG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2404" y="2349.5"/>
+        </scene>
+        <!--Partial View Controller-->
+        <scene sceneID="CfV-Gb-kq2">
+            <objects>
+                <viewController storyboardIdentifier="patialvc" modalTransitionStyle="partialCurl" id="beB-Da-q1y" customClass="PartialViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kxj-tZ-pnd"/>
+                        <viewControllerLayoutGuide type="bottom" id="uV7-DF-WmG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qpA-Ik-CZU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdS-wP-9QK">
+                                <rect key="frame" x="272" y="221" width="57" height="30"/>
+                                <state key="normal" title="Popover"/>
+                                <connections>
+                                    <segue destination="EBw-mn-ZfZ" kind="popoverPresentation" identifier="showpopover" popoverAnchorView="QdS-wP-9QK" id="bdP-aG-8Dx">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QdS-wP-9QK" firstAttribute="centerX" secondItem="qpA-Ik-CZU" secondAttribute="centerX" id="8tE-TQ-YaU"/>
+                            <constraint firstItem="QdS-wP-9QK" firstAttribute="top" secondItem="Kxj-tZ-pnd" secondAttribute="bottom" constant="201" id="b9V-0s-Lku"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yfy-Ij-sJQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2404" y="1844"/>
+        </scene>
+        <!--PyzeEvents-->
+        <scene sceneID="ciz-hU-D1Z">
+            <objects>
+                <viewController storyboardIdentifier="pyzeeventsvc" id="WoG-sr-zY0" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OgU-lr-XOW"/>
+                        <viewControllerLayoutGuide type="bottom" id="lwk-v5-vcV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P8M-zG-UJU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98o-Un-LcI">
+                                <rect key="frame" x="260" y="372" width="79" height="30"/>
+                                <state key="normal" title="About Pyze"/>
+                                <connections>
+                                    <segue destination="iMz-GA-Z8h" kind="push" id="Hk1-Jd-LFu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3T-IM-aq9">
+                                <rect key="frame" x="249" y="410" width="101" height="30"/>
+                                <state key="normal" title="PyzeEvents"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="9"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" identifier="push1" id="hWV-Dp-QSY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGW-hg-cU8">
+                                <rect key="frame" x="266" y="443" width="67" height="30"/>
+                                <state key="normal" title="pyze.com"/>
+                                <connections>
+                                    <segue destination="MA3-MR-TYA" kind="push" identifier="push2" id="xtQ-Na-Jjq"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pyzeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="G64-XZ-OmR">
+                                <rect key="frame" x="186" y="64" width="228" height="304"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="98o-Un-LcI" firstAttribute="top" secondItem="G64-XZ-OmR" secondAttribute="bottom" constant="4" id="87W-8l-REF"/>
+                            <constraint firstItem="G64-XZ-OmR" firstAttribute="centerX" secondItem="P8M-zG-UJU" secondAttribute="centerX" id="8qk-TE-yIW"/>
+                            <constraint firstItem="98o-Un-LcI" firstAttribute="trailing" secondItem="x3T-IM-aq9" secondAttribute="trailing" constant="-11" id="SGQ-T3-bhZ"/>
+                            <constraint firstItem="G64-XZ-OmR" firstAttribute="top" secondItem="OgU-lr-XOW" secondAttribute="bottom" id="SdL-QG-NLq"/>
+                            <constraint firstItem="x3T-IM-aq9" firstAttribute="centerX" secondItem="IGW-hg-cU8" secondAttribute="centerX" id="YCt-B6-Pm9"/>
+                            <constraint firstItem="x3T-IM-aq9" firstAttribute="top" secondItem="98o-Un-LcI" secondAttribute="bottom" constant="8" symbolic="YES" id="eWF-oN-0vJ"/>
+                            <constraint firstItem="98o-Un-LcI" firstAttribute="leading" secondItem="x3T-IM-aq9" secondAttribute="leading" constant="11" id="g6c-Mg-Iab"/>
+                            <constraint firstItem="IGW-hg-cU8" firstAttribute="top" secondItem="x3T-IM-aq9" secondAttribute="bottom" constant="3" id="lO9-Gi-9PW"/>
+                            <constraint firstItem="IGW-hg-cU8" firstAttribute="centerX" secondItem="G64-XZ-OmR" secondAttribute="centerX" id="llY-Ka-BrE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PyzeEvents" id="FWM-7K-2Tt"/>
+                    <connections>
+                        <outlet property="eventsButton" destination="x3T-IM-aq9" id="TLc-wl-lTy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xGz-aY-CAq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036" y="352"/>
+        </scene>
+        <!--Pyze-->
+        <scene sceneID="3PU-zZ-yhg">
+            <objects>
+                <viewController storyboardIdentifier="webviewvc" id="MA3-MR-TYA" customClass="PyzeWebViewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G9g-59-wxr"/>
+                        <viewControllerLayoutGuide type="bottom" id="HUO-i1-A63"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ENq-w0-OFt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ds8-NH-b4E">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="myV-99-s9n">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ds8-NH-b4E" firstAttribute="top" secondItem="ENq-w0-OFt" secondAttribute="top" id="7MB-dR-ai3"/>
+                            <constraint firstItem="myV-99-s9n" firstAttribute="centerY" secondItem="Ds8-NH-b4E" secondAttribute="centerY" id="8Ch-IQ-fUT"/>
+                            <constraint firstAttribute="trailing" secondItem="Ds8-NH-b4E" secondAttribute="trailing" id="Jg2-Wo-xJY"/>
+                            <constraint firstItem="Ds8-NH-b4E" firstAttribute="leading" secondItem="ENq-w0-OFt" secondAttribute="leading" id="Thj-IX-8zd"/>
+                            <constraint firstItem="myV-99-s9n" firstAttribute="centerX" secondItem="Ds8-NH-b4E" secondAttribute="centerX" id="rIh-mI-A1m"/>
+                            <constraint firstItem="Ds8-NH-b4E" firstAttribute="bottom" secondItem="HUO-i1-A63" secondAttribute="top" id="yxf-xK-24U"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pyze" id="0lb-ek-MCk"/>
+                    <connections>
+                        <outlet property="actIndicator" destination="myV-99-s9n" id="T9p-m1-i1i"/>
+                        <outlet property="webView" destination="Ds8-NH-b4E" id="UyT-eN-TZO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kVN-AS-Uz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="620" y="1095"/>
+        </scene>
+        <!--Jobs at Pyze-->
+        <scene sceneID="W5H-WS-HQ3">
+            <objects>
+                <viewController storyboardIdentifier="jobsvc" id="XOV-21-Hhh" customClass="JobsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vYH-kX-vQ6"/>
+                        <viewControllerLayoutGuide type="bottom" id="jxx-k7-0JB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rdb-BE-Ppu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BQb-68-JpA">
+                                <rect key="frame" x="20" y="28" width="364" height="417"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="364" id="dC9-4C-g6i"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Where your best work makes app publishers successful.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.8901960784313725" green="0.45098039215686275" blue="0.14509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="18" name="Helvetica"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.50196078431372548" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Let's make a real difference in the lives of app publishers.
+</string>
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="0.85490196078431369" green="0.36862745098039218" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="Helvetica-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="33" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.85490196078431369" green="0.36862745098039218" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Pyze has built a transformative Growth Intelligence® SaaS platform that enables mobile app publishers to develop and monetize loyal users. Pyze is a growing and fully funded startup seeking to hire insanely talented people who care about making a huge impact in helping app publishers become successful. You will be trusted to tackle the toughest problems and expected to make big decisions from day one. We move fast, fail faster and learn fastest. We foster an environment where everyone's ideas are cherished.
+</string>
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="0.47843137254901963" green="0.47843137254901963" blue="0.47843137254901963" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.47843137254901963" green="0.47843137254901963" blue="0.47843137254901963" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Inspire others and be inspired by others.">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="0.85490196078431369" green="0.36470588235294116" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="Helvetica-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="26" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.85490196078431369" green="0.36470588235294116" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="0.85490196078431369" green="0.36470588235294116" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="Helvetica-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="26" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.85490196078431369" green="0.36470588235294116" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Contact us at jobs@pyze.com">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="0.47843137254901963" green="0.47843137254901963" blue="0.47843137254901963" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="Helvetica-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.47843137254901963" green="0.47843137254901963" blue="0.47843137254901963" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.19215686274509805" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.47843137254901963" green="0.47843137254901963" blue="0.47843137254901963" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="http://pyze.com/team.html">
+                                        <attributes>
+                                            <color key="NSColor" red="0.13725490196078433" green="0.41960784313725491" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <url key="NSLink" string="http://pyze.com/team.html"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.47843137254901963" green="0.47843137254901963" blue="0.47843137254901963" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BQb-68-JpA" firstAttribute="leading" secondItem="rdb-BE-Ppu" secondAttribute="leadingMargin" id="3tU-fv-eoe"/>
+                            <constraint firstItem="jxx-k7-0JB" firstAttribute="top" secondItem="BQb-68-JpA" secondAttribute="bottom" constant="155" id="JRw-FO-zr4"/>
+                            <constraint firstItem="BQb-68-JpA" firstAttribute="top" secondItem="vYH-kX-vQ6" secondAttribute="bottom" constant="8" symbolic="YES" id="KYp-as-K2J"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Jobs at Pyze" id="G5e-7s-uNp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cYF-2W-HeM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="620" y="1835"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="i7S-fg-oo6">
+            <objects>
+                <viewController storyboardIdentifier="detailvc" id="B6K-DH-FYU" customClass="DetailEventViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vnC-r9-L81"/>
+                        <viewControllerLayoutGuide type="bottom" id="fRk-7n-dzI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UWR-TQ-7Em">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JRB-0i-Kg2">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" tag="100" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell1" textLabel="Nh4-pO-656" imageView="fDy-8M-gaV" style="IBUITableViewCellStyleDefault" id="u7c-aJ-Qet">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u7c-aJ-Qet" id="TPW-j0-B0Z">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nh4-pO-656">
+                                                    <rect key="frame" x="62" y="0.0" width="503" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="icon_m" id="fDy-8M-gaV">
+                                                    <rect key="frame" x="15" y="5" width="32" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="YKy-kI-rzA" kind="push" identifier="eventvalue" id="w5H-1X-X2p"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="B6K-DH-FYU" id="Wbl-I2-WuA"/>
+                                    <outlet property="delegate" destination="B6K-DH-FYU" id="4hj-RE-ya7"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JRB-0i-Kg2" firstAttribute="bottom" secondItem="fRk-7n-dzI" secondAttribute="top" id="4xa-LK-OAQ"/>
+                            <constraint firstAttribute="trailing" secondItem="JRB-0i-Kg2" secondAttribute="trailing" id="6Lz-qJ-KkE"/>
+                            <constraint firstItem="JRB-0i-Kg2" firstAttribute="top" secondItem="vnC-r9-L81" secondAttribute="bottom" constant="-64" id="WPo-Yf-suc"/>
+                            <constraint firstItem="JRB-0i-Kg2" firstAttribute="leading" secondItem="UWR-TQ-7Em" secondAttribute="leading" id="X8p-5J-6qo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detail" id="BG6-Ud-iKf">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="mlh-jB-k0w"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="JRB-0i-Kg2" id="l05-oF-LIa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qaA-4r-sfL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1472" y="1844"/>
+        </scene>
+        <!--Event Values Table View Controller-->
+        <scene sceneID="aAc-JZ-v2d">
+            <objects>
+                <tableViewController storyboardIdentifier="eventvalvc" id="YKy-kI-rzA" customClass="EventValuesTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="fkk-O9-Ecx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" tag="100" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" textLabel="LsA-O9-ll6" style="IBUITableViewCellStyleDefault" id="5tj-oE-sX0">
+                                <rect key="frame" x="0.0" y="113.5" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="center" tableViewCell="5tj-oE-sX0" id="6it-fY-la5">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LsA-O9-ll6">
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell2" id="gbp-Rp-y5O">
+                                <rect key="frame" x="0.0" y="157.5" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gbp-Rp-y5O" id="5lT-05-RHq">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell3" id="VYz-hM-qNd">
+                                <rect key="frame" x="0.0" y="201.5" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VYz-hM-qNd" id="zAS-9n-WHx">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="YKy-kI-rzA" id="3WB-2x-rNL"/>
+                            <outlet property="delegate" destination="YKy-kI-rzA" id="bQk-LA-RXw"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="tLQ-Wx-uNx">
+                        <barButtonItem key="rightBarButtonItem" title="Post Event" id="dRN-2h-qSd">
+                            <connections>
+                                <action selector="performOperation:" destination="YKy-kI-rzA" id="bDq-ab-PoL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tsE-7j-ykU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1472" y="2559"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rK5-vk-i3i">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eFC-eQ-hY7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="24J-xc-blp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WoG-sr-zY0" kind="relationship" relationship="rootViewController" id="QFY-d8-lMc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M0p-5w-D16" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036" y="-544"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_m" width="32" height="32"/>
+        <image name="pyzeLogo" width="228" height="304"/>
+        <image name="pyzeicon" width="32" height="32"/>
+    </resources>
+</document>
