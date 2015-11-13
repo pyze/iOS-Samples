@@ -1,6 +1,0 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/pyze-sdk-iOS"
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/pyze-sdk-iOS"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/pyze-sdk-iOS"
-OTHER_LDFLAGS = $(inherited) -ObjC -framework "CoreTelephony" -framework "Pyze" -framework "SystemConfiguration"
-PODS_ROOT = ${SRCROOT}/Pods
