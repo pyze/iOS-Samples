@@ -7,13 +7,21 @@
 //
 
 #import "AppDelegate.h"
+#import <Pyze/Pyze.h>
 
+//
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
+-(BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [[Pyze sharedPyze] initializeWithKey:@"wV8KamP5QECHtgVfZNKm8g"];
+    [[Pyze sharedPyze] logThrottling:PyzelogLevelAll];
+    return YES;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.

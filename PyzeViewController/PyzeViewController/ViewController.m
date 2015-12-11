@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "PyzeViewController.h"
 #import "PyzeCollectionViewController.h"
+#import "SegementDemoViewController.h"
+#import "SearchTableViewController.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -19,7 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataArray = @[@"CollectionViewController", @"PageViewController", @"TabBarController",@"SearchBar"];
+    
+    self.dataArray = @[@"CollectionViewController",@"SegmentControl",@"SearchBar"];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -30,7 +32,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 4;
+    return self.dataArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -43,16 +45,18 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 {
-    if (indexPath.row == 1) {
-        UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        PyzeViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"pyzevc"];
-        [self.navigationController pushViewController:vc animated:YES];
-    }
-    else if (indexPath.row == 0) {
+    if (indexPath.row == 0) {
         UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
         PyzeCollectionViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"collectionViewController"];
         [self.navigationController pushViewController:vc animated:YES];
-     
+    }
+    if (indexPath.row == 1) {
+        SegementDemoViewController * vc = [self.storyboard instantiateViewControllerWithIdentifier:@"segment"];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    if (indexPath.row == 2) {
+        SearchTableViewController * vc = [self.storyboard instantiateViewControllerWithIdentifier:@"search"];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 @end

@@ -15,8 +15,10 @@
 		46B1BD3B1BFB5C5000B8CCCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B1BD391BFB5C5000B8CCCE /* Main.storyboard */; };
 		46B1BD3D1BFB5C5000B8CCCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B1BD3C1BFB5C5000B8CCCE /* Assets.xcassets */; };
 		46B1BD401BFB5C5000B8CCCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B1BD3E1BFB5C5000B8CCCE /* LaunchScreen.storyboard */; };
-		46B1BD521BFB6E6700B8CCCE /* PyzeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B1BD511BFB6E6700B8CCCE /* PyzeViewController.m */; };
-		46B1BD551BFB70A300B8CCCE /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B1BD541BFB70A300B8CCCE /* PageContentViewController.m */; };
+		46D96F601C10812400F4B186 /* SegementDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D96F5F1C10812400F4B186 /* SegementDemoViewController.m */; };
+		46D96F631C10830E00F4B186 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D96F621C10830E00F4B186 /* SearchTableViewController.m */; };
+		46D96F671C10968D00F4B186 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D96F661C10968D00F4B186 /* CoreTelephony.framework */; };
+		46D96F691C10969400F4B186 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D96F681C10969400F4B186 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,10 +36,12 @@
 		46B1BD3C1BFB5C5000B8CCCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46B1BD3F1BFB5C5000B8CCCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46B1BD411BFB5C5000B8CCCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		46B1BD501BFB6E6700B8CCCE /* PyzeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PyzeViewController.h; sourceTree = "<group>"; };
-		46B1BD511BFB6E6700B8CCCE /* PyzeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PyzeViewController.m; sourceTree = "<group>"; };
-		46B1BD531BFB70A300B8CCCE /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
-		46B1BD541BFB70A300B8CCCE /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		46D96F5E1C10812400F4B186 /* SegementDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegementDemoViewController.h; sourceTree = "<group>"; };
+		46D96F5F1C10812400F4B186 /* SegementDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegementDemoViewController.m; sourceTree = "<group>"; };
+		46D96F611C10830E00F4B186 /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
+		46D96F621C10830E00F4B186 /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
+		46D96F661C10968D00F4B186 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		46D96F681C10969400F4B186 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46D96F691C10969400F4B186 /* SystemConfiguration.framework in Frameworks */,
+				46D96F671C10968D00F4B186 /* CoreTelephony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,14 +62,14 @@
 			children = (
 				46B1BD361BFB5C5000B8CCCE /* ViewController.h */,
 				46B1BD371BFB5C5000B8CCCE /* ViewController.m */,
-				46B1BD501BFB6E6700B8CCCE /* PyzeViewController.h */,
-				46B1BD511BFB6E6700B8CCCE /* PyzeViewController.m */,
-				46B1BD531BFB70A300B8CCCE /* PageContentViewController.h */,
-				46B1BD541BFB70A300B8CCCE /* PageContentViewController.m */,
 				461BCD0F1C04AF1600E864B8 /* PyzeCollectionViewController.h */,
 				461BCD101C04AF1600E864B8 /* PyzeCollectionViewController.m */,
 				461BCD121C04AF6F00E864B8 /* CollectionViewCell.h */,
 				461BCD131C04AF6F00E864B8 /* CollectionViewCell.m */,
+				46D96F5E1C10812400F4B186 /* SegementDemoViewController.h */,
+				46D96F5F1C10812400F4B186 /* SegementDemoViewController.m */,
+				46D96F611C10830E00F4B186 /* SearchTableViewController.h */,
+				46D96F621C10830E00F4B186 /* SearchTableViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -71,6 +77,8 @@
 		46B1BD241BFB5C5000B8CCCE = {
 			isa = PBXGroup;
 			children = (
+				46D96F681C10969400F4B186 /* SystemConfiguration.framework */,
+				46D96F661C10968D00F4B186 /* CoreTelephony.framework */,
 				46B1BD2F1BFB5C5000B8CCCE /* PyzeViewController */,
 				46B1BD2E1BFB5C5000B8CCCE /* Products */,
 			);
@@ -177,11 +185,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46D96F631C10830E00F4B186 /* SearchTableViewController.m in Sources */,
 				461BCD111C04AF1600E864B8 /* PyzeCollectionViewController.m in Sources */,
 				46B1BD381BFB5C5000B8CCCE /* ViewController.m in Sources */,
 				46B1BD351BFB5C5000B8CCCE /* AppDelegate.m in Sources */,
-				46B1BD551BFB70A300B8CCCE /* PageContentViewController.m in Sources */,
-				46B1BD521BFB6E6700B8CCCE /* PyzeViewController.m in Sources */,
+				46D96F601C10812400F4B186 /* SegementDemoViewController.m in Sources */,
 				461BCD141C04AF6F00E864B8 /* CollectionViewCell.m in Sources */,
 				46B1BD321BFB5C5000B8CCCE /* main.m in Sources */,
 			);
@@ -295,7 +303,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Vinodh Kumar (RHXCHS39A7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Vinodh Kumar (RHXCHS39A7)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PyzeViewController",
+				);
 				INFOPLIST_FILE = PyzeViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.PyzeViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -307,7 +320,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PyzeViewController",
+				);
 				INFOPLIST_FILE = PyzeViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.PyzeViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";

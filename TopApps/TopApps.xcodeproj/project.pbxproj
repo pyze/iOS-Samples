@@ -13,13 +13,13 @@
 		460F6E381BEA5DC000E99FC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 460F6E361BEA5DC000E99FC9 /* Main.storyboard */; };
 		460F6E3A1BEA5DC000E99FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 460F6E391BEA5DC000E99FC9 /* Assets.xcassets */; };
 		460F6E3D1BEA5DC000E99FC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 460F6E3B1BEA5DC000E99FC9 /* LaunchScreen.storyboard */; };
-		460F6E4D1BEA5E4E00E99FC9 /* UIImageView+ImageCaching.m in Sources */ = {isa = PBXBuildFile; fileRef = 460F6E461BEA5E4E00E99FC9 /* UIImageView+ImageCaching.m */; settings = {ASSET_TAGS = (); }; };
-		460F6E4E1BEA5E4E00E99FC9 /* AppStoreDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 460F6E491BEA5E4E00E99FC9 /* AppStoreDataModel.m */; settings = {ASSET_TAGS = (); }; };
-		460F6E4F1BEA5E4E00E99FC9 /* TopAppsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 460F6E4C1BEA5E4E00E99FC9 /* TopAppsManager.m */; settings = {ASSET_TAGS = (); }; };
-		460F6E511BEA5E9000E99FC9 /* Pyze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460F6E501BEA5E9000E99FC9 /* Pyze.framework */; settings = {ASSET_TAGS = (); }; };
+		460F6E4D1BEA5E4E00E99FC9 /* UIImageView+ImageCaching.m in Sources */ = {isa = PBXBuildFile; fileRef = 460F6E461BEA5E4E00E99FC9 /* UIImageView+ImageCaching.m */; };
+		460F6E4E1BEA5E4E00E99FC9 /* AppStoreDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 460F6E491BEA5E4E00E99FC9 /* AppStoreDataModel.m */; };
+		460F6E4F1BEA5E4E00E99FC9 /* TopAppsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 460F6E4C1BEA5E4E00E99FC9 /* TopAppsManager.m */; };
+		460F6E511BEA5E9000E99FC9 /* Pyze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460F6E501BEA5E9000E99FC9 /* Pyze.framework */; };
 		460F6E531BEA5E9F00E99FC9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460F6E521BEA5E9F00E99FC9 /* CoreTelephony.framework */; };
 		460F6E551BEA5EA900E99FC9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460F6E541BEA5EA900E99FC9 /* SystemConfiguration.framework */; };
-		460F6E581BEA5F0000E99FC9 /* AppStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 460F6E571BEA5F0000E99FC9 /* AppStatusCell.m */; settings = {ASSET_TAGS = (); }; };
+		460F6E581BEA5F0000E99FC9 /* AppStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 460F6E571BEA5F0000E99FC9 /* AppStatusCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -321,8 +321,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Vinodh Kumar (RHXCHS39A7)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Vinodh Kumar (RHXCHS39A7)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development IOS Push Services: com.pyze.samples.TopApps";
 				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -330,9 +330,9 @@
 				);
 				INFOPLIST_FILE = TopApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.TopApps;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.samples.TopApps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "34ab189c-6759-40cb-84f9-f3376900f19b";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -340,6 +340,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -347,8 +348,9 @@
 				);
 				INFOPLIST_FILE = TopApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.TopApps;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.samples.TopApps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -371,6 +373,7 @@
 				460F6E431BEA5DC000E99FC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
