@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--PyzeEvents-->
+        <!--PyzeEvents-ObjC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="eventsvc" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -25,11 +25,11 @@
                                         <rect key="frame" x="0.0" y="86" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="joo-yo-dwV" id="8NP-8l-bn9">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cn1-r0-vrC">
-                                                    <rect key="frame" x="62" y="0.0" width="503" height="43.5"/>
+                                                    <rect key="frame" x="62" y="0.0" width="503" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -60,7 +60,7 @@
                             <constraint firstAttribute="trailing" secondItem="VKV-17-nV8" secondAttribute="trailing" id="zUD-dc-Tox"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="PyzeEvents" id="SRz-04-9jK"/>
+                    <navigationItem key="navigationItem" title="PyzeEvents-ObjC" id="SRz-04-9jK"/>
                     <connections>
                         <outlet property="tableView" destination="VKV-17-nV8" id="wbn-N6-NSI"/>
                     </connections>
@@ -82,11 +82,11 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XOt-Ur-cgX" id="FEu-AT-uxR">
-                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ccc-kH-12F">
-                                            <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="550" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -160,7 +160,7 @@
             </objects>
             <point key="canvasLocation" x="2404" y="1844"/>
         </scene>
-        <!--PyzeEvents-->
+        <!--PyzeEvents-ObjC-->
         <scene sceneID="ciz-hU-D1Z">
             <objects>
                 <viewController storyboardIdentifier="pyzeeventsvc" id="WoG-sr-zY0" customClass="HomeViewController" sceneMemberID="viewController">
@@ -181,7 +181,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3T-IM-aq9">
                                 <rect key="frame" x="249" y="410" width="101" height="30"/>
-                                <state key="normal" title="PyzeEvents"/>
+                                <state key="normal" title="PyzeEvents-ObjC"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="9"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
@@ -214,7 +214,7 @@
                             <constraint firstItem="IGW-hg-cU8" firstAttribute="centerX" secondItem="G64-XZ-OmR" secondAttribute="centerX" id="llY-Ka-BrE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="PyzeEvents" id="FWM-7K-2Tt"/>
+                    <navigationItem key="navigationItem" title="PyzeEvents-ObjC" id="FWM-7K-2Tt"/>
                     <connections>
                         <outlet property="eventsButton" destination="x3T-IM-aq9" id="TLc-wl-lTy"/>
                     </connections>
@@ -436,11 +436,11 @@ Cg
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u7c-aJ-Qet" id="TPW-j0-B0Z">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nh4-pO-656">
-                                                    <rect key="frame" x="62" y="0.0" width="503" height="43.5"/>
+                                                    <rect key="frame" x="62" y="0.0" width="503" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -495,11 +495,11 @@ Cg
                                 <rect key="frame" x="0.0" y="113.5" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="center" tableViewCell="5tj-oE-sX0" id="6it-fY-la5">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LsA-O9-ll6">
-                                            <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -512,7 +512,7 @@ Cg
                                 <rect key="frame" x="0.0" y="157.5" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gbp-Rp-y5O" id="5lT-05-RHq">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -520,7 +520,7 @@ Cg
                                 <rect key="frame" x="0.0" y="201.5" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VYz-hM-qNd" id="zAS-9n-WHx">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
