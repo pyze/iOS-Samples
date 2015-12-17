@@ -14,12 +14,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, willFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
-        Pyze.sharedPyze().initializeWithKey("nW3V4gQ8S-O4ZjRMDy9d1g")
+        
+        Pyze.sharedPyze().initializeWithKey("<insert your Pyze App Key>")
         return true
     }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // iOS 8.x and iOS Phone 9.x onwards
+        if #available(iOS 8.0, *) {
+            let userNotificationTypes = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
+            UIApplication.sharedApplication().registerUserNotificationSettings(userNotificationTypes)
+            UIApplication.sharedApplication().registerForRemoteNotifications()
+        } else {
+            // Fallback on earlier versions
+            application.registerForRemoteNotificationTypes([.Alert, .Badge, .Sound])
+        }
+        
         return true
     }
 

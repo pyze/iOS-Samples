@@ -7,7 +7,7 @@
 //
 
 #import "ALEventsTest.h"
-#import "PyzeEvent.h"
+#import <Pyze/Pyze.h>
 #import "ALRandomDictionaryGenerator.h"
 #import <objc/runtime.h>
 
@@ -836,7 +836,7 @@ BOOL g_shouldExecute;
     }
     else if (g_indexPath.row == 3){
         arguments = @[@"fb",@"fb/21212121212",@"Robert Downey Jr."];
-        if (g_shouldExecute)[PyzeSocial postSubscibed:arguments[0]
+        if (g_shouldExecute)[PyzeSocial postSubscribed:arguments[0]
                                   forContentReference:arguments[1]
                                              category:arguments[1]
                                        withAttributes:attributes];

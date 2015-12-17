@@ -7,24 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		463D86921BC6CB1900F60C50 /* PyzeWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 463D86911BC6CB1900F60C50 /* PyzeWebViewViewController.m */; settings = {ASSET_TAGS = (); }; };
-		464F659E1BE126450077C4C8 /* JobsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 464F659D1BE126450077C4C8 /* JobsViewController.m */; settings = {ASSET_TAGS = (); }; };
-		469318601BC809AB00EF0883 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4693185F1BC809AB00EF0883 /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
-		469318641BCB8B1100EF0883 /* AboutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469318631BCB8B1100EF0883 /* AboutTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		463D86921BC6CB1900F60C50 /* PyzeWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 463D86911BC6CB1900F60C50 /* PyzeWebViewViewController.m */; };
+		464F659E1BE126450077C4C8 /* JobsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 464F659D1BE126450077C4C8 /* JobsViewController.m */; };
+		469318601BC809AB00EF0883 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4693185F1BC809AB00EF0883 /* HomeViewController.m */; };
+		469318641BCB8B1100EF0883 /* AboutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469318631BCB8B1100EF0883 /* AboutTableViewController.m */; };
 		46945A001BBD67C9000E5070 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 469459FF1BBD67C9000E5070 /* main.m */; };
 		46945A031BBD67C9000E5070 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46945A021BBD67C9000E5070 /* AppDelegate.m */; };
 		46945A061BBD67C9000E5070 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46945A051BBD67C9000E5070 /* ViewController.m */; };
 		46945A091BBD67C9000E5070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46945A071BBD67C9000E5070 /* Main.storyboard */; };
 		46945A0B1BBD67C9000E5070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46945A0A1BBD67C9000E5070 /* Assets.xcassets */; };
 		46945A0E1BBD67C9000E5070 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46945A0C1BBD67C9000E5070 /* LaunchScreen.storyboard */; };
-		46945A261BBD7092000E5070 /* PyzeClassParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 46945A251BBD7092000E5070 /* PyzeClassParser.m */; settings = {ASSET_TAGS = (); }; };
-		46945A291BBD85E8000E5070 /* PyzeTableViewSrc.m in Sources */ = {isa = PBXBuildFile; fileRef = 46945A281BBD85E8000E5070 /* PyzeTableViewSrc.m */; settings = {ASSET_TAGS = (); }; };
-		46945A611BC56403000E5070 /* ALEventsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 46945A5E1BC56403000E5070 /* ALEventsTest.m */; settings = {ASSET_TAGS = (); }; };
-		46945A621BC56403000E5070 /* ALRandomDictionaryGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 46945A601BC56403000E5070 /* ALRandomDictionaryGenerator.m */; settings = {ASSET_TAGS = (); }; };
-		46945A831BC6B4C4000E5070 /* DetailEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46945A821BC6B4C4000E5070 /* DetailEventViewController.m */; settings = {ASSET_TAGS = (); }; };
-		469B13E21BCBE86900751712 /* PartialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469B13E11BCBE86900751712 /* PartialViewController.m */; settings = {ASSET_TAGS = (); }; };
-		469B13E91BCE91EB00751712 /* EventValuesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469B13E81BCE91EB00751712 /* EventValuesTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		46D0BA5D1BD7DA6800D4D449 /* libPyze.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D0BA5C1BD7DA6800D4D449 /* libPyze.a */; settings = {ASSET_TAGS = (); }; };
+		46945A261BBD7092000E5070 /* PyzeClassParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 46945A251BBD7092000E5070 /* PyzeClassParser.m */; };
+		46945A291BBD85E8000E5070 /* PyzeTableViewSrc.m in Sources */ = {isa = PBXBuildFile; fileRef = 46945A281BBD85E8000E5070 /* PyzeTableViewSrc.m */; };
+		46945A611BC56403000E5070 /* ALEventsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 46945A5E1BC56403000E5070 /* ALEventsTest.m */; };
+		46945A621BC56403000E5070 /* ALRandomDictionaryGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 46945A601BC56403000E5070 /* ALRandomDictionaryGenerator.m */; };
+		46945A831BC6B4C4000E5070 /* DetailEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46945A821BC6B4C4000E5070 /* DetailEventViewController.m */; };
+		469B13E21BCBE86900751712 /* PartialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469B13E11BCBE86900751712 /* PartialViewController.m */; };
+		469B13E91BCE91EB00751712 /* EventValuesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469B13E81BCE91EB00751712 /* EventValuesTableViewController.m */; };
+		6BDF0D8E1C23137000BAE5C6 /* Pyze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDF0D8D1C23137000BAE5C6 /* Pyze.framework */; };
+		6BDF0D911C23138700BAE5C6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDF0D901C23138700BAE5C6 /* CoreTelephony.framework */; };
+		6BDF0D931C23138C00BAE5C6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDF0D921C23138C00BAE5C6 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,9 +62,9 @@
 		469B13E11BCBE86900751712 /* PartialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PartialViewController.m; path = AboutViewController/PartialViewController.m; sourceTree = "<group>"; };
 		469B13E71BCE91EB00751712 /* EventValuesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventValuesTableViewController.h; path = DetailEvent/EventValueList/EventValuesTableViewController.h; sourceTree = "<group>"; };
 		469B13E81BCE91EB00751712 /* EventValuesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventValuesTableViewController.m; path = DetailEvent/EventValueList/EventValuesTableViewController.m; sourceTree = "<group>"; };
-		46D0BA591BD7DA6800D4D449 /* Pyze.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pyze.h; sourceTree = "<group>"; };
-		46D0BA5A1BD7DA6800D4D449 /* PyzeEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PyzeEvent.h; sourceTree = "<group>"; };
-		46D0BA5C1BD7DA6800D4D449 /* libPyze.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPyze.a; sourceTree = "<group>"; };
+		6BDF0D8D1C23137000BAE5C6 /* Pyze.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pyze.framework; sourceTree = "<group>"; };
+		6BDF0D901C23138700BAE5C6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		6BDF0D921C23138C00BAE5C6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46D0BA5D1BD7DA6800D4D449 /* libPyze.a in Frameworks */,
+				6BDF0D931C23138C00BAE5C6 /* SystemConfiguration.framework in Frameworks */,
+				6BDF0D911C23138700BAE5C6 /* CoreTelephony.framework in Frameworks */,
+				6BDF0D8E1C23137000BAE5C6 /* Pyze.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +122,8 @@
 		469459F21BBD67C9000E5070 = {
 			isa = PBXGroup;
 			children = (
+				6BDF0D921C23138C00BAE5C6 /* SystemConfiguration.framework */,
+				6BDF0D901C23138700BAE5C6 /* CoreTelephony.framework */,
 				469459FD1BBD67C9000E5070 /* Pyze */,
 				469459FC1BBD67C9000E5070 /* Products */,
 			);
@@ -134,7 +140,7 @@
 		469459FD1BBD67C9000E5070 /* Pyze */ = {
 			isa = PBXGroup;
 			children = (
-				46D0BA571BD7DA6800D4D449 /* PyzeSDK */,
+				6BDF0D8F1C23137400BAE5C6 /* Frameworks */,
 				464F659B1BE126160077C4C8 /* JobsViewController */,
 				463D868F1BC6CAF600F60C50 /* WebView */,
 				4693185D1BC8098800EF0883 /* HomeViewController */,
@@ -214,30 +220,12 @@
 			name = EventValueList;
 			sourceTree = "<group>";
 		};
-		46D0BA571BD7DA6800D4D449 /* PyzeSDK */ = {
+		6BDF0D8F1C23137400BAE5C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				46D0BA581BD7DA6800D4D449 /* include */,
-				46D0BA5B1BD7DA6800D4D449 /* lib */,
+				6BDF0D8D1C23137000BAE5C6 /* Pyze.framework */,
 			);
-			path = PyzeSDK;
-			sourceTree = "<group>";
-		};
-		46D0BA581BD7DA6800D4D449 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				46D0BA591BD7DA6800D4D449 /* Pyze.h */,
-				46D0BA5A1BD7DA6800D4D449 /* PyzeEvent.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		46D0BA5B1BD7DA6800D4D449 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				46D0BA5C1BD7DA6800D4D449 /* libPyze.a */,
-			);
-			path = lib;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,6 +423,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: DICKEY SINGH (X59M56WU7W)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: DICKEY SINGH (X59M56WU7W)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pyze",
+				);
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Pyze/PyzeSDK/include\"";
 				INFOPLIST_FILE = Pyze/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -456,6 +448,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: DICKEY SINGH (X59M56WU7W)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pyze",
+				);
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Pyze/PyzeSDK/include\"";
 				INFOPLIST_FILE = Pyze/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

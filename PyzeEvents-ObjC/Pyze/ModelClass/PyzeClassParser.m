@@ -7,10 +7,10 @@
 //
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
+#import <Pyze/Pyze.h>
 
 #import "PyzeClassParser.h"
 #import "PyzeTableViewSrc.h"
-#import "PyzeEvent.h"
 
 @interface PyzeClassParser()
 

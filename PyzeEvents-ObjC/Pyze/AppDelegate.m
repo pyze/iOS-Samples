@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "Pyze.h"
+#import <Pyze/Pyze.h>
 
 
 
