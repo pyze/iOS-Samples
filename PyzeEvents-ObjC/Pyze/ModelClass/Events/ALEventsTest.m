@@ -908,5 +908,29 @@ BOOL g_shouldExecute;
     else if (g_indexPath.row == 4){ if (g_shouldExecute) [PyzeBitcoin postImportedPrivateKey:attributes];}
     else { if (g_shouldExecute) [PyzeBitcoin postScannedPrivateKey:attributes];}
     return g_shouldExecute ? nil : [NSArray arrayWithObjects: @[],attributes,nil];
+
+}
+
+-(void) customExample
+{
+    //
+    // Custom event handling.
+    //
+    [PyzeCustomEvent postWithEventName:@"Blog Read" withAttributes:@{@"Author":@"Nav S",
+                                                                        @"User status":@"Registered",
+                                                                        @"Article Source" : @"CNN",
+                                                                        @"Publish Time": @"12-17-2015"}];
+    //
+    // Alternate way to pass value1,key1, value2,key2 ...
+    //
+    NSDictionary * attributes = [NSDictionary dictionaryWithObjectsAndKeys:
+                                 @"Nav S", @"Author",
+                                 @"Registered", @"User_Status",
+                                 @"Article Source", @"CNN",
+                                 @"Publish Time",@"12-17-2015",nil];
+    
+    [PyzeCustomEvent postWithEventName:@"Blog Read" withAttributes:attributes];
+    
+    
 }
 @end

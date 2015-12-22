@@ -1,54 +1,90 @@
-/*!
- ## Pyze
- Main class for the Pyze iOS sdk.
- With this class, the SDK will be initialized with the APP key provided by Pyze team.
- You can also use this class to see the logs which would be sent to server when you post any
- event to the server based on the priority set, however this will log only in the debug 
- configuration. In the release mode or deployment the SDK will log minimally.
-  */
-
 #import <UIKit/UIKit.h>
 
 #import "PyzeEvent.h"
 
-//! Project version number for Pyze.
+
+/**
+ *  Significant build number for Pyze SDK.
+ */
 FOUNDATION_EXPORT double PyzeVersionNumber;
 
-typedef enum{
+/**
+ *  PyzeLogLevel
+ *  Log level of the SDK. 
+ *  Default is Minimal Logs
+ */
+typedef NS_ENUM(NSInteger, PyzeLogLevel) {
+    /**
+     *  Log Minimal
+     */
     PyzelogLevelMinimal = 0,
+    /**
+     *  Log Mininmal + warnings
+     */
     PyzelogLevelWarnings = 1,
+    /**
+     * Log Mininmal + warnings + errors
+     */
     PyzelogLevelErrors = 2,
+    /**
+     *  Log all messages
+     */
     PyzelogLevelAll = 3
-} PyzeLogLevel;
+};
 
-
+#pragma mark - Pyze
+/**
+ * ## Pyze
+ * This is the main class for the Pyze iOS SDK. Use method initializeWithKey: to initialize the Library.  For troubleshooting during development and in debug mode, you can throttle the logging level using method 
+ * logThrottling: 
+ * In the release mode or deployment the SDK will log minimally.
+ * 
+ * SDK Download instructions are here: [github.com/pyze/iOS-Library](https://github.com/pyze/iOS-Library/) 
+ * 
+ * You will need an app-specific key from: [growth.pyze.com](https://growth.pyze.com/) 
+ * 
+ */
 @interface Pyze : NSObject
 
-/*!
- *  Get the shared instance of Pyze API.
- *
- *  @return Pyze instance type.
+
+/// @name Initialize Pyze Library
+
+/**
+ *  Initializes the Pyze library. Call this method in the app delegate's method
+ *  application:willFinishLaunchingWithOptions.
+ *      
+ *  @param pyzeAppKey The app-specific key obtained from [growth.pyze.com](https://growth.pyze.com/) 
+ *  @warning *Important:* Get an app-specific key from [growth.pyze.com](https://growth.pyze.com/) 
  */
+- (void) initializeWithKey:(NSString *) pyzeAppKey;
 
+/// @name Debug Log Throttling
 
-+ (Pyze*) sharedPyze;
-
-/*!
+/**
  *  Log throttling level to be used in the lib while target is in debug mode.
  *
  *  @param logLevel Log level you would wish to see in the console.
  */
-
 -(void) logThrottling:(PyzeLogLevel) logLevel;
 
-/*!
- *  Initializes the Pyze library. Call this method in the app delegate's method
- *  application:willFinishLaunchingWithOptions.
- *
- *  @param pyzeAppKey The SDK key received from the Pyze.com
- */
-- (void) initializeWithKey:(NSString *) pyzeAppKey;
 
+/// @name Shared Pyze Instance
+
+/**
+ *  Get the shared instance of Pyze API
+ *
+ *  @return Pyze instance type.
+ */
++ (Pyze*) sharedPyze;
+
+
+/**
+ *  init method is unavailable. Use initializeWithKey: method instead.
+ *
+ *  @see initializeWithKey:
+ *
+ *  @return instance type
+ */
 -(instancetype) init NS_UNAVAILABLE;
 
 @end

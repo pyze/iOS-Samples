@@ -3,7 +3,7 @@ use_frameworks!
 
 target 'SwiftCocoapods' do
 
-pod 'pyze-sdk-iOS', '1.6.0'
+pod 'pyze-sdk-iOS'
 
 end
 
