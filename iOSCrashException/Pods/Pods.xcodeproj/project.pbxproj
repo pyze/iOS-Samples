@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8703020DE8DB1F27A746537F87CFC5AC /* Pods-iOSCrashException-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EAF83EABE57AFA9EB9137F174D6829 /* Pods-iOSCrashException-dummy.m */; };
+		92CC916A3BD11EFC8FA01C622285465B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D29E54E817A4D6D5020816374D5C525 /* Pods-iOSCrashException-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSCrashException-frameworks.sh"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		42E5239233A91E5919C482F01538D17C /* Pods-iOSCrashException-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSCrashException-acknowledgements.plist"; sourceTree = "<group>"; };
+		66446925B1402B5A1A105C9F575E3CF4 /* Pyze.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pyze.framework; sourceTree = "<group>"; };
+		7FDA009E1564D7089EDC393294BACC69 /* Pods-iOSCrashException.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSCrashException.release.xcconfig"; sourceTree = "<group>"; };
+		8103DA1AECCE42D52AA3093747AD5CA4 /* libPods-iOSCrashException.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSCrashException.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8999B501167539603353EE399A0B8CAE /* Pods-iOSCrashException-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOSCrashException-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9AE8429C04747644A16CC85706235209 /* Pods-iOSCrashException.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSCrashException.debug.xcconfig"; sourceTree = "<group>"; };
+		A0EAF83EABE57AFA9EB9137F174D6829 /* Pods-iOSCrashException-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOSCrashException-dummy.m"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F3AAED1CCC80DD8E3D025C2731771578 /* Pods-iOSCrashException-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSCrashException-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AD734CC85CB3F04A9FB67EEFB93F327 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92CC916A3BD11EFC8FA01C622285465B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0193C90EC8AC1758F60AE109D7D89FBA /* Pods-iOSCrashException */ = {
+			isa = PBXGroup;
+			children = (
+				8999B501167539603353EE399A0B8CAE /* Pods-iOSCrashException-acknowledgements.markdown */,
+				42E5239233A91E5919C482F01538D17C /* Pods-iOSCrashException-acknowledgements.plist */,
+				A0EAF83EABE57AFA9EB9137F174D6829 /* Pods-iOSCrashException-dummy.m */,
+				0D29E54E817A4D6D5020816374D5C525 /* Pods-iOSCrashException-frameworks.sh */,
+				F3AAED1CCC80DD8E3D025C2731771578 /* Pods-iOSCrashException-resources.sh */,
+				9AE8429C04747644A16CC85706235209 /* Pods-iOSCrashException.debug.xcconfig */,
+				7FDA009E1564D7089EDC393294BACC69 /* Pods-iOSCrashException.release.xcconfig */,
+			);
+			name = "Pods-iOSCrashException";
+			path = "Target Support Files/Pods-iOSCrashException";
+			sourceTree = "<group>";
+		};
+		45E786FFF9B57E741F2D1101DB7CBA22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8103DA1AECCE42D52AA3093747AD5CA4 /* libPods-iOSCrashException.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6803BF6CFF22D6B85539BD2859502E8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1BD09A9396C4AD3F54E5F530B26E977 /* pyze-sdk-iOS */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				6803BF6CFF22D6B85539BD2859502E8D /* Pods */,
+				45E786FFF9B57E741F2D1101DB7CBA22 /* Products */,
+				E09A1C310B8CF273D086E9F6E1B9804B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		87876E743926339DFA30BA7C2FBC3716 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66446925B1402B5A1A105C9F575E3CF4 /* Pyze.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1BD09A9396C4AD3F54E5F530B26E977 /* pyze-sdk-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				87876E743926339DFA30BA7C2FBC3716 /* Frameworks */,
+			);
+			path = "pyze-sdk-iOS";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E09A1C310B8CF273D086E9F6E1B9804B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0193C90EC8AC1758F60AE109D7D89FBA /* Pods-iOSCrashException */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DFE65229841EC25253C73CF5BA14554 /* Pods-iOSCrashException */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 504DCDA576C6B91E07D8D8C4DDFCEC55 /* Build configuration list for PBXNativeTarget "Pods-iOSCrashException" */;
+			buildPhases = (
+				CA7EC791453ADF11C1E63EDC8F920241 /* Sources */,
+				2AD734CC85CB3F04A9FB67EEFB93F327 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-iOSCrashException";
+			productName = "Pods-iOSCrashException";
+			productReference = 8103DA1AECCE42D52AA3093747AD5CA4 /* libPods-iOSCrashException.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 45E786FFF9B57E741F2D1101DB7CBA22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DFE65229841EC25253C73CF5BA14554 /* Pods-iOSCrashException */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA7EC791453ADF11C1E63EDC8F920241 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8703020DE8DB1F27A746537F87CFC5AC /* Pods-iOSCrashException-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		27FAB8B3A988C8A7DA70B48D51C43AA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AE8429C04747644A16CC85706235209 /* Pods-iOSCrashException.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A9D37888ECB35EE1CDED89CF9E79430D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FDA009E1564D7089EDC393294BACC69 /* Pods-iOSCrashException.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D1534490D941DCA47C62AC4314182AF /* Debug */,
+				C5A18280E9321A9268D1C80B7DA43967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		504DCDA576C6B91E07D8D8C4DDFCEC55 /* Build configuration list for PBXNativeTarget "Pods-iOSCrashException" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27FAB8B3A988C8A7DA70B48D51C43AA9 /* Debug */,
+				A9D37888ECB35EE1CDED89CF9E79430D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
