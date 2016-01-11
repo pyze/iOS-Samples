@@ -1,15 +1,13 @@
 //
 //  AppDelegate.m
-//  Pyze
+//  iOSCrashException
 //
-//  Created by Ramachandra Naragund on 01/10/15.
-//  Copyright © 2015 Pyze Technologies Pvt Ltd. All rights reserved.
+//  Created by Ramachandra Naragund on 11/01/16.
+//  Copyright © 2016 Pyze. All rights reserved.
 //
 
 #import "AppDelegate.h"
 #import <Pyze/Pyze.h>
-
-
 
 @interface AppDelegate ()
 
@@ -17,40 +15,16 @@
 
 @implementation AppDelegate
 
--(BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+-(BOOL) application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [[Pyze sharedPyze] initializeWithKey:@"nW3V4gQ8S-O4ZjRMDy9d1g"];
-    [[Pyze sharedPyze] logThrottling:PyzelogLevelAll];
+
     return YES;
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-#if __IPHONE_OS_VERSION_MIN_REQUIRED >= 80000
-        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil]];
-        [[UIApplication sharedApplication] registerForRemoteNotifications];
-#else
-        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
-         (UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert)];
-#endif
-    
+
     return YES;
-}
-
-
-- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    NSLog(@"%@\n\n\n\n deviceTokenBytesReceived %d\n\n\n\n",NSStringFromSelector(_cmd),(int)[deviceToken length]);
-}
-
-
-- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
-{
-    NSLog(@"%@\n\n\n\n Error %@\n\n\n\n",NSStringFromSelector(_cmd), [error localizedDescription]);
-    
-}
-
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    NSLog(@"%@\n\n\n\n notifn %@\n\n\n\n",NSStringFromSelector(_cmd),userInfo);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -25,7 +25,6 @@
 		469B13E21BCBE86900751712 /* PartialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469B13E11BCBE86900751712 /* PartialViewController.m */; };
 		469B13E91BCE91EB00751712 /* EventValuesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469B13E81BCE91EB00751712 /* EventValuesTableViewController.m */; };
 		6BDF0D8E1C23137000BAE5C6 /* Pyze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDF0D8D1C23137000BAE5C6 /* Pyze.framework */; };
-		6BDF0D911C23138700BAE5C6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDF0D901C23138700BAE5C6 /* CoreTelephony.framework */; };
 		6BDF0D931C23138C00BAE5C6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDF0D921C23138C00BAE5C6 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +62,6 @@
 		469B13E71BCE91EB00751712 /* EventValuesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventValuesTableViewController.h; path = DetailEvent/EventValueList/EventValuesTableViewController.h; sourceTree = "<group>"; };
 		469B13E81BCE91EB00751712 /* EventValuesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventValuesTableViewController.m; path = DetailEvent/EventValueList/EventValuesTableViewController.m; sourceTree = "<group>"; };
 		6BDF0D8D1C23137000BAE5C6 /* Pyze.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pyze.framework; sourceTree = "<group>"; };
-		6BDF0D901C23138700BAE5C6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		6BDF0D921C23138C00BAE5C6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -73,7 +71,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BDF0D931C23138C00BAE5C6 /* SystemConfiguration.framework in Frameworks */,
-				6BDF0D911C23138700BAE5C6 /* CoreTelephony.framework in Frameworks */,
 				6BDF0D8E1C23137000BAE5C6 /* Pyze.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				6BDF0D921C23138C00BAE5C6 /* SystemConfiguration.framework */,
-				6BDF0D901C23138700BAE5C6 /* CoreTelephony.framework */,
 				469459FD1BBD67C9000E5070 /* Pyze */,
 				469459FC1BBD67C9000E5070 /* Products */,
 			);
