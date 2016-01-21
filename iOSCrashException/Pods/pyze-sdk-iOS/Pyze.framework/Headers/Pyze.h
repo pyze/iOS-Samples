@@ -60,12 +60,14 @@ typedef NS_ENUM(NSInteger, PyzeLogLevel) {
  */
 - (void) initializeWithKey:(NSString *) pyzeAppKey;
 
-/// @name Debug Log Throttling
+/// @name Log Throttling
 
 /**
- 
+ *  Log throttling level to be used in the lib while target is in debug mode.
+ *
+ *  @param logLevel Log level you would wish to see in the console.
  */
--(void) debugLogThrottling:(PyzeLogLevel) logLevel;
+-(void) logThrottling:(PyzeLogLevel) logLevel;
 
 
 /// @name Shared Pyze Instance

@@ -2417,5 +2417,176 @@ forContentReference:(NSString *) contentReference
 
 @end
 
+
+
+#pragma mark - Weather and Forecast class
+
+//http://openweathermap.org/api
+/**
+ *  Weather request types
+ */
+typedef NS_ENUM(NSInteger, PyzeWeatherRequestType) {
+    /**
+     *  Weather requested by City name.
+     */
+    PyzeWeatherRequestByCityName = 0,
+    /**
+     *  Weather requested by City code.
+     */
+    PyzeWeatherRequestByCityCode,
+    /**
+     *  Weather reqquested by Geo codes.
+     */
+    PyzeWeatherRequestByGeoCodes,
+    /**
+     *  Weather requested by zones.
+     */
+    PyzeWeatherRequestByZone
+};
+
+/**
+ *  Geo point struct.
+ */
+typedef struct PyzeGeoPoint {
+    /**
+     *  Lattitude
+     */
+    float GeoPointLat;
+    /**
+     *  Longitude.
+     */
+    float GeoPointLon;
+    
+}
+/**
+ * Geo point struct.
+ */
+PyzeGeoPoint;
+
+/**
+ * ### PyzeWeatherAndForecast
+ * Subclass of PyzeCustomEvent can be used to post events related to Weather and Forecast.
+ */
+@interface PyzeWeatherAndForecast : PyzeCustomEvent
+
+/**
+ *  Post weather request for type.
+ *
+ *  @param type        Type you wish to query weather app.
+ *  @param howManyDays Number of days.
+ *  @param attributes  Addition attributes.
+ */
++(void) postWeatherRequestedForType:(PyzeWeatherRequestType) type
+                            forDays:(NSInteger) howManyDays
+                     withAttributes:(NSDictionary *) attributes;
+
+/**
+ *  Post weather historical request data.
+ *
+ *  @param startingInterval Timestamp to start with.
+ *  @param endInterval      End timestamp interval.
+ *  @param attributes       Additional attributes.
+ */
++(void) postWeatherHistoricalRequest:(NSTimeInterval) startingInterval
+                         withEndDate:(NSTimeInterval) endInterval
+                      withAttributes:(NSDictionary *) attributes;
+
+/**
+ *  Post weather station request.
+ *
+ *  @param clusterData Cluster data to pass.
+ *  @param point       Geo point of the station.
+ *  @param attributes  Additional attributes.
+ */
++(void) postWeatherStationsRequestWithClusterData:(NSString *) clusterData
+                                       atGeoPoint:(PyzeGeoPoint *) point
+                                   withAttributes:(NSDictionary *) attributes;
+
+/**
+ *  Post request of weather maps. Weather maps include precipitation, clouds, pressure, temperature, wind and more.
+ *
+ *  @param layerName  Layer name.
+ *  @param attributes Additional attributes.
+ */
++(void) postWeatherMapLayersRequested:(NSString *) layerName withAttributes:(NSDictionary *) attributes;
+
+/**
+ *  Post request for UVIndex.
+ *
+ *  @param point      Geo point.
+ *  @param attributes Additional attributes.
+ */
++(void) postWeatherRequestForUVIndexAtPoint:(PyzeGeoPoint *) point withAttributes:(NSDictionary *) attributes;
+
+/**
+ *  Post response received for weather request for type.
+ *
+ *  @param type       Type querried.
+ *  @param attributes Additional attributes.
+ */
++(void) postWeatherResponseForType:(PyzeWeatherRequestType) type withAttributes:(NSDictionary *) attributes;
+
+/**
+ *  Post historical weather response.
+ *
+ *  @param attributes Additional attributes.
+ */
++(void) postWeatherResponseForHistoricalData:(NSDictionary *) attributes;
+
+/**
+ *  Post weather station response.
+ *
+ *  @param attributes Additional attributes.
+ */
++(void) postWeatherStationResponseData:(NSDictionary *) attributes;
+
+/**
+ *  Post weather map layer's response.
+ *
+ *  @param attributes Additional attributes.
+ */
++(void) postWeatherMapLayersResponse:(NSDictionary *) attributes;
+
+/**
+ *  Post weather response for UVIndex.
+ *
+ *  @param attributes Additional attributes.
+ */
++(void) postWeatherResponseForUVIndex:(NSDictionary *) attributes;
+
+// Forecast
+
+/**
+ *  Post forecast request for keywords.
+ *
+ *  @param commaSeperateKeywords Keywords used to search forecast and are comma seperated.
+ *  @param attributes            Additional attributes.
+ */
++(void) postForecastRequestForKeywords:(NSString *) commaSeperateKeywords withAttributes:(NSDictionary *) attributes;
+
+/**
+ *  Post response received for keywords.
+ *
+ *  @param attributes Additional attributes.
+ */
++(void) postForecastResponseForKeywords:(NSDictionary *) attributes;
+
+/**
+ *  Post forecast fetch for n Days.
+ *
+ *  @param nDays      Number of days.
+ *  @param attributes Additional attributes.
+ */
++(void) postForecastFetch:(NSInteger) nDays withAttributes:(NSDictionary *) attributes;
+
+/**
+ *  Post forecast fetch response.
+ *
+ *  @param attributes Additional attributes.
+ */
++(void) postForecastFetchResponse:(NSDictionary *) attributes;
+
+@end
+
 NS_ASSUME_NONNULL_END
 

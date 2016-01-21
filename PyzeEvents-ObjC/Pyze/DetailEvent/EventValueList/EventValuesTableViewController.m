@@ -38,7 +38,10 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    NSArray * ar = [self methodComponets];
+    if (ar && ar.count >= 2)
+        return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -74,8 +77,11 @@
             id object = [self.firstGroupItemArray objectAtIndex:indexPath.row];
             if (![object isKindOfClass:[NSDictionary class]] || ![object isKindOfClass:[NSArray class]]) {
                 NSArray * methodCmpnts = [self methodComponets];
-                if (methodCmpnts && methodCmpnts.count) {
+                if (methodCmpnts && methodCmpnts.count && methodCmpnts.count > 2 ) {
                     [lblName setText:[NSString stringWithFormat:@"%@ : %@",[methodCmpnts objectAtIndex:indexPath.row], object]];
+                }
+                else {
+                    [lblName setText:[NSString stringWithFormat:@"%@", object]];
                 }
             }
         }

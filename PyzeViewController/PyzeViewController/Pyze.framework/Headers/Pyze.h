@@ -2,7 +2,10 @@
 
 #import "PyzeEvent.h"
 
-// Project version number for Pyze.
+
+/**
+ *  Significant build number for Pyze SDK.
+ */
 FOUNDATION_EXPORT double PyzeVersionNumber;
 
 /**
@@ -29,10 +32,13 @@ typedef NS_ENUM(NSInteger, PyzeLogLevel) {
     PyzelogLevelAll = 3
 };
 
+#pragma mark - Pyze
 /**
- * ## Pyze
- * This is the main class for the Pyze iOS SDK. Use method initializeWithKey: to initialize the Library.  For troubleshooting during development and in debug mode, you can throttle the logging level using method 
- * logThrottling: 
+ * Pyze main class
+ * 
+ * This is the main class for the Pyze iOS SDK. Use method initializeWithKey: to initialize the Library.
+ * For troubleshooting during development and in debug mode, you can throttle the logging level using method
+ * debugLogThrottling:
  * In the release mode or deployment the SDK will log minimally.
  * 
  * SDK Download instructions are here: [github.com/pyze/iOS-Library](https://github.com/pyze/iOS-Library/) 
@@ -54,7 +60,7 @@ typedef NS_ENUM(NSInteger, PyzeLogLevel) {
  */
 - (void) initializeWithKey:(NSString *) pyzeAppKey;
 
-/// @name Debug Log Throttling
+/// @name Log Throttling
 
 /**
  *  Log throttling level to be used in the lib while target is in debug mode.
@@ -73,6 +79,14 @@ typedef NS_ENUM(NSInteger, PyzeLogLevel) {
  */
 + (Pyze*) sharedPyze;
 
+
+/**
+ *  init method is unavailable. Use initializeWithKey: method instead.
+ *
+ *  @see initializeWithKey:
+ *
+ *  @return instance type
+ */
 -(instancetype) init NS_UNAVAILABLE;
 
 @end

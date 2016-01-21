@@ -62,6 +62,16 @@
 +(NSArray *) executeMediaEvents;
 
 +(NSArray *) executeBitcoinEvents;
+
++(NSArray *) executeCustomExample;
+
++(NSArray *) executeDroneEvents;
+
++(NSArray *) executeSupportEvents;
+
++(NSArray *) executeCommerceSupportEvents;
+
++(NSArray *) executeWeatherAndForecastEvents;
 @end
 
 @implementation ALEventsTest
@@ -105,13 +115,14 @@ BOOL g_shouldExecute;
                            MacroStr(executeSocialEvents),
                            MacroStr(executeMediaEvents),
                            MacroStr(executeBitcoinEvents),
+                           MacroStr(executeCustomExample),
                            nil];
-        if (g_shouldExecute)
-            NSLog(@"%@",array);
         
         
         array = [array sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
-        
+        if (g_shouldExecute)
+            NSLog(@"%@",array);
+
         SEL selector = NSSelectorFromString([array objectAtIndex:indexPath.section]);
         
         NSMethodSignature *methodSig = [[self class] methodSignatureForSelector:selector];
@@ -128,7 +139,7 @@ BOOL g_shouldExecute;
 
 +(NSArray *) executeExplicitEvents
 {
-    NSDictionary * attributes = @{@"myAppKeyCode" : @"xyzPqrStu321"};
+    NSDictionary * attributes = @{@"myAppKeyCode" : [ALRandomDictionaryGenerator new]};
     NSArray * result = g_shouldExecute ? nil : [NSArray arrayWithObjects:@[], attributes , nil];
     if (g_shouldExecute)
         [PyzeExplicitActivation post:attributes];
@@ -478,7 +489,7 @@ BOOL g_shouldExecute;
     }
     else if (g_indexPath.row == 6){
         arguments = @[@"32121",@"general",@"112233",@"uniqueDealId4321"];
-        if (g_shouldExecute)[PyzeCommerceCart postAddItemFromSubcriptionList:arguments[0]
+        if (g_shouldExecute)[PyzeCommerceCart postAddItemFromSubscriptionList:arguments[0]
                                                             withItemCategory:arguments[1]
                                                                   withItemId:arguments[2]
                                                             withUniqueDealId:arguments[3]
@@ -911,12 +922,12 @@ BOOL g_shouldExecute;
 
 }
 
--(void) customExample
++(NSArray *)executeCustomExample
 {
     //
     // Custom event handling.
     //
-    [PyzeCustomEvent postWithEventName:@"Blog Read" withAttributes:@{@"Author":@"Nav S",
+    [PyzeCustomEvent postWithEventName:@"Blog Read1" withAttributes:@{@"Author":@"Nav S",
                                                                         @"User status":@"Registered",
                                                                         @"Article Source" : @"CNN",
                                                                         @"Publish Time": @"12-17-2015"}];
@@ -929,8 +940,33 @@ BOOL g_shouldExecute;
                                  @"Article Source", @"CNN",
                                  @"Publish Time",@"12-17-2015",nil];
     
-    [PyzeCustomEvent postWithEventName:@"Blog Read" withAttributes:attributes];
-    
+    [PyzeCustomEvent postWithEventName:@"Blog Read2" withAttributes:attributes];
+    [PyzeCustomEvent postWithEventName:@"Blog Read3" withAttributes:nil];
+    return  nil;
     
 }
+
++(NSArray *) executeDroneEvents
+{
+    return nil;
+}
+
++(NSArray *) executeSupportEvents
+{
+    return nil;
+}
+
+
++(NSArray *) executeCommerceSupportEvents
+{
+    return nil;
+}
+
+
++(NSArray *) executeWeatherAndForecastEvents
+{
+    return nil;
+}
+
+
 @end

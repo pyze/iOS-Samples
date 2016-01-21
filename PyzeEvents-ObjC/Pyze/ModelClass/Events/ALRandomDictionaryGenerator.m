@@ -20,13 +20,13 @@
                              @"Mercedes-Benz E350" : [NSNumber numberWithInt:22],
                              @"BMW M3 Coupe" : [NSNumber numberWithInt:19],
                              @"BMW X6" : [NSNumber numberWithInt:16],
-                          },
+                             },
                          @{
                              @"Audi TT" : @"John",
                              @"Audi Quattro (Black)" : @"Mary",
                              @"Audi Quattro (Silver)" : @"Bill",
                              @"Audi A7" : @"Bill"
-                         },
+                             },
                          @{
                              @"category": @"c",
                              @"title": @"crd",
@@ -46,7 +46,7 @@
                              @"saxophonist": @"Jerry"
                              },
                          
-                          @{ @"1": @"red", @"2": @"green", @"3": @"blue" },
+                         @{ @"1": @"red", @"2": @"green", @"3": @"blue" },
                          
                          @{ @"Character" : @"Zelda",
                             @"Weapon" : @"Sword",
@@ -56,11 +56,11 @@
                              @"DrinkKey" : @"Beer",
                              @"StyleKey" : @"Stout",
                              @"ColorKey" : @"Jet Black"
-                           },
+                             },
                          @{
-                             @"cat" : @[@"Fancy Feast", @"Meow Mix", @"Whiskas", @"Pounce"],
-                             @"dog" : @[@"Happidog", @"Friskies", @"Kibbles 'n Bits", @"Science Diet"]
-                          }
+                             @"cat" :@"Fancy Feast",
+                             @"dog" : @"Happidog"
+                             }
                          ,
                          @{
                              @"anObject" : @55,
@@ -75,12 +75,12 @@
                              @"Shelf": @"Accessories",
                              @"SKU": @"SKU222222222",
                              },
-                         @{@"javaStudents" : @[@1128, @582, @42], @"iosStudents" : @[@12, @252, @426]},
+                         @{@"javaStudents" : @1128, @"iosStudents" : @12},
                          @{
                              @"firstName" : @"Matt",
                              @"lastName" : @"Galloway",
                              @"age" : @28
-                          },
+                             },
                          @{@"name": @"Macbook Pro", @"price": @"1,799$"},
                          @{
                              @"Interface": @"Bar Code",
@@ -111,7 +111,9 @@
                              @"Store": @"Stanford, CA",
                              @"Shelf": [NSNull null],//@"Accessories",
                              @"SKU": @"SKU222222222",
-                          },
+                             },
+                         @{
+                             }
                          ];
     
     return array;
@@ -119,7 +121,7 @@
 }
 +(NSDictionary *) attributesDictionary
 {
-    NSInteger index = [self randomNumberBetween:0 to:19];
+    NSInteger index = [self randomNumberBetween:0 to:20];
     NSLog(@"Random index = %d", (int) index );
     return [[self arrayofDictionaries] objectAtIndex:index];
 }

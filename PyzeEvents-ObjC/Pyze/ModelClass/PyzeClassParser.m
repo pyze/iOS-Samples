@@ -41,6 +41,7 @@
 {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         self.classNames = [NSMutableArray arrayWithArray:[self subclassesFromParentClass:[PyzeCustomEvent class]]];
+        [self.classNames addObject:NSStringFromClass([PyzeCustomEvent class])];
         
         self.classNames = (NSMutableArray*)[self.classNames sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
         
