@@ -62,6 +62,16 @@
 +(NSArray *) executeMediaEvents;
 
 +(NSArray *) executeBitcoinEvents;
+
++(NSArray *) executeCustomExample;
+
++(NSArray *) executeDroneEvents;
+
++(NSArray *) executeSupportEvents;
+
++(NSArray *) executeCommerceSupportEvents;
+
++(NSArray *) executeWeatherAndForecastEvents;
 @end
 
 @implementation ALEventsTest
@@ -105,13 +115,17 @@ BOOL g_shouldExecute;
                            MacroStr(executeSocialEvents),
                            MacroStr(executeMediaEvents),
                            MacroStr(executeBitcoinEvents),
+                           MacroStr(executeDroneEvents),
+                           MacroStr(executeSupportEvents),
+                           MacroStr(executeCommerceSupportEvents),
+                           MacroStr(executeWeatherAndForecastEvents),
                            nil];
-        if (g_shouldExecute)
-            NSLog(@"%@",array);
         
         
         array = [array sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
-        
+        if (g_shouldExecute)
+            NSLog(@"%@",array);
+
         SEL selector = NSSelectorFromString([array objectAtIndex:indexPath.section]);
         
         NSMethodSignature *methodSig = [[self class] methodSignatureForSelector:selector];
@@ -128,7 +142,7 @@ BOOL g_shouldExecute;
 
 +(NSArray *) executeExplicitEvents
 {
-    NSDictionary * attributes = @{@"myAppKeyCode" : @"xyzPqrStu321"};
+    NSDictionary * attributes = @{@"myAppKeyCode" : [ALRandomDictionaryGenerator new]};
     NSArray * result = g_shouldExecute ? nil : [NSArray arrayWithObjects:@[], attributes , nil];
     if (g_shouldExecute)
         [PyzeExplicitActivation post:attributes];
@@ -478,7 +492,7 @@ BOOL g_shouldExecute;
     }
     else if (g_indexPath.row == 6){
         arguments = @[@"32121",@"general",@"112233",@"uniqueDealId4321"];
-        if (g_shouldExecute)[PyzeCommerceCart postAddItemFromSubcriptionList:arguments[0]
+        if (g_shouldExecute)[PyzeCommerceCart postAddItemFromSubscriptionList:arguments[0]
                                                             withItemCategory:arguments[1]
                                                                   withItemId:arguments[2]
                                                             withUniqueDealId:arguments[3]
@@ -908,5 +922,200 @@ BOOL g_shouldExecute;
     else if (g_indexPath.row == 4){ if (g_shouldExecute) [PyzeBitcoin postImportedPrivateKey:attributes];}
     else { if (g_shouldExecute) [PyzeBitcoin postScannedPrivateKey:attributes];}
     return g_shouldExecute ? nil : [NSArray arrayWithObjects: @[],attributes,nil];
+
 }
+
++(NSArray *)executeCustomExample
+{
+    //
+    // Custom event handling.
+    //
+    [PyzeCustomEvent postWithEventName:@"Blog Read1" withAttributes:@{@"Author":@"Nav S",
+                                                                        @"User status":@"Registered",
+                                                                        @"Article Source" : @"CNN",
+                                                                        @"Publish Time": @"12-17-2015"}];
+    //
+    // Alternate way to pass value1,key1, value2,key2 ...
+    //
+    NSDictionary * attributes = [NSDictionary dictionaryWithObjectsAndKeys:
+                                 @"Nav S", @"Author",
+                                 @"Registered", @"User_Status",
+                                 @"Article Source", @"CNN",
+                                 @"Publish Time",@"12-17-2015",nil];
+    
+    [PyzeCustomEvent postWithEventName:@"Blog Read2" withAttributes:attributes];
+    [PyzeCustomEvent postWithEventName:@"Blog Read3" withAttributes:nil];
+    return  nil;
+    
+}
+
++(NSArray *) executeDroneEvents
+{
+    return nil;
+}
+
++(NSArray *) executeSupportEvents
+{
+    NSDictionary * attributes = [ALRandomDictionaryGenerator attributesDictionary];
+    NSArray * arguments = @[];
+    
+    if (g_indexPath.row == 0){
+        if (g_shouldExecute)[PyzeSupport postRequestedPhonecallback:attributes];
+    }
+    else if (g_indexPath.row == 1){
+        arguments = @[@"Device Support"];
+        if (g_shouldExecute)[PyzeSupport postLiveChatStartedWithTopic:arguments[0]
+                                                       withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 2){
+        arguments = @[@"Device Support"];
+        if (g_shouldExecute)[PyzeSupport postLiveChatEndedWithTopic:arguments[0]
+                                                     withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 3){
+        arguments = @[@"12343221",@"Device Support"];
+        if (g_shouldExecute)[PyzeSupport postTicketCreated:arguments[0]
+                                                 withTopic:arguments[1]
+                                            withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 4){
+        arguments = @[@"Device support addressed"];
+        if (g_shouldExecute) [PyzeSupport postFeedbackReceived:arguments[0]
+                                                withAttributes:attributes];
+    }
+    else {
+        arguments = @[@"Device support addressed", @"4"];
+        if (g_shouldExecute) [PyzeSupport postQualityOfServiceRated:arguments[0]
+                                                       rateOn5Scale:arguments[1]
+                                                     withAttributes:attributes];
+
+    }
+    
+    return g_shouldExecute ? nil : [NSArray arrayWithObjects: arguments,attributes,nil];
+}
+
+
++(NSArray *) executeCommerceSupportEvents
+{
+    NSDictionary * attributes = [ALRandomDictionaryGenerator attributesDictionary];
+    NSArray * arguments = @[];
+    
+    if (g_indexPath.row == 0){
+        arguments = @[@"Device Support",@"112233"];
+        if (g_shouldExecute)[PyzeCommerceSupport postLiveChatStartedWithTopic:arguments[0]
+                                                              withOrderNumber:arguments[1]
+                                                               withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 1){
+        arguments = @[@"Device Support",@"112233"];
+        if (g_shouldExecute)[PyzeCommerceSupport postLiveChatEndedWithTopic:arguments[0]
+                                                            withOrderNumber:arguments[1]
+                                                             withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 2){
+        arguments = @[@"12343221",@"Device Support",@"112233"];
+        if (g_shouldExecute)[PyzeCommerceSupport postTicketCreated:arguments[0]
+                                                         withTopic:arguments[1]
+                                                   withOrderNumber:arguments[2]
+                                                    withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 3){
+        arguments = @[@"Device support addressed",@"112233"];
+        if (g_shouldExecute) [PyzeCommerceSupport postFeedbackReceived:arguments[0]
+                                               withOrderNumber:arguments[2]
+                                                withAttributes:attributes];
+    }
+    else {
+        arguments = @[@"Device support addressed", @"4"];
+        if (g_shouldExecute) [PyzeCommerceSupport postQualityOfServiceRated:arguments[0]
+                                                            withOrderNumber:arguments[1]
+                                                               rateOn5Scale:arguments[2]
+                                                             withAttributes:attributes];
+        
+    }
+    
+    return g_shouldExecute ? nil : [NSArray arrayWithObjects: arguments,attributes,nil];
+}
+
+
++(NSArray *) executeWeatherAndForecastEvents
+{
+    NSDictionary * attributes = [ALRandomDictionaryGenerator attributesDictionary];
+    NSArray * arguments = @[];
+    
+    if (g_indexPath.row == 0){
+        arguments = @[@"2",[@(PyzeWeatherRequestByCityCode) stringValue]];
+        if (g_shouldExecute)[PyzeWeatherAndForecast postWeatherRequestedForType:PyzeWeatherRequestByCityCode
+                                                                        forDays:[arguments[0] integerValue]
+                                                                 withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 1){
+        arguments = @[[@(NSTimeIntervalSince1970+24) stringValue],[@(NSTimeIntervalSince1970) stringValue]];
+
+        if (g_shouldExecute)[PyzeWeatherAndForecast postWeatherHistoricalRequest:NSTimeIntervalSince1970
+                                                                     withEndDate:NSTimeIntervalSince1970+24
+                                                                  withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 2){
+        arguments = @[@"12343221"];
+        PyzeGeoPoint point;
+        point.GeoPointLat = 100.0f;
+        point.GeoPointLon = point.GeoPointLat;
+        
+        if (g_shouldExecute)[PyzeWeatherAndForecast postWeatherStationsRequestWithClusterData:arguments[0]
+                                                                                   atGeoPoint:&point
+                                                                               withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 3){
+        arguments = @[@"Weather Map"];
+        if (g_shouldExecute) [PyzeWeatherAndForecast postWeatherMapLayersRequested:arguments[0]
+                                                                    withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 4){
+        PyzeGeoPoint point;
+        point.GeoPointLat = 100.0f;
+        point.GeoPointLon = point.GeoPointLat;
+
+        if (g_shouldExecute) [PyzeWeatherAndForecast postWeatherRequestForUVIndexAtPoint:&point
+                                                                          withAttributes:attributes];
+        
+    }
+    else if (g_indexPath.row == 5){
+        arguments = @[[@(PyzeWeatherRequestByCityCode) stringValue]];
+        if (g_shouldExecute) [PyzeWeatherAndForecast postWeatherResponseForType:[arguments[0] integerValue]
+                                                                 withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 6){
+        if (g_shouldExecute) [PyzeWeatherAndForecast postWeatherResponseForHistoricalData:attributes];
+    }
+    else if (g_indexPath.row == 7){
+        if (g_shouldExecute) [PyzeWeatherAndForecast postWeatherStationResponseData:attributes];
+    }
+    else if (g_indexPath.row == 8){
+        if (g_shouldExecute) [PyzeWeatherAndForecast postWeatherMapLayersResponse:attributes];
+    }
+    else if (g_indexPath.row == 9){
+        if (g_shouldExecute) [PyzeWeatherAndForecast postWeatherResponseForUVIndex:attributes];
+    }
+    else if (g_indexPath.row == 10){
+        arguments = @[@"Weather Map"];
+        if (g_shouldExecute) [PyzeWeatherAndForecast postForecastRequestForKeywords:arguments[0]
+                                                                     withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 11){
+        if (g_shouldExecute) [PyzeWeatherAndForecast postForecastResponseForKeywords:attributes];
+    }
+    else if (g_indexPath.row == 12){
+        arguments = @[@"21"];
+        if (g_shouldExecute) [PyzeWeatherAndForecast postForecastFetch:[arguments[0] integerValue]
+                                                        withAttributes:attributes];
+    }
+    else {
+        if (g_shouldExecute) [PyzeWeatherAndForecast postForecastFetchResponse:attributes];
+    }
+
+    return g_shouldExecute ? nil : [NSArray arrayWithObjects: arguments,attributes,nil];
+}
+
+
 @end
