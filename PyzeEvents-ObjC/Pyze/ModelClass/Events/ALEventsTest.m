@@ -951,7 +951,162 @@ BOOL g_shouldExecute;
 
 +(NSArray *) executeDroneEvents
 {
-    return nil;
+    NSDictionary * attributes = [ALRandomDictionaryGenerator attributesDictionary];
+    NSArray * arguments = @[];
+    
+    if (g_indexPath.row == 0){
+        arguments = @[@"Good",@"Excellent",[@(90) stringValue], [@(90) stringValue], @"Working", @"Enabled"];
+        if (g_shouldExecute)[PyzeDrone postPreflightCheckCompleted:arguments[0]
+                                                 withStorageStatus:arguments[1]
+                                                  withDroneBattery:[arguments[2] integerValue]
+                                            withTransmitterBattery:[arguments[3] integerValue]
+                                             withCalibrationStatus:arguments[4]
+                                                     withGPSStatus:arguments[5]
+                                                    withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 1){
+        arguments = @[@"Good",@"left",@"forward",@"left",@"forward", [@(45) stringValue]];
+        
+        if (g_shouldExecute)[PyzeDrone postInflightCheckCompleted:arguments[0]
+                                                         withRoll:arguments[1]
+                                                        withPitch:arguments[2]
+                                                          withYaw:arguments[3]
+                                                     withThrottle:arguments[4]
+                                                         withTrim:arguments[5]
+                                                   withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 2){
+        if (g_shouldExecute)[PyzeDrone postConnected:attributes];
+    }
+    else if (g_indexPath.row == 3){
+        arguments = @[[@(1) stringValue]];
+        if (g_shouldExecute) [PyzeDrone postDisconnected:arguments[0]
+                                          withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 4){
+        arguments = @[@"DroneAirborne"];
+        
+        if (g_shouldExecute) [PyzeDrone postAirborne:arguments[0]
+                                      withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 5){
+        arguments = @[@"DroneLanded"];
+        if (g_shouldExecute) [PyzeDrone postLanded:arguments[0]
+                                    withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 6){
+        arguments = @[@"uniquePathForward"];
+        if (g_shouldExecute) [PyzeDrone postFlightPathCreated:arguments[0]
+                                               withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 7){
+        arguments = @[@"uniquePathForward"];
+        if (g_shouldExecute) [PyzeDrone postFlightPathUploaded:arguments[0]
+                                                withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 8){
+        arguments = @[@"uniquePathForward"];
+        if (g_shouldExecute) [PyzeDrone postFlightPathEdited:arguments[0]
+                                              withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 9){
+        arguments = @[@"uniquePathForward"];
+        if (g_shouldExecute) [PyzeDrone postFlightPathDeleted:arguments[0]
+                                               withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 10){
+        arguments = @[@"uniquePathForward"];
+        if (g_shouldExecute) [PyzeDrone postFlightPathCompleted:arguments[0]
+                                                 withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 11){
+        arguments = @[@"ViewingEnabled"];
+        if (g_shouldExecute) [PyzeDrone postFirstPersonViewEnabled:arguments[0]
+                                                    withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 12){
+        arguments = @[@"ViewingDisabled"];
+        if (g_shouldExecute) [PyzeDrone postFirstPersonViewDisabled:arguments[0]
+                                                     withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 12){
+        arguments = @[@"ViewingDisabled"];
+        if (g_shouldExecute) [PyzeDrone postFirstPersonViewDisabled:arguments[0]
+                                                     withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 13){
+        arguments = @[@"videoplay"];
+        if (g_shouldExecute) [PyzeDrone postStartedAerialVideo:arguments[0]
+                                                withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 14){
+        arguments = @[@"videoplay",@"videoID1234"];
+        if (g_shouldExecute) [PyzeDrone postStartedAerialVideo:arguments[0]
+                                                videoIdentifer:arguments[1]
+                                                withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 15){
+        arguments = @[@"videoID1234",@"3:14"];
+        if (g_shouldExecute) [PyzeDrone postStoppedAerialVideo:arguments[0]
+                                                    withLength:arguments[1]
+                                                withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 16){
+        arguments = @[@"DCIM_20_10_2016.png"];
+        if (g_shouldExecute) [PyzeDrone postTookAerialPicture:arguments[0]
+                                               withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 17){
+        arguments = @[@"DCIM_20_10_2016.png",@"10", @"1"];
+        if (g_shouldExecute) [PyzeDrone postStartedAerialTimelapse:arguments[0]
+                                                        totalShots:[arguments[1] integerValue]
+                                                 delayBetweenShots:[arguments[2] integerValue]
+                                                    withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 18){
+        arguments = @[@"DCIM_20_10_2016.png",@"10", @"1"];
+        if (g_shouldExecute) [PyzeDrone postStoppedAerialTimelapse:arguments[0]
+                                                    withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 19){
+        if (g_shouldExecute) [PyzeDrone postRequestedReturnToBase:attributes];
+    }
+    else if (g_indexPath.row == 20){
+        if (g_shouldExecute) [PyzeDrone postSwitchedToHelicopterFlyingMode:attributes];
+    }
+    else if (g_indexPath.row == 21){
+        if (g_shouldExecute) [PyzeDrone postSwitchedToAttitudeFlyingMode:attributes];
+    }
+    else if (g_indexPath.row == 22){
+        if (g_shouldExecute) [PyzeDrone postSwitchedToGPSHoldFlyingMode:attributes];
+    }
+    else if (g_indexPath.row == 23){
+        arguments = @[@"10"];
+        if (g_shouldExecute) [PyzeDrone postSwitchedToCustomFlyingMode:[arguments[0] integerValue]
+                                                        withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 24){
+        arguments = @[@"14"];
+        if (g_shouldExecute) [PyzeDrone postSetMaxAltitude:[arguments[0] integerValue]
+                                            withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 25){
+        arguments = @[@"2048"];
+        if (g_shouldExecute) [PyzeDrone postSetAutoReturnWhenLowMemory:[arguments[0] integerValue]
+                                                        withAttributes:attributes];
+    }
+    else if (g_indexPath.row == 26){
+        arguments = @[@"600"];
+        if (g_shouldExecute) [PyzeDrone postSetAutoReturnInSeconds:[arguments[0] integerValue]
+                                                    withAttributes:attributes];
+    }
+    else {
+        arguments = @[@"10"];
+        if (g_shouldExecute) [PyzeDrone postSetAutoReturnWhenLowBattery:[arguments[0] integerValue]
+                                                         withAttributes:attributes];
+    }
+    
+    return g_shouldExecute ? nil : [NSArray arrayWithObjects: arguments,attributes,nil];
 }
 
 +(NSArray *) executeSupportEvents
