@@ -9,7 +9,7 @@
  */
 @interface PyzeCustomEvent : NSObject
 
-/// @name Class Methods
+/// @name Custom Event class methods
 
 /**
  *  Base class method which will post the data to server.
@@ -21,6 +21,72 @@
  
  */
 +(void) postWithEventName:(nonnull NSString *) eventName withAttributes:(nullable NSDictionary *)attributes;
+
+/**
+ *  Base class method which will post the data to server.  When posting an event with attributes, use postWithEventName:withAttributes:
+ *
+ *  @param eventName  The event name to capture.
+ 
+ *  @since v2.0.5
+ *  @see postWithEventName:withAttributes:
+ *
+ */
++(void) postWithEventName:(nonnull NSString *) eventName;
+
+#pragma mark - Timed Custom Event class methods
+
+/**
+ *  Base class method which will post the data to server.
+ *  If a non nil timer reference obtained by calling [Pyze timerReference] is passed in, the difference from this timer reference will be sent as an attribute "elapsedSeconds" with precision 3.  e.g. 4.567 seconds (4567 milliseconds)
+ *
+ *
+ *    //started uploading file 1
+ *    double timerReference1 = [Pyze getTimerReference];
+ *
+ *    sleep(1);
+ *
+ *    //started uploading file 2
+ *    double timerReference2 = [Pyze getTimerReference];
+ *
+ *    void (^block)();
+ *
+ *    block = ^void() {
+ *
+ *    sleep(2);
+ *    //second finished before first
+ *    [PyzeCustomEvent postWithEventName:@“File Uploaded” withTimerReference: timerReference2];
+ *    sleep(1);
+ *    //first finished
+ *    [PyzeCustomEvent postWithEventName:@“File Uploaded” withTimerReference: timerReference1];
+ *    };
+ *    block();
+ *
+ *  @since v2.0.5
+ *
+ *  @param eventName  The event name to capture.
+ *  @param timerReference  reference time received by calling [Pyze timerReference] when you want to start timing
+ *  @param attributes Additional custom attributes the app would want to share with server.
+ *
+ */
++(void) postTimedWithEventName:(nonnull NSString *) eventName withTimerReference:(double) timerReference withAttributes:(nullable NSDictionary *)attributes ;
+
+/**
+ *  Base class method which will post the data to server.  
+ *  If a non nil timer reference obtained by calling [Pyze timerReference] is passed in, the difference from this timer reference will be sent as an attribute "elapsedSeconds" with precision 3.  e.g. 4.567 seconds (4567 milliseconds)
+ *  When posting an event with attributes, use postWithEventName:withAttributes:
+ *
+ *  @param eventName  The event name to capture.
+ *  @param timerReference  reference time received by calling [Pyze timerReference].  Call [Pyze timerReference] when you want to start timing and this method to stop and report the elapsed time
+ *
+ *
+ *  @since v2.0.5
+ *
+ *  @see +postWithEventName:
+ *
+ *  @see +postWithEventName:withAttributes:
+ *
+ */
++(void) postTimedWithEventName:(nonnull NSString *) eventName withTimerReference:(double) timerReference;
 
 @end
 
@@ -2301,8 +2367,8 @@ forContentReference:(NSString *) contentReference
  *
  *  @param overallStatus summary of overall status
  *  @param storageStatus storage (usually a micro SD card) presence and status if the drone is equipped with a camera
- *  @param droneBatteryChargePercent drone battery status
- *  @param deviceBatteryChargePercent controller device status
+ *  @param droneBatteryChargePercent drone battery status[range should be within 0 to 100].
+ *  @param deviceBatteryChargePercent controller device status [range should be within 0 to 100].
  *  @param calibrationStatus callibration status
  *  @param gpsStatus gps Status if drone is GPS equipped
  *  @param attributes Additional custom attributes
@@ -2561,7 +2627,7 @@ forContentReference:(NSString *) contentReference
 
 
 
-#pragma mark - Weather and Forecast class
+#pragma mark - Pyze Weather and Forecast tracking
 
 //http://openweathermap.org/api
 /**
