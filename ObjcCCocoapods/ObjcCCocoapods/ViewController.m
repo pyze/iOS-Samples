@@ -16,6 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSURLConnection * connection = [[NSURLConnection alloc] initWithRequest:[NSURLRequest requestWithURL:nil]
+                                                                   delegate:self];
+    [connection start];
+
     // Do any additional setup after loading the view, typically from a nib.
 }
 
