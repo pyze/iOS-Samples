@@ -1,5 +1,5 @@
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
 #pragma mark - Pyze Custom Events 
 
@@ -9,7 +9,7 @@
  */
 @interface PyzeCustomEvent : NSObject
 
-/// @name Custom Event class methods
+#pragma mark - Custom Event class methods
 
 /**
  *  Base class method which will post the data to server.
@@ -126,7 +126,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PyzeAccount : PyzeCustomEvent
 
-/// @name Registration
+#pragma mark - Registration
 
 /**
  *  Post registration offered details.
@@ -155,7 +155,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 +(void) postRegistrationCompleted:(NSDictionary *) attributes;
 
-/// @name Login / Logout
+#pragma mark - Login / Logout
 
 /**
  *  Post the login operation completion details.
@@ -180,7 +180,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 +(void) postLogoutCompleted:(BOOL)logoutExplicit withAttributes:(NSDictionary *) dictionary;
 
-/// @name Password Reset
+#pragma mark - Password Reset
 
 /**
  *  Post password reset request details.
@@ -204,7 +204,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface PyzeIdentity : NSObject
 
-/// @name Set Identities Locally
+#pragma mark - Set Identities Locally
 
 /**
  *  Set App specific User Identifer.  Use this to identify users by an app specific trait. Examples include: username, userid, hashedid.  It is highly recommended you do not send PII.  Call postIfChanged after setting all identifiers.
@@ -295,7 +295,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 +(void) setCustomUserIdentifier:(nonnull NSString *) value forKey:(nonnull NSString *) key;
 
-/// @name Retrieve Identities Set Locally
+#pragma mark - Retrieve Identities Set Locally
 
 /**
  *  Retrieving method for identities.
@@ -307,7 +307,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 +(nullable NSDictionary *) identities;
 
-/// @name Post Set Identities to Pyze
+#pragma mark - Post Set Identities to Pyze
 
 /**
  *  Call this method after all the identifers are set.  This sends changed traits to Pyze Servers.
@@ -331,7 +331,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface PyzeAd : PyzeCustomEvent
 
-/// @name Class Methods
+#pragma mark - Class Methods
 
 
 /**
@@ -403,7 +403,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface PyzeAdvocacy : PyzeCustomEvent
 
-/// @name Class Methods
+#pragma mark - Class Methods
 
 /**
  *  Post request for feedback.
@@ -451,7 +451,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @param attributes Additional attributes
  */
-+(void) postRequestedPhonecallback:(NSDictionary *) attributes;
++(void) postRequestedPhoneCallback:(NSDictionary *) attributes;
 
 /**
  *  Post live chat started with topic details.
@@ -590,7 +590,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface PyzeCommerceDiscovery : PyzeCustomEvent
 
-/// @name Class Methods
+#pragma mark - Class Methods
 
 /**
  *  Post the search details, latency value with details.
@@ -666,8 +666,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface PyzeCommerceCuratedList: PyzeCustomEvent
 
-/// @name Class Methods
-/// @name Class Methods
+#pragma mark - Class Methods
 
 /**
  *  Post creation details of curated list.
@@ -768,8 +767,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface PyzeCommerceWishList : PyzeCustomEvent
 
-/// @name Class Methods
-/// @name Class Methods
+#pragma mark - Class Methods
 
 /**
  *  Post details of wish lists created.
@@ -852,8 +850,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface PyzeCommerceBeacon : PyzeCustomEvent
 
-/// @name Class Methods
-/// @name Class Methods
+#pragma mark - Class Methods
 
 /**
  *  Post entered region of beacon details.
@@ -923,8 +920,7 @@ withUniqueRegionIdentifier:(NSString *)uniqueRegionIdentifier
  */
 @interface PyzeCommerceCart : PyzeCustomEvent
 
-/// @name Class Methods
-/// @name Class Methods
+#pragma mark - Class Methods
 
 /**
  *  Post details of item added to the cart.
@@ -1124,8 +1120,7 @@ withItemSharedWith:(NSString *) sharedWith
 
 @interface PyzeCommerceItem : PyzeCustomEvent
 
-/// @name Class Methods
-/// @name Class Methods
+#pragma mark - Class Methods
 
 /**
  *  Post detials of the item viewed details.
@@ -1216,8 +1211,7 @@ withItemSharedWith:(NSString *) sharedWith
  */
 @interface PyzeCommerceCheckout : PyzeCustomEvent
 
-/// @name Class Methods
-/// @name Class Methods
+#pragma mark - Class Methods
 
 /**
  *  Post checkout started details of the item.
@@ -1271,8 +1265,7 @@ withItemSharedWith:(NSString *) sharedWith
 
 @interface PyzeCommerceShipping : PyzeCustomEvent
 
-/// @name Class Methods
-/// @name Class Methods
+#pragma mark - Class Methods
 
 /**
  *  Post shipping started details.
@@ -1328,8 +1321,7 @@ withItemSharedWith:(NSString *) sharedWith
 
 @interface PyzeCommerceBilling : PyzeCustomEvent
 
-/// @name Class Methods
-/// @name Class Methods
+#pragma mark - Class Methods
 
 /**
  *  Post billing started details.
@@ -1384,8 +1376,7 @@ withItemSharedWith:(NSString *) sharedWith
 
 @interface PyzeCommercePayment : PyzeCustomEvent
 
-/// @name Class Methods
-/// @name Class Methods
+#pragma mark - Class Methods
 
 /**
  *  Post payment started details.
@@ -1438,8 +1429,7 @@ withItemSharedWith:(NSString *) sharedWith
  */
 @interface PyzeCommerceRevenue : PyzeCustomEvent
 
-/// @name Class Methods
-/// @name Class Methods
+#pragma mark - Class Methods
 
 /**
  *  Post details of revenue details.
@@ -1511,8 +1501,7 @@ withItemSharedWith:(NSString *) sharedWith
  */
 @interface PyzeGaming : PyzeCustomEvent
 
-/// @name Class Methods
-/// @name Class Methods
+#pragma mark - Class Methods
 
 /**
  *  Post details of Gaming level the app is in.
@@ -1724,8 +1713,7 @@ withItemSharedWith:(NSString *) sharedWith
 
 @interface PyzeHealthAndFitness : PyzeCustomEvent
 
-/// @name Class Methods
-/// @name Class Methods
+#pragma mark - Class Methods
 
 /**
  *  Post details of health and fitness routine start.
@@ -1811,8 +1799,7 @@ withItemSharedWith:(NSString *) sharedWith
 
 @interface PyzeContent : PyzeCustomEvent
 
-/// @name Class Methods
-/// @name Class Methods
+#pragma mark - Class Methods
 
 /**
  *  Post details of the content viewed.
@@ -1893,6 +1880,163 @@ withUniqueContentId:(NSString *) contentId
 @end
 
 
+
+
+/**
+ *  Message Types
+ */
+typedef NS_ENUM(NSInteger, PyzeMessageType) {
+
+    /**
+     * Default Text Message (type not specified or tracked)
+     */
+    PyzeMessageTypeDefault = 0,
+    
+    /**
+     *  SMS message with or without emoji - picture (e) + letter (moji)
+     */
+    PyzeMessageTypeSMS,
+    
+    /**
+     *  MMS message
+     */
+    PyzeMessageTypeMMS,
+    
+
+    /**
+     *  Text message with or without emoji - picture (e) + letter (moji)
+     */
+    PyzeMessageTypeText,
+
+    /**
+     *  Text message without emoji - picture (e) + letter (moji)
+     */
+    PyzeMessageTypeTextPlain,
+    
+    
+    /**
+     *  Text message with emoji - picture (e) + letter (moji)
+     */
+    PyzeMessageTypeTextWithEmoji,
+    
+    /**
+     *  Picture sent or received (no tracking source)
+     */
+    PyzeMessageTypePicture,
+
+    /**
+     *  Picture taken from camera and messaged
+     */
+    PyzeMessageTypePictureFromCamera,
+    
+    /**
+     *  Picture selected from Album
+     */
+    PyzeMessageTypePictureFromAlbum,
+
+    /**
+     *  Send last taken picture
+     */
+    PyzeMessageTypePictureMostRecent,
+    
+    /**
+     *  send a marked-up or drawn upon picture
+     */
+    PyzeMessageTypePictureMarkedup,
+    
+    /**
+     *  send a picture that was touched up or a filter applied to
+     */
+    PyzeMessageTypePictureEdited,
+
+    /**
+     *  send a picture of a whiteboard
+     */
+    PyzeMessageTypePictureWhiteboard,
+    
+    /**
+     *  send an animated gif
+     */
+    PyzeMessageTypePictureAnimated,
+    
+    /**
+     *  send a picture of a whiteboard adjusted for clarity or cleaned to fix white levels
+     */
+    PyzeMessageTypePictureWhiteboardCleaned,
+    
+    /**
+     *  send clipart from Library
+     */
+    PyzeMessageTypeClipart,
+    
+    /**
+     *  send sticker
+     */
+    PyzeMessageTypeSticker,
+    
+    /**
+     *  send an animated sticker
+     */
+    PyzeMessageTypeAnimatedSticker,
+    
+    /**
+     *  Video sent or received (no tracking source)
+     */
+    PyzeMessageTypeVideo,
+    
+    /**
+     *  Video taken from camera and messaged
+     */
+    PyzeMessageTypeVideoFromCamera,
+    
+    /**
+     *  Video selected from Album
+     */
+    PyzeMessageTypeVideoFromAlbum,
+    
+    /**
+     *  Send last taken Video
+     */
+    PyzeMessageTypeVideoeMostRecent,
+    
+    /**
+     *  send a Video that was edited
+     */
+    PyzeMessageTypeVideoEdited,
+
+    /**
+     *  send a Voice Memo that was edited
+     */
+    PyzeMessageTypeVoiceMemo,
+    
+    /**
+     *  send a Voice call that was edited
+     */
+    PyzeMessageTypeVoiceCall,
+    
+    /**
+     *  send a Video Memo
+     */
+    PyzeMessageTypeVideoMemo,
+    
+    /**
+     *  send scribbled image
+     */
+    PyzeMessageTypeScribble,
+    
+    /**
+     *  Used an Integration or BOT (roBOT).
+     *  An integration could be used to text to a service provider to complete a task.
+     * 
+     *  Examples include: Call Uber, Order Pizza, Buy tickets to a game, Get flight status, Send Money to a friend, Make a call using Slack, List what's playing in the Music app,  Bring car out of garage, Check order status, Notify bot to turn coffee machine on, Turn the house alarm on, Close the garage doors, Contact Geico to renew auto insurance, Buy a stock, Find a conference room at a specific time, Create a poll etc.
+     */
+    PyzeMessageTypeIntegrationOrBot
+};
+
+
+
+
+
 /**
  *  ### PyzeMessaging
  *  Subclass of PyzeCustomEvent class used post details of the events related to Messaging.
@@ -1903,24 +2047,13 @@ withUniqueContentId:(NSString *) contentId
 
 @interface PyzeMessaging : PyzeCustomEvent
 
-/// @name Class Methods
-/// @name Class Methods
+#pragma mark - Class Methods
+
 
 /**
- *  Post message SMS details
+ *  Post details of Message sent
  *
- *  @param uniqueId   SMS identifier.
- *  @param dictionary Additional custom attributes app would like to share with server.
- 
- *  @since v1.0.0
- 
- */
-+(void) postMessageSMS:(NSString *) uniqueId withAttributes:(NSDictionary *) dictionary;
-
-/**
- *  Post details of SMS sent
- *
- *  @param uniqueId   SMS identifier.
+ *  @param uniqueId   Message identifier.
  *  @param dictionary Additional custom attributes app would like to share with server.
  
  *  @since v1.0.0
@@ -1929,15 +2062,46 @@ withUniqueContentId:(NSString *) contentId
 +(void) postMessageSent:(NSString *) uniqueId withAttributes:(NSDictionary *) dictionary;
 
 /**
- *  Post details of SMS received.
+ *  Post details of Message sent
  *
- *  @param uniqueId   SMS identifier
+ *  @param messageType   Message type
+ *  @param uniqueId      Message identifier.
+ *  @param dictionary    Additional custom attributes app would like to share with server.
+ 
+ *  @since v1.0.0
+ 
+ */
++(void) postMessageSentOfType:(PyzeMessageType) messageType
+                 withUniqueId:(NSString *) uniqueId
+               withAttributes:(NSDictionary *) dictionary;
+
+
+/**
+ *  Post details of message received.
+ *
+ *  @param uniqueId   message identifier
  *  @param dictionary Additional custom attributes app would like to share with server.
  
  *  @since v1.0.0
  
  */
 +(void) postMessageReceived:(NSString *) uniqueId withAttributes:(NSDictionary *) dictionary;
+
+
+/**
+ *  Post details of message received.
+ *
+ *  @param messageType   Message type
+ *  @param uniqueId   message identifier
+ *  @param dictionary Additional custom attributes app would like to share with server.
+ 
+ *  @since v1.0.0
+ 
+ */
++(void) postMessageReceivedOfType:(PyzeMessageType) messageType
+                     withUniqueId:(NSString *) uniqueId
+                   withAttributes:(NSDictionary *) dictionary;
+
 
 /**
  *  Post details of the New conversation created.
@@ -1949,6 +2113,8 @@ withUniqueContentId:(NSString *) contentId
  
  */
 +(void) postMessageNewConversation:(NSString *) uniqueId withAttributes:(NSDictionary *) dictionary;
+
+
 
 /**
  *  Post voice call details.
@@ -1973,7 +2139,7 @@ withUniqueContentId:(NSString *) contentId
  */
 @interface PyzeTasks: PyzeCustomEvent
 
-/// @name Class Methods
+#pragma mark - Class Methods
 
 /**
  *  Add the current task to the calendar.
@@ -1997,8 +2163,7 @@ withUniqueContentId:(NSString *) contentId
  */
 @interface PyzeSocial: PyzeCustomEvent
 
-/// @name Class Methods
-/// @name Class Methods
+#pragma mark - Class Methods
 
 /**
  *  Post detials of social content shared.
@@ -2101,8 +2266,7 @@ forContentReference:(NSString *) contentReference
 
 @interface PyzeMedia : PyzeCustomEvent
 
-/// @name Class Methods
-/// @name Class Methods
+#pragma mark - Class Methods
 
 /**
  *  Post details of the media played.
@@ -2199,8 +2363,7 @@ forContentReference:(NSString *) contentReference
 
 @interface  PyzeInAppPurchaseRevenue : PyzeCustomEvent
 
-/// @name Class Methods
-/// @name Class Methods
+#pragma mark - Class Methods
 
 /**
  *  Post price list viewed in purchases
@@ -2282,8 +2445,7 @@ forContentReference:(NSString *) contentReference
  */
 @interface PyzeBitcoin : PyzeCustomEvent
 
-/// @name Class Methods
-/// @name Class Methods
+#pragma mark - Class Methods
 
 /**
  *  Post sent bitcoin details.
@@ -2356,7 +2518,8 @@ forContentReference:(NSString *) contentReference
  */
 @interface PyzeDrone : PyzeCustomEvent
 
-/// @name Class Methods
+#pragma mark - Preflight and Inflight check
+
 
 /**
  *  Post Preflight health check
@@ -2369,7 +2532,7 @@ forContentReference:(NSString *) contentReference
  *  @param storageStatus storage (usually a micro SD card) presence and status if the drone is equipped with a camera
  *  @param droneBatteryChargePercent drone battery status[range should be within 0 to 100].
  *  @param deviceBatteryChargePercent controller device status [range should be within 0 to 100].
- *  @param calibrationStatus callibration status
+ *  @param calibrationStatus calibration status
  *  @param gpsStatus gps Status if drone is GPS equipped
  *  @param attributes Additional custom attributes
  *  @since v1.6.0
@@ -2384,13 +2547,16 @@ forContentReference:(NSString *) contentReference
 
 /**
  *  Inflight health check
- *  @param overallStatus summary of overall status
- *  @param rollStatus - acomplished by controlling the Aileron (moving right stick to the left or right) which maneuvers the drone / quadcopter left or right.
- *  @param pitchStatus - acomplished by controlling the Elevator (moving right stick forwards or backwards) which maneuvers the drone / quadcopter forwards or backwards.
- *  @param yawStatus – acomplished by controlling Rudder (moving the left stick to the left or to the right)  Rotates the drone / quadcopter left or right. Points the front of the drone / quadcopter different directions and helps with changing directions while flying.
- *  @param throttleStatus – acomplished by controlling Throttle. Engaged by pushing the left stick forwards. Disengaged by pulling the left stick backwards. This adjusts the altitude, or height, of the quadcopter.
- *  @param trimmingSettings - Adjust roll, pitch, yaw, and throttle if they are off balance. e.g. "+20-20+4+0" would mean adjustments in percent of 20%, -20%, +4% and 0% for roll, pitch, yaw, and throttle respectively.
- *  @param attributes Additional custom attributes
+ *  @param overallStatus    summary of overall status
+ *  @param rollStatus       accomplished by controlling the Aileron (moving right stick to the left or right) which maneuvers the drone / quadcopter left or right.
+ *  @param pitchStatus      accomplished by controlling the Elevator (moving right stick forwards or backwards) which maneuvers the drone / quadcopter forwards or backwards.
+ *  @param yawStatus        accomplished by controlling Rudder (moving the left stick to the left or to the right)  Rotates the drone / quadcopter left or right. Points the front of the drone / quadcopter different directions and helps with changing directions while flying.
+ *
+ *  @param throttleStatus   accomplished by controlling Throttle. Engaged by pushing the left stick forwards. Disengaged by pulling the left stick backwards. This adjusts the altitude, or height, of the quadcopter.
+ *
+ *  @param trimmingSettings    Adjust roll, pitch, yaw, and throttle if they are off balance. e.g. "+20-20+4+0" would mean adjustments in percent of 20%, -20%, +4% and 0% for roll, pitch, yaw, and throttle respectively.
+ 
+ *  @param attributes       Additional custom attributes
  *  @since v1.6.0
  */
 +(void) postInflightCheckCompleted:(NSString *) overallStatus
@@ -2401,22 +2567,30 @@ forContentReference:(NSString *) contentReference
                           withTrim:(NSString *) trimmingSettings
                     withAttributes:(NSDictionary *)attributes;
 
+#pragma mark - Drone and Controller Connectivity
+
+
 /**
  *  Drone is connected to controlling device.  Time to connect depends on surroundings and interference. Post this after successfully connecting
+ *
  *  @param attributes Additional custom attributes
  */
 +(void) postConnected:(NSDictionary *)attributes ;
 
 /**
  *  Drone is disconnected from controlling device either explicitly or because of environment or distance
+ *
  *  @param code disconnection code indicating how disconnected from the controller's point of view
  *  @param attributes Additional custom attributes
  */
 +(void) postDisconnected:(NSString *) code
           withAttributes:(NSDictionary *) attributes;
 
+#pragma mark - Airborne or Landed
+
 /**
  *  Drone is Airborne
+ *
  *  @param status Drone status if any
  *  @param attributes Additional custom attributes
  */
@@ -2425,15 +2599,20 @@ forContentReference:(NSString *) contentReference
 
 /**
  * Drone Landed
+ *
  *  @param status Drone status if any
  *  @param attributes Additional custom attributes
  */
 +(void)  postLanded:(NSString *) status
      withAttributes:(NSDictionary *)attributes ;
 
+
+#pragma mark - Flight Path and Planning
+
 /**
  *  New Flight path created
- *  @param uniqueFlightPathId - Every Flight Path should be associated with a unique identifier or name
+ *
+ *  @param uniqueFlightPathId Every Flight Path should be associated with a unique identifier or name
  *  @param attributes Additional custom attributes
  */
 +(void) postFlightPathCreated:(NSString *) uniqueFlightPathId
@@ -2441,7 +2620,8 @@ forContentReference:(NSString *) contentReference
 
 /**
  *  Flight path uploaded to drone
- *  @param uniqueFlightPathId - Every Flight Path should be associated with a unique identifier or name
+ *
+ *  @param uniqueFlightPathId Every Flight Path should be associated with a unique identifier or name
  *  @param attributes Additional custom attributes
  */
 +(void)  postFlightPathUploaded:(NSString *) uniqueFlightPathId
@@ -2449,7 +2629,8 @@ forContentReference:(NSString *) contentReference
 
 /**
  *  Flight path created edited on controller and should be re-uplooaded
- *  @param uniqueFlightPathId - Every Flight Path should be associated with a unique identifier or name
+ *
+ *  @param uniqueFlightPathId Every Flight Path should be associated with a unique identifier or name
  *  @param attributes Additional custom attributes
  */
 +(void)  postFlightPathEdited:(NSString *) uniqueFlightPathId
@@ -2457,7 +2638,8 @@ forContentReference:(NSString *) contentReference
 
 /**
  *  Flight path deleted
- *  @param uniqueFlightPathId - Every Flight Path should be associated with a unique identifier or name
+ *
+ *  @param uniqueFlightPathId Every Flight Path should be associated with a unique identifier or name
  *  @param attributes Additional custom attributes
  */
 +(void)  postFlightPathDeleted:(NSString *) uniqueFlightPathId
@@ -2465,15 +2647,19 @@ forContentReference:(NSString *) contentReference
 
 /**
  *  Flight path flown
- *  @param uniqueFlightPathId - Every Flight Path should be associated with a unique identifier or name
+ *
+ *  @param uniqueFlightPathId Every Flight Path should be associated with a unique identifier or name
  *  @param attributes Additional custom attributes
  */
 +(void)  postFlightPathCompleted:(NSString *) uniqueFlightPathId
                   withAttributes:(NSDictionary *)attributes;
 
+#pragma mark - First Person View
+
 /**
  *  First Person View Enabled.  this allows a lower quality video to be transmitted to controller in near realtime with an acceptable lag
- *  @param status - status on FPV
+ *
+ *  @param status status on FPV
  *  @param attributes Additional custom attributes
  */
 +(void)  postFirstPersonViewEnabled:(NSString *) status
@@ -2481,15 +2667,19 @@ forContentReference:(NSString *) contentReference
 
 /**
  *  First Person View Disabled.
- *  @param status - status on FPV
+ *
+ *  @param status status on FPV
  *  @param attributes Additional custom attributes
  */
 +(void)  postFirstPersonViewDisabled:(NSString *) status
                       withAttributes:(NSDictionary *)attributes ;
 
+#pragma mark - Aerial Video
+
 /**
  *  Started taking aerial video identifed by video identifier
- *  @param status - status
+ *
+ *  @param status status
  *  @param attributes Additional custom attributes
  */
 +(void)  postStartedAerialVideo:(NSString *) status
@@ -2497,8 +2687,9 @@ forContentReference:(NSString *) contentReference
 
 /**
  *  Started taking aerial video identifed by video identifier
- *  @param status - status
- *  @param videoIdentifer - Video Identifier
+ *
+ *  @param status status
+ *  @param videoIdentifer Video Identifier
  *  @param attributes Additional custom attributes
  */
 +(void)  postStartedAerialVideo:(NSString *) status
@@ -2507,17 +2698,20 @@ forContentReference:(NSString *) contentReference
 
 /**
  *  Stopped taking aerial video
- *  @param videoIdentifer - Video Identifier
+ *
+ *  @param videoIdentifer Video Identifier
  *  @param attributes Additional custom attributes
  */
 +(void)  postStoppedAerialVideo:(NSString *) videoIdentifer
                      withLength:(NSString *) secondsLength
                  withAttributes:(NSDictionary *)attributes ;
 
+#pragma mark - Aerial Pictures and Timelapse
 
 /**
  *  Took Aerial Picture
- *  @param status - status
+ *
+ *  @param status status
  *  @param attributes Additional custom attributes
  */
 +(void)  postTookAerialPicture:(NSString *) status
@@ -2530,9 +2724,9 @@ forContentReference:(NSString *) contentReference
  *  then played back at 30 frames per second; the result is an apparent 30 times speed increase.  Specify total shots
  *  and seconds between shots.  The playback time would be approximately be the product of total shots and seconds betwwen shots
  *
- *  @param status - status
- *  @param totalshots - Total Number of shots
- *  @param secondsBetweenShots - delay between shots
+ *  @param status status
+ *  @param totalshots Total Number of shots
+ *  @param secondsBetweenShots delay between shots
  *  @param attributes Additional custom attributes
  */
 +(void)  postStartedAerialTimelapse:(NSString *) status
@@ -2542,17 +2736,23 @@ forContentReference:(NSString *) contentReference
 
 /**
  *  Stopped Aerial Timelapse
- *  @param status - status (interupted / completed)
+ *
+ *  @param status status (interupted / completed)
  *  @param attributes Additional custom attributes
  */
 +(void)  postStoppedAerialTimelapse:(NSString *) status
                      withAttributes:(NSDictionary *) attributes ;
 
+#pragma mark - Return to base
+
 /**
  *  Requested Drone to return to base
+ *
  *  @param attributes Additional custom attributes
  */
 +(void)  postRequestedReturnToBase:(NSDictionary *)attributes ;
+
+#pragma mark - Flying Modes
 
 /**
  *  Switched to Helicopter flying mode.  Similar to flying a helicopter,
@@ -2582,16 +2782,18 @@ forContentReference:(NSString *) contentReference
 /**
  *  Switched to Custom Device Mode identified by a numeric mode.  Some drones have numbered modes 1, 2, 3.
  *
- *  @param mode - Numeric custom mode
+ *  @param mode Numeric custom mode
  *  @param attributes Additional custom attributes
  */
 +(void)  postSwitchedToCustomFlyingMode: (NSInteger) mode
                          withAttributes: (NSDictionary *)attributes ;
 
+#pragma mark - Safety Settings
+
 /**
  *  Drones that support GPS can limit the altitude to avoid flying into restricted airspace
  *
- *  @param altitudeInMeters - altitude in meters. One foot is 0.3048 meters.
+ *  @param altitudeInMeters altitude in meters. One foot is 0.3048 meters.
  *  @param attributes Additional custom attributes
  */
 +(void)  postSetMaxAltitude:(NSInteger) altitudeInMeters
@@ -2600,16 +2802,16 @@ forContentReference:(NSString *) contentReference
 /**
  *  This feature is avilable on drones that are used for surveying.  If the drone has to survey 4 jobs you can specify the time in seconds for a job to ensure enough battery is available for subsequent jobs.  The math is performed by app
  *
- *  @param seconds - seconds to return in
+ *  @param seconds seconds to return in
  *  @param attributes Additional custom attributes
  */
 +(void)  postSetAutoReturnInSeconds:(NSInteger) seconds
                      withAttributes:(NSDictionary *)attributes ;
 
 /**
- *  The drone can be requested to return when storage memory reaches a low threshold. (See customer ticket #2312)
+ *  The drone can be requested to return when storage memory reaches a low threshold.
  *
- *  @param memoryLeftInKilobytes - return when storage is below memoryLeftInKilobytes
+ *  @param memoryLeftInKilobytes return when storage is below memoryLeftInKilobytes
  *  @param attributes Additional custom attributes
  */
 +(void)  postSetAutoReturnWhenLowMemory:(NSInteger) memoryLeftInKilobytes
@@ -2617,7 +2819,7 @@ forContentReference:(NSString *) contentReference
 /**
  *  The drone can be requested to return when battery reaches a low threshold.
  *
- *  @param batterylevelPercent - return when battery is below batterylevelPercent
+ *  @param batterylevelPercent return when battery is below batterylevelPercent
  *  @param attributes Additional custom attributes
  */
 +(void)  postSetAutoReturnWhenLowBattery:(NSInteger) batterylevelPercent

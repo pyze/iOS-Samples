@@ -767,7 +767,7 @@ BOOL g_shouldExecute;
     NSDictionary * attributes = [ALRandomDictionaryGenerator attributesDictionary];
     NSArray * arguments = @[];
     
-    if (g_indexPath.row == 0){ arguments = @[@"1234321"];if (g_shouldExecute)[PyzeMessaging postMessageSMS:arguments[0] withAttributes:attributes];}
+    if (g_indexPath.row == 0){ arguments = @[@"1234321"];if (g_shouldExecute)[PyzeMessaging postMessageSent:arguments[0] withAttributes:attributes];}
     else if (g_indexPath.row == 1){ arguments = @[@"1234321"];if (g_shouldExecute)[PyzeMessaging postMessageSent:arguments[0] withAttributes:attributes];}
     else if (g_indexPath.row == 2){ arguments = @[@"1234321"]; if (g_shouldExecute)[PyzeMessaging postMessageReceived:arguments[0] withAttributes:attributes];}
     else if (g_indexPath.row == 3){ arguments = @[@"0987654321"]; if (g_shouldExecute)[PyzeMessaging postMessageNewConversation:arguments[0] withAttributes:attributes];}
@@ -1115,7 +1115,7 @@ BOOL g_shouldExecute;
     NSArray * arguments = @[];
     
     if (g_indexPath.row == 0){
-        if (g_shouldExecute)[PyzeSupport postRequestedPhonecallback:attributes];
+        if (g_shouldExecute)[PyzeSupport postRequestedPhoneCallback:attributes];
     }
     else if (g_indexPath.row == 1){
         arguments = @[@"Device Support"];
