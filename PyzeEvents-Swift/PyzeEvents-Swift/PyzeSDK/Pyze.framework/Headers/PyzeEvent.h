@@ -126,10 +126,29 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PyzeAccount : PyzeCustomEvent
 
+/**
+ *  Post login offered details when the login screen is shown
+ *
+ *  @param attributes Additional custom attributes app would like to share with server.
+ *
+ *  @since v2.1.2
+ */
++(void) postLoginOffered:( NSDictionary *) attributes;
+
+/**
+ *  Post login started details when user started to type user credentials.
+ *
+ *  @param attributes Additional custom attributes app would like to share with server.
+ *
+ *  @since v2.1.2
+ */
+
++(void) postLoginStarted:( NSDictionary *) attributes;
+
 #pragma mark - Registration
 
 /**
- *  Post registration offered details.
+ *  Post registration offered details; sign up, registration, user enrollment offered.
  *
  *  @param attributes Additional custom attributes app would like to share with server.
  
@@ -145,6 +164,41 @@ NS_ASSUME_NONNULL_BEGIN
  *  @since v1.0.0
  */
 +(void) postRegistrationStarted:(NSDictionary *) attributes;
+
+
+/**
+ *  Post the login operation Offered details.
+ *
+ *  @param type       This could be any of  Facebook, Twitter, LinkedIn, Phone number, etc.,
+ *  @param attributes Additional custom attributes app would like to share with server.
+ *
+ *  @since v2.1.2
+ */
+
++(void) postSocialLoginOffered:(NSString *) type withAttributes:(NSDictionary *) attributes;
+
+/**
+ *  Post the login operation Started details.
+ *
+ *  @param type       This could be any of  Facebook, Twitter, LinkedIn, Phone number, etc.,
+ *  @param attributes Additional custom attributes app would like to share with server.
+ *
+ *  @since v2.1.2
+ */
+
++(void) postSocialLoginStarted:(NSString *) type withAttributes:(NSDictionary *) attributes;
+
+/**
+ *  Post the login operation Completed details.
+ *
+ *  @param type       This could be any of  Facebook, Twitter, LinkedIn, Phone number, etc.,
+ *  @param attributes Additional custom attributes app would like to share with server.
+ *
+ *  @since v2.1.2
+ */
+
++(void) postSocialLoginCompleted:(NSString *) type withAttributes:(NSDictionary *) attributes;
+
 
 /**
  *  Post registration completed details.
@@ -183,15 +237,24 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Password Reset
 
 /**
- *  Post password reset request details.
+ *  Post password reset requested details.
  *
  *  @param dictionary Additional custom attributes app would like to share with server.
  
  *  @since v1.0.0
  
  */
-+(void) postPasswordResetRequest:(NSDictionary *) dictionary;
++(void) postPasswordResetRequested:(NSDictionary *) dictionary;
 
+/**
+ *  Post password reset completed details.
+ *
+ *  @param dictionary Additional custom attributes app would like to share with server.
+ *
+ *  @since v2.1.2
+ */
+
++(void) postPasswordResetCompleted:(NSDictionary *) dictionary;
 @end
 
 

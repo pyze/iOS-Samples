@@ -245,7 +245,7 @@ BOOL g_shouldExecute;
     }
     else if (g_indexPath.row == 4){
         if (g_shouldExecute)
-            [PyzeAccount postPasswordResetRequest:attributes];
+            [PyzeAccount postPasswordResetRequested:attributes];
     }
     else {
         arguments = @[[NSNumber numberWithBool:YES]];

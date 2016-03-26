@@ -48,46 +48,6 @@ typedef NS_ENUM(NSInteger, PyzeLogLevel) {
     PyzelogLevelAll = 3
 };
 
-/**
- *  PyzeAspectRatio
- *
- *  It will be used to display InApp Messages screen based on the aspect ratio of the screen on which In App messages will be presented.
- */
-typedef NS_ENUM(NSInteger, PyzeAspectRatio) {
-    /**
-     *  Full size screen. InApp Messages screen will cover the screen on which In App messages will be presented.
-     */
-    PyzeAspectRatioFullSize,
-    /**
-     *  3/4 of the screen. InApp Messages screen will cover 75% of the screen on which In App messages will be presented.
-     */
-    PyzeAspectRatioThreeQuarterSize,
-    /**
-     *  1/2 of the screen. InApp Messages screen will cover 50% of the screen on which In App messages will be presented.
-     */
-    PyzeAspectRatioHalfSize
-};
-
-/**
- *  PyzeMessageDisplayType
- *
- *  This enum will be used to display New InApp messages [Unread messages] or Previous messages [Read messages] or both using segmented control
- *
- */
-typedef NS_ENUM(NSInteger, PyzeMessageDisplayType) {
-    /**
-     *  New InApp messages [Unread messages]
-     */
-    PyzeMessageDisplayTypeNew,
-    /**
-     *  Previous messages [Read messages]
-     */
-    PyzeMessageDisplayTypePrevious,
-    /**
-     *  New InApp messages [Unread messages] & Previous messages [Read messages]
-     */
-    PyzeMessageDisplayTypeBoth
-};
 
 #pragma mark - Pyze
 /**
@@ -202,5 +162,7 @@ typedef NS_ENUM(NSInteger, PyzeMessageDisplayType) {
  *  @return instance type
  */
 -(instancetype) init NS_UNAVAILABLE;
+
+
 
 @end
