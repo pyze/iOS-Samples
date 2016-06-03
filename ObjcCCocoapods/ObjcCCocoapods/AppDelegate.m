@@ -17,7 +17,7 @@
 
 -(BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [[Pyze sharedPyze] initializeWithKey:@"nW3V4gQ8S-O4ZjRMDy9d1g"];
+    [[Pyze sharedPyze] initializeWithKey:@"IYGTpimwR-uhchtmkfKotw"];
     return YES;
 }
 

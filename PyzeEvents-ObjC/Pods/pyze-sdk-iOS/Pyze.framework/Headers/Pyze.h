@@ -48,8 +48,51 @@ typedef NS_ENUM(NSInteger, PyzeLogLevel) {
     PyzelogLevelAll = 3
 };
 
+/**
+ *  PyzeAspectRatio
+ *
+ *  It will be used to display InApp Messages screen based on the aspect ratio of the screen on which In App messages will be presented.
+ */
+typedef NS_ENUM(NSInteger, PyzeAspectRatio) {
+    /**
+     *  Full size screen. InApp Messages screen will cover the screen on which In App messages will be presented.
+     */
+    PyzeAspectRatioFullSize,
+    /**
+     *  3/4 of the screen. InApp Messages screen will cover 75% of the screen on which In App messages will be presented.
+     */
+    PyzeAspectRatioThreeQuarterSize,
+    /**
+     *  1/2 of the screen. InApp Messages screen will cover 50% of the screen on which In App messages will be presented.
+     */
+    PyzeAspectRatioHalfSize
+};
+
+/**
+ *  PyzeInAppMessageType
+ *
+ *  This enum will be used to display New InApp messages [Unread messages] or Previous messages [Read messages] or both.
+ *
+ */
+typedef NS_ENUM(NSInteger, PyzeInAppMessageType) {
+    /**
+     *  New InApp messages [Unread messages including unfetched]
+     */
+    PyzeInAppTypeUnread,
+    /**
+     *  Previous messages [Read messages]
+     */
+    PyzeInAppTypeRead,
+    /**
+     *  New InApp messages [Unread messages] & Previous messages [Read messages]
+     */
+    PyzeInAppTypeAll
+};
 
 #pragma mark - Pyze
+
+@protocol PyzeInAppMessageHandlerDelegate;
+
 /**
  * Pyze main class
  * 
@@ -128,6 +171,31 @@ typedef NS_ENUM(NSInteger, PyzeLogLevel) {
 
 
 
+/// @name Push notification helper APIs
+
+/**
+ *  Use this API to set the push notification device token. This will trigger Pyze to update the device token, which internally would be used to send the push notification. Call this API in Application's AppDelegate method application:didRegisterForRemoteNotificationsWithDeviceToken:.
+ *
+ *
+ *  @param deviceToken device Token bytes received from the AppDelegate's method call.
+ 
+ *  @since 2.2.1
+ */
++(void) setRemoteNotificationDeviceToken:(NSData *) deviceToken;
+
+
+/**
+ *  Use this API to process the push/remote notification. Call this everytime when you receive the remote notification from application:didReceiveRemoteNotification or application:didReceiveRemoteNotification:fetchCompletionHandler:
+ 
+ *  @param userInfo User information received as a payload.
+ 
+ *  @since 2.2.1
+ */
++(void) processReceivedRemoteNotification:(NSDictionary *) userInfo;
+
+
+
+
 /// @name Marked for Deprecation
 
 /**
@@ -163,6 +231,95 @@ typedef NS_ENUM(NSInteger, PyzeLogLevel) {
  */
 -(instancetype) init NS_UNAVAILABLE;
 
+/**
+ *  Show in-app message with default settings. For all the controls presented including 'MessageNavigationBar', buttons 
+ *  will loaded with default presentation colors used by the SDK.
+ *
+ *  @param onViewControlller The controller on which the in-app should be presented.
+ */
++(void) showInAppNotificationScreenOnViewControllerWithDefaults:(UIViewController *) onViewControlller;
 
 
+/**
+ *  Convenience method to show in-app message with custom colors as required by the app.
+ *
+ *  @param onViewControlller       The controller on which the in-app should be presented.
+ *  @param messageType             The in-app message type you would want to see. Default is PyzeInAppTypeAll.
+ *  @param buttonTextcolor         Button text color.
+ *  @param buttonBackgroundColor   Button background color
+ *  @param backgroundColor         background color of the 'MessageNavigationBar'
+ *  @param messageCounterTextColor Message counter text color (Ex: Showing 1/10 in-app messages).
+ *  @param delegate                Delegate if your app would want to handle when user taps on one of the presented buttons.
+ */
++(void) showInAppNotificationScreenOnViewController:(UIViewController *) onViewControlller
+                                 forDisplayMessages:(PyzeInAppMessageType) messageType
+      foregroundColorForMessageNavigationBarButtons:(UIColor *) buttonTextcolor
+      backgroundColorForMessageNavigationBarButtons:(UIColor *) buttonBackgroundColor
+ withTransulcentMessageNavigationBarBackgroundColor:(UIColor *) backgroundColor
+   withColorForMessageCounterOfMessageNavigationBar:(UIColor *) messageCounterTextColor
+                                       withDelegate:(id<PyzeInAppMessageHandlerDelegate>) delegate;
+
+
+/**
+ *  Returns the number of unread messages from the server.
+ *
+ *  @param completionHandler Completion handler will be called with count.
+ */
++(void) countNewUnFetched:(void (^)(id result)) completionHandler;
+
+/**
+ *  Get message headers containing message ID and content ID.
+ *
+ *  @param messageType       Message type for in-app messages.
+ *  @param completionHandler Completion handler will be called with result.
+ */
++(void) getMessageHeadersForType:(PyzeInAppMessageType) messageType withCompletionHandler:(void (^)(id result)) completionHandler;
+
+/**
+ *  Get message details with Content ID and messageID received from 'getMessageHeadersForType'.
+ *
+ *  @param contentID         content ID
+ *  @param messageID         message ID
+ *  @param completionHandler Completion handler will be called with result.
+ */
++(void) getMessageWithContentID:(NSString *) contentID andMessageID:(NSString *) messageID withCompletionHandler:(void (^)(id result)) completionHandler;
+
+@end
+
+/**
+ *  Pyze deep link status enumeration, useful to determine whether deeplink provided, successful or failed.
+ */
+typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
+    /**
+     *  Deeplink not provided while creating the in-app
+     */
+    PyzeDeepLinkNotProvided = 0,
+    /**
+     *  Deeplink successfully called. For Example: (http://pyze.com or yelp://search?term=burritos where yelp application is installed on the device)
+     */
+    PyzeDeepLinkCallSuccessful,
+    /**
+     *  Invalid or deeplink not found. For Example: (mispelt htp://pyze.com or yelp://search?term=burritos where yelp application is not installed on the device)
+     */
+    PyzeDeepLinkCallFailed
+};
+
+/**
+ *  Pyze In app message handler delegate. This has one optional call to action method which will inform your class when user clicks on one of the in-app messsage buttons.
+ */
+@protocol PyzeInAppMessageHandlerDelegate <NSObject>
+
+@optional
+
+/**
+ *  Call to action delegate method for in-app message buttons
+ *
+ *  @param buttonID Button index id
+ *  @param title    Title provided for the button
+ *  @param urlInfo  deeplink url info provided.
+ *  @param status   Pyze deep link status.
+ */
+-(void) didUserClickedOnInAppMessageButtonWithID:(NSInteger) buttonID
+                                     buttonTitle:(NSString *) title
+                               containingURLInfo:(id) urlInfo withDeepLinkStatus:(PyzeDeepLinkStatus) status;
 @end

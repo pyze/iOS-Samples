@@ -158,7 +158,7 @@ BOOL g_shouldExecute;
         if (g_shouldExecute) {
             [PyzeAd postAdRequested:arguments[0]
                       fromAppScreen:arguments[1]
-                         withAdSize:[arguments[2] CGSizeValue]
+                         withAdSize: NSStringFromCGSize([arguments[2] CGSizeValue])
                              adType:arguments[3]
                      withAttributes:attributes];
         }

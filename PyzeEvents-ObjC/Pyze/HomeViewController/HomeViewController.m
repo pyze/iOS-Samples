@@ -8,10 +8,12 @@
 
 #import "HomeViewController.h"
 
+#import <Pyze/Pyze.h>
 
 @interface HomeViewController () <UIPopoverPresentationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *eventsButton;
 
+- (IBAction)showInAppMessage:(UIButton *)sender;
 @end
 
 @implementation HomeViewController
@@ -33,4 +35,8 @@
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
+- (IBAction)showInAppMessage:(UIButton *)sender
+{
+    [Pyze showInAppNotificationScreenOnViewControllerWithDefaults:self];
+}
 @end

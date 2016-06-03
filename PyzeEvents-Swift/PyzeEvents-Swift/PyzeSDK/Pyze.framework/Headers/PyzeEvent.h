@@ -131,7 +131,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @param attributes Additional custom attributes app would like to share with server.
  *
- *  @since v2.1.2
+ *  @since v2.2.0
  */
 +(void) postLoginOffered:( NSDictionary *) attributes;
 
@@ -140,7 +140,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @param attributes Additional custom attributes app would like to share with server.
  *
- *  @since v2.1.2
+ *  @since v2.2.0
  */
 
 +(void) postLoginStarted:( NSDictionary *) attributes;
@@ -172,7 +172,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param type       This could be any of  Facebook, Twitter, LinkedIn, Phone number, etc.,
  *  @param attributes Additional custom attributes app would like to share with server.
  *
- *  @since v2.1.2
+ *  @since v2.2.0
  */
 
 +(void) postSocialLoginOffered:(NSString *) type withAttributes:(NSDictionary *) attributes;
@@ -183,7 +183,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param type       This could be any of  Facebook, Twitter, LinkedIn, Phone number, etc.,
  *  @param attributes Additional custom attributes app would like to share with server.
  *
- *  @since v2.1.2
+ *  @since v2.2.0
  */
 
 +(void) postSocialLoginStarted:(NSString *) type withAttributes:(NSDictionary *) attributes;
@@ -194,7 +194,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param type       This could be any of  Facebook, Twitter, LinkedIn, Phone number, etc.,
  *  @param attributes Additional custom attributes app would like to share with server.
  *
- *  @since v2.1.2
+ *  @since v2.2.0
  */
 
 +(void) postSocialLoginCompleted:(NSString *) type withAttributes:(NSDictionary *) attributes;
@@ -251,7 +251,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @param dictionary Additional custom attributes app would like to share with server.
  *
- *  @since v2.1.2
+ *  @since v2.2.0
  */
 
 +(void) postPasswordResetCompleted:(NSDictionary *) dictionary;
