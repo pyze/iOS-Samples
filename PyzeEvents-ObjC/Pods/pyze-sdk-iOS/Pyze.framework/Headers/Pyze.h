@@ -235,23 +235,25 @@ typedef NS_ENUM(NSInteger, PyzeInAppMessageType) {
  *  Show in-app message with default settings. For all the controls presented including 'MessageNavigationBar', buttons 
  *  will loaded with default presentation colors used by the SDK.
  *
- *  @param onViewControlller The controller on which the in-app should be presented.
+ *  @param onViewController The controller on which the in-app should be presented.
  */
-+(void) showInAppNotificationScreenOnViewControllerWithDefaults:(UIViewController *) onViewControlller;
++(void) showInAppNotificationScreenOnViewControllerWithDefaults:(UIViewController *) onViewController;
 
 
 /**
  *  Convenience method to show in-app message with custom colors as required by the app.
  *
- *  @param onViewControlller       The controller on which the in-app should be presented.
+ *  @param onViewController       The controller on which the in-app should be presented.
  *  @param messageType             The in-app message type you would want to see. Default is PyzeInAppTypeAll.
  *  @param buttonTextcolor         Button text color.
  *  @param buttonBackgroundColor   Button background color
  *  @param backgroundColor         background color of the 'MessageNavigationBar'
  *  @param messageCounterTextColor Message counter text color (Ex: Showing 1/10 in-app messages).
  *  @param delegate                Delegate if your app would want to handle when user taps on one of the presented buttons.
- */
-+(void) showInAppNotificationScreenOnViewController:(UIViewController *) onViewControlller
+ *
+ *  @since 2.3.0
+*/
++(void) showInAppNotificationScreenOnViewController:(UIViewController *) onViewController
                                  forDisplayMessages:(PyzeInAppMessageType) messageType
       foregroundColorForMessageNavigationBarButtons:(UIColor *) buttonTextcolor
       backgroundColorForMessageNavigationBarButtons:(UIColor *) buttonBackgroundColor
@@ -264,6 +266,8 @@ typedef NS_ENUM(NSInteger, PyzeInAppMessageType) {
  *  Returns the number of unread messages from the server.
  *
  *  @param completionHandler Completion handler will be called with count.
+ *
+ *  @since 2.3.0
  */
 +(void) countNewUnFetched:(void (^)(id result)) completionHandler;
 
@@ -272,6 +276,8 @@ typedef NS_ENUM(NSInteger, PyzeInAppMessageType) {
  *
  *  @param messageType       Message type for in-app messages.
  *  @param completionHandler Completion handler will be called with result.
+ *
+ *  @since 2.3.0
  */
 +(void) getMessageHeadersForType:(PyzeInAppMessageType) messageType withCompletionHandler:(void (^)(id result)) completionHandler;
 
@@ -281,6 +287,8 @@ typedef NS_ENUM(NSInteger, PyzeInAppMessageType) {
  *  @param contentID         content ID
  *  @param messageID         message ID
  *  @param completionHandler Completion handler will be called with result.
+ *
+ *  @since 2.3.0
  */
 +(void) getMessageWithContentID:(NSString *) contentID andMessageID:(NSString *) messageID withCompletionHandler:(void (^)(id result)) completionHandler;
 
@@ -288,6 +296,8 @@ typedef NS_ENUM(NSInteger, PyzeInAppMessageType) {
 
 /**
  *  Pyze deep link status enumeration, useful to determine whether deeplink provided, successful or failed.
+ *
+ *  @since 2.3.0
  */
 typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
     /**
@@ -306,7 +316,9 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 
 /**
  *  Pyze In app message handler delegate. This has one optional call to action method which will inform your class when user clicks on one of the in-app messsage buttons.
- */
+ *
+ *  @since 2.3.0
+*/
 @protocol PyzeInAppMessageHandlerDelegate <NSObject>
 
 @optional
@@ -318,7 +330,9 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
  *  @param title    Title provided for the button
  *  @param urlInfo  deeplink url info provided.
  *  @param status   Pyze deep link status.
- */
+ *
+ *  @since 2.3.0
+*/
 -(void) didUserClickedOnInAppMessageButtonWithID:(NSInteger) buttonID
                                      buttonTitle:(NSString *) title
                                containingURLInfo:(id) urlInfo withDeepLinkStatus:(PyzeDeepLinkStatus) status;
