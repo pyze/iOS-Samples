@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eFC-eQ-hY7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eFC-eQ-hY7">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -202,8 +202,15 @@
                                 <rect key="frame" x="186" y="64" width="228" height="304"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXu-57-rUk">
-                                <rect key="frame" x="266" y="481" width="82" height="30"/>
+                                <rect key="frame" x="245" y="481" width="109" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="njj-dl-rpq"/>
+                                </constraints>
                                 <state key="normal" title="Show InApp"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="showInAppMessage:" destination="WoG-sr-zY0" eventType="touchUpInside" id="IzN-Oo-h8I"/>
                                 </connections>
@@ -211,9 +218,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="JXu-57-rUk" firstAttribute="top" secondItem="IGW-hg-cU8" secondAttribute="bottom" constant="8" id="4eI-Hf-lql"/>
                             <constraint firstItem="98o-Un-LcI" firstAttribute="top" secondItem="G64-XZ-OmR" secondAttribute="bottom" constant="4" id="87W-8l-REF"/>
                             <constraint firstItem="G64-XZ-OmR" firstAttribute="centerX" secondItem="P8M-zG-UJU" secondAttribute="centerX" id="8qk-TE-yIW"/>
-                            <constraint firstItem="JXu-57-rUk" firstAttribute="top" secondItem="IGW-hg-cU8" secondAttribute="bottom" constant="8" symbolic="YES" id="Gni-qw-PSj"/>
+                            <constraint firstItem="JXu-57-rUk" firstAttribute="centerX" secondItem="IGW-hg-cU8" secondAttribute="centerX" id="IiT-p1-rKJ"/>
                             <constraint firstItem="98o-Un-LcI" firstAttribute="trailing" secondItem="x3T-IM-aq9" secondAttribute="trailing" constant="-11" id="SGQ-T3-bhZ"/>
                             <constraint firstItem="G64-XZ-OmR" firstAttribute="top" secondItem="OgU-lr-XOW" secondAttribute="bottom" id="SdL-QG-NLq"/>
                             <constraint firstItem="x3T-IM-aq9" firstAttribute="centerX" secondItem="IGW-hg-cU8" secondAttribute="centerX" id="YCt-B6-Pm9"/>
@@ -221,12 +229,12 @@
                             <constraint firstItem="98o-Un-LcI" firstAttribute="leading" secondItem="x3T-IM-aq9" secondAttribute="leading" constant="11" id="g6c-Mg-Iab"/>
                             <constraint firstItem="IGW-hg-cU8" firstAttribute="top" secondItem="x3T-IM-aq9" secondAttribute="bottom" constant="3" id="lO9-Gi-9PW"/>
                             <constraint firstItem="IGW-hg-cU8" firstAttribute="centerX" secondItem="G64-XZ-OmR" secondAttribute="centerX" id="llY-Ka-BrE"/>
-                            <constraint firstItem="JXu-57-rUk" firstAttribute="leading" secondItem="IGW-hg-cU8" secondAttribute="leading" id="uJ1-q9-hUh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="PyzeEvents" id="FWM-7K-2Tt"/>
                     <connections>
                         <outlet property="eventsButton" destination="x3T-IM-aq9" id="TLc-wl-lTy"/>
+                        <outlet property="showInAppButton" destination="JXu-57-rUk" id="DTL-K6-siq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xGz-aY-CAq" userLabel="First Responder" sceneMemberID="firstResponder"/>

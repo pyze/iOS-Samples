@@ -19,12 +19,12 @@
 		4644C21D1C19C2650054191E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4644C21C1C19C2650054191E /* SystemConfiguration.framework */; };
 		4644C2201C19C3D90054191E /* PyzeEventListingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4644C21F1C19C3D90054191E /* PyzeEventListingTableViewController.swift */; };
 		4644C2221C19D2E90054191E /* PyzeEventDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4644C2211C19D2E90054191E /* PyzeEventDetailTableViewController.swift */; };
-		46DBCE6D1C1B04DE002A3C88 /* ALEventsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DBCE6A1C1B04DE002A3C88 /* ALEventsTest.m */; settings = {ASSET_TAGS = (); }; };
-		46DBCE6E1C1B04DE002A3C88 /* ALRandomDictionaryGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DBCE6C1C1B04DE002A3C88 /* ALRandomDictionaryGenerator.m */; settings = {ASSET_TAGS = (); }; };
-		46DBCE731C1B0963002A3C88 /* EventListingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DBCE721C1B0963002A3C88 /* EventListingTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		46DBCE751C1B1881002A3C88 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DBCE741C1B1881002A3C88 /* AboutTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		46DBCE771C1B1978002A3C88 /* PyzeWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DBCE761C1B1978002A3C88 /* PyzeWebViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		46DBCE791C1B1CD4002A3C88 /* JobsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DBCE781C1B1CD4002A3C88 /* JobsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		46DBCE6D1C1B04DE002A3C88 /* ALEventsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DBCE6A1C1B04DE002A3C88 /* ALEventsTest.m */; };
+		46DBCE6E1C1B04DE002A3C88 /* ALRandomDictionaryGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DBCE6C1C1B04DE002A3C88 /* ALRandomDictionaryGenerator.m */; };
+		46DBCE731C1B0963002A3C88 /* EventListingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DBCE721C1B0963002A3C88 /* EventListingTableViewController.m */; };
+		46DBCE751C1B1881002A3C88 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DBCE741C1B1881002A3C88 /* AboutTableViewController.swift */; };
+		46DBCE771C1B1978002A3C88 /* PyzeWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DBCE761C1B1978002A3C88 /* PyzeWebViewController.swift */; };
+		46DBCE791C1B1CD4002A3C88 /* JobsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DBCE781C1B1CD4002A3C88 /* JobsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -347,7 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Robosoft IT (F8LAWA2A2K)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PyzeEvents-Swift/PyzeSDK",
@@ -355,7 +355,8 @@
 				INFOPLIST_FILE = "PyzeEvents-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = come.pyze.EventsSwift;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robosoft.dictionary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PyzeEvents-Swift/PyzeEvents-Swift-Bridging-Header.h";
@@ -368,7 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Robosoft IT (F8LAWA2A2K)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PyzeEvents-Swift/PyzeSDK",
@@ -376,7 +377,8 @@
 				INFOPLIST_FILE = "PyzeEvents-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = come.pyze.EventsSwift;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robosoft.dictionary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PyzeEvents-Swift/PyzeEvents-Swift-Bridging-Header.h";

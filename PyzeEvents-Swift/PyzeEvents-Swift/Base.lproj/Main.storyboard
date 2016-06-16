@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rEl-Vx-GOD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rEl-Vx-GOD">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -52,6 +52,20 @@
                                     <constraint firstAttribute="width" constant="228" id="MoP-d6-EFy"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEw-VT-oP9">
+                                <rect key="frame" x="224" y="481" width="151" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="Daq-Jr-WJb"/>
+                                </constraints>
+                                <state key="normal" title="Show InApp Message"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showInAppMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ck4-1a-5fM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -60,13 +74,16 @@
                             <constraint firstItem="sAg-UV-sic" firstAttribute="centerX" secondItem="EDN-xh-9Iv" secondAttribute="centerX" id="LZi-R5-PVV"/>
                             <constraint firstItem="as0-DD-rgm" firstAttribute="centerX" secondItem="sAg-UV-sic" secondAttribute="centerX" id="VEA-dp-xsR"/>
                             <constraint firstItem="sAg-UV-sic" firstAttribute="top" secondItem="as0-DD-rgm" secondAttribute="bottom" constant="8" symbolic="YES" id="bbv-Kg-Mzj"/>
+                            <constraint firstItem="oEw-VT-oP9" firstAttribute="top" secondItem="KMw-Va-tPU" secondAttribute="bottom" constant="8" symbolic="YES" id="ddn-Tv-fb9"/>
                             <constraint firstItem="as0-DD-rgm" firstAttribute="centerX" secondItem="ApF-dR-yzR" secondAttribute="centerX" id="h61-1s-lSX"/>
                             <constraint firstItem="ApF-dR-yzR" firstAttribute="top" secondItem="JH4-n9-RV5" secondAttribute="bottom" id="iEf-rA-fCf"/>
                             <constraint firstItem="sAg-UV-sic" firstAttribute="centerX" secondItem="KMw-Va-tPU" secondAttribute="centerX" id="k3l-t8-czB"/>
+                            <constraint firstItem="oEw-VT-oP9" firstAttribute="centerX" secondItem="KMw-Va-tPU" secondAttribute="centerX" id="mVE-ei-e3n"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="PyzeEvents" id="qhF-AY-y0a"/>
                     <connections>
+                        <outlet property="showInAppButton" destination="oEw-VT-oP9" id="DYI-68-Ue4"/>
                         <outlet property="view" destination="EDN-xh-9Iv" id="b4S-6w-sWs"/>
                     </connections>
                 </viewController>

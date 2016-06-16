@@ -10,8 +10,9 @@
 
 #import <Pyze/Pyze.h>
 
-@interface HomeViewController () <UIPopoverPresentationControllerDelegate>
+@interface HomeViewController () <UIPopoverPresentationControllerDelegate,PyzeInAppMessageHandlerDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *eventsButton;
+@property (weak, nonatomic) IBOutlet UIButton *showInAppButton;
 
 - (IBAction)showInAppMessage:(UIButton *)sender;
 @end
@@ -21,8 +22,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     UIColor *ios7BlueColor = [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0];
-
+//
     self.eventsButton.layer.borderColor = ios7BlueColor.CGColor;
+    self.showInAppButton.layer.borderColor = ios7BlueColor.CGColor;
     // Do any additional setup after loading the view.
 }
 
@@ -32,11 +34,27 @@
 }
 
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+ 
+    [Pyze addBadge:self.showInAppButton];
+}
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (IBAction)showInAppMessage:(UIButton *)sender
 {
-    [Pyze showInAppNotificationScreenOnViewControllerWithDefaults:self];
+    [Pyze showInAppNotificationUI:self withDelegate:self];
 }
+
+-(void) didUserClickedOnInAppMessageButtonWithID:(NSInteger)buttonID
+                                     buttonTitle:(NSString *)title
+                               containingURLInfo:(id)urlInfo
+                              withDeepLinkStatus:(PyzeDeepLinkStatus)status
+{
+    NSLog(@"Button Index = %d, button title = %@ and urlInfo = %@",(int) buttonID, title, urlInfo);
+}
+
 @end
