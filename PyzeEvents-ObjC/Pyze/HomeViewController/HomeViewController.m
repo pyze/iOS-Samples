@@ -46,7 +46,7 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (IBAction)showInAppMessage:(UIButton *)sender
 {
-    [Pyze showInAppNotificationUI:self withDelegate:self];
+    [Pyze showUnreadInAppNotificationUI:self withDelegate:self];
 }
 
 -(void) didUserClickedOnInAppMessageButtonWithID:(NSInteger)buttonID

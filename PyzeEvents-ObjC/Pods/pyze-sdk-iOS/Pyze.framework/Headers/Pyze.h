@@ -113,19 +113,37 @@ typedef NS_ENUM(NSInteger, PyzeInAppMessageType) {
 
 /**
  *  Initializes the Pyze library. Call this method in the app delegate's method
- *  application:willFinishLaunchingWithOptions.
+ *  application:willFinishLaunchingWithOptions. [Get Pyze App Key from growth.pyze.com](http://pyze.com/get-Pyze-App-Key.html)
  * 
  *  Usage:
  *
  *      [Pyze initialize:@"Pyze App Key obtained from growth.pyze.com"];
  *
- *  @param pyzeAppKey The app-specific key obtained from [growth.pyze.com](https://growth.pyze.com/)
- *  @warning *Important:* Get an app-specific key from [growth.pyze.com](https://growth.pyze.com/)
+ *  @param pyzeAppKey The app-specific key obtained from [growth.pyze.com](http://pyze.com/get-Pyze-App-Key.html)
+ *  @warning *Important:* Get an app-specific key from [growth.pyze.com](http://pyze.com/get-Pyze-App-Key.html)
  * 
  *  - Since: 2.0.5
  *
  */
 + (void) initialize:(NSString *) pyzeAppKey;
+
+/**
+ *  Initializes the Pyze library and specify the log throttling level. Call this method in the app delegate's method
+ *  application:willFinishLaunchingWithOptions. [Get Pyze App Key from growth.pyze.com](http://pyze.com/get-Pyze-App-Key.html)
+ *
+ *  Usage:
+ *
+ *      [Pyze initialize:@"Pyze App Key obtained from growth.pyze.com"];
+ *
+ *  @param pyzeAppKey The app-specific key obtained from [growth.pyze.com](http://pyze.com/get-Pyze-App-Key.html)
+ *  @param logLevel Log level you would wish to see in the console.
+ *  @warning *Important:* Get an app-specific key from [growth.pyze.com](http://pyze.com/get-Pyze-App-Key.html)
+ *
+ *  - Since: 2.3.3 (added for consistency with Android and Unity agents)
+ *
+ */
++ (void) initialize:(NSString *)pyzeAppKey withLogThrottling: (PyzeLogLevel) logLevel;
+
 
 /// @name  Timer Reference to use with timed custom events
 
@@ -152,7 +170,7 @@ typedef NS_ENUM(NSInteger, PyzeInAppMessageType) {
 /// @name Throttling logs for troubleshooting
 
 /**
- *  Log throttling level to be used in the lib while target is in debug mode.
+ *  Log throttling level can be changed anytime in the app
  *
  *  How to use:
  *
@@ -207,15 +225,15 @@ typedef NS_ENUM(NSInteger, PyzeInAppMessageType) {
 +(void) addBadge:(UIControl *) control;
 
 /**
- *  Show in-app message with default settings. For all the controls presented including 'MessageNavigationBar', buttons 
+ *  Show in-app message with default settings. For all the controls presented including  Message Navigation Bar, buttons
  *  will loaded with default presentation colors used by the SDK.
  *
  *  @param onViewController The controller on which the in-app should be presented.
- *  @param delegate                Delegate if your app would want to handle when user taps on one of the presented buttons.
+ *  @param delegate         Delegate if your app would want to handle when user taps on one of the presented buttons, See PyzeInAppMessageHandlerDelegate protocol
  
  - Since: 2.3.0
  */
-+(void) showInAppNotificationUI:(UIViewController *) onViewController
++(void) showUnreadInAppNotificationUI:(UIViewController *) onViewController
                    withDelegate:(id<PyzeInAppMessageHandlerDelegate>) delegate;
 
 
@@ -223,11 +241,11 @@ typedef NS_ENUM(NSInteger, PyzeInAppMessageType) {
  *  Convenience method to show in-app message with custom colors as required by the app.
  *
  *  @param onViewController        The controller on which the in-app should be presented.
- *  @param messageType             The in-app message type you would want to see. Default is PyzeInAppTypeAll.
+ *  @param messageType             The in-app message type you would want to see. Default is PyzeInAppTypeUnread.
  *  @param buttonTextcolor         Button text color.
  *  @param buttonBackgroundColor   Button background color
  *  @param backgroundColor         Translucent background color of the 'MessageNavigationBar'
- *  @param messageCounterTextColor Message counter text color (Ex: Showing 1/10 in-app messages).
+ *  @param messageCounterTextColor Message counter text color (Ex: 1 of 10 in-app messages).
  *  @param delegate                Delegate if your app would want to handle when user taps on one of the presented buttons.
  *
  *  - Since: 2.3.0
@@ -265,17 +283,18 @@ typedef NS_ENUM(NSInteger, PyzeInAppMessageType) {
            withCompletionHandler:(void (^)(NSArray * messageHeaders)) completionHandler;
 
 /**
- *  Get message details with Content ID and messageID received from 'getMessageHeadersForType'.
+ *  Get message details with Campaign ID and message ID received from 'getMessageHeadersForType'.
  *
- *  @param contentID         content ID
- *  @param messageID         message ID
- *  @param completionHandler Completion handler will be called with message body.
+ *  @param cid                  campaign ID
+ *  @param messageID            message ID
+ *  @param completionHandler    Completion handler will be called with message body.
  *
  *  - Since: 2.3.0
  */
-+(void) getMessageWithContentID:(NSString *) contentID
-                   andMessageID:(NSString *) messageID
-          withCompletionHandler:(void (^)(NSDictionary * messageBody)) completionHandler;
++(void) getMessageBodyWithCampaignID:(NSString *) cid
+                        andMessageID:(NSString *) messageID
+               withCompletionHandler:(void (^)(NSDictionary * messageBody)) completionHandler;
+
 
 
 /// @name Deprecated methods
