@@ -18,7 +18,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[Pyze sharedPyze] initializeWithKey:@"WgdvOC7PQpOJ3rn55GXaJw"];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
     [[NSNotificationCenter defaultCenter] postNotificationName: kReachabilityChangedNotification object: nil];

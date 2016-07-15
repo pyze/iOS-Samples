@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		076D2EF784B54086802B3BC0 /* Pods_PyzeEvents_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB400429C9219A26569D38C7 /* Pods_PyzeEvents_Swift.framework */; };
 		4644C1FA1C19B4EE0054191E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4644C1F91C19B4EE0054191E /* AppDelegate.swift */; };
 		4644C1FC1C19B4EE0054191E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4644C1FB1C19B4EE0054191E /* ViewController.swift */; };
 		4644C1FF1C19B4EE0054191E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4644C1FD1C19B4EE0054191E /* Main.storyboard */; };
@@ -54,6 +55,9 @@
 		46DBCE741C1B1881002A3C88 /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutTableViewController.swift; path = Controllers/AboutTableViewController.swift; sourceTree = "<group>"; };
 		46DBCE761C1B1978002A3C88 /* PyzeWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PyzeWebViewController.swift; path = Controllers/PyzeWebViewController.swift; sourceTree = "<group>"; };
 		46DBCE781C1B1CD4002A3C88 /* JobsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobsViewController.swift; path = Controllers/JobsViewController.swift; sourceTree = "<group>"; };
+		97FE305B9A6576E2D0CFA657 /* Pods-PyzeEvents-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PyzeEvents-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PyzeEvents-Swift/Pods-PyzeEvents-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		A9AA471995C0277C2703BCE6 /* Pods-PyzeEvents-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PyzeEvents-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-PyzeEvents-Swift/Pods-PyzeEvents-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		AB400429C9219A26569D38C7 /* Pods_PyzeEvents_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PyzeEvents_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,18 +68,29 @@
 				4644C21D1C19C2650054191E /* SystemConfiguration.framework in Frameworks */,
 				4644C21B1C19C25F0054191E /* CoreTelephony.framework in Frameworks */,
 				4644C2191C19C2380054191E /* Pyze.framework in Frameworks */,
+				076D2EF784B54086802B3BC0 /* Pods_PyzeEvents_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02CBBE7BC21A9A1356163886 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97FE305B9A6576E2D0CFA657 /* Pods-PyzeEvents-Swift.debug.xcconfig */,
+				A9AA471995C0277C2703BCE6 /* Pods-PyzeEvents-Swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4644C1ED1C19B4EE0054191E = {
 			isa = PBXGroup;
 			children = (
 				4644C21E1C19C2E50054191E /* Frameworks */,
 				4644C1F81C19B4EE0054191E /* PyzeEvents-Swift */,
 				4644C1F71C19B4EE0054191E /* Products */,
+				02CBBE7BC21A9A1356163886 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +150,7 @@
 				4644C21C1C19C2650054191E /* SystemConfiguration.framework */,
 				4644C21A1C19C25F0054191E /* CoreTelephony.framework */,
 				4644C2181C19C2380054191E /* Pyze.framework */,
+				AB400429C9219A26569D38C7 /* Pods_PyzeEvents_Swift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -158,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4644C2081C19B4EE0054191E /* Build configuration list for PBXNativeTarget "PyzeEvents-Swift" */;
 			buildPhases = (
+				97847B051D539F1E619116E9 /* [CP] Check Pods Manifest.lock */,
 				4644C1F21C19B4EE0054191E /* Sources */,
 				4644C1F31C19B4EE0054191E /* Frameworks */,
 				4644C1F41C19B4EE0054191E /* Resources */,
+				85772627B3E5C733BB7B154E /* [CP] Embed Pods Frameworks */,
+				4E261C6FF60F8E4EB9D70082 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,6 +235,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E261C6FF60F8E4EB9D70082 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PyzeEvents-Swift/Pods-PyzeEvents-Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85772627B3E5C733BB7B154E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PyzeEvents-Swift/Pods-PyzeEvents-Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97847B051D539F1E619116E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4644C1F21C19B4EE0054191E /* Sources */ = {
@@ -344,6 +411,7 @@
 		};
 		4644C2091C19B4EE0054191E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97FE305B9A6576E2D0CFA657 /* Pods-PyzeEvents-Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -355,7 +423,7 @@
 				INFOPLIST_FILE = "PyzeEvents-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robosoft.dictionary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -366,6 +434,7 @@
 		};
 		4644C20A1C19B4EE0054191E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9AA471995C0277C2703BCE6 /* Pods-PyzeEvents-Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -377,7 +446,7 @@
 				INFOPLIST_FILE = "PyzeEvents-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robosoft.dictionary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

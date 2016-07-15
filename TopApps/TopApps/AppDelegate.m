@@ -18,9 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(nullable NSDictionary *)launchOptions
 {
-    [[Pyze sharedPyze] initializeWithKey:@"FK3GGeYNTwaDMrwsXtmx0Q"];
-    [[Pyze sharedPyze] logThrottling:PyzelogLevelMinimal];
-    
+    [Pyze initialize:@"FK3GGeYNTwaDMrwsXtmx0Q" withLogThrottling:PyzelogLevelAll];
     return YES;
 }
 

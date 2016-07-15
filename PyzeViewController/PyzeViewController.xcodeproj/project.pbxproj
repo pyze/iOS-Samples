@@ -20,6 +20,7 @@
 		46D96F631C10830E00F4B186 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D96F621C10830E00F4B186 /* SearchTableViewController.m */; };
 		46D96F671C10968D00F4B186 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D96F661C10968D00F4B186 /* CoreTelephony.framework */; };
 		46D96F691C10969400F4B186 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D96F681C10969400F4B186 /* SystemConfiguration.framework */; };
+		F11C1A3B0413939311940E69 /* libPods-PyzeViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DBEF680E2081B143D44A04 /* libPods-PyzeViewController.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,9 @@
 		46D96F621C10830E00F4B186 /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
 		46D96F661C10968D00F4B186 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		46D96F681C10969400F4B186 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8D8B7727F7EC20BB3AB19124 /* Pods-PyzeViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PyzeViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PyzeViewController/Pods-PyzeViewController.debug.xcconfig"; sourceTree = "<group>"; };
+		A0DBEF680E2081B143D44A04 /* libPods-PyzeViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PyzeViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1544665740341FA72B350B /* Pods-PyzeViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PyzeViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-PyzeViewController/Pods-PyzeViewController.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +58,22 @@
 				467716601C463A0500F36217 /* Pyze.framework in Frameworks */,
 				46D96F691C10969400F4B186 /* SystemConfiguration.framework in Frameworks */,
 				46D96F671C10968D00F4B186 /* CoreTelephony.framework in Frameworks */,
+				F11C1A3B0413939311940E69 /* libPods-PyzeViewController.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11183111C328FE299877FDB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D8B7727F7EC20BB3AB19124 /* Pods-PyzeViewController.debug.xcconfig */,
+				BE1544665740341FA72B350B /* Pods-PyzeViewController.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		461BCD0E1C04AEDD00E864B8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +98,8 @@
 				46D96F661C10968D00F4B186 /* CoreTelephony.framework */,
 				46B1BD2F1BFB5C5000B8CCCE /* PyzeViewController */,
 				46B1BD2E1BFB5C5000B8CCCE /* Products */,
+				11183111C328FE299877FDB5 /* Pods */,
+				69DD8624A6CBA92B6A680006 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +135,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		69DD8624A6CBA92B6A680006 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0DBEF680E2081B143D44A04 /* libPods-PyzeViewController.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46B1BD441BFB5C5000B8CCCE /* Build configuration list for PBXNativeTarget "PyzeViewController" */;
 			buildPhases = (
+				9C883937E9D56A2B44E5E6F9 /* [CP] Check Pods Manifest.lock */,
 				46B1BD291BFB5C5000B8CCCE /* Sources */,
 				46B1BD2A1BFB5C5000B8CCCE /* Frameworks */,
 				46B1BD2B1BFB5C5000B8CCCE /* Resources */,
+				C1ECD71D63151915BAC70933 /* [CP] Embed Pods Frameworks */,
+				CFF49ACE918390258C8C4E23 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,6 +210,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C883937E9D56A2B44E5E6F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1ECD71D63151915BAC70933 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PyzeViewController/Pods-PyzeViewController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFF49ACE918390258C8C4E23 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PyzeViewController/Pods-PyzeViewController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		46B1BD291BFB5C5000B8CCCE /* Sources */ = {
@@ -303,6 +378,7 @@
 		};
 		46B1BD451BFB5C5000B8CCCE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D8B7727F7EC20BB3AB19124 /* Pods-PyzeViewController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Vinodh Kumar (RHXCHS39A7)";
@@ -322,6 +398,7 @@
 		};
 		46B1BD461BFB5C5000B8CCCE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE1544665740341FA72B350B /* Pods-PyzeViewController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (

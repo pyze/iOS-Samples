@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F5ACA5EE0322411749972D0 /* libPods-iOSCrashException.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA5D0110611FE6CC7C7DE0E /* libPods-iOSCrashException.a */; };
 		467652611C440DE500F68E79 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 467652601C440DE500F68E79 /* Reachability.m */; };
 		469B657F1C439D8300CD4E6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 469B657E1C439D8300CD4E6C /* main.m */; };
 		469B65821C439D8300CD4E6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 469B65811C439D8300CD4E6C /* AppDelegate.m */; };
@@ -14,11 +15,9 @@
 		469B65881C439D8300CD4E6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469B65861C439D8300CD4E6C /* Main.storyboard */; };
 		469B658A1C439D8300CD4E6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 469B65891C439D8300CD4E6C /* Assets.xcassets */; };
 		469B658D1C439D8300CD4E6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469B658B1C439D8300CD4E6C /* LaunchScreen.storyboard */; };
-		9C5C46FD7A40E188FD5CE686 /* libPods-iOSCrashException.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0501F8783E1B015EF30A1B5 /* libPods-iOSCrashException.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		026771B7B35E9ED01AD8C293 /* Pods-iOSCrashException.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSCrashException.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSCrashException/Pods-iOSCrashException.release.xcconfig"; sourceTree = "<group>"; };
 		4676525F1C440DE500F68E79 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		467652601C440DE500F68E79 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		469B657A1C439D8300CD4E6C /* iOSCrashException.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCrashException.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,8 +30,9 @@
 		469B65891C439D8300CD4E6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		469B658C1C439D8300CD4E6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		469B658E1C439D8300CD4E6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0501F8783E1B015EF30A1B5 /* libPods-iOSCrashException.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSCrashException.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDDD29B5B4B49E3E297331DF /* Pods-iOSCrashException.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSCrashException.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSCrashException/Pods-iOSCrashException.debug.xcconfig"; sourceTree = "<group>"; };
+		49980F0F7068271AD82ECFC4 /* Pods-iOSCrashException.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSCrashException.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSCrashException/Pods-iOSCrashException.release.xcconfig"; sourceTree = "<group>"; };
+		9DA5D0110611FE6CC7C7DE0E /* libPods-iOSCrashException.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSCrashException.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E69FB2DFF2B0661D1E5954F0 /* Pods-iOSCrashException.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSCrashException.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSCrashException/Pods-iOSCrashException.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,13 +40,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C5C46FD7A40E188FD5CE686 /* libPods-iOSCrashException.a in Frameworks */,
+				0F5ACA5EE0322411749972D0 /* libPods-iOSCrashException.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01522D14BCCBD1AE4773E003 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E69FB2DFF2B0661D1E5954F0 /* Pods-iOSCrashException.debug.xcconfig */,
+				49980F0F7068271AD82ECFC4 /* Pods-iOSCrashException.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4676525E1C440DE500F68E79 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
@@ -61,8 +70,8 @@
 			children = (
 				469B657C1C439D8300CD4E6C /* iOSCrashException */,
 				469B657B1C439D8300CD4E6C /* Products */,
-				9310E4E56F1B4FAD8932722A /* Pods */,
-				656835E3E3738D232F371AA7 /* Frameworks */,
+				01522D14BCCBD1AE4773E003 /* Pods */,
+				EBCEA38D33304ABB925C2024 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,21 +108,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		656835E3E3738D232F371AA7 /* Frameworks */ = {
+		EBCEA38D33304ABB925C2024 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0501F8783E1B015EF30A1B5 /* libPods-iOSCrashException.a */,
+				9DA5D0110611FE6CC7C7DE0E /* libPods-iOSCrashException.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9310E4E56F1B4FAD8932722A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CDDD29B5B4B49E3E297331DF /* Pods-iOSCrashException.debug.xcconfig */,
-				026771B7B35E9ED01AD8C293 /* Pods-iOSCrashException.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,12 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 469B65911C439D8300CD4E6C /* Build configuration list for PBXNativeTarget "iOSCrashException" */;
 			buildPhases = (
-				F762473DBF55861AD8EC2BB0 /* Check Pods Manifest.lock */,
+				7E5E318CDCEE11339D02C2EB /* [CP] Check Pods Manifest.lock */,
 				469B65761C439D8300CD4E6C /* Sources */,
 				469B65771C439D8300CD4E6C /* Frameworks */,
 				469B65781C439D8300CD4E6C /* Resources */,
-				B1901E4125BAF9E1622292AD /* Embed Pods Frameworks */,
-				1F37110777A24D3B1212653A /* Copy Pods Resources */,
+				D6534A78F90F27E3F5477539 /* [CP] Embed Pods Frameworks */,
+				9C166E458060B5D4C1839CA9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,14 +185,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1F37110777A24D3B1212653A /* Copy Pods Resources */ = {
+		7E5E318CDCEE11339D02C2EB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C166E458060B5D4C1839CA9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,34 +215,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSCrashException/Pods-iOSCrashException-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B1901E4125BAF9E1622292AD /* Embed Pods Frameworks */ = {
+		D6534A78F90F27E3F5477539 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSCrashException/Pods-iOSCrashException-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F762473DBF55861AD8EC2BB0 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -350,7 +350,7 @@
 		};
 		469B65921C439D8300CD4E6C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDDD29B5B4B49E3E297331DF /* Pods-iOSCrashException.debug.xcconfig */;
+			baseConfigurationReference = E69FB2DFF2B0661D1E5954F0 /* Pods-iOSCrashException.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSCrashException/Info.plist;
@@ -362,7 +362,7 @@
 		};
 		469B65931C439D8300CD4E6C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 026771B7B35E9ED01AD8C293 /* Pods-iOSCrashException.release.xcconfig */;
+			baseConfigurationReference = 49980F0F7068271AD82ECFC4 /* Pods-iOSCrashException.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSCrashException/Info.plist;

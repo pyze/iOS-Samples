@@ -17,6 +17,7 @@
 
 -(BOOL) application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [Pyze initialize:@"wpVnMUWPSeWiZ8OxZmBwPw" withLogThrottling:PyzelogLevelMinimal];
 
     return YES;
 }

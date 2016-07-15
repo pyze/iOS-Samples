@@ -24,7 +24,7 @@ class ViewController: UIViewController, PyzeInAppMessageHandlerDelegate {
 
     @IBAction func showInAppMessage(sender: UIButton)
     {
-        Pyze.showInAppNotificationUI(self, withDelegate: self);
+        Pyze.showUnreadInAppNotificationUI(self)
     }
 
     func didUserClickedOnInAppMessageButtonWithID(buttonID: Int, buttonTitle title: String!, containingURLInfo urlInfo: AnyObject!, withDeepLinkStatus status: PyzeDeepLinkStatus) {

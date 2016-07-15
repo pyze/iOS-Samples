@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, willFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
-        Pyze.sharedPyze().initializeWithKey("nW3V4gQ8S-O4ZjRMDy9d1g")
+        Pyze.initialize("J5k1nUJ_R5WPPJyJiv82-w", withLogThrottling: .PyzelogLevelAll)
         return true
     }
 
@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func yourMethod() {
         PyzeAd.postAdRequested("https://www.google.com",
                                 fromAppScreen: "home",
-                                   withAdSize: CGSizeMake(320, 160),
+                                   withAdSize: "(320, 160)",
                                        adType: "Banner",
                                withAttributes: ["FirstName": "John", "LastName" : "Smith", "Age" : "28"])
     }

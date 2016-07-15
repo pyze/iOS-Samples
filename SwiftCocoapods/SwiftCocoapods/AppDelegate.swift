@@ -14,7 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, willFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
-        Pyze.sharedPyze().initializeWithKey("nW3V4gQ8S-O4ZjRMDy9d1g")
+        Pyze.initialize("otRIZHvZTHGE-MvXl2-7Fw", withLogThrottling: .PyzelogLevelAll)
+        
         return true
     }
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
