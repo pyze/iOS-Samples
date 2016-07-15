@@ -89,6 +89,28 @@ typedef NS_ENUM(NSInteger, PyzeInAppMessageType) {
     PyzeInAppTypeAll
 };
 
+
+/**
+ *  Pyze deep link status enumeration, useful to determine whether deeplink provided, successful or failed.
+ *
+ *  - Since: 2.3.0
+ */
+typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
+    /**
+     *  Deeplink not provided while creating the in-app
+     */
+    PyzeDeepLinkNotProvided = 0,
+    /**
+     *  Deeplink successfully called. For Example: (http://pyze.com or yelp://search?term=burritos where yelp application is installed on the device)
+     */
+    PyzeDeepLinkCallSuccessful,
+    /**
+     *  Invalid or deeplink not found. For Example: (mispelt htp://pyze.com or yelp://search?term=burritos where yelp application is not installed on the device)
+     */
+    PyzeDeepLinkCallFailed
+};
+
+
 #pragma mark - Pyze
 
 @protocol PyzeInAppMessageHandlerDelegate;
@@ -133,7 +155,7 @@ typedef NS_ENUM(NSInteger, PyzeInAppMessageType) {
  *
  *  Usage:
  *
- *      [Pyze initialize:@"Pyze App Key obtained from growth.pyze.com"];
+ *      [Pyze initialize:@"Pyze App Key obtained from growth.pyze.com"   withLogThrottling: PyzelogLevelAll];
  *
  *  @param pyzeAppKey The app-specific key obtained from [growth.pyze.com](http://pyze.com/get-Pyze-App-Key.html)
  *  @param logLevel Log level you would wish to see in the console.
@@ -225,20 +247,22 @@ typedef NS_ENUM(NSInteger, PyzeInAppMessageType) {
 +(void) addBadge:(UIControl *) control;
 
 /**
- *  Show in-app message with default settings. For all the controls presented including  Message Navigation Bar, buttons
- *  will loaded with default presentation colors used by the SDK.
+ *  Show in-app unread messages with default settings. For all the controls presented including  Message Navigation Bar, buttons
+ *  will loaded with default presentation colors used by the SDK. When user taps on any of the buttons in in-app message
+ *  inAppMessageButtonHandlerWithIndex:buttonTitle:containingURLString:withDeepLinkStatus method will be called on your onViewController.
  *
  *  @param onViewController The controller on which the in-app should be presented.
- *  @param delegate         Delegate if your app would want to handle when user taps on one of the presented buttons, See PyzeInAppMessageHandlerDelegate protocol
+ 
+ *  @see inAppMessageButtonHandlerWithIndex:buttonTitle:containingURLString:withDeepLinkStatus
  
  - Since: 2.3.0
  */
-+(void) showUnreadInAppNotificationUI:(UIViewController *) onViewController
-                   withDelegate:(id<PyzeInAppMessageHandlerDelegate>) delegate;
++(void) showUnreadInAppNotificationUI:(UIViewController *) onViewController;
 
 
 /**
- *  Convenience method to show in-app message with custom colors as required by the app.
+ *  Convenience method to show in-app message with custom colors as required by the app. When user taps on any of the buttons in in-app message
+ *  inAppMessageButtonHandlerWithIndex:buttonTitle:containingURLString:withDeepLinkStatus method will be called on your onViewController.
  *
  *  @param onViewController        The controller on which the in-app should be presented.
  *  @param messageType             The in-app message type you would want to see. Default is PyzeInAppTypeUnread.
@@ -246,8 +270,9 @@ typedef NS_ENUM(NSInteger, PyzeInAppMessageType) {
  *  @param buttonBackgroundColor   Button background color
  *  @param backgroundColor         Translucent background color of the 'MessageNavigationBar'
  *  @param messageCounterTextColor Message counter text color (Ex: 1 of 10 in-app messages).
- *  @param delegate                Delegate if your app would want to handle when user taps on one of the presented buttons.
  *
+ *  @see inAppMessageButtonHandlerWithIndex:buttonTitle:containingURLString:withDeepLinkStatus
+
  *  - Since: 2.3.0
 */
 
@@ -256,8 +281,7 @@ typedef NS_ENUM(NSInteger, PyzeInAppMessageType) {
       msgNavBarButtonsTextColor:(UIColor *) buttonTextcolor
         msgNavBarButtonsBgColor:(UIColor *) buttonBackgroundColor
                msgNavBarBgColor:(UIColor *) backgroundColor
-      msgNavBarCounterTextColor:(UIColor *) messageCounterTextColor
-                   withDelegate:(id<PyzeInAppMessageHandlerDelegate>) delegate;
+      msgNavBarCounterTextColor:(UIColor *) messageCounterTextColor;
 
 
 /// @name In-App Notifications (using API)
@@ -296,7 +320,6 @@ typedef NS_ENUM(NSInteger, PyzeInAppMessageType) {
                withCompletionHandler:(void (^)(NSDictionary * messageBody)) completionHandler;
 
 
-
 /// @name Deprecated methods
 
 /**
@@ -331,33 +354,17 @@ typedef NS_ENUM(NSInteger, PyzeInAppMessageType) {
  *  @return instance type
  */
 -(instancetype) init NS_UNAVAILABLE;
+
 @end
 
+
+
 /**
- *  Pyze deep link status enumeration, useful to determine whether deeplink provided, successful or failed.
+ *  Pyze In app message handler delegate. This has one optional call to action method which will inform your class 
+    when user clicks on one of the in-app messsage buttons.
  *
  *  - Since: 2.3.0
  */
-typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
-    /**
-     *  Deeplink not provided while creating the in-app
-     */
-    PyzeDeepLinkNotProvided = 0,
-    /**
-     *  Deeplink successfully called. For Example: (http://pyze.com or yelp://search?term=burritos where yelp application is installed on the device)
-     */
-    PyzeDeepLinkCallSuccessful,
-    /**
-     *  Invalid or deeplink not found. For Example: (mispelt htp://pyze.com or yelp://search?term=burritos where yelp application is not installed on the device)
-     */
-    PyzeDeepLinkCallFailed
-};
-
-/**
- *  Pyze In app message handler delegate. This has one optional call to action method which will inform your class when user clicks on one of the in-app messsage buttons.
- *
- *  - Since: 2.3.0
-*/
 @protocol PyzeInAppMessageHandlerDelegate <NSObject>
 
 /// @name Optional delegate method
@@ -365,20 +372,22 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 @optional
 
 /**
- *  Call to action delegate method for in-app message buttons
+ *  Call to action handler for in-app message buttons implemented by your view controller to receive in-app message
+    button click actions.
  *
- *  @param buttonID Button index id
- *  @param title    Title provided for the button
- *  @param urlInfo  deeplink url info provided.
- *  @param status   Pyze deep link status.
+ *  @param buttonID  Button index
+ *  @param title     Title provided for the button
+ *  @param urlString Deeplink url string provided.
+ *  @param status    Pyze deep link status.
+ *
+ *  @see showUnreadInAppNotificationUI and showInAppNotificationUI methods.
  *
  *  - Since: 2.3.0
-*/
--(void) didUserClickedOnInAppMessageButtonWithID:(NSInteger) buttonID
-                                     buttonTitle:(NSString *) title
-                               containingURLInfo:(id) urlInfo withDeepLinkStatus:(PyzeDeepLinkStatus) status;
-
-
-
+ *
+ */
+-(void) inAppMessageButtonHandlerWithIndex:(NSInteger) buttonIndex
+                               buttonTitle:(NSString *) title
+                       containingURLString:(NSString *) urlString
+                        withDeepLinkStatus:(PyzeDeepLinkStatus) status;
 
 @end

@@ -46,15 +46,16 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (IBAction)showInAppMessage:(UIButton *)sender
 {
-    [Pyze showUnreadInAppNotificationUI:self withDelegate:self];
+    [Pyze showUnreadInAppNotificationUI:self];
 }
 
--(void) didUserClickedOnInAppMessageButtonWithID:(NSInteger)buttonID
-                                     buttonTitle:(NSString *)title
-                               containingURLInfo:(id)urlInfo
-                              withDeepLinkStatus:(PyzeDeepLinkStatus)status
+-(void) inAppMessageButtonHandlerWithIndex:(NSInteger) buttonIndex
+                               buttonTitle:(NSString *) title
+                       containingURLString:(NSString *) urlString
+                        withDeepLinkStatus:(PyzeDeepLinkStatus) status;
+
 {
-    NSLog(@"Button Index = %d, button title = %@ and urlInfo = %@",(int) buttonID, title, urlInfo);
+    NSLog(@"Button Index = %d, button title = %@ and urlInfo = %@",(int) buttonIndex, title, urlString);
 }
 
 @end
