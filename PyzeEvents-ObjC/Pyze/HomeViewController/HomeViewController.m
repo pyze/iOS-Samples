@@ -46,7 +46,12 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (IBAction)showInAppMessage:(UIButton *)sender
 {
-    [Pyze showUnreadInAppNotificationUI:self];
+    [Pyze showInAppNotificationUI:self
+               forDisplayMessages:PyzeInAppTypeAll
+        msgNavBarButtonsTextColor:[UIColor blueColor]
+          msgNavBarButtonsBgColor:[UIColor grayColor]
+                 msgNavBarBgColor:[UIColor clearColor]
+        msgNavBarCounterTextColor:[UIColor blueColor]];
 }
 
 -(void) inAppMessageButtonHandlerWithIndex:(NSInteger) buttonIndex

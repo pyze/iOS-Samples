@@ -353,6 +353,14 @@
 				);
 				INFOPLIST_FILE = ObjcCCocoapods/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/pyze-sdk-iOS\"",
+					"-fembed-bitcode",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.ObjcCCocoapods;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "34ab189c-6759-40cb-84f9-f3376900f19b";
@@ -370,6 +378,14 @@
 				);
 				INFOPLIST_FILE = ObjcCCocoapods/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/pyze-sdk-iOS\"",
+					"-fembed-bitcode",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.ObjcCCocoapods;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
