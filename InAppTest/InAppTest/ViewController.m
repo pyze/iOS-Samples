@@ -18,7 +18,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [Pyze countNewUnFetched:^(NSInteger result) {
+        if (result > 0)
+            [Pyze showUnreadInAppNotificationUIWithCompletionHandler:^(PyzeInAppStatus *inAppStatus) {
+                NSLog(@"buttonIndex = %d", (int)inAppStatus.buttonIndex);
+                NSLog(@"message-ID =%@" , inAppStatus.messageID);
+                NSLog(@"campaign-ID = %@", inAppStatus.campaignID);
+                NSLog(@"title = %@",inAppStatus.title);
+                NSLog(@"urlString = %@",inAppStatus.urlString);
+            }];
+    }];
+
     [Pyze addBadge:self.showMessagesButton]; //1
 }
 
