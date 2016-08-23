@@ -462,3 +462,64 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 @property (nonatomic, assign) PyzeDeepLinkStatus status;
 
 @end
+
+#pragma mark - Pyze Personalization Intelligence
+
+/**
+ *  PyzePersonalizationIntelligence  
+ *  See: http://pyze.com/iOS-Personalization.html and http://pyze.com/product/personalization-intelligence.html for more details.
+ *
+ *  This class provides access to get the personalization intelligence tags. These tags are set in the intelligence explorer.
+ *
+ *  - Since: 2.6.0
+ */
+
+@interface PyzePersonalizationIntelligence : NSObject
+
+/**
+ *  Get all tags assigned to the user.  Note: Tags are case sensitive, "High Value" and "high value" are different tags.
+ *
+ *    [PyzePersonalizationIntelligence getTags:^(NSArray *tagsList) {
+ *         NSLog(@"PyzePersonalizationIntelligence tags = %@", tagsList);
+ *    }];
+ *
+ *  @param completionHandler Handler with array of tag strings or nil.
+ */
++(void) getTags:(void (^) (NSArray * tagsList)) completionHandler;
+
+
+/**
+ *  Returns true if requested tag is assigned to user.   Note: Tags are case sensitive, "High Value" and "high value" are different tags
+ *
+ *      NSLog(@"isTagSet = %d", [PyzePersonalizationIntelligence isTagSet:@"loyal"]);
+ *
+ *  @param tag The selected tag.
+ *
+ *  @return Returns YES if found.
+ */
++(BOOL) isTagSet:(NSString *) tag;
+
+/**
+ *  Returns true if at least one tag is assigned.    Note: Tags are case sensitive, "High Value" and "high value" are different tags.
+ *
+ *      NSLog(@"areAnyTagsSet = %d",[PyzePersonalizationIntelligence areAnyTagsSet:@[@"High value"]]);
+ *
+ *  @param tagsList The array tag list strings.
+ *
+ *  @return Returns YES if any of the tags is found.
+ */
++(BOOL) areAnyTagsSet:(NSArray *) tagsList;
+
+
+/**
+ *  Returns true if all tags specified are assigned to user.   Note: Tags are case sensitive, "High Value" and "high value" are different tags.
+ *
+ *     NSLog(@"areAllTagsSet = %d", [PyzePersonalizationIntelligence areAllTagsSet:@[@"loyal", @"whale",@"High value"]]);
+ *
+ *  @param tagsList The array tag list strings.
+ *
+ *  @return Returns YES if all of the tags are found.
+ */
++(BOOL) areAllTagsSet:(NSArray *) tagsList;
+
+@end

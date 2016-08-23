@@ -114,7 +114,7 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 #pragma mark - Pyze
 
 @protocol PyzeInAppMessageHandlerDelegate;
-
+@class PyzeInAppStatus;
 /**
  * Pyze main class
  * 
@@ -246,43 +246,39 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
  */
 +(void) addBadge:(UIControl *) control;
 
+
 /**
  *  Show in-app unread messages with default settings. For all the controls presented including  Message Navigation Bar, buttons
  *  will loaded with default presentation colors used by the SDK. When user taps on any of the buttons in in-app message
- *  inAppMessageButtonHandlerWithIndex:buttonTitle:containingURLString:withDeepLinkStatus method will be called on your onViewController.
+ *  completionhandler method will be called.
  *
- *  @param onViewController The controller on which the in-app should be presented.
- 
- *  @see inAppMessageButtonHandlerWithIndex:buttonTitle:containingURLString:withDeepLinkStatus
- 
- - Since: 2.3.0
+ *  @param completionhandler Completion handler
+ *
+ *  - Since: 2.5.3
+ *
  */
-+(void) showUnreadInAppNotificationUI:(UIViewController *) onViewController;
-
++(void) showUnreadInAppNotificationUIWithCompletionHandler:(void (^)(PyzeInAppStatus *inAppStatus))completionhandler;
 
 /**
  *  Convenience method to show in-app message with custom colors as required by the app. When user taps on any of the buttons in in-app message
- *  inAppMessageButtonHandlerWithIndex:buttonTitle:containingURLString:withDeepLinkStatus method will be called on your onViewController.
+ *  completionhandler method will be called.
  *
- *  @param onViewController        The controller on which the in-app should be presented.
  *  @param messageType             The in-app message type you would want to see. Default is PyzeInAppTypeUnread.
  *  @param buttonTextcolor         Button text color.
  *  @param buttonBackgroundColor   Button background color
  *  @param backgroundColor         Translucent background color of the 'MessageNavigationBar'
  *  @param messageCounterTextColor Message counter text color (Ex: 1 of 10 in-app messages).
+ *  @param completionhandler Completion handler
  *
- *  @see inAppMessageButtonHandlerWithIndex:buttonTitle:containingURLString:withDeepLinkStatus
+ *  - Since: 2.5.3
 
- *  - Since: 2.3.0
-*/
-
-+(void) showInAppNotificationUI:(UIViewController *) onViewController
-             forDisplayMessages:(PyzeInAppMessageType) messageType
-      msgNavBarButtonsTextColor:(UIColor *) buttonTextcolor
-        msgNavBarButtonsBgColor:(UIColor *) buttonBackgroundColor
-               msgNavBarBgColor:(UIColor *) backgroundColor
-      msgNavBarCounterTextColor:(UIColor *) messageCounterTextColor;
-
+ */
++(void) showInAppNotificationUIForDisplayMessages:(PyzeInAppMessageType) messageType
+                        msgNavBarButtonsTextColor:(UIColor *) buttonTextcolor
+                          msgNavBarButtonsBgColor:(UIColor *) buttonBackgroundColor
+                                 msgNavBarBgColor:(UIColor *) backgroundColor
+                        msgNavBarCounterTextColor:(UIColor *) messageCounterTextColor
+                            withCompletionHandler:(void (^)(PyzeInAppStatus *inAppStatus))completionhandler;
 
 /// @name In-App Notifications (using API)
 
@@ -320,6 +316,7 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
                withCompletionHandler:(void (^)(NSDictionary * messageBody)) completionHandler;
 
 
+
 /// @name Deprecated methods
 
 /**
@@ -355,6 +352,44 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
  */
 -(instancetype) init NS_UNAVAILABLE;
 
+/**
+ *  Show in-app unread messages with default settings. For all the controls presented including  Message Navigation Bar, buttons
+ *  will loaded with default presentation colors used by the SDK. When user taps on any of the buttons in in-app message
+ *  inAppMessageButtonHandlerWithIndex:buttonTitle:containingURLString:withDeepLinkStatus method will be called on your onViewController.
+ *
+ *  @param onViewController The controller on which the in-app should be presented.
+ 
+ *  @see showUnreadInAppNotificationUIWithCompletionHandler:
+ 
+ - Since: 2.3.0
+ */
++(void) showUnreadInAppNotificationUI:(UIViewController *) onViewController;
+
+
+/**
+ *  Convenience method to show in-app message with custom colors as required by the app. When user taps on any of the buttons in in-app message
+ *  inAppMessageButtonHandlerWithIndex:buttonTitle:containingURLString:withDeepLinkStatus method will be called on your onViewController.
+ *
+ *  @param onViewController        The controller on which the in-app should be presented.
+ *  @param messageType             The in-app message type you would want to see. Default is PyzeInAppTypeUnread.
+ *  @param buttonTextcolor         Button text color.
+ *  @param buttonBackgroundColor   Button background color
+ *  @param backgroundColor         Translucent background color of the 'MessageNavigationBar'
+ *  @param messageCounterTextColor Message counter text color (Ex: 1 of 10 in-app messages).
+ *
+ *  @see showInAppNotificationUI: with completionHandler method.
+ 
+ *  - Since: 2.3.0
+ */
+
++(void) showInAppNotificationUI:(UIViewController *) onViewController
+             forDisplayMessages:(PyzeInAppMessageType) messageType
+      msgNavBarButtonsTextColor:(UIColor *) buttonTextcolor
+        msgNavBarButtonsBgColor:(UIColor *) buttonBackgroundColor
+               msgNavBarBgColor:(UIColor *) backgroundColor
+      msgNavBarCounterTextColor:(UIColor *) messageCounterTextColor;
+
+
 @end
 
 
@@ -389,5 +424,102 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
                                buttonTitle:(NSString *) title
                        containingURLString:(NSString *) urlString
                         withDeepLinkStatus:(PyzeDeepLinkStatus) status;
+
+@end
+
+
+/**
+ *  PyzeInAppStatus
+ *  This class contains return status when any of the button pressed in in-app message.
+ */
+@interface PyzeInAppStatus : NSObject
+
+/**
+ *  Button index, if provided or else be zero
+ */
+@property (nonatomic, assign) NSInteger buttonIndex;
+
+/**
+ *  Message-ID of the in-app message.
+ */
+@property (nonatomic, strong) NSString *messageID;
+/**
+ *  Campaign-IDof the in-app message.
+ */
+@property (nonatomic, strong) NSString *campaignID;
+/**
+ *  Title of the message. 'title' can be nil.
+ */
+@property (nonatomic, strong) NSString *title;
+/**
+ *  Url string of the message for deeplink purpose. This can be nil.
+ */
+@property (nonatomic, strong) NSString *urlString;
+
+/**
+ *  Status of the deeplink.
+ */
+@property (nonatomic, assign) PyzeDeepLinkStatus status;
+
+@end
+
+#pragma mark - Pyze Personalization Intelligence
+
+/**
+ *  PyzePersonalizationIntelligence  
+ *  See: http://pyze.com/iOS-Personalization.html and http://pyze.com/product/personalization-intelligence.html for more details.
+ *
+ *  This class provides access to get the personalization intelligence tags. These tags are set in the intelligence explorer.
+ *
+ *  - Since: 2.6.0
+ */
+
+@interface PyzePersonalizationIntelligence : NSObject
+
+/**
+ *  Get all tags assigned to the user.  Note: Tags are case sensitive, "High Value" and "high value" are different tags.
+ *
+ *    [PyzePersonalizationIntelligence getTags:^(NSArray *tagsList) {
+ *         NSLog(@"PyzePersonalizationIntelligence tags = %@", tagsList);
+ *    }];
+ *
+ *  @param completionHandler Handler with array of tag strings or nil.
+ */
++(void) getTags:(void (^) (NSArray * tagsList)) completionHandler;
+
+
+/**
+ *  Returns true if requested tag is assigned to user.   Note: Tags are case sensitive, "High Value" and "high value" are different tags
+ *
+ *      NSLog(@"isTagSet = %d", [PyzePersonalizationIntelligence isTagSet:@"loyal"]);
+ *
+ *  @param tag The selected tag.
+ *
+ *  @return Returns YES if found.
+ */
++(BOOL) isTagSet:(NSString *) tag;
+
+/**
+ *  Returns true if at least one tag is assigned.    Note: Tags are case sensitive, "High Value" and "high value" are different tags.
+ *
+ *      NSLog(@"areAnyTagsSet = %d",[PyzePersonalizationIntelligence areAnyTagsSet:@[@"High value"]]);
+ *
+ *  @param tagsList The array tag list strings.
+ *
+ *  @return Returns YES if any of the tags is found.
+ */
++(BOOL) areAnyTagsSet:(NSArray *) tagsList;
+
+
+/**
+ *  Returns true if all tags specified are assigned to user.   Note: Tags are case sensitive, "High Value" and "high value" are different tags.
+ *
+ *     NSLog(@"areAllTagsSet = %d", [PyzePersonalizationIntelligence areAllTagsSet:@[@"loyal", @"whale",@"High value"]]);
+ *
+ *  @param tagsList The array tag list strings.
+ *
+ *  @return Returns YES if all of the tags are found.
+ */
++(BOOL) areAllTagsSet:(NSArray *) tagsList;
 
 @end
