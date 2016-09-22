@@ -1,0 +1,26 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'WatchKitTest' do
+  # Uncomment this line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+pod 'pyze-sdk-iOS'
+
+  # Pods for WatchKitTest
+
+end
+
+target 'WatchKitTest-WK' do
+  # Uncomment this line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+end
+
+target 'WatchKitTest-WK Extension' do
+  # Uncomment this line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for WatchKitTest-WK Extension
+
+end

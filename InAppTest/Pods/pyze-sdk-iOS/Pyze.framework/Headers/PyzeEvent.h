@@ -3111,5 +3111,30 @@ PyzeGeoPoint;
 
 @end
 
+
+#define mark - iOS 10 Events
+
+typedef NS_ENUM(NSInteger, PyzeMessagingAppType) {
+    PyzeMessageDidReceive = 0,
+    PyzeMessageDidSending,
+    PyzeMessageDidCancel,
+    PyzeMessageOthers
+};
+
+/**
+ * ### PyzeMessagingAppEvent
+ * Subclass of PyzeCustomEvent can be used to post events related to iMessage apps and extension.
+ * For backwards compatiblitiy with Xcode version 7.x.x MSConversation * and MSMessage * are being passed ids.
+ *
+ */
+NS_CLASS_AVAILABLE_IOS(10_0)
+ @interface PyzeMessagingAppEvent : PyzeCustomEvent
+ 
+ +(void) postConversationMetadata:(PyzeMessagingAppType) methodType
+ withMessageAsID:(id) message
+ withConversationAsID:(id) conversation;
+ 
+ @end
+
 NS_ASSUME_NONNULL_END
 

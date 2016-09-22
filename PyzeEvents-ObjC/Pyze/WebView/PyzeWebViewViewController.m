@@ -31,7 +31,7 @@
 }
 
 
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(nullable NSError *)error;
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error;
 {
     [self.actIndicator stopAnimating];
     NSLog(@"%@",error);
