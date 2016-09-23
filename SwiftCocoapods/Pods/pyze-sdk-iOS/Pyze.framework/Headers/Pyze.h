@@ -316,6 +316,17 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
                withCompletionHandler:(void (^)(NSDictionary * messageBody)) completionHandler;
 
 
+/**
+ *  Hash function can be used to convert any NSString to an hashed equivalent.
+ *  The generated string is suffixed with two hash characters ##
+ *  This function is useful to avoid collecting any information that may be private or sensitive.
+ *
+ *  @param stringToHash         String to Hash
+ *
+ *  - Since: 2.7.0
+ */
++ (NSString *)hash:(NSString *)stringToHash;
+
 
 /// @name Deprecated methods
 
@@ -410,10 +421,10 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
  *  Call to action handler for in-app message buttons implemented by your view controller to receive in-app message
     button click actions.
  *
- *  @param buttonID  Button index
- *  @param title     Title provided for the button
- *  @param urlString Deeplink url string provided.
- *  @param status    Pyze deep link status.
+ *  @param buttonIndex  Button index
+ *  @param title        Title provided for the button
+ *  @param urlString    Deeplink url string provided.
+ *  @param status       Pyze deep link status.
  *
  *  @see showUnreadInAppNotificationUI and showInAppNotificationUI methods.
  *

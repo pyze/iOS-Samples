@@ -132,6 +132,7 @@
 				TargetAttributes = {
 					4616EFD91BF62AC000D06C73 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -341,6 +342,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "34ab189c-6759-40cb-84f9-f3376900f19b";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftCocoapods/SwiftCocoapods-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -355,6 +357,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.SwiftCocoapods;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftCocoapods/SwiftCocoapods-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};

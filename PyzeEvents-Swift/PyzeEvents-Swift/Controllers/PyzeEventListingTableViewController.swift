@@ -10,7 +10,7 @@ import UIKit
 
 class PyzeEventListingTableViewController: UITableViewController, PyzeClassParserDelegate {
 
-    let textCellIdentifier = "eventListingCell"
+   let openextCellIdentifier = "eventListingCell"
     
     let detailSBIdentifier = "detailMethodVC"
     
@@ -46,7 +46,7 @@ class PyzeEventListingTableViewController: UITableViewController, PyzeClassParse
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier, forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier(openextCellIdentifier, forIndexPath: indexPath)
        
         let src = listingItems[indexPath.row]
         cell.textLabel?.text = src.title

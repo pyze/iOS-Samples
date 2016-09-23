@@ -3111,5 +3111,285 @@ PyzeGeoPoint;
 
 @end
 
+
+/**
+ * ### PyzeiMessageApps
+ * Subclass of PyzeCustomEvent can be used to post events related to iMessage apps and extensions.
+ *
+ * - Since: v2.7.0
+ */
+@interface PyzeiMessageApps : PyzeMessaging
+
+// Write usage with sample code to fill attributes and call sequence.
+
+/**
+ *  Post insert message details.
+ *
+ *  Usage:
+ *
+ *      -(void) insertMessageOnCurrentConversation {
+ *          MSConversation * conversation = self.activeConversation;
+ *          if (conversation) {
+ *          MSMessageTemplateLayout * activeLayout = [[MSMessageTemplateLayout alloc] init];
+ *          activeLayout.image = image;
+ *          activeLayout.caption = @"Message Counter";
+ *          activeLayout.subcaption = @"Message subcaption";
+ *          activeLayout.trailingCaption = @"Trailing caption";
+ *          activeLayout.trailingSubcaption = @"Trailing Subcaption";
+ *          activeLayout.mediaFileURL = [NSURL URLWithString:@"Path to media URL"];
+ *          activeLayout.imageTitle = @"Image counter";
+ *          activeLayout.imageSubtitle = @"Image subtitle";
+ *
+ *          MSMessage * message = [[MSMessage alloc] init];
+ *          message.layout = activeLayout;
+ *          message.URL = [NSURL URLWithString:@"Empty URL"];
+ *          message.summaryText = @"This is Summary";
+ *
+ *          [conversation insertMessage:message completionHandler:^(NSError * error) {
+ *              NSMutableDictionary * dictionary = [self fillMessagingAttributes:message 
+ *                                                                  conversation:conversation];
+ *
+ *              dictionary[@"additional attributes"] = "may be set before calling";
+ *              [PyzeiMessageApps postInsertMessageWithAttributes: dictionary];
+ *          }];
+ *          }
+ *      }
+ *
+ *      -(NSMutableDictionary *) fillMessagingAttributes:(MSMessage *)message
+ *                                          conversation:(MSConversation *)conversation
+ *      {
+ *          NSMutableDictionary * attributes = [NSMutableDictionary dictionary];
+ *          // Message details
+ *          if (message) {
+ *              if (message.URL) attributes[@"URL"] = @"1";
+ *              if (message.summaryText) attributes[@"summaryText"] = @"1";
+ *          }
+ *          // message layout details
+ *          MSMessageTemplateLayout * layout = (MSMessageTemplateLayout *)message.layout;
+ *          if (layout) {
+ *              if (layout.caption) attributes[@"caption"] = @"1";
+ *              if (layout.subcaption) attributes [@"subcaption"] = @"1";
+ *              if (layout.trailingCaption) attributes[@"trailingCaption"] = @"1";
+ *              if (layout.trailingSubcaption) attributes[@"trailingSubcaption"] = @"1";
+ *              if (layout.image) attributes[@"image"] = @"1";
+ *              if (layout.mediaFileURL) attributes[@"mediaFileURL"] =  @"1";
+ *              if (layout.imageTitle) attributes[@"imageTitle"] = @"1";
+ *              if (layout.imageSubtitle) attributes[@"imageSubtitle"] = @"1";
+ *          }
+ *          // conversation details
+ *          if (conversation) {
+ *              attributes[@"localParticipantHash"] = [Pyze hash:[conversation.localParticipantIdentifier UUIDString]];
+ *              if (conversation.remoteParticipantIdentifiers) 
+ *                   attributes[@"remoteParticipants"] = @(conversation.remoteParticipantIdentifiers.count);
+ *
+ *              NSMutableString * remoteParticipantHashes = [NSMutableString string];
+ *              for (NSUUID * uuid in conversation.remoteParticipantIdentifiers) {
+ *                  [remoteParticipantHashes appendString:[Pyze hash:[uuid UUIDString]]];
+ *              }
+ *
+ *              if (remoteParticipantHashes && remoteParticipantHashes.length) 
+ *                  attributes[@"remoteParticipantsHashes"] = remoteParticipantHashes;
+ *          }
+ *          return attributes;
+ *       }
+ *
+ *
+ *  @param attributes Additional attributes.
+ */
++(void) postInsertMessageWithAttributes: (NSMutableDictionary *) attributes;
+
+
+/**
+ *  Post insert sticker details.
+ *
+ *  Usage:
+ *
+ *      -(void) insertStickerOnCurrentConversation {
+ *          MSConversation * conversation = self.activeConversation;
+ *          if (conversation) {
+ *              MSSticker * sticker = [[MSSticker alloc] initWithContentsOfFileURL:[NSURL URLWithString:@"URL to sticker file"]
+ *                                                            localizedDescription:@"description"
+ *                                                                           error:nil];
+ *
+ *              [conversation insertSticker:sticker completionHandler:^(NSError * _Nullable) {
+ *              NSMutableDictionary * attributes = [NSMutableDictionary dictionary];
+ *
+ *              // conversation details
+ *              attributes[@"localParticipantHash"] = [Pyze hash:[conversation.localParticipantIdentifier UUIDString]];
+ *              if (conversation.remoteParticipantIdentifiers)
+ *                   attributes[@"remoteParticipants"] = @(conversation.remoteParticipantIdentifiers.count);
+ *
+ *              NSMutableString * remoteParticipantHashes = [NSMutableString string];
+ *              for (NSUUID * uuid in conversation.remoteParticipantIdentifiers) {
+ *                  [remoteParticipantHashes appendString:[Pyze hash:[uuid UUIDString]]];
+ *              }
+ *
+ *              if (remoteParticipantHashes && remoteParticipantHashes.length)
+ *                  attributes[@"remoteParticipantsHashes"] = remoteParticipantHashes;
+ *
+ *              [PyzeiMessageApps postInsertStickerWithLocalizedDescription:sticker.localizedDescription.length
+ *                                            withStickerImageFileURLString:[sticker.imageFileURL absoluteString].length
+ *                                                           withAttributes:attributes];
+ *              }];
+ *          }
+ *        }
+ *
+ *  @param descriptionProvided Boolean value to check whether description provided or not.
+ *  @param URLstringProvided   URL to sticker is provided or not.
+ *  @param attributes          Other attributes to be processed.
+ */
++(void) postInsertStickerWithLocalizedDescription: (BOOL) descriptionProvided
+                    withStickerImageFileURLString: (BOOL) URLstringProvided
+                                   withAttributes: (NSMutableDictionary *) attributes;
+
+/**
+ *  Post insert text details.
+ *
+ *  Usage:
+ *
+ *      -(void) insertTextOnCurrentConversation {
+ *          MSConversation * conversation = self.activeConversation;
+ *          if (conversation) {
+ *              [conversation insertText:@"Pyze" completionHandler:^(NSError * error) {
+ *                  NSMutableDictionary * attributes = [NSMutableDictionary dictionary];
+ *
+ *                  // conversation details
+ *                  attributes[@"localParticipantHash"] = [Pyze hash:[conversation.localParticipantIdentifier UUIDString]];
+ *                  if (conversation.remoteParticipantIdentifiers)
+ *                      attributes[@"remoteParticipants"] = @(conversation.remoteParticipantIdentifiers.count);
+ *
+ *                      NSMutableString * remoteParticipantHashes = [NSMutableString string];
+ *                      for (NSUUID * uuid in conversation.remoteParticipantIdentifiers) {
+ *                      [remoteParticipantHashes appendString:[Pyze hash:[uuid UUIDString]]];
+ *                  }
+ *
+ *                  if (remoteParticipantHashes && remoteParticipantHashes.length)
+ *                      attributes[@"remoteParticipantsHashes"] = remoteParticipantHashes;
+ *
+ *                  [PyzeiMessageApps postInsertTextWithText:true withAttributes:attributes];
+ *              }];
+ *         }
+ *      }
+ *
+ *  @param textProvided True if text provided or false.
+ *  @param attributes   Other attributes to process.
+ */
++(void) postInsertTextWithText:(BOOL) textProvided
+                withAttributes:(NSMutableDictionary *) attributes;
+
+
+/**
+ *  Post insert attachment details.
+ *
+ *  Usage:
+ *
+ *      -(void) insertAttachmentOnCurrentConversation {
+ *          MSConversation * conversation = self.activeConversation;
+ *          if (conversation) {
+ *              [conversation insertAttachment:[NSURL URLWithString:@"URL to attachment"]
+ *                       withAlternateFilename:@"My Attachement"
+ *                           completionHandler:^(NSError * error)
+ *              {
+ *
+ *                  NSMutableDictionary * attributes = [NSMutableDictionary dictionary];
+ *
+ *                  // conversation details
+ *                  attributes[@"localParticipantHash"] = [Pyze hash:[conversation.localParticipantIdentifier UUIDString]];
+ *                  if (conversation.remoteParticipantIdentifiers)
+ *                      attributes[@"remoteParticipants"] = @(conversation.remoteParticipantIdentifiers.count);
+ *
+ *                      NSMutableString * remoteParticipantHashes = [NSMutableString string];
+ *                      for (NSUUID * uuid in conversation.remoteParticipantIdentifiers) {
+ *                      [remoteParticipantHashes appendString:[Pyze hash:[uuid UUIDString]]];
+ *                  }
+ *
+ *                  if (remoteParticipantHashes && remoteParticipantHashes.length)
+ *                      attributes[@"remoteParticipantsHashes"] = remoteParticipantHashes;
+ *
+ *                  [PyzeiMessageApps postInsertAttachmentWithURL:true
+ *                                          withAlternateFileName:true
+ *                                                 withAttributes:attributes];
+ *               }];
+ *           }
+ *        }
+ *
+ *  @param URLProvided      True if url to attachment provided.
+ *  @param fileNameProvided True if alternate filename provided for attachment
+ *  @param attributes       Other attributes to process.
+ */
++(void) postInsertAttachmentWithURL: (BOOL) URLProvided
+              withAlternateFileName: (BOOL) fileNameProvided
+                     withAttributes: (NSMutableDictionary *) attributes;
+
+// Write usage with sample code to fill attributes and call sequence as done in sample app.
+
+/**
+ *  Post message start sending details.
+ *
+ *  Usage:
+ *
+ *      // Called when the user taps the send button.
+ *      -(void)didStartSendingMessage:(MSMessage *)message conversation:(MSConversation *)conversation {
+ *
+ *          NSMutableDictionary * attributes = [self fillMessagingAttributes:message conversation:conversation];
+ *          attributes = [self fillMessagingAttributes:message conversation:conversation];
+ *          attributes[@"additional attributes"] = "may be set before calling";
+ *
+ *          [PyzeiMessageApps postMessageStartSendingWithAttributes:attributes];
+ *      }
+ *
+ *      -(NSMutableDictionary *) fillMessagingAttributes:(MSMessage *)message conversation:(MSConversation *)conversation
+ *      {
+ *          // See fillMessagingAttributes in postInsertMessageWithAttributes.
+ *      }
+ *
+ *  @param attributes                  Other attributes to process.
+ */
+
++(void) postMessageStartSendingWithAttributes: (NSMutableDictionary *) attributes;
+
+
+/**
+ *  Post receive message details.
+ *
+ *  Usage:
+ *
+ *      // Called when a message arrives that was generated by another instance of this extension on a remote device.
+ *      -(void)didReceiveMessage:(MSMessage *)message conversation:(MSConversation *)conversation {
+ *
+ *          [PyzeiMessageApps postReceiveMessageWithAttributes:[self fillMessagingAttributes:message conversation:conversation]];
+ *      }
+ *
+ *      -(NSMutableDictionary *) fillMessagingAttributes:(MSMessage *)message conversation:(MSConversation *)conversation
+ *      {
+ *          // See fillMessagingAttributes in postInsertMessageWithAttributes. 
+ *      }
+ *
+ *  @param attributes                  Other attributes to process.
+ */
++(void) postReceiveMessageWithAttributes: (NSMutableDictionary *) attributes;
+
+/**
+ *  Post cancel sending message details.
+ *
+ *  Usage:
+ *
+ *      // Called when the user deletes the message without sending it.
+ *      -(void)didCancelSendingMessage:(MSMessage *)message conversation:(MSConversation *)conversation {
+ *
+ *          [PyzeiMessageApps postCancelSendingMessageWithAttributes:[self fillMessagingAttributes:message conversation:conversation]];
+ *      }
+ *
+ *      -(NSMutableDictionary *) fillMessagingAttributes:(MSMessage *)message conversation:(MSConversation *)conversation
+ *      {
+ *          // See fillMessagingAttributes in postInsertMessageWithAttributes.
+ *      }
+ *
+ *  @param attributes                  Other attributes to process.
+ */
++(void) postCancelSendingMessageWithAttributes: (NSMutableDictionary *) attributes;
+
+@end
+
 NS_ASSUME_NONNULL_END
 
