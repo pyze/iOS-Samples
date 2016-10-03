@@ -15,12 +15,6 @@
 
 @implementation MessagesViewController
 
-+(void) load
-{
-    [Pyze initialize:@"QF3zSg9SRwWdV6rsncEMBw" withLogThrottling:PyzelogLevelMinimal];
-}
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tokenCounter = 0;
@@ -28,6 +22,41 @@
     // Do any additional setup after loading the view.
     
 }
+
+// Initialize Pyze in the load method
++(void) load {
+    [Pyze initialize:@"QF3zSg9SRwWdV6rsncEMBw" withLogThrottling:PyzelogLevelMinimal];
+}
+
+// Helper Method to create a dynamic image we will use when sending a message
+-(UIImage *) snapShot {
+    CGRect frameRect = CGRectMake(self.view.frame.size.width, self.view.frame.size.height, 300, 300);
+    UIView * frameView = [[UIView alloc] initWithFrame:frameRect];
+    frameView.backgroundColor = [UIColor whiteColor];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(75, 75, 150, 150)];
+    [label setFont:[UIFont systemFontOfSize:40.0f]];
+    label.backgroundColor = [UIColor blackColor];
+    label.textColor = [UIColor colorWithRed:69 / 255.0f green:165 / 255.0f blue:238 / 255.0f alpha:1.0f];
+    label.text = [NSString stringWithFormat:@"%d", (int)++self.tokenCounter];
+    label.layer.cornerRadius = CGRectGetWidth(frameRect) / 2.0f;
+    label.clipsToBounds = YES;
+    label.textAlignment = NSTextAlignmentCenter;
+    
+    [frameView addSubview:label];
+    [self.view addSubview:frameView];
+    
+    UIGraphicsBeginImageContextWithOptions(frameRect.size, NO, [[UIScreen mainScreen] scale]);
+    [frameView drawViewHierarchyInRect:frameView.bounds afterScreenUpdates:YES];
+    UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    [frameView removeFromSuperview];
+    
+    return image;
+}
+
+// Create a iMessage upon button click
 - (IBAction)createiMessage {
     
     UIImage * image = [self snapShot];
@@ -124,32 +153,7 @@
 
 }
 
--(UIImage *) snapShot {
-    CGRect frameRect = CGRectMake(self.view.frame.size.width, self.view.frame.size.height, 300, 300);
-    UIView * frameView = [[UIView alloc] initWithFrame:frameRect];
-    frameView.backgroundColor = [UIColor whiteColor];
-    
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(75, 75, 150, 150)];
-    [label setFont:[UIFont systemFontOfSize:40.0f]];
-    label.backgroundColor = [UIColor blackColor];
-    label.textColor = [UIColor colorWithRed:69 / 255.0f green:165 / 255.0f blue:238 / 255.0f alpha:1.0f];
-    label.text = [NSString stringWithFormat:@"%d", (int)++self.tokenCounter];
-    label.layer.cornerRadius = CGRectGetWidth(frameRect) / 2.0f;
-    label.clipsToBounds = YES;
-    label.textAlignment = NSTextAlignmentCenter;
-    
-    [frameView addSubview:label];
-    [self.view addSubview:frameView];
-    
-    UIGraphicsBeginImageContextWithOptions(frameRect.size, NO, [[UIScreen mainScreen] scale]);
-    [frameView drawViewHierarchyInRect:frameView.bounds afterScreenUpdates:YES];
-    UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    [frameView removeFromSuperview];
-    
-    return image;
-}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
