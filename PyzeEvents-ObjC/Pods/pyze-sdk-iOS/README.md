@@ -9,7 +9,9 @@ Visit **<a href="http://pyze.com/iOS.html">iOS Developer Center</a>** to learn m
 
 ###<a href="http://pyze.com/iOS.html">iOS Developer Center</a>
 
-iOS versions supported are 7.x, 8.x and 9.x.
-<a href="https://github.com/pyze/iOS-Library/wiki/iOS-Troubleshooting-Guide">iOS Troubleshooting Guide</a>
+iOS versions supported are 8.x, 9.x and 10.x through <a href="https://pyze.com/iOS-Install-Cocoapods.html">Cocoapods</a>. For iOS version 7.x follow the instructions provided <a href="https://pyze.com/iOS-Install-Framework.html">here</a>.
+
+
+<a href="https://github.com/pyze/iOS-Library/wiki/iOS-Troubleshooting-Guide">iOS Troubleshooting Guide</a> is available here.
 
 <br>

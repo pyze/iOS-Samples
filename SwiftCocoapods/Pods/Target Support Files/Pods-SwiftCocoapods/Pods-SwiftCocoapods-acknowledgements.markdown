@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## pyze-sdk-iOS
+## pyze-sdk-iOS7
 
 Copyright (c) 2013-2016, Pyze Technologies.
 All rights reserved.

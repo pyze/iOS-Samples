@@ -353,6 +353,7 @@
 			baseConfigurationReference = E69FB2DFF2B0661D1E5954F0 /* Pods-iOSCrashException.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = NO;
 				INFOPLIST_FILE = iOSCrashException/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robosoftin.iOSCrashException;
@@ -365,6 +366,7 @@
 			baseConfigurationReference = 49980F0F7068271AD82ECFC4 /* Pods-iOSCrashException.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = NO;
 				INFOPLIST_FILE = iOSCrashException/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robosoftin.iOSCrashException;

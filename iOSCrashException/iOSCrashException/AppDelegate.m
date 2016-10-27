@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <Pyze/Pyze.h>
+@import Pyze;
 
 @interface AppDelegate ()
 

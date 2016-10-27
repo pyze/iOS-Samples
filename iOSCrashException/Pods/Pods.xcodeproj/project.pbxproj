@@ -31,6 +31,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>0D151FA06B767D501C3B2608D4E878F9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>432D9D1A523ECD9417536EF71E039CDE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>0D29E54E817A4D6D5020816374D5C525</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -144,6 +157,21 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>432D9D1A523ECD9417536EF71E039CDE</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5D7F2B89C47D873B2050CAFF4E0DEA36</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>pyze-sdk-iOS-Swift</string>
+			<key>path</key>
+			<string>pyze-sdk-iOS-Swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>45E786FFF9B57E741F2D1101DB7CBA22</key>
 		<dict>
 			<key>children</key>
@@ -171,27 +199,16 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>66446925B1402B5A1A105C9F575E3CF4</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>path</key>
-			<string>Pyze.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6803BF6CFF22D6B85539BD2859502E8D</key>
+		<key>5D7F2B89C47D873B2050CAFF4E0DEA36</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>B1BD09A9396C4AD3F54E5F530B26E977</string>
+				<string>FE496FD423648FF4454377DE009F5AE9</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Pods</string>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -201,7 +218,7 @@
 			<array>
 				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
 				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>6803BF6CFF22D6B85539BD2859502E8D</string>
+				<string>0D151FA06B767D501C3B2608D4E878F9</string>
 				<string>45E786FFF9B57E741F2D1101DB7CBA22</string>
 				<string>E09A1C310B8CF273D086E9F6E1B9804B</string>
 			</array>
@@ -323,19 +340,6 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>87876E743926339DFA30BA7C2FBC3716</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>66446925B1402B5A1A105C9F575E3CF4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>8999B501167539603353EE399A0B8CAE</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -415,21 +419,6 @@
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
 			<string>Pods-iOSCrashException-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B1BD09A9396C4AD3F54E5F530B26E977</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>87876E743926339DFA30BA7C2FBC3716</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>pyze-sdk-iOS</string>
-			<key>path</key>
-			<string>pyze-sdk-iOS</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -646,6 +635,17 @@
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Release</string>
+		</dict>
+		<key>FE496FD423648FF4454377DE009F5AE9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>path</key>
+			<string>Pyze.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>

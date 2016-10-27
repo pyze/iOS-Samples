@@ -1,0 +1,12 @@
+PODS:
+  - pyze-sdk-iOS (2.9.1)
+
+DEPENDENCIES:
+  - pyze-sdk-iOS
+
+SPEC CHECKSUMS:
+  pyze-sdk-iOS: cd341a221577d0c6b1d97f887a80a415fb340339
+
+PODFILE CHECKSUM: dc7cf2046e947f1d51cf3ae6136a29d8d5e93aaf
+
+COCOAPODS: 1.0.1

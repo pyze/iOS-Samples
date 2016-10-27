@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Pyze
 
 class PyzeEventListingTableViewController: UITableViewController, PyzeClassParserDelegate {
 

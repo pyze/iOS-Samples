@@ -1,12 +1,12 @@
 PODS:
-  - pyze-sdk-iOS (2.7.1)
+  - pyze-sdk-iOS-Swift (2.7.1.4)
 
 DEPENDENCIES:
-  - pyze-sdk-iOS
+  - pyze-sdk-iOS-Swift
 
 SPEC CHECKSUMS:
-  pyze-sdk-iOS: fa220312c726fd88a0f6a7ec2f05dcb48a0e13c8
+  pyze-sdk-iOS-Swift: c2f8cef2adf783fa783adf4c25e461a207784b1c
 
-PODFILE CHECKSUM: 2b351dff3f3dae2d48a6e8f12f0b3f532b3a44dc
+PODFILE CHECKSUM: bd148b64e0962d25581ee4f067720284c1cf3c97
 
 COCOAPODS: 1.0.1

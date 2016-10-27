@@ -13,11 +13,10 @@
 		467696501D674C45006A7AF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4676964E1D674C45006A7AF1 /* Main.storyboard */; };
 		467696521D674C45006A7AF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467696511D674C45006A7AF1 /* Assets.xcassets */; };
 		467696551D674C45006A7AF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467696531D674C45006A7AF1 /* LaunchScreen.storyboard */; };
-		A51F3335F04F99DA34AD4E78 /* libPods-InAppTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B272DEA4CE2D1FB6914F13 /* libPods-InAppTest.a */; };
+		F4DED501029312DBB2D019F8 /* libPods-InAppTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E71FBC32709FA9D3D189395B /* libPods-InAppTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		05B272DEA4CE2D1FB6914F13 /* libPods-InAppTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InAppTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C32B265FFDCCDE8A1DD0B5E /* Pods-InAppTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InAppTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InAppTest/Pods-InAppTest.debug.xcconfig"; sourceTree = "<group>"; };
 		467696421D674C45006A7AF1 /* InAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		467696461D674C45006A7AF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -29,6 +28,7 @@
 		467696511D674C45006A7AF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		467696541D674C45006A7AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		467696561D674C45006A7AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E71FBC32709FA9D3D189395B /* libPods-InAppTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InAppTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C573BFE657FD8B1F11D9A4 /* Pods-InAppTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InAppTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-InAppTest/Pods-InAppTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A51F3335F04F99DA34AD4E78 /* libPods-InAppTest.a in Frameworks */,
+				F4DED501029312DBB2D019F8 /* libPods-InAppTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +89,7 @@
 		4DE9B534B730257A783DBC32 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				05B272DEA4CE2D1FB6914F13 /* libPods-InAppTest.a */,
+				E71FBC32709FA9D3D189395B /* libPods-InAppTest.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -291,7 +291,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -332,7 +332,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -345,6 +345,8 @@
 			baseConfigurationReference = 0C32B265FFDCCDE8A1DD0B5E /* Pods-InAppTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = InAppTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.InAppTest;
@@ -357,6 +359,8 @@
 			baseConfigurationReference = F7C573BFE657FD8B1F11D9A4 /* Pods-InAppTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = InAppTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.InAppTest;

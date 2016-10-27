@@ -36,7 +36,6 @@
 		4644C2001C19B4EE0054191E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4644C2031C19B4EE0054191E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4644C2051C19B4EE0054191E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4644C20D1C19C18E0054191E /* PyzeEvents-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PyzeEvents-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		4644C20F1C19C18F0054191E /* PyzeClassParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PyzeClassParser.h; path = ModelClass/PyzeClassParser.h; sourceTree = "<group>"; };
 		4644C2101C19C18F0054191E /* PyzeClassParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PyzeClassParser.m; path = ModelClass/PyzeClassParser.m; sourceTree = "<group>"; };
 		4644C2111C19C18F0054191E /* PyzeTableViewSrc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PyzeTableViewSrc.h; path = ModelClass/PyzeTableViewSrc.h; sourceTree = "<group>"; };
@@ -46,6 +45,7 @@
 		4644C21C1C19C2650054191E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4644C21F1C19C3D90054191E /* PyzeEventListingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PyzeEventListingTableViewController.swift; path = Controllers/PyzeEventListingTableViewController.swift; sourceTree = "<group>"; };
 		4644C2211C19D2E90054191E /* PyzeEventDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PyzeEventDetailTableViewController.swift; path = Controllers/PyzeEventDetailTableViewController.swift; sourceTree = "<group>"; };
+		46ADD94E1DA3F91C00C3BB47 /* PyzeEvents-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PyzeEvents-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		46DBCE691C1B04DE002A3C88 /* ALEventsTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALEventsTest.h; sourceTree = "<group>"; };
 		46DBCE6A1C1B04DE002A3C88 /* ALEventsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALEventsTest.m; sourceTree = "<group>"; };
 		46DBCE6B1C1B04DE002A3C88 /* ALRandomDictionaryGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALRandomDictionaryGenerator.h; sourceTree = "<group>"; };
@@ -109,8 +109,8 @@
 				4644C20B1C19C10B0054191E /* Controllers */,
 				4644C1F91C19B4EE0054191E /* AppDelegate.swift */,
 				4644C1FB1C19B4EE0054191E /* ViewController.swift */,
+				46ADD94E1DA3F91C00C3BB47 /* PyzeEvents-Swift-Bridging-Header.h */,
 				4644C1FD1C19B4EE0054191E /* Main.storyboard */,
-				4644C20D1C19C18E0054191E /* PyzeEvents-Swift-Bridging-Header.h */,
 				4644C2001C19B4EE0054191E /* Assets.xcassets */,
 				4644C2021C19B4EE0054191E /* LaunchScreen.storyboard */,
 				4644C2051C19B4EE0054191E /* Info.plist */,
@@ -422,7 +422,7 @@
 					"$(PROJECT_DIR)/PyzeEvents-Swift/PyzeSDK",
 				);
 				INFOPLIST_FILE = "PyzeEvents-Swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robosoft.dictionary;
@@ -446,7 +446,7 @@
 					"$(PROJECT_DIR)/PyzeEvents-Swift/PyzeSDK",
 				);
 				INFOPLIST_FILE = "PyzeEvents-Swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robosoft.dictionary;
