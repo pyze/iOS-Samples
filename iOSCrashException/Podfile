@@ -4,6 +4,6 @@
 # use_frameworks!
 
 target 'iOSCrashException' do
-pod 'pyze-sdk-iOS-Swift'
+pod 'pyze-sdk-iOS'
 end
 

@@ -36,19 +36,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0D151FA06B767D501C3B2608D4E878F9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>432D9D1A523ECD9417536EF71E039CDE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>1961E14E7444BB1DDC9DDA403AEC3BC7</key>
 		<dict>
 			<key>children</key>
@@ -93,21 +80,6 @@
 			<string>PBXGroup</string>
 			<key>name</key>
 			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>432D9D1A523ECD9417536EF71E039CDE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5D7F2B89C47D873B2050CAFF4E0DEA36</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>pyze-sdk-iOS-Swift</string>
-			<key>path</key>
-			<string>pyze-sdk-iOS-Swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -257,19 +229,6 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>5D7F2B89C47D873B2050CAFF4E0DEA36</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FE496FD423648FF4454377DE009F5AE9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>5D904DB226D356F697699FCE59B19DF2</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -296,6 +255,30 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>66446925B1402B5A1A105C9F575E3CF4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>path</key>
+			<string>Pyze.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6803BF6CFF22D6B85539BD2859502E8D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B1BD09A9396C4AD3F54E5F530B26E977</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>6F527A6191A4B84C471B04110F809F3C</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -315,7 +298,7 @@
 			<array>
 				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
 				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>0D151FA06B767D501C3B2608D4E878F9</string>
+				<string>6803BF6CFF22D6B85539BD2859502E8D</string>
 				<string>63B58A34A172D1AA39859C60B5AFD342</string>
 				<string>1961E14E7444BB1DDC9DDA403AEC3BC7</string>
 			</array>
@@ -351,6 +334,19 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>87876E743926339DFA30BA7C2FBC3716</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>66446925B1402B5A1A105C9F575E3CF4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>93A4A3777CF96A4AAC1D13BA6DCCEA73</key>
 		<dict>
@@ -491,6 +487,21 @@
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Release</string>
+		</dict>
+		<key>B1BD09A9396C4AD3F54E5F530B26E977</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>87876E743926339DFA30BA7C2FBC3716</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>pyze-sdk-iOS</string>
+			<key>path</key>
+			<string>pyze-sdk-iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
 		<dict>
@@ -744,17 +755,6 @@
 			<string>text.script.sh</string>
 			<key>path</key>
 			<string>Pods-PyzeEvents-Swift-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE496FD423648FF4454377DE009F5AE9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>path</key>
-			<string>Pyze.framework</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>

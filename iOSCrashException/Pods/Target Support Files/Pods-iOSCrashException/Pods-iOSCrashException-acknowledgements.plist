@@ -14,11 +14,11 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright (c) 2013-2016, Pyze Technologies.
+			<string>Copyright (c) 2013-2016, Pyze Inc.
 All rights reserved.
 </string>
 			<key>Title</key>
-			<string>pyze-sdk-iOS-Swift</string>
+			<string>pyze-sdk-iOS</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

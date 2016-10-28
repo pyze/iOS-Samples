@@ -48,7 +48,7 @@
 {
     [Pyze showInAppNotificationUI:self
                forDisplayMessages:PyzeInAppTypeAll
-        msgNavBarButtonsTextColor:[UIColor blueColor]
+        msgNavBarButtonsTextColor:[UIColor whiteColor]
           msgNavBarButtonsBgColor:[UIColor grayColor]
                  msgNavBarBgColor:[UIColor clearColor]
         msgNavBarCounterTextColor:[UIColor blueColor]];

@@ -6,13 +6,7 @@ target 'MessagesExtension' do
   # use_frameworks!
 
   # Pods for MessagesExtension
-<<<<<<< HEAD
-	pod 'pyze-sdk-iOS'
-=======
-
-  pod 'pyze-sdk-iOS'
->>>>>>> 26b737fe3e2b85487475eb4e8d441ff1ffc9f40c
-
+pod 'pyze-sdk-iOS'
 end
 
 target 'PyzeIMessageApps' do
@@ -21,9 +15,4 @@ target 'PyzeIMessageApps' do
 
   # Pods for PyzeIMessageApps
 
-<<<<<<< HEAD
-=======
-  pod 'pyze-sdk-iOS'
-
->>>>>>> 26b737fe3e2b85487475eb4e8d441ff1ffc9f40c
 end

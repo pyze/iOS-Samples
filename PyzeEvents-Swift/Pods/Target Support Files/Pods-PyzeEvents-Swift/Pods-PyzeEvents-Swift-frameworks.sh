@@ -84,8 +84,8 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${PODS_ROOT}/pyze-sdk-iOS-Swift/Pyze.framework"
+  install_framework "${PODS_ROOT}/pyze-sdk-iOS/Pyze.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_ROOT}/pyze-sdk-iOS-Swift/Pyze.framework"
+  install_framework "${PODS_ROOT}/pyze-sdk-iOS/Pyze.framework"
 fi

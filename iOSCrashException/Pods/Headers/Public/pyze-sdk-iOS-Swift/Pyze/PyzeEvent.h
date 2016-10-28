@@ -1,1 +1,0 @@
-../../../../pyze-sdk-iOS-Swift/Pyze.framework/Headers/PyzeEvent.h

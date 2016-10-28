@@ -3,5 +3,5 @@
 
 target 'PyzeEvents-Swift' do
   use_frameworks!
-pod 'pyze-sdk-iOS-Swift'
+pod 'pyze-sdk-iOS'
 end

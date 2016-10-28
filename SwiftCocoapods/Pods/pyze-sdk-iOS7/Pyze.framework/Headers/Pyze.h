@@ -167,7 +167,27 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 + (void) initialize:(NSString *)pyzeAppKey withLogThrottling: (PyzeLogLevel) logLevel;
 
 
-/// @name  Timer Reference to use with timed custom events
+/**
+ *  Log throttling level can be changed anytime in the app
+ *
+ *  How to use:
+ *
+ *    [Pyze logThrottling:PyzelogLevelMinimal];
+ *
+ *  or
+ *
+ *    [Pyze logThrottling:PyzelogLevelErrors];
+ *
+ *  @param logLevel Log level you would wish to see in the console.
+ *
+ *  - Since: 2.0.5
+ *
+ */
++(void) logThrottling:(PyzeLogLevel) logLevel;
+
+
+
+/// @name  Create Timer Reference to use in Timed Custom Events using PyzeCustomEvent class
 
 /**
  *  Pyze Timer Reference is a time interval since a Pyze internal reference time in seconds with millisecond precision e.g. 6.789 seconds (or 6789 milliseconds)
@@ -188,26 +208,6 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 +(double) timerReference;
 
 
-
-/// @name Throttling logs for troubleshooting
-
-/**
- *  Log throttling level can be changed anytime in the app
- *
- *  How to use:
- *
- *    [Pyze logThrottling:PyzelogLevelMinimal];
- *
- *  or
- *
- *    [Pyze logThrottling:PyzelogLevelErrors];
- *
- *  @param logLevel Log level you would wish to see in the console.
- *
- *  - Since: 2.0.5
- *
- */
-+(void) logThrottling:(PyzeLogLevel) logLevel;
 
 
 
@@ -232,6 +232,18 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
  *  - Since: 2.2.1
  */
 +(void) processReceivedRemoteNotification:(NSDictionary *) userInfo;
+
+
+/**
+ *  Use this API to process the local/remote push notifications. Call this everytime when you receive the remote notification from application:handleActionWithIdentifier:forRemoteNotification:completionHandler:. For example: Button handlers in
+ interactive push notifications. If you are not using button handlers in push messages, you can pass nil to 'identifer' parameter.
+ 
+ *  @param userInfo User information received as a payload.
+ *
+ *  - Since: 2.9.1
+ */
+
++(void) processReceivedRemoteNotificationWithId:(NSString *) identifer withUserInfo:(NSDictionary *) userInfo;
 
 
 /// @name In-App Notifications (using Built-in User Interface)
@@ -328,7 +340,7 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 + (NSString *)hash:(NSString *)stringToHash;
 
 
-/// @name Deprecated methods
+/// @name Deprecated methods (to be removed in subsequent releases)
 
 /**
  *  Deprecated in favor of static initialize: method

@@ -1,6 +1,0 @@
-framework module Pyze {
-  umbrella header "Pyze.h"
-
-  export *
-  module * { export * }
-}

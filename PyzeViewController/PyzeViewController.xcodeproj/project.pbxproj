@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		461BCD111C04AF1600E864B8 /* PyzeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 461BCD101C04AF1600E864B8 /* PyzeCollectionViewController.m */; };
 		461BCD141C04AF6F00E864B8 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 461BCD131C04AF6F00E864B8 /* CollectionViewCell.m */; };
-		467716601C463A0500F36217 /* Pyze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4677165F1C463A0500F36217 /* Pyze.framework */; };
 		46B1BD321BFB5C5000B8CCCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B1BD311BFB5C5000B8CCCE /* main.m */; };
 		46B1BD351BFB5C5000B8CCCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B1BD341BFB5C5000B8CCCE /* AppDelegate.m */; };
 		46B1BD381BFB5C5000B8CCCE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B1BD371BFB5C5000B8CCCE /* ViewController.m */; };
@@ -28,7 +27,6 @@
 		461BCD101C04AF1600E864B8 /* PyzeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PyzeCollectionViewController.m; sourceTree = "<group>"; };
 		461BCD121C04AF6F00E864B8 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		461BCD131C04AF6F00E864B8 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
-		4677165F1C463A0500F36217 /* Pyze.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pyze.framework; sourceTree = "<group>"; };
 		46B1BD2D1BFB5C5000B8CCCE /* PyzeViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PyzeViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B1BD311BFB5C5000B8CCCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		46B1BD331BFB5C5000B8CCCE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,7 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				467716601C463A0500F36217 /* Pyze.framework in Frameworks */,
 				46D96F691C10969400F4B186 /* SystemConfiguration.framework in Frameworks */,
 				46D96F671C10968D00F4B186 /* CoreTelephony.framework in Frameworks */,
 				F11C1A3B0413939311940E69 /* libPods-PyzeViewController.a in Frameworks */,
@@ -114,7 +111,6 @@
 		46B1BD2F1BFB5C5000B8CCCE /* PyzeViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4677165F1C463A0500F36217 /* Pyze.framework */,
 				461BCD0E1C04AEDD00E864B8 /* ViewControllers */,
 				46B1BD331BFB5C5000B8CCCE /* AppDelegate.h */,
 				46B1BD341BFB5C5000B8CCCE /* AppDelegate.m */,
@@ -388,7 +384,7 @@
 					"$(PROJECT_DIR)/PyzeViewController",
 				);
 				INFOPLIST_FILE = PyzeViewController/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.PyzeViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -406,7 +402,7 @@
 					"$(PROJECT_DIR)/PyzeViewController",
 				);
 				INFOPLIST_FILE = PyzeViewController/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.PyzeViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
