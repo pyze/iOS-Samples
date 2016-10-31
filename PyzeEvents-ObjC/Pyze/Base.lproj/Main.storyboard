@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eFC-eQ-hY7">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eFC-eQ-hY7">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -23,7 +23,7 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell tag="100" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="cn1-r0-vrC" imageView="q9y-gY-den" style="IBUITableViewCellStyleDefault" id="joo-yo-dwV">
-                                        <rect key="frame" x="0.0" y="86" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="86" width="1000" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="joo-yo-dwV" id="8NP-8l-bn9">
                                             <frame key="frameInset" width="342" height="43"/>
@@ -83,11 +83,11 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XOt-Ur-cgX" id="FEu-AT-uxR">
-                                    <frame key="frameInset" width="342" height="43"/>
+                                    <frame key="frameInset" width="342" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ccc-kH-12F">
-                                            <frame key="frameInset" minX="15" width="325" height="43"/>
+                                            <frame key="frameInset" minX="15" width="325" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -179,27 +179,22 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3T-IM-aq9">
-                                <state key="normal" title="PyzeEvents"/>
+                                <state key="normal" title="Track Curated Pyze Events"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="9"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="push" identifier="push1" id="hWV-Dp-QSY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGW-hg-cU8">
-                                <state key="normal" title="pyze.com"/>
-                                <connections>
-                                    <segue destination="MA3-MR-TYA" kind="push" identifier="push2" id="xtQ-Na-Jjq"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pyzeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="G64-XZ-OmR"/>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXu-57-rUk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pyzeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="G64-XZ-OmR">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="109" id="njj-dl-rpq"/>
+                                    <constraint firstAttribute="height" constant="190" id="AgI-88-ArI"/>
                                 </constraints>
-                                <state key="normal" title="Show InApp"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXu-57-rUk">
+                                <state key="normal" title="Show InApp Messages"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
@@ -208,31 +203,63 @@
                                     <action selector="showInAppMessage:" destination="WoG-sr-zY0" eventType="touchUpInside" id="IzN-Oo-h8I"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3K-eu-Kvf">
+                                <state key="normal" title="Enable Geolocations"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="enableLocations:" destination="WoG-sr-zY0" eventType="touchUpInside" id="e4g-2F-xsA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGW-hg-cU8">
+                                <state key="normal" title="pyze.com"/>
+                                <connections>
+                                    <segue destination="MA3-MR-TYA" kind="push" identifier="push2" id="xtQ-Na-Jjq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source code along with other Pyze samples available at https://github.com/pyze/iOS-Samples." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGR-ci-2uF">
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="JXu-57-rUk" firstAttribute="top" secondItem="IGW-hg-cU8" secondAttribute="bottom" constant="8" id="4eI-Hf-lql"/>
-                            <constraint firstItem="98o-Un-LcI" firstAttribute="top" secondItem="G64-XZ-OmR" secondAttribute="bottom" constant="4" id="87W-8l-REF"/>
-                            <constraint firstItem="G64-XZ-OmR" firstAttribute="centerX" secondItem="P8M-zG-UJU" secondAttribute="centerX" id="8qk-TE-yIW"/>
-                            <constraint firstItem="JXu-57-rUk" firstAttribute="centerX" secondItem="IGW-hg-cU8" secondAttribute="centerX" id="IiT-p1-rKJ"/>
-                            <constraint firstItem="98o-Un-LcI" firstAttribute="trailing" secondItem="x3T-IM-aq9" secondAttribute="trailing" constant="-11" id="SGQ-T3-bhZ"/>
-                            <constraint firstItem="G64-XZ-OmR" firstAttribute="top" secondItem="OgU-lr-XOW" secondAttribute="bottom" id="SdL-QG-NLq"/>
-                            <constraint firstItem="x3T-IM-aq9" firstAttribute="centerX" secondItem="IGW-hg-cU8" secondAttribute="centerX" id="YCt-B6-Pm9"/>
-                            <constraint firstItem="x3T-IM-aq9" firstAttribute="top" secondItem="98o-Un-LcI" secondAttribute="bottom" constant="8" symbolic="YES" id="eWF-oN-0vJ"/>
-                            <constraint firstItem="98o-Un-LcI" firstAttribute="leading" secondItem="x3T-IM-aq9" secondAttribute="leading" constant="11" id="g6c-Mg-Iab"/>
-                            <constraint firstItem="IGW-hg-cU8" firstAttribute="top" secondItem="x3T-IM-aq9" secondAttribute="bottom" constant="3" id="lO9-Gi-9PW"/>
-                            <constraint firstItem="IGW-hg-cU8" firstAttribute="centerX" secondItem="G64-XZ-OmR" secondAttribute="centerX" id="llY-Ka-BrE"/>
+                            <constraint firstItem="98o-Un-LcI" firstAttribute="top" secondItem="G64-XZ-OmR" secondAttribute="bottom" constant="8" symbolic="YES" id="3pE-Fb-ZIb"/>
+                            <constraint firstItem="x3T-IM-aq9" firstAttribute="trailing" secondItem="JXu-57-rUk" secondAttribute="trailing" id="5Zf-R6-VtN"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="pGR-ci-2uF" secondAttribute="leading" id="6Wq-RL-3cY"/>
+                            <constraint firstItem="JXu-57-rUk" firstAttribute="leading" secondItem="e3K-eu-Kvf" secondAttribute="leading" id="7fZ-hT-Epn"/>
+                            <constraint firstItem="JXu-57-rUk" firstAttribute="trailing" secondItem="e3K-eu-Kvf" secondAttribute="trailing" id="C6g-La-fhb"/>
+                            <constraint firstItem="x3T-IM-aq9" firstAttribute="top" secondItem="98o-Un-LcI" secondAttribute="bottom" constant="8" symbolic="YES" id="O9P-EZ-lxc"/>
+                            <constraint firstItem="98o-Un-LcI" firstAttribute="trailing" secondItem="x3T-IM-aq9" secondAttribute="trailing" id="Pxw-hB-Qqq"/>
+                            <constraint firstItem="98o-Un-LcI" firstAttribute="leading" secondItem="x3T-IM-aq9" secondAttribute="leading" id="T0u-Rs-j3Q"/>
+                            <constraint firstItem="lwk-v5-vcV" firstAttribute="top" secondItem="pGR-ci-2uF" secondAttribute="bottom" constant="20" id="bVp-YK-duI"/>
+                            <constraint firstItem="IGW-hg-cU8" firstAttribute="centerX" secondItem="pGR-ci-2uF" secondAttribute="centerX" id="baZ-yB-F3N"/>
+                            <constraint firstItem="G64-XZ-OmR" firstAttribute="leading" secondItem="P8M-zG-UJU" secondAttribute="leadingMargin" constant="58" id="bqz-Hw-DWv"/>
+                            <constraint firstItem="98o-Un-LcI" firstAttribute="leading" secondItem="P8M-zG-UJU" secondAttribute="leadingMargin" constant="41" id="dNy-Sn-wjz"/>
+                            <constraint firstItem="x3T-IM-aq9" firstAttribute="leading" secondItem="JXu-57-rUk" secondAttribute="leading" id="eE9-vG-elU"/>
+                            <constraint firstItem="G64-XZ-OmR" firstAttribute="top" secondItem="OgU-lr-XOW" secondAttribute="bottom" id="fOa-yY-Xcf"/>
+                            <constraint firstItem="JXu-57-rUk" firstAttribute="top" secondItem="x3T-IM-aq9" secondAttribute="bottom" constant="8" symbolic="YES" id="hoI-RQ-uj9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pGR-ci-2uF" secondAttribute="trailing" id="iuF-gs-B5a"/>
+                            <constraint firstItem="e3K-eu-Kvf" firstAttribute="leading" secondItem="IGW-hg-cU8" secondAttribute="leading" id="maU-qW-S1z"/>
+                            <constraint firstItem="e3K-eu-Kvf" firstAttribute="top" secondItem="JXu-57-rUk" secondAttribute="bottom" constant="8" symbolic="YES" id="q3H-kh-obJ"/>
+                            <constraint firstItem="e3K-eu-Kvf" firstAttribute="trailing" secondItem="IGW-hg-cU8" secondAttribute="trailing" id="qPz-uK-4p2"/>
+                            <constraint firstItem="IGW-hg-cU8" firstAttribute="top" secondItem="e3K-eu-Kvf" secondAttribute="bottom" constant="8" symbolic="YES" id="wcy-8S-jCz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="G64-XZ-OmR" secondAttribute="trailing" constant="57" id="yJm-jK-0Gz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="PyzeEvents" id="FWM-7K-2Tt"/>
                     <connections>
                         <outlet property="eventsButton" destination="x3T-IM-aq9" id="TLc-wl-lTy"/>
+                        <outlet property="locationsBtn" destination="e3K-eu-Kvf" id="Pd4-Q2-AhM"/>
                         <outlet property="showInAppButton" destination="JXu-57-rUk" id="DTL-K6-siq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xGz-aY-CAq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1036" y="352"/>
+            <point key="canvasLocation" x="1277.5999999999999" y="300.89955022488761"/>
         </scene>
         <!--Pyze-->
         <scene sceneID="3PU-zZ-yhg">
@@ -439,7 +466,7 @@ Cg
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" tag="100" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell1" textLabel="Nh4-pO-656" imageView="fDy-8M-gaV" style="IBUITableViewCellStyleDefault" id="u7c-aJ-Qet">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="92" width="1000" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u7c-aJ-Qet" id="TPW-j0-B0Z">
                                             <frame key="frameInset" width="342" height="43"/>
@@ -498,14 +525,14 @@ Cg
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" tag="100" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" textLabel="LsA-O9-ll6" style="IBUITableViewCellStyleDefault" id="5tj-oE-sX0">
-                                <rect key="frame" x="0.0" y="120" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="119.5" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="center" tableViewCell="5tj-oE-sX0" id="6it-fY-la5">
-                                    <frame key="frameInset" width="600" height="43"/>
+                                    <frame key="frameInset" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LsA-O9-ll6">
-                                            <frame key="frameInset" minX="15" width="570" height="43"/>
+                                            <frame key="frameInset" minX="15" width="570" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -515,18 +542,18 @@ Cg
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell2" id="gbp-Rp-y5O">
-                                <rect key="frame" x="0.0" y="164" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="163.5" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gbp-Rp-y5O" id="5lT-05-RHq">
-                                    <frame key="frameInset" width="600" height="43"/>
+                                    <frame key="frameInset" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell3" id="VYz-hM-qNd">
-                                <rect key="frame" x="0.0" y="208" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="207.5" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VYz-hM-qNd" id="zAS-9n-WHx">
-                                    <frame key="frameInset" width="600" height="43"/>
+                                    <frame key="frameInset" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>

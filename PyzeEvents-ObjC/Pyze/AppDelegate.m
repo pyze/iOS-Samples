@@ -20,8 +20,9 @@
 -(BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 //    [[Pyze sharedPyze] initializeWithKey:@"nW3V4gQ8S-O4ZjRMDy9d1g"];
-    [Pyze initialize:@"_6m2fW8WTzWXryElPxHxAA"];
-    [[Pyze sharedPyze] logThrottling:PyzelogLevelAll];
+//    [Pyze initialize:@"_6m2fW8WTzWXryElPxHxAA"]; //devmode
+    [Pyze initialize:@"MIzI8Z8PRCCVDMIOKlMalA" withLogThrottling:PyzelogLevelMinimal];
+//    [[Pyze sharedPyze] logThrottling:PyzelogLevelAll];
     return YES;
 }
 
@@ -40,7 +41,9 @@
 
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    NSLog(@"%@\n\n\n\n deviceTokenBytesReceived %d\n\n\n\n",NSStringFromSelector(_cmd),(int)[deviceToken length]);
+//    NSLog(@"%@\n\n\n\n deviceTokenBytesReceived %d\n\n\n\n",NSStringFromSelector(_cmd),(int)[deviceToken length]);
+    [Pyze setRemoteNotificationDeviceToken:deviceToken];
+
 }
 
 
@@ -52,6 +55,7 @@
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
     NSLog(@"%@\n\n\n\n notifn %@\n\n\n\n",NSStringFromSelector(_cmd),userInfo);
+    [Pyze processReceivedRemoteNotification:userInfo];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -37,7 +37,7 @@
 		4693185F1BC809AB00EF0883 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = HomeViewController/HomeViewController.m; sourceTree = "<group>"; };
 		469318621BCB8B1100EF0883 /* AboutTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutTableViewController.h; path = AboutViewController/AboutTableViewController.h; sourceTree = "<group>"; };
 		469318631BCB8B1100EF0883 /* AboutTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutTableViewController.m; path = AboutViewController/AboutTableViewController.m; sourceTree = "<group>"; };
-		469459FB1BBD67C9000E5070 /* PyzeEvents-ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PyzeEvents-ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		469459FB1BBD67C9000E5070 /* PyzeEvents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PyzeEvents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		469459FF1BBD67C9000E5070 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		46945A011BBD67C9000E5070 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		46945A021BBD67C9000E5070 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 		469459FC1BBD67C9000E5070 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				469459FB1BBD67C9000E5070 /* PyzeEvents-ObjC.app */,
+				469459FB1BBD67C9000E5070 /* PyzeEvents.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,7 +162,6 @@
 		469459FE1BBD67C9000E5070 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				46945A591BBD8C4B000E5070 /* Framework */,
 				469459FF1BBD67C9000E5070 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -178,14 +177,6 @@
 				46945A281BBD85E8000E5070 /* PyzeTableViewSrc.m */,
 			);
 			name = ModelClass;
-			sourceTree = "<group>";
-		};
-		46945A591BBD8C4B000E5070 /* Framework */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Framework;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		46945A5C1BC56403000E5070 /* Events */ = {
@@ -256,7 +247,7 @@
 			);
 			name = "PyzeEvents-ObjC";
 			productName = Pyze;
-			productReference = 469459FB1BBD67C9000E5070 /* PyzeEvents-ObjC.app */;
+			productReference = 469459FB1BBD67C9000E5070 /* PyzeEvents.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -497,7 +488,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robosoft.dictionary;
-				PRODUCT_NAME = "PyzeEvents-ObjC";
+				PRODUCT_NAME = PyzeEvents;
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
@@ -518,7 +509,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robosoft.dictionary;
-				PRODUCT_NAME = "PyzeEvents-ObjC";
+				PRODUCT_NAME = PyzeEvents;
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "";
 			};

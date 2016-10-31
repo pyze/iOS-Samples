@@ -67,11 +67,15 @@
 
 +(NSArray *) executeDroneEvents;
 
++(NSArray *) executeSceneFlow;
+
 +(NSArray *) executeSupportEvents;
 
 +(NSArray *) executeCommerceSupportEvents;
 
 +(NSArray *) executeWeatherAndForecastEvents;
+
++(NSArray *) executeiMessageApps;
 @end
 
 @implementation ALEventsTest
@@ -116,6 +120,8 @@ BOOL g_shouldExecute;
                            MacroStr(executeMediaEvents),
                            MacroStr(executeBitcoinEvents),
                            MacroStr(executeDroneEvents),
+                           MacroStr(executeSceneFlow),
+                           MacroStr(executeiMessageApps),
                            MacroStr(executeSupportEvents),
                            MacroStr(executeCommerceSupportEvents),
                            MacroStr(executeWeatherAndForecastEvents),
@@ -1192,6 +1198,58 @@ BOOL g_shouldExecute;
     return g_shouldExecute ? nil : [NSArray arrayWithObjects: arguments,attributes,nil];
 }
 
++(NSArray *) executeSceneFlow
+{
+    NSDictionary * attributes = [ALRandomDictionaryGenerator attributesDictionary];
+    NSArray * arguments = @[];
+    if (g_indexPath.row == 0) {
+        arguments = @[@"Game Scene Begin", @"100.0"];
+        if (g_shouldExecute)[PyzeSceneFlow postSecondsOnScene:arguments[0] forSeconds:[arguments[1] doubleValue]];
+    }
+    return g_shouldExecute ? nil : [NSArray arrayWithObjects: arguments,attributes,nil];
+
+}
+
++(NSArray *) executeiMessageApps
+{
+    NSDictionary * attributes = [ALRandomDictionaryGenerator attributesDictionary];
+    NSArray * arguments = @[];
+    if (g_indexPath.row == 0) {
+        if(g_shouldExecute)
+            [PyzeiMessageApps postInsertMessageWithAttributes:(NSMutableDictionary*)attributes];
+    }
+    else if (g_indexPath.row == 1) {
+        if(g_shouldExecute)
+            [PyzeiMessageApps postInsertStickerWithLocalizedDescription:YES
+                                          withStickerImageFileURLString:YES withAttributes:(NSMutableDictionary*)attributes];
+    }
+    else if (g_indexPath.row == 2) {
+        if (g_shouldExecute)
+            [PyzeiMessageApps postInsertTextWithText:YES
+                                      withAttributes:(NSMutableDictionary*)attributes];
+    }
+    else if (g_indexPath.row == 3) {
+        if (g_shouldExecute)
+            [PyzeiMessageApps postInsertAttachmentWithURL:YES
+                                    withAlternateFileName:YES
+                                           withAttributes:(NSMutableDictionary*)attributes];
+    }
+    else if (g_indexPath.row == 4) {
+        if (g_shouldExecute)
+            [PyzeiMessageApps postMessageStartSendingWithAttributes:(NSMutableDictionary*)attributes];
+    }
+    else if (g_indexPath.row == 5) {
+        if (g_shouldExecute)
+            [PyzeiMessageApps postReceiveMessageWithAttributes:(NSMutableDictionary*)attributes];
+    }
+    else if (g_indexPath.row == 6) {
+        if (g_shouldExecute)
+            [PyzeiMessageApps postCancelSendingMessageWithAttributes:(NSMutableDictionary*)attributes];
+    }
+    
+    return g_shouldExecute ? nil : [NSArray arrayWithObjects: arguments,attributes,nil];
+
+}
 
 +(NSArray *) executeWeatherAndForecastEvents
 {

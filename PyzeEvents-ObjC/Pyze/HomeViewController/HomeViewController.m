@@ -8,11 +8,16 @@
 
 #import "HomeViewController.h"
 
+#import <CoreLocation/CoreLocation.h>
+
 #import <Pyze/Pyze.h>
 
-@interface HomeViewController () <UIPopoverPresentationControllerDelegate,PyzeInAppMessageHandlerDelegate>
+@interface HomeViewController () <UIPopoverPresentationControllerDelegate,PyzeInAppMessageHandlerDelegate,CLLocationManagerDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *eventsButton;
 @property (weak, nonatomic) IBOutlet UIButton *showInAppButton;
+@property (nonatomic,strong) CLLocationManager * locationManager;
+@property (weak, nonatomic) IBOutlet UIButton *locationsBtn;
+
 
 - (IBAction)showInAppMessage:(UIButton *)sender;
 @end
@@ -25,6 +30,7 @@
 //
     self.eventsButton.layer.borderColor = ios7BlueColor.CGColor;
     self.showInAppButton.layer.borderColor = ios7BlueColor.CGColor;
+    self.locationsBtn.layer.borderColor = ios7BlueColor.CGColor;
     // Do any additional setup after loading the view.
 }
 
@@ -62,5 +68,37 @@
 {
     NSLog(@"Button Index = %d, button title = %@ and urlInfo = %@",(int) buttonIndex, title, urlString);
 }
+- (IBAction)enableLocations:(id)sender
+{
+    if (self.locationManager == nil) {
+        self.locationManager = [[CLLocationManager alloc] init];
+        self.locationManager.delegate = self;
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        self.locationManager.distanceFilter = kCLDistanceFilterNone;
+        if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+            [self.locationManager requestWhenInUseAuthorization];
+        }
+        [self.locationManager startUpdatingLocation];
+        
+        [self performSelector:@selector(stopUpdatingLocationWithMessage:)
+                   withObject:@"Timed Out"
+                   afterDelay:15];
+    }
+}
+
+
+- (void)locationManager:(CLLocationManager *)manager
+     didUpdateLocations:(NSArray<CLLocation *> *)locations
+{
+    CLLocation * location = [locations lastObject];
+    NSLog(@"%@",[NSString stringWithFormat:@"%.4f,%.4f,%@",fabs(location.coordinate.latitude), fabs(location.coordinate.longitude), [NSDate date]] );
+}
+
+- (void)stopUpdatingLocationWithMessage:(NSString *)state {
+    //    self.stateString = state;
+    [self.locationManager stopUpdatingLocation];
+    self.locationManager.delegate = nil;
+}
+
 
 @end
