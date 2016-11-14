@@ -4,13 +4,8 @@
 
 
 /**
- *  Significant build number for Pyze SDK.
- */
-FOUNDATION_EXPORT double PyzeVersionNumber;
-
-/**
  *  PyzeLogLevel
- *  Log level of the SDK. 
+ *  Log level of the SDK.
  *  Default is Minimal Logs
  */
 typedef NS_ENUM(NSInteger, PyzeLogLevel) {
@@ -117,16 +112,16 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 @class PyzeInAppStatus;
 /**
  * Pyze main class
- * 
+ *
  * This is the main class for the Pyze iOS SDK. Use method initializeWithKey: to initialize the Library.
  * For troubleshooting during development and in debug mode, you can throttle the logging level using method
  * debugLogThrottling:
  * In the release mode or deployment the SDK will log minimally.
- * 
+ *
  * Please visit [Pyze Developer Center](http://docs.pyze.com) for more information.
  *
  * You will need an app-specific key "Pyze App Key" from: [growth.pyze.com](https://growth.pyze.com/)
- * 
+ *
  */
 @interface Pyze : NSObject
 
@@ -136,14 +131,14 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 /**
  *  Initializes the Pyze library. Call this method in the app delegate's method
  *  application:willFinishLaunchingWithOptions. [Get Pyze App Key from growth.pyze.com](http://pyze.com/get-Pyze-App-Key.html)
- * 
+ *
  *  Usage:
  *
  *      [Pyze initialize:@"Pyze App Key obtained from growth.pyze.com"];
  *
  *  @param pyzeAppKey The app-specific key obtained from [growth.pyze.com](http://pyze.com/get-Pyze-App-Key.html)
  *  @warning *Important:* Get an app-specific key from [growth.pyze.com](http://pyze.com/get-Pyze-App-Key.html)
- * 
+ *
  *  - Since: 2.0.5
  *
  */
@@ -186,7 +181,6 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 +(void) logThrottling:(PyzeLogLevel) logLevel;
 
 
-
 /// @name  Create Timer Reference to use in Timed Custom Events using PyzeCustomEvent class
 
 /**
@@ -208,9 +202,6 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 +(double) timerReference;
 
 
-
-
-
 /// @name Push notification helper APIs
 
 /**
@@ -225,14 +216,16 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 
 
 /**
- *  Use this API to process the push/remote notification. Call this everytime when you receive the remote notification from application:didReceiveRemoteNotification or application:didReceiveRemoteNotification:fetchCompletionHandler:
+ *  Use this API to process the push/remote notification. Call this everytime when you receive the remote notification from application:didReceiveRemoteNotification or application:didReceiveRemoteNotification:fetchCompletionHandler:.
+ 
+ If you are using interactive push notifications e.g. Button handlers in push messages, then use processReceivedRemoteNotificationWithId:
+ instead.
  
  *  @param userInfo User information received as a payload.
  
  *  - Since: 2.2.1
  */
 +(void) processReceivedRemoteNotification:(NSDictionary *) userInfo;
-
 
 /**
  *  Use this API to process the local/remote push notifications. Call this everytime when you receive the remote notification from application:handleActionWithIdentifier:forRemoteNotification:completionHandler:. For example: Button handlers in
@@ -245,11 +238,10 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 
 +(void) processReceivedRemoteNotificationWithId:(NSString *) identifer withUserInfo:(NSDictionary *) userInfo;
 
-
 /// @name In-App Notifications (using Built-in User Interface)
 
 /**
- *  This will add a badge to the UIControl (e.g.: UIButton) depicting the number of unfetched and new in-app messages available. 
+ *  This will add a badge to the UIControl (e.g.: UIButton) depicting the number of unfetched and new in-app messages available.
  *
  *  @param control UIControl to add badge to.
  
@@ -273,26 +265,32 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 
 /**
  *  Convenience method to show in-app message with custom colors as required by the app. When user taps on any of the buttons in in-app message
- *  completionhandler method will be called.
+ *  completionhandler method will be called. The call-to-action (upto 3) button colors are defined in the UI on growth.pyze.com when creating an in-app message. The navigation text color to move between in-app messages e.g. '<' | '>' are defined using navigationTextColor parameter in this method.
  *
  *  @param messageType             The in-app message type you would want to see. Default is PyzeInAppTypeUnread.
- *  @param buttonTextcolor         Button text color.
- *  @param buttonBackgroundColor   Button background color
- *  @param backgroundColor         Translucent background color of the 'MessageNavigationBar'
- *  @param messageCounterTextColor Message counter text color (Ex: 1 of 10 in-app messages).
- *  @param completionhandler Completion handler
+ *  @param navigationTextColor     Navigation text color (Ex: 1 of 10) and chevrons.
+ *  @param completionhandler       Completion handler
  *
- *  - Since: 2.5.3
-
+ *  - Since: 2.9.0
+ 
  */
+
 +(void) showInAppNotificationUIForDisplayMessages:(PyzeInAppMessageType) messageType
-                        msgNavBarButtonsTextColor:(UIColor *) buttonTextcolor
-                          msgNavBarButtonsBgColor:(UIColor *) buttonBackgroundColor
-                                 msgNavBarBgColor:(UIColor *) backgroundColor
-                        msgNavBarCounterTextColor:(UIColor *) messageCounterTextColor
+                              navigationTextColor:(UIColor *) textColor
                             withCompletionHandler:(void (^)(PyzeInAppStatus *inAppStatus))completionhandler;
 
 /// @name In-App Notifications (using API)
+
+/**
+ *  Returns the messageHeaders and messageBody from the server and from the cache based on the messageType.
+ *
+ *  @param messageType       Message type for in-app messages.
+ *  @param completionHandler Completion handler will be called with result.
+ *
+ *  - Since: 2.8.2
+ */
++(void) getMessagesForType:(PyzeInAppMessageType) messageType
+     withCompletionHandler:(void (^)(NSArray * result)) completionHandler;
 
 /**
  *  Returns the number of unread messages from the server.
@@ -313,6 +311,7 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
  */
 +(void) getMessageHeadersForType:(PyzeInAppMessageType) messageType
            withCompletionHandler:(void (^)(NSArray * messageHeaders)) completionHandler;
+
 
 /**
  *  Get message details with Campaign ID and message ID received from 'getMessageHeadersForType'.
@@ -412,14 +411,36 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
                msgNavBarBgColor:(UIColor *) backgroundColor
       msgNavBarCounterTextColor:(UIColor *) messageCounterTextColor;
 
+/**
+ *  Convenience method to show in-app message with custom colors as required by the app. When user taps on any of the buttons in in-app message
+ *  completionhandler method will be called.
+ *
+ *  @param messageType             The in-app message type you would want to see. Default is PyzeInAppTypeUnread.
+ *  @param buttonTextcolor         Button text color.
+ *  @param buttonBackgroundColor   Button background color
+ *  @param backgroundColor         Translucent background color of the 'MessageNavigationBar'
+ *  @param messageCounterTextColor Message counter text color (Ex: 1 of 10).
+ *  @param completionhandler Completion handler
+ *
+ *  @see showInAppNotificationUIForDisplayMessages:navigationTextColor:withCompletionHandler: as alternative implementation.
+ *
+ *  - Since: 2.5.3
+ 
+ */
++(void) showInAppNotificationUIForDisplayMessages:(PyzeInAppMessageType) messageType
+                        msgNavBarButtonsTextColor:(UIColor *) buttonTextcolor
+                          msgNavBarButtonsBgColor:(UIColor *) buttonBackgroundColor
+                                 msgNavBarBgColor:(UIColor *) backgroundColor
+                        msgNavBarCounterTextColor:(UIColor *) messageCounterTextColor
+                            withCompletionHandler:(void (^)(PyzeInAppStatus *inAppStatus))completionhandler;
 
 @end
 
 
 
 /**
- *  Pyze In app message handler delegate. This has one optional call to action method which will inform your class 
-    when user clicks on one of the in-app messsage buttons.
+ *  Pyze In app message handler delegate. This has one optional call to action method which will inform your class
+ when user clicks on one of the in-app messsage buttons.
  *
  *  - Since: 2.3.0
  */
@@ -431,7 +452,7 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 
 /**
  *  Call to action handler for in-app message buttons implemented by your view controller to receive in-app message
-    button click actions.
+ button click actions.
  *
  *  @param buttonIndex  Button index
  *  @param title        Title provided for the button
@@ -489,7 +510,7 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 #pragma mark - Pyze Personalization Intelligence
 
 /**
- *  PyzePersonalizationIntelligence  
+ *  PyzePersonalizationIntelligence
  *  See: http://pyze.com/iOS-Personalization.html and http://pyze.com/product/personalization-intelligence.html for more details.
  *
  *  This class provides access to get the personalization intelligence tags. These tags are set in the intelligence explorer.

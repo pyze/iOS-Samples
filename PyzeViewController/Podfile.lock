@@ -1,11 +1,11 @@
 PODS:
-  - pyze-sdk-iOS (2.9.1)
+  - pyze-sdk-iOS (2.9.2)
 
 DEPENDENCIES:
   - pyze-sdk-iOS
 
 SPEC CHECKSUMS:
-  pyze-sdk-iOS: cd341a221577d0c6b1d97f887a80a415fb340339
+  pyze-sdk-iOS: 912f144599c514fbd1b72a1165e2dd61dd2c9ec7
 
 PODFILE CHECKSUM: 853da661e142629d9fa8cc2542429419020ad369
 

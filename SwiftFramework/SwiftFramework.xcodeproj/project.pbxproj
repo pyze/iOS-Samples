@@ -12,7 +12,7 @@
 		4616F0061BF62CBB00D06C73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4616F0041BF62CBB00D06C73 /* Main.storyboard */; };
 		4616F0081BF62CBB00D06C73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4616F0071BF62CBB00D06C73 /* Assets.xcassets */; };
 		4616F00B1BF62CBB00D06C73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4616F0091BF62CBB00D06C73 /* LaunchScreen.storyboard */; };
-		4616F0131BF62CD800D06C73 /* Pyze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4616F0121BF62CD800D06C73 /* Pyze.framework */; settings = {ASSET_TAGS = (); }; };
+		4616F0131BF62CD800D06C73 /* Pyze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4616F0121BF62CD800D06C73 /* Pyze.framework */; };
 		4616F0151BF62CEA00D06C73 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4616F0141BF62CEA00D06C73 /* CoreTelephony.framework */; };
 		4616F0171BF62CF100D06C73 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4616F0161BF62CF100D06C73 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
@@ -109,6 +109,7 @@
 				TargetAttributes = {
 					4616EFFC1BF62CBB00D06C73 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -272,6 +273,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "34ab189c-6759-40cb-84f9-f3376900f19b";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftFramework/SwiftFramework-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -288,6 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.SwiftFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftFramework/SwiftFramework-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -310,6 +313,7 @@
 				4616F0111BF62CBB00D06C73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
