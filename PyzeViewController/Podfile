@@ -2,5 +2,5 @@
 # platform :ios, '9.0'
 
 target 'PyzeViewController' do
-pod 'pyze-sdk-iOS'
+pod 'pyze-sdk-iOS7’
 end

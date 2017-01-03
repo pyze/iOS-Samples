@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Pyze
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

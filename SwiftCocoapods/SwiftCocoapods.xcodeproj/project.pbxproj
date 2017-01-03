@@ -25,7 +25,6 @@
 		4616EFE41BF62AC000D06C73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4616EFE71BF62AC000D06C73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4616EFE91BF62AC000D06C73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4616EFEF1BF62B7E00D06C73 /* SwiftCocoapods-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftCocoapods-Bridging-Header.h"; sourceTree = "<group>"; };
 		4616EFF01BF62BA700D06C73 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4616EFF21BF62BAD00D06C73 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		5C9F2DCEEF29B96AE7BEA57B /* Pods_SwiftCocoapods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftCocoapods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +73,6 @@
 				4616EFE41BF62AC000D06C73 /* Assets.xcassets */,
 				4616EFE61BF62AC000D06C73 /* LaunchScreen.storyboard */,
 				4616EFE91BF62AC000D06C73 /* Info.plist */,
-				4616EFEF1BF62B7E00D06C73 /* SwiftCocoapods-Bridging-Header.h */,
 			);
 			path = SwiftCocoapods;
 			sourceTree = "<group>";
@@ -337,7 +335,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Vinodh Kumar (RHXCHS39A7)";
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = SwiftCocoapods/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.SwiftCocoapods;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = SwiftCocoapods/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.SwiftCocoapods;
 				PRODUCT_NAME = "$(TARGET_NAME)";
