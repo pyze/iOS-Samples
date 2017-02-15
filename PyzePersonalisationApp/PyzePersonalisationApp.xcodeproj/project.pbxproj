@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A0317BE1E531D0900F3511A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0317BD1E531D0900F3511A /* main.m */; };
+		5A0317C11E531D0900F3511A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0317C01E531D0900F3511A /* AppDelegate.m */; };
+		5A0317C41E531D0900F3511A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0317C31E531D0900F3511A /* ViewController.m */; };
+		5A0317C71E531D0900F3511A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0317C51E531D0900F3511A /* Main.storyboard */; };
+		5A0317C91E531D0900F3511A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0317C81E531D0900F3511A /* Assets.xcassets */; };
+		5A0317CC1E531D0900F3511A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0317CA1E531D0900F3511A /* LaunchScreen.storyboard */; };
+		5A0317F21E532B2D00F3511A /* PABlogListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0317F11E532B2D00F3511A /* PABlogListController.m */; };
+		5A5B7A781E5338680068B8FC /* PABlogContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B7A771E5338680068B8FC /* PABlogContentController.m */; };
+		5A5B7A7B1E533A740068B8FC /* PyzeBlogContent.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A5B7A791E533A740068B8FC /* PyzeBlogContent.json */; };
+		5A5B7A7C1E533A740068B8FC /* PyzeBlogList.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A5B7A7A1E533A740068B8FC /* PyzeBlogList.json */; };
+		5A5B7A811E533FCE0068B8FC /* pyze_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A5B7A801E533FCE0068B8FC /* pyze_big.png */; };
+		5AA723A41E532DD0008CFDB1 /* PAFeedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA723A31E532DD0008CFDB1 /* PAFeedManager.m */; };
+		5AA723A71E532DFE008CFDB1 /* PABlog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA723A61E532DFE008CFDB1 /* PABlog.m */; };
+		5AA723AD1E533702008CFDB1 /* pyze.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AA723AC1E533702008CFDB1 /* pyze.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5A0317B91E531D0900F3511A /* PyzePersonalisationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PyzePersonalisationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A0317BD1E531D0900F3511A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5A0317BF1E531D0900F3511A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5A0317C01E531D0900F3511A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5A0317C21E531D0900F3511A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5A0317C31E531D0900F3511A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5A0317C61E531D0900F3511A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A0317C81E531D0900F3511A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A0317CB1E531D0900F3511A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A0317CD1E531D0900F3511A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A0317F01E532B2D00F3511A /* PABlogListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PABlogListController.h; path = ViewContorllers/BlogListController/PABlogListController.h; sourceTree = "<group>"; };
+		5A0317F11E532B2D00F3511A /* PABlogListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PABlogListController.m; path = ViewContorllers/BlogListController/PABlogListController.m; sourceTree = "<group>"; };
+		5A5B7A761E5338680068B8FC /* PABlogContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PABlogContentController.h; path = ViewContorllers/BlogContentController/PABlogContentController.h; sourceTree = "<group>"; };
+		5A5B7A771E5338680068B8FC /* PABlogContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PABlogContentController.m; path = ViewContorllers/BlogContentController/PABlogContentController.m; sourceTree = "<group>"; };
+		5A5B7A791E533A740068B8FC /* PyzeBlogContent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PyzeBlogContent.json; sourceTree = "<group>"; };
+		5A5B7A7A1E533A740068B8FC /* PyzeBlogList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PyzeBlogList.json; sourceTree = "<group>"; };
+		5A5B7A801E533FCE0068B8FC /* pyze_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pyze_big.png; sourceTree = "<group>"; };
+		5AA723A21E532DD0008CFDB1 /* PAFeedManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAFeedManager.h; path = FeedManager/PAFeedManager.h; sourceTree = "<group>"; };
+		5AA723A31E532DD0008CFDB1 /* PAFeedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAFeedManager.m; path = FeedManager/PAFeedManager.m; sourceTree = "<group>"; };
+		5AA723A51E532DFE008CFDB1 /* PABlog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PABlog.h; path = Models/PABlog.h; sourceTree = "<group>"; };
+		5AA723A61E532DFE008CFDB1 /* PABlog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PABlog.m; path = Models/PABlog.m; sourceTree = "<group>"; };
+		5AA723AC1E533702008CFDB1 /* pyze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pyze.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A0317B61E531D0900F3511A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A0317B01E531D0900F3511A = {
+			isa = PBXGroup;
+			children = (
+				5A0317BB1E531D0900F3511A /* PyzePersonalisationApp */,
+				5A0317BA1E531D0900F3511A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A0317BA1E531D0900F3511A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A0317B91E531D0900F3511A /* PyzePersonalisationApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A0317BB1E531D0900F3511A /* PyzePersonalisationApp */ = {
+			isa = PBXGroup;
+			children = (
+				5AA723A81E532E03008CFDB1 /* Models */,
+				5AA723A11E532D6F008CFDB1 /* FeedManager */,
+				5A0317F31E532B3000F3511A /* ViewControllers */,
+				5A0317BF1E531D0900F3511A /* AppDelegate.h */,
+				5A0317C01E531D0900F3511A /* AppDelegate.m */,
+				5A0317C21E531D0900F3511A /* ViewController.h */,
+				5A0317C31E531D0900F3511A /* ViewController.m */,
+				5A0317C51E531D0900F3511A /* Main.storyboard */,
+				5A0317C81E531D0900F3511A /* Assets.xcassets */,
+				5A0317CA1E531D0900F3511A /* LaunchScreen.storyboard */,
+				5A0317CD1E531D0900F3511A /* Info.plist */,
+				5A0317BC1E531D0900F3511A /* Supporting Files */,
+			);
+			path = PyzePersonalisationApp;
+			sourceTree = "<group>";
+		};
+		5A0317BC1E531D0900F3511A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5AA723A91E532F12008CFDB1 /* Resources */,
+				5A0317BD1E531D0900F3511A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A0317EF1E532B0000F3511A /* BlogListController */ = {
+			isa = PBXGroup;
+			children = (
+				5A0317F01E532B2D00F3511A /* PABlogListController.h */,
+				5A0317F11E532B2D00F3511A /* PABlogListController.m */,
+			);
+			name = BlogListController;
+			sourceTree = "<group>";
+		};
+		5A0317F31E532B3000F3511A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A5B7A721E53381C0068B8FC /* BlogContentController */,
+				5A0317EF1E532B0000F3511A /* BlogListController */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5A5B7A721E53381C0068B8FC /* BlogContentController */ = {
+			isa = PBXGroup;
+			children = (
+				5A5B7A761E5338680068B8FC /* PABlogContentController.h */,
+				5A5B7A771E5338680068B8FC /* PABlogContentController.m */,
+			);
+			name = BlogContentController;
+			sourceTree = "<group>";
+		};
+		5AA723A11E532D6F008CFDB1 /* FeedManager */ = {
+			isa = PBXGroup;
+			children = (
+				5AA723A21E532DD0008CFDB1 /* PAFeedManager.h */,
+				5AA723A31E532DD0008CFDB1 /* PAFeedManager.m */,
+			);
+			name = FeedManager;
+			sourceTree = "<group>";
+		};
+		5AA723A81E532E03008CFDB1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5AA723A51E532DFE008CFDB1 /* PABlog.h */,
+				5AA723A61E532DFE008CFDB1 /* PABlog.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5AA723A91E532F12008CFDB1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5A5B7A791E533A740068B8FC /* PyzeBlogContent.json */,
+				5A5B7A7A1E533A740068B8FC /* PyzeBlogList.json */,
+				5A5B7A801E533FCE0068B8FC /* pyze_big.png */,
+				5AA723AC1E533702008CFDB1 /* pyze.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A0317B81E531D0900F3511A /* PyzePersonalisationApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A0317E61E531D0900F3511A /* Build configuration list for PBXNativeTarget "PyzePersonalisationApp" */;
+			buildPhases = (
+				5A0317B51E531D0900F3511A /* Sources */,
+				5A0317B61E531D0900F3511A /* Frameworks */,
+				5A0317B71E531D0900F3511A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PyzePersonalisationApp;
+			productName = PyzePersonalisationApp;
+			productReference = 5A0317B91E531D0900F3511A /* PyzePersonalisationApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A0317B11E531D0900F3511A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Robosoft Technologies Pvt. Ltd.";
+				TargetAttributes = {
+					5A0317B81E531D0900F3511A = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5A0317B41E531D0900F3511A /* Build configuration list for PBXProject "PyzePersonalisationApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A0317B01E531D0900F3511A;
+			productRefGroup = 5A0317BA1E531D0900F3511A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A0317B81E531D0900F3511A /* PyzePersonalisationApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A0317B71E531D0900F3511A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5B7A7B1E533A740068B8FC /* PyzeBlogContent.json in Resources */,
+				5A5B7A811E533FCE0068B8FC /* pyze_big.png in Resources */,
+				5A0317CC1E531D0900F3511A /* LaunchScreen.storyboard in Resources */,
+				5AA723AD1E533702008CFDB1 /* pyze.png in Resources */,
+				5A0317C91E531D0900F3511A /* Assets.xcassets in Resources */,
+				5A0317C71E531D0900F3511A /* Main.storyboard in Resources */,
+				5A5B7A7C1E533A740068B8FC /* PyzeBlogList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A0317B51E531D0900F3511A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A0317C41E531D0900F3511A /* ViewController.m in Sources */,
+				5A0317C11E531D0900F3511A /* AppDelegate.m in Sources */,
+				5AA723A41E532DD0008CFDB1 /* PAFeedManager.m in Sources */,
+				5A0317BE1E531D0900F3511A /* main.m in Sources */,
+				5AA723A71E532DFE008CFDB1 /* PABlog.m in Sources */,
+				5A5B7A781E5338680068B8FC /* PABlogContentController.m in Sources */,
+				5A0317F21E532B2D00F3511A /* PABlogListController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5A0317C51E531D0900F3511A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A0317C61E531D0900F3511A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A0317CA1E531D0900F3511A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A0317CB1E531D0900F3511A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A0317E41E531D0900F3511A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5A0317E51E531D0900F3511A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A0317E71E531D0900F3511A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PyzePersonalisationApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.PyzePersonalisationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5A0317E81E531D0900F3511A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PyzePersonalisationApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.PyzePersonalisationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A0317B41E531D0900F3511A /* Build configuration list for PBXProject "PyzePersonalisationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A0317E41E531D0900F3511A /* Debug */,
+				5A0317E51E531D0900F3511A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A0317E61E531D0900F3511A /* Build configuration list for PBXNativeTarget "PyzePersonalisationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A0317E71E531D0900F3511A /* Debug */,
+				5A0317E81E531D0900F3511A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A0317B11E531D0900F3511A /* Project object */;
+}

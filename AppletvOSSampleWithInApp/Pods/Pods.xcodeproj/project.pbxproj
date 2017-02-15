@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D20213B23A649B7762E5B70AB8855142 /* Pods-AppletvOSSampleWithInApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 031DF50DFB08F3C58167B7669C28224B /* Pods-AppletvOSSampleWithInApp-dummy.m */; };
+		FD10E4C64E4AC9AE6F01D51E8945C913 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B617D1FB81FD6F4783AE29E8810A2B5B /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		031DF50DFB08F3C58167B7669C28224B /* Pods-AppletvOSSampleWithInApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppletvOSSampleWithInApp-dummy.m"; sourceTree = "<group>"; };
+		108300AA9D963E3151ACA3B523647A5B /* Pods-AppletvOSSampleWithInApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppletvOSSampleWithInApp.debug.xcconfig"; sourceTree = "<group>"; };
+		1ACE2A6630B0939BB2D73B61122FFD21 /* Pods-AppletvOSSampleWithInApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppletvOSSampleWithInApp-frameworks.sh"; sourceTree = "<group>"; };
+		233040BA123C97354D9846E2D0909443 /* Pods-AppletvOSSampleWithInApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppletvOSSampleWithInApp.release.xcconfig"; sourceTree = "<group>"; };
+		70EBEFB1481C686F25CBD641707C7078 /* Pyze.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pyze.framework; sourceTree = "<group>"; };
+		73279F4230E789D4DE2CD14B06667610 /* Pods-AppletvOSSampleWithInApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppletvOSSampleWithInApp-resources.sh"; sourceTree = "<group>"; };
+		8B5CA2D2D9D1BC14E6FB914EFF93F26B /* Pods-AppletvOSSampleWithInApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppletvOSSampleWithInApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8D338E232991AAD02D94A14E30C69E1F /* Pods-AppletvOSSampleWithInApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppletvOSSampleWithInApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B617D1FB81FD6F4783AE29E8810A2B5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F730202EFC6DBA182549BD18EDA163BE /* libPods-AppletvOSSampleWithInApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppletvOSSampleWithInApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6564E1FC84A5D2DBF2C6DE7BF608784 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD10E4C64E4AC9AE6F01D51E8945C913 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0280461F41D8BD00B93D9ADFFA3EFE3E /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				B617D1FB81FD6F4783AE29E8810A2B5B /* Foundation.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
+		106419D949CD80A24DD579CCC689E628 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70EBEFB1481C686F25CBD641707C7078 /* Pyze.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B380619C056F5DE363725EEC10761A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F730202EFC6DBA182549BD18EDA163BE /* libPods-AppletvOSSampleWithInApp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		693F7A9BFF915AD51C0DD3BB5110FBBD /* Pods-AppletvOSSampleWithInApp */ = {
+			isa = PBXGroup;
+			children = (
+				8B5CA2D2D9D1BC14E6FB914EFF93F26B /* Pods-AppletvOSSampleWithInApp-acknowledgements.markdown */,
+				8D338E232991AAD02D94A14E30C69E1F /* Pods-AppletvOSSampleWithInApp-acknowledgements.plist */,
+				031DF50DFB08F3C58167B7669C28224B /* Pods-AppletvOSSampleWithInApp-dummy.m */,
+				1ACE2A6630B0939BB2D73B61122FFD21 /* Pods-AppletvOSSampleWithInApp-frameworks.sh */,
+				73279F4230E789D4DE2CD14B06667610 /* Pods-AppletvOSSampleWithInApp-resources.sh */,
+				108300AA9D963E3151ACA3B523647A5B /* Pods-AppletvOSSampleWithInApp.debug.xcconfig */,
+				233040BA123C97354D9846E2D0909443 /* Pods-AppletvOSSampleWithInApp.release.xcconfig */,
+			);
+			name = "Pods-AppletvOSSampleWithInApp";
+			path = "Target Support Files/Pods-AppletvOSSampleWithInApp";
+			sourceTree = "<group>";
+		};
+		782994FCCD68DDF43C1C74D37681E086 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E17E989E2A6F51189D760FA14F3799AE /* pyze-sdk-tvOS */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BB99B8D4C7329D10E7E4451B0A72C15A /* Frameworks */,
+				782994FCCD68DDF43C1C74D37681E086 /* Pods */,
+				3B380619C056F5DE363725EEC10761A7 /* Products */,
+				FB6C6B83FDEB1E820722A7067CEAB013 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BB99B8D4C7329D10E7E4451B0A72C15A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0280461F41D8BD00B93D9ADFFA3EFE3E /* tvOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E17E989E2A6F51189D760FA14F3799AE /* pyze-sdk-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				106419D949CD80A24DD579CCC689E628 /* Frameworks */,
+			);
+			path = "pyze-sdk-tvOS";
+			sourceTree = "<group>";
+		};
+		FB6C6B83FDEB1E820722A7067CEAB013 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				693F7A9BFF915AD51C0DD3BB5110FBBD /* Pods-AppletvOSSampleWithInApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC3AB29156AF2D767968C2C53C55DF6C /* Pods-AppletvOSSampleWithInApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A14E5E9B3D521DD8A612222ADCC29003 /* Build configuration list for PBXNativeTarget "Pods-AppletvOSSampleWithInApp" */;
+			buildPhases = (
+				DE57112B0519CFF4AD380A40381F5A96 /* Sources */,
+				C6564E1FC84A5D2DBF2C6DE7BF608784 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AppletvOSSampleWithInApp";
+			productName = "Pods-AppletvOSSampleWithInApp";
+			productReference = F730202EFC6DBA182549BD18EDA163BE /* libPods-AppletvOSSampleWithInApp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3B380619C056F5DE363725EEC10761A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC3AB29156AF2D767968C2C53C55DF6C /* Pods-AppletvOSSampleWithInApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE57112B0519CFF4AD380A40381F5A96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20213B23A649B7762E5B70AB8855142 /* Pods-AppletvOSSampleWithInApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		133EE0F90A4B09984A41D53AB995BD45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 233040BA123C97354D9846E2D0909443 /* Pods-AppletvOSSampleWithInApp.release.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		2451934325A9BB132B45B9D4AFF86374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B60231318AC87A7886A322309AC96003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 108300AA9D963E3151ACA3B523647A5B /* Pods-AppletvOSSampleWithInApp.debug.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		E46DC92EE7EAE9E9F6A4C179BBDAC949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E46DC92EE7EAE9E9F6A4C179BBDAC949 /* Debug */,
+				2451934325A9BB132B45B9D4AFF86374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A14E5E9B3D521DD8A612222ADCC29003 /* Build configuration list for PBXNativeTarget "Pods-AppletvOSSampleWithInApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B60231318AC87A7886A322309AC96003 /* Debug */,
+				133EE0F90A4B09984A41D53AB995BD45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

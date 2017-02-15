@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "234CE540615287EABD20192B9806A1466863A31B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "9d41b063-fedc-47fc-84d9-32ea20ca789b" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9d41b063-fedc-47fc-84d9-32ea20ca789b" : 9223372036854775807,
+    "234CE540615287EABD20192B9806A1466863A31B" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E5CAFDE5-8471-40D6-A97D-A6316263FA6C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9d41b063-fedc-47fc-84d9-32ea20ca789b" : "..\/..\/..\/..\/..\/..\/..",
+    "234CE540615287EABD20192B9806A1466863A31B" : "iOS-Samples\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PyzeWatchOSInAppObjC",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PyzeWatchOSInAppObjC\/PyzeWatchOSInAppObjC.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pyze\/iOS-Samples.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "234CE540615287EABD20192B9806A1466863A31B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/escort.robosoft.co.in",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9d41b063-fedc-47fc-84d9-32ea20ca789b"
+    }
+  ]
+}

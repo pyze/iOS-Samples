@@ -1,0 +1,862 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A3EA5D21E43092E0016A95B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3EA5D11E43092E0016A95B /* AppDelegate.swift */; };
+		5A3EA5D41E43092E0016A95B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3EA5D31E43092E0016A95B /* ViewController.swift */; };
+		5A3EA5D71E43092E0016A95B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3EA5D51E43092E0016A95B /* Main.storyboard */; };
+		5A3EA5D91E43092E0016A95B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A3EA5D81E43092E0016A95B /* Assets.xcassets */; };
+		5A3EA5DC1E43092E0016A95B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3EA5DA1E43092E0016A95B /* LaunchScreen.storyboard */; };
+		5A3EA5E71E43092E0016A95B /* PyzeWatchOSInAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3EA5E61E43092E0016A95B /* PyzeWatchOSInAppTests.swift */; };
+		5A3EA5F21E43092E0016A95B /* PyzeWatchOSInAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3EA5F11E43092E0016A95B /* PyzeWatchOSInAppUITests.swift */; };
+		5A3EA5F71E43092E0016A95B /* PyzeWatchOSInApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5A3EA5F61E43092E0016A95B /* PyzeWatchOSInApp WatchKit App.app */; };
+		5A3EA5FD1E43092E0016A95B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3EA5FB1E43092E0016A95B /* Interface.storyboard */; };
+		5A3EA5FF1E43092E0016A95B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A3EA5FE1E43092E0016A95B /* Assets.xcassets */; };
+		5A3EA6061E43092F0016A95B /* PyzeWatchOSInApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5A3EA6051E43092F0016A95B /* PyzeWatchOSInApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5A3EA60D1E43092F0016A95B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3EA60C1E43092F0016A95B /* InterfaceController.swift */; };
+		5A3EA60F1E43092F0016A95B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3EA60E1E43092F0016A95B /* ExtensionDelegate.swift */; };
+		5A3EA6111E43092F0016A95B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3EA6101E43092F0016A95B /* NotificationController.swift */; };
+		5A3EA6131E43092F0016A95B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A3EA6121E43092F0016A95B /* Assets.xcassets */; };
+		5A3EA69E1E4313CF0016A95B /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A3EA69D1E4313CF0016A95B /* apple.png */; };
+		5A3EA69F1E4313CF0016A95B /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A3EA69D1E4313CF0016A95B /* apple.png */; };
+		5A3EA6A01E4313CF0016A95B /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A3EA69D1E4313CF0016A95B /* apple.png */; };
+		5A3EA6A21E434C740016A95B /* InAppMessageinterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3EA6A11E434C740016A95B /* InAppMessageinterfaceController.swift */; };
+		5A3EA6A41E435C220016A95B /* InAppMessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3EA6A31E435C220016A95B /* InAppMessageManager.swift */; };
+		5A4E86E81E48546E00AAAB57 /* Pyze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A4E86E61E48544F00AAAB57 /* Pyze.framework */; };
+		5A4E86E91E48546E00AAAB57 /* Pyze.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A4E86E61E48544F00AAAB57 /* Pyze.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5A5BDFBA1E52B1D900362990 /* Pyze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5BDFB91E52B1D900362990 /* Pyze.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A3EA5E31E43092E0016A95B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A3EA5C61E43092E0016A95B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A3EA5CD1E43092E0016A95B;
+			remoteInfo = PyzeWatchOSInApp;
+		};
+		5A3EA5EE1E43092E0016A95B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A3EA5C61E43092E0016A95B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A3EA5CD1E43092E0016A95B;
+			remoteInfo = PyzeWatchOSInApp;
+		};
+		5A3EA5F81E43092E0016A95B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A3EA5C61E43092E0016A95B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A3EA5F51E43092E0016A95B;
+			remoteInfo = "PyzeWatchOSInApp WatchKit App";
+		};
+		5A3EA6071E43092F0016A95B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A3EA5C61E43092E0016A95B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A3EA6041E43092F0016A95B;
+			remoteInfo = "PyzeWatchOSInApp WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5A3EA61A1E43092F0016A95B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5A3EA6061E43092F0016A95B /* PyzeWatchOSInApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3EA61E1E43092F0016A95B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5A3EA5F71E43092E0016A95B /* PyzeWatchOSInApp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A4E86EA1E48546E00AAAB57 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5A4E86E91E48546E00AAAB57 /* Pyze.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5A3EA5CE1E43092E0016A95B /* PyzeWatchOSInApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PyzeWatchOSInApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A3EA5D11E43092E0016A95B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A3EA5D31E43092E0016A95B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5A3EA5D61E43092E0016A95B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A3EA5D81E43092E0016A95B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A3EA5DB1E43092E0016A95B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A3EA5DD1E43092E0016A95B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A3EA5E21E43092E0016A95B /* PyzeWatchOSInAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PyzeWatchOSInAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A3EA5E61E43092E0016A95B /* PyzeWatchOSInAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PyzeWatchOSInAppTests.swift; sourceTree = "<group>"; };
+		5A3EA5E81E43092E0016A95B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A3EA5ED1E43092E0016A95B /* PyzeWatchOSInAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PyzeWatchOSInAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A3EA5F11E43092E0016A95B /* PyzeWatchOSInAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PyzeWatchOSInAppUITests.swift; sourceTree = "<group>"; };
+		5A3EA5F31E43092E0016A95B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A3EA5F61E43092E0016A95B /* PyzeWatchOSInApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PyzeWatchOSInApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A3EA5FC1E43092E0016A95B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5A3EA5FE1E43092E0016A95B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A3EA6001E43092E0016A95B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A3EA6051E43092F0016A95B /* PyzeWatchOSInApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PyzeWatchOSInApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A3EA60B1E43092F0016A95B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5A3EA60C1E43092F0016A95B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		5A3EA60E1E43092F0016A95B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		5A3EA6101E43092F0016A95B /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		5A3EA6121E43092F0016A95B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A3EA6141E43092F0016A95B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A3EA69D1E4313CF0016A95B /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = apple.png; path = ../PyzeWatchOSInApp/apple.png; sourceTree = "<group>"; };
+		5A3EA6A11E434C740016A95B /* InAppMessageinterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppMessageinterfaceController.swift; sourceTree = "<group>"; };
+		5A3EA6A31E435C220016A95B /* InAppMessageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppMessageManager.swift; sourceTree = "<group>"; };
+		5A4E86E61E48544F00AAAB57 /* Pyze.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pyze.framework; sourceTree = "<group>"; };
+		5A5BDFB91E52B1D900362990 /* Pyze.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pyze.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A3EA5CB1E43092E0016A95B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5BDFBA1E52B1D900362990 /* Pyze.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3EA5DF1E43092E0016A95B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3EA5EA1E43092E0016A95B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3EA6021E43092F0016A95B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A4E86E81E48546E00AAAB57 /* Pyze.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A3EA5C51E43092E0016A95B = {
+			isa = PBXGroup;
+			children = (
+				5A3EA6091E43092F0016A95B /* PyzeWatchOSInApp WatchKit Extension */,
+				5A3EA5D01E43092E0016A95B /* PyzeWatchOSInApp */,
+				5A3EA5CF1E43092E0016A95B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A3EA5CF1E43092E0016A95B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A3EA5CE1E43092E0016A95B /* PyzeWatchOSInApp.app */,
+				5A3EA5E21E43092E0016A95B /* PyzeWatchOSInAppTests.xctest */,
+				5A3EA5ED1E43092E0016A95B /* PyzeWatchOSInAppUITests.xctest */,
+				5A3EA5F61E43092E0016A95B /* PyzeWatchOSInApp WatchKit App.app */,
+				5A3EA6051E43092F0016A95B /* PyzeWatchOSInApp WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A3EA5D01E43092E0016A95B /* PyzeWatchOSInApp */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BDFB91E52B1D900362990 /* Pyze.framework */,
+				5A3EA5D11E43092E0016A95B /* AppDelegate.swift */,
+				5A3EA5D31E43092E0016A95B /* ViewController.swift */,
+				5A3EA5D51E43092E0016A95B /* Main.storyboard */,
+				5A3EA5D81E43092E0016A95B /* Assets.xcassets */,
+				5A3EA5DA1E43092E0016A95B /* LaunchScreen.storyboard */,
+				5A3EA5DD1E43092E0016A95B /* Info.plist */,
+			);
+			path = PyzeWatchOSInApp;
+			sourceTree = "<group>";
+		};
+		5A3EA5E51E43092E0016A95B /* PyzeWatchOSInAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A3EA5E61E43092E0016A95B /* PyzeWatchOSInAppTests.swift */,
+				5A3EA5E81E43092E0016A95B /* Info.plist */,
+			);
+			name = PyzeWatchOSInAppTests;
+			path = ../PyzeWatchOSInAppTests;
+			sourceTree = "<group>";
+		};
+		5A3EA5F01E43092E0016A95B /* PyzeWatchOSInAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5A3EA5F11E43092E0016A95B /* PyzeWatchOSInAppUITests.swift */,
+				5A3EA5F31E43092E0016A95B /* Info.plist */,
+			);
+			name = PyzeWatchOSInAppUITests;
+			path = ../PyzeWatchOSInAppUITests;
+			sourceTree = "<group>";
+		};
+		5A3EA5FA1E43092E0016A95B /* PyzeWatchOSInApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5A3EA5FB1E43092E0016A95B /* Interface.storyboard */,
+				5A3EA5FE1E43092E0016A95B /* Assets.xcassets */,
+				5A3EA6001E43092E0016A95B /* Info.plist */,
+			);
+			name = "PyzeWatchOSInApp WatchKit App";
+			path = "../PyzeWatchOSInApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		5A3EA6091E43092F0016A95B /* PyzeWatchOSInApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5A4E86E61E48544F00AAAB57 /* Pyze.framework */,
+				5A3EA6A31E435C220016A95B /* InAppMessageManager.swift */,
+				5A3EA60C1E43092F0016A95B /* InterfaceController.swift */,
+				5A3EA6A11E434C740016A95B /* InAppMessageinterfaceController.swift */,
+				5A3EA60E1E43092F0016A95B /* ExtensionDelegate.swift */,
+				5A3EA6101E43092F0016A95B /* NotificationController.swift */,
+				5A3EA6121E43092F0016A95B /* Assets.xcassets */,
+				5A3EA6141E43092F0016A95B /* Info.plist */,
+				5A3EA60A1E43092F0016A95B /* Supporting Files */,
+			);
+			path = "PyzeWatchOSInApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5A3EA60A1E43092F0016A95B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A3EA69D1E4313CF0016A95B /* apple.png */,
+				5A3EA5FA1E43092E0016A95B /* PyzeWatchOSInApp WatchKit App */,
+				5A3EA5E51E43092E0016A95B /* PyzeWatchOSInAppTests */,
+				5A3EA5F01E43092E0016A95B /* PyzeWatchOSInAppUITests */,
+				5A3EA60B1E43092F0016A95B /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A3EA5CD1E43092E0016A95B /* PyzeWatchOSInApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A3EA61F1E43092F0016A95B /* Build configuration list for PBXNativeTarget "PyzeWatchOSInApp" */;
+			buildPhases = (
+				5A3EA5CA1E43092E0016A95B /* Sources */,
+				5A3EA5CB1E43092E0016A95B /* Frameworks */,
+				5A3EA5CC1E43092E0016A95B /* Resources */,
+				5A3EA61E1E43092F0016A95B /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A3EA5F91E43092E0016A95B /* PBXTargetDependency */,
+			);
+			name = PyzeWatchOSInApp;
+			productName = PyzeWatchOSInApp;
+			productReference = 5A3EA5CE1E43092E0016A95B /* PyzeWatchOSInApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A3EA5E11E43092E0016A95B /* PyzeWatchOSInAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A3EA6221E43092F0016A95B /* Build configuration list for PBXNativeTarget "PyzeWatchOSInAppTests" */;
+			buildPhases = (
+				5A3EA5DE1E43092E0016A95B /* Sources */,
+				5A3EA5DF1E43092E0016A95B /* Frameworks */,
+				5A3EA5E01E43092E0016A95B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A3EA5E41E43092E0016A95B /* PBXTargetDependency */,
+			);
+			name = PyzeWatchOSInAppTests;
+			productName = PyzeWatchOSInAppTests;
+			productReference = 5A3EA5E21E43092E0016A95B /* PyzeWatchOSInAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5A3EA5EC1E43092E0016A95B /* PyzeWatchOSInAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A3EA6251E43092F0016A95B /* Build configuration list for PBXNativeTarget "PyzeWatchOSInAppUITests" */;
+			buildPhases = (
+				5A3EA5E91E43092E0016A95B /* Sources */,
+				5A3EA5EA1E43092E0016A95B /* Frameworks */,
+				5A3EA5EB1E43092E0016A95B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A3EA5EF1E43092E0016A95B /* PBXTargetDependency */,
+			);
+			name = PyzeWatchOSInAppUITests;
+			productName = PyzeWatchOSInAppUITests;
+			productReference = 5A3EA5ED1E43092E0016A95B /* PyzeWatchOSInAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5A3EA5F51E43092E0016A95B /* PyzeWatchOSInApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A3EA61B1E43092F0016A95B /* Build configuration list for PBXNativeTarget "PyzeWatchOSInApp WatchKit App" */;
+			buildPhases = (
+				5A3EA5F41E43092E0016A95B /* Resources */,
+				5A3EA61A1E43092F0016A95B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A3EA6081E43092F0016A95B /* PBXTargetDependency */,
+			);
+			name = "PyzeWatchOSInApp WatchKit App";
+			productName = "PyzeWatchOSInApp WatchKit App";
+			productReference = 5A3EA5F61E43092E0016A95B /* PyzeWatchOSInApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5A3EA6041E43092F0016A95B /* PyzeWatchOSInApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A3EA6171E43092F0016A95B /* Build configuration list for PBXNativeTarget "PyzeWatchOSInApp WatchKit Extension" */;
+			buildPhases = (
+				5A3EA6011E43092F0016A95B /* Sources */,
+				5A3EA6021E43092F0016A95B /* Frameworks */,
+				5A3EA6031E43092F0016A95B /* Resources */,
+				5A4E86EA1E48546E00AAAB57 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PyzeWatchOSInApp WatchKit Extension";
+			productName = "PyzeWatchOSInApp WatchKit Extension";
+			productReference = 5A3EA6051E43092F0016A95B /* PyzeWatchOSInApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A3EA5C61E43092E0016A95B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Robosoft Technologies Pvt. Ltd.";
+				TargetAttributes = {
+					5A3EA5CD1E43092E0016A95B = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					5A3EA5E11E43092E0016A95B = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5A3EA5CD1E43092E0016A95B;
+					};
+					5A3EA5EC1E43092E0016A95B = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5A3EA5CD1E43092E0016A95B;
+					};
+					5A3EA5F51E43092E0016A95B = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					5A3EA6041E43092F0016A95B = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5A3EA5C91E43092E0016A95B /* Build configuration list for PBXProject "PyzeWatchOSInApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A3EA5C51E43092E0016A95B;
+			productRefGroup = 5A3EA5CF1E43092E0016A95B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A3EA5CD1E43092E0016A95B /* PyzeWatchOSInApp */,
+				5A3EA5E11E43092E0016A95B /* PyzeWatchOSInAppTests */,
+				5A3EA5EC1E43092E0016A95B /* PyzeWatchOSInAppUITests */,
+				5A3EA5F51E43092E0016A95B /* PyzeWatchOSInApp WatchKit App */,
+				5A3EA6041E43092F0016A95B /* PyzeWatchOSInApp WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A3EA5CC1E43092E0016A95B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A3EA5DC1E43092E0016A95B /* LaunchScreen.storyboard in Resources */,
+				5A3EA5D91E43092E0016A95B /* Assets.xcassets in Resources */,
+				5A3EA5D71E43092E0016A95B /* Main.storyboard in Resources */,
+				5A3EA69E1E4313CF0016A95B /* apple.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3EA5E01E43092E0016A95B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3EA5EB1E43092E0016A95B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3EA5F41E43092E0016A95B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A3EA5FF1E43092E0016A95B /* Assets.xcassets in Resources */,
+				5A3EA69F1E4313CF0016A95B /* apple.png in Resources */,
+				5A3EA5FD1E43092E0016A95B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3EA6031E43092F0016A95B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A3EA6A01E4313CF0016A95B /* apple.png in Resources */,
+				5A3EA6131E43092F0016A95B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A3EA5CA1E43092E0016A95B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A3EA5D41E43092E0016A95B /* ViewController.swift in Sources */,
+				5A3EA5D21E43092E0016A95B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3EA5DE1E43092E0016A95B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A3EA5E71E43092E0016A95B /* PyzeWatchOSInAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3EA5E91E43092E0016A95B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A3EA5F21E43092E0016A95B /* PyzeWatchOSInAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A3EA6011E43092F0016A95B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A3EA6A41E435C220016A95B /* InAppMessageManager.swift in Sources */,
+				5A3EA6111E43092F0016A95B /* NotificationController.swift in Sources */,
+				5A3EA60F1E43092F0016A95B /* ExtensionDelegate.swift in Sources */,
+				5A3EA6A21E434C740016A95B /* InAppMessageinterfaceController.swift in Sources */,
+				5A3EA60D1E43092F0016A95B /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A3EA5E41E43092E0016A95B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A3EA5CD1E43092E0016A95B /* PyzeWatchOSInApp */;
+			targetProxy = 5A3EA5E31E43092E0016A95B /* PBXContainerItemProxy */;
+		};
+		5A3EA5EF1E43092E0016A95B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A3EA5CD1E43092E0016A95B /* PyzeWatchOSInApp */;
+			targetProxy = 5A3EA5EE1E43092E0016A95B /* PBXContainerItemProxy */;
+		};
+		5A3EA5F91E43092E0016A95B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A3EA5F51E43092E0016A95B /* PyzeWatchOSInApp WatchKit App */;
+			targetProxy = 5A3EA5F81E43092E0016A95B /* PBXContainerItemProxy */;
+		};
+		5A3EA6081E43092F0016A95B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A3EA6041E43092F0016A95B /* PyzeWatchOSInApp WatchKit Extension */;
+			targetProxy = 5A3EA6071E43092F0016A95B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A3EA5D51E43092E0016A95B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A3EA5D61E43092E0016A95B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A3EA5DA1E43092E0016A95B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A3EA5DB1E43092E0016A95B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5A3EA5FB1E43092E0016A95B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A3EA5FC1E43092E0016A95B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A3EA6151E43092F0016A95B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A3EA6161E43092F0016A95B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A3EA6181E43092F0016A95B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/PyzeWatchOSInApp WatchKit Extension\"",
+				);
+				INFOPLIST_FILE = "PyzeWatchOSInApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.PyzeWatchOSInApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		5A3EA6191E43092F0016A95B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/PyzeWatchOSInApp WatchKit Extension\"",
+				);
+				INFOPLIST_FILE = "PyzeWatchOSInApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.PyzeWatchOSInApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		5A3EA61C1E43092F0016A95B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = PyzeWatchOSInApp_WatchKit_Extension;
+				INFOPLIST_FILE = "PyzeWatchOSInApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.PyzeWatchOSInApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		5A3EA61D1E43092F0016A95B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = PyzeWatchOSInApp_WatchKit_Extension;
+				INFOPLIST_FILE = "PyzeWatchOSInApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.PyzeWatchOSInApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		5A3EA6201E43092F0016A95B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PyzeWatchOSInApp",
+				);
+				INFOPLIST_FILE = PyzeWatchOSInApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.PyzeWatchOSInApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5A3EA6211E43092F0016A95B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PyzeWatchOSInApp",
+				);
+				INFOPLIST_FILE = PyzeWatchOSInApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.PyzeWatchOSInApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5A3EA6231E43092F0016A95B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PyzeWatchOSInAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.PyzeWatchOSInAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PyzeWatchOSInApp.app/PyzeWatchOSInApp";
+			};
+			name = Debug;
+		};
+		5A3EA6241E43092F0016A95B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PyzeWatchOSInAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.PyzeWatchOSInAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PyzeWatchOSInApp.app/PyzeWatchOSInApp";
+			};
+			name = Release;
+		};
+		5A3EA6261E43092F0016A95B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PyzeWatchOSInAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.PyzeWatchOSInAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PyzeWatchOSInApp;
+			};
+			name = Debug;
+		};
+		5A3EA6271E43092F0016A95B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PyzeWatchOSInAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.PyzeWatchOSInAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PyzeWatchOSInApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A3EA5C91E43092E0016A95B /* Build configuration list for PBXProject "PyzeWatchOSInApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A3EA6151E43092F0016A95B /* Debug */,
+				5A3EA6161E43092F0016A95B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A3EA6171E43092F0016A95B /* Build configuration list for PBXNativeTarget "PyzeWatchOSInApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A3EA6181E43092F0016A95B /* Debug */,
+				5A3EA6191E43092F0016A95B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A3EA61B1E43092F0016A95B /* Build configuration list for PBXNativeTarget "PyzeWatchOSInApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A3EA61C1E43092F0016A95B /* Debug */,
+				5A3EA61D1E43092F0016A95B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A3EA61F1E43092F0016A95B /* Build configuration list for PBXNativeTarget "PyzeWatchOSInApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A3EA6201E43092F0016A95B /* Debug */,
+				5A3EA6211E43092F0016A95B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A3EA6221E43092F0016A95B /* Build configuration list for PBXNativeTarget "PyzeWatchOSInAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A3EA6231E43092F0016A95B /* Debug */,
+				5A3EA6241E43092F0016A95B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A3EA6251E43092F0016A95B /* Build configuration list for PBXNativeTarget "PyzeWatchOSInAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A3EA6261E43092F0016A95B /* Debug */,
+				5A3EA6271E43092F0016A95B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A3EA5C61E43092E0016A95B /* Project object */;
+}

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
+    </dependencies>
+    <scenes>
+        <!--InAppManagerController-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="InAppManagerController" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PyzeWatchOSInApp_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" hidden="YES" text="0" textAlignment="left" id="rBR-N6-t0w">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                        <button width="122" height="35" alignment="center" title="Show Unread" id="59R-Ng-jsX">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" weight="light" pointSize="9"/>
+                            <connections>
+                                <action selector="showUnread" destination="AgC-eL-Hgc" id="eRW-jR-6b7"/>
+                            </connections>
+                        </button>
+                        <button width="122" height="35" alignment="center" title="Show Read" id="Xsv-g4-yeX">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" weight="light" pointSize="9"/>
+                            <connections>
+                                <action selector="showRead" destination="AgC-eL-Hgc" id="9Mf-62-mps"/>
+                            </connections>
+                        </button>
+                        <button width="122" height="35" alignment="center" title="Show All" id="PGH-gV-tYd">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" weight="light" pointSize="9"/>
+                            <connections>
+                                <action selector="showAll" destination="AgC-eL-Hgc" id="ydd-xB-zjW"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="countLabel" destination="rBR-N6-t0w" id="YZa-Xk-xgG"/>
+                        <outlet property="unreadButton" destination="59R-Ng-jsX" id="yRX-Wm-rzf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-160" y="-18"/>
+        </scene>
+        <!--InAppMessageUIController-->
+        <scene sceneID="2aX-9u-izw">
+            <objects>
+                <controller identifier="InAppMessageUIController" id="qGx-6N-3AG" customClass="InAppMessageinterfaceController" customModule="PyzeWatchOSInApp_WatchKit_Extension">
+                    <items>
+                        <button width="22" height="18" alignment="right" title="X" id="sVr-z7-XwF">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" weight="medium" pointSize="10"/>
+                            <connections>
+                                <action selector="didTapCloseInApp" destination="qGx-6N-3AG" id="h5H-Vp-1wg"/>
+                            </connections>
+                        </button>
+                        <imageView width="1" height="71" alignment="center" id="lXu-pP-urO"/>
+                        <label width="100" alignment="center" numberOfLines="0" id="6L6-nT-7zv">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label width="100" alignment="center" numberOfLines="0" id="qvI-bT-nkh">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                        </label>
+                        <button width="1" height="23" alignment="left" hidden="YES" id="eox-YF-KUh">
+                            <fontDescription key="font" type="system" weight="thin" pointSize="12"/>
+                            <connections>
+                                <action selector="didTapOption1" destination="qGx-6N-3AG" id="YEd-3w-fH1"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="23" alignment="left" hidden="YES" id="JKl-3q-wgz">
+                            <fontDescription key="font" type="system" weight="thin" pointSize="12"/>
+                            <connections>
+                                <action selector="didTapOption2" destination="qGx-6N-3AG" id="QGH-hV-8hK"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="23" alignment="left" hidden="YES" id="HFv-ob-m78">
+                            <fontDescription key="font" type="system" weight="thin" pointSize="12"/>
+                            <connections>
+                                <action selector="didTapOption3" destination="qGx-6N-3AG" id="AdZ-Vf-glS"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="23" alignment="left" title="Show Next &gt;" id="7T8-Fk-Nx2">
+                            <fontDescription key="font" type="system" weight="thin" pointSize="12"/>
+                            <connections>
+                                <action selector="didTapShowNext" destination="qGx-6N-3AG" id="Oqj-cx-AZj"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="contentLabel" destination="6L6-nT-7zv" id="Dm9-SK-aPH"/>
+                        <outlet property="imageView" destination="lXu-pP-urO" id="MSi-Jt-91T"/>
+                        <outlet property="option1" destination="eox-YF-KUh" id="11L-xp-c5m"/>
+                        <outlet property="option2" destination="JKl-3q-wgz" id="eq1-pC-LLz"/>
+                        <outlet property="option3" destination="HFv-ob-m78" id="KXf-lk-Xxm"/>
+                        <outlet property="showNextButton" destination="7T8-Fk-Nx2" id="43q-OC-gyZ"/>
+                        <outlet property="titleLabel" destination="qvI-bT-nkh" id="BxK-Eu-6xe"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="67" y="-18"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="PyzeWatchOSInApp_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

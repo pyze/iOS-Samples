@@ -1,0 +1,40 @@
+{
+    "blogList":[
+                {
+                "title":"First blog",
+                "blogId":"111",
+                "subTitle":"Subtitle for First blog",
+                "imageURL":"pyze.png",
+                },
+                {
+                "title":"Second blog",
+                "blogId":"222",
+                "subTitle":"Subtitle for Second blog",
+                "imageURL":"pyze.png",
+                },
+                {
+                "title":"Third blog",
+                "blogId":"333",
+                "subTitle":"Subtitle for Third blog",
+                "imageURL":"pyze.png",
+                },
+                {
+                "title":"Fourth blog",
+                "blogId":"444",
+                "subTitle":"Subtitle for Fourth blog",
+                "imageURL":"pyze.png",
+                },
+                {
+                "title":"Fifth blog",
+                "blogId":"555",
+                "subTitle":"Subtitle for Fifth blog",
+                "imageURL":"pyze.png",
+                },
+                {
+                "title":"Sixth blog",
+                "blogId":"666",
+                "subTitle":"Subtitle for Sixth blog",
+                "imageURL":"pyze.png",
+                },
+                ]
+}
