@@ -1,5 +1,6 @@
 
 #import "AppDelegate.h"
+#import "PADataManager.h"
 
 @interface AppDelegate ()
 
@@ -7,9 +8,13 @@
 
 @implementation AppDelegate
 
+#pragma mark - Application life cycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [DATA_MANAGER fetchLoginInfo];
+    [self customiseTabbarController];
+    
     return YES;
 }
 
@@ -38,6 +43,43 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Utility method
+
+- (void) customiseTabbarController {
+    
+    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    UITabBar *tabBar = tabBarController.tabBar;
+
+    
+    UITabBarItem *tabBarItem = [tabBar.items objectAtIndex:0];
+    [tabBarItem setTitle: @"Flights"];
+    [tabBarItem setTitlePositionAdjustment:UIOffsetMake(0.0, -10.0)];
+    
+    tabBarItem = [tabBar.items objectAtIndex:1];
+    [tabBarItem setTitle: @"Hotels"];
+    [tabBarItem setTitlePositionAdjustment:UIOffsetMake(0.0, -10.0)];
+    
+    tabBarItem = [tabBar.items objectAtIndex:2];
+    [tabBarItem setTitle: @"Cars"];
+    [tabBarItem setTitlePositionAdjustment:UIOffsetMake(0.0, -10.0)];
+    
+    tabBarItem = [tabBar.items objectAtIndex:3];
+    [tabBarItem setTitle: @"More"];
+    [tabBarItem setTitlePositionAdjustment:UIOffsetMake(0.0, -10.0)];
+    
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                       [UIColor blackColor], NSForegroundColorAttributeName,
+                                                       [UIFont boldSystemFontOfSize:14], NSFontAttributeName,
+                                                       nil] forState:UIControlStateNormal];
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                       [UIColor whiteColor], NSForegroundColorAttributeName,
+                                                       [UIFont boldSystemFontOfSize:14], NSFontAttributeName,
+                                                       nil] forState:UIControlStateSelected];
+    
 }
 
 

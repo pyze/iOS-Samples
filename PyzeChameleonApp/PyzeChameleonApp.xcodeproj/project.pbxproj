@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A713C221E65849C00DAF256 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A713C211E65849C00DAF256 /* main.m */; };
+		5A713C251E65849C00DAF256 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A713C241E65849C00DAF256 /* AppDelegate.m */; };
+		5A713C2B1E65849C00DAF256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A713C291E65849C00DAF256 /* Main.storyboard */; };
+		5A713C2D1E65849C00DAF256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A713C2C1E65849C00DAF256 /* Assets.xcassets */; };
+		5A713C301E65849C00DAF256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A713C2E1E65849C00DAF256 /* LaunchScreen.storyboard */; };
+		5A713C3B1E65849C00DAF256 /* PyzeChameleonAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A713C3A1E65849C00DAF256 /* PyzeChameleonAppTests.m */; };
+		5A713C461E65849C00DAF256 /* PyzeChameleonAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A713C451E65849C00DAF256 /* PyzeChameleonAppUITests.m */; };
+		5A713C591E6584EC00DAF256 /* PyzeE-Cart.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A713C581E6584EC00DAF256 /* PyzeE-Cart.json */; };
+		5A713C691E658BAC00DAF256 /* Arrow New York Striped Men's Polo Neck Grey, Dark Blue T-shirt.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5A713C5C1E658BAC00DAF256 /* Arrow New York Striped Men's Polo Neck Grey, Dark Blue T-shirt.jpeg */; };
+		5A713C6A1E658BAC00DAF256 /* Arrow Solid Men's Polo Neck Blue T-shirt.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5A713C5D1E658BAC00DAF256 /* Arrow Solid Men's Polo Neck Blue T-shirt.jpeg */; };
+		5A713C6B1E658BAC00DAF256 /* Fabstone Solid Men's Henley Maroon T-Shirt.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5A713C5E1E658BAC00DAF256 /* Fabstone Solid Men's Henley Maroon T-Shirt.jpeg */; };
+		5A713C6C1E658BAC00DAF256 /* Fila Printed Men's Polo Neck Dark Blue T-Shirt.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5A713C5F1E658BAC00DAF256 /* Fila Printed Men's Polo Neck Dark Blue T-Shirt.jpeg */; };
+		5A713C6D1E658BAC00DAF256 /* Fila Striped Men's Henley White, Grey T-Shirt.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5A713C601E658BAC00DAF256 /* Fila Striped Men's Henley White, Grey T-Shirt.jpeg */; };
+		5A713C6E1E658BAC00DAF256 /* Fila Striped Men's Polo Neck White, Blue, Pink T-Shirt.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5A713C611E658BAC00DAF256 /* Fila Striped Men's Polo Neck White, Blue, Pink T-Shirt.jpeg */; };
+		5A713C6F1E658BAC00DAF256 /* French Connection Solid Men's Polo Neck Dark Blue T-Shirt.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5A713C621E658BAC00DAF256 /* French Connection Solid Men's Polo Neck Dark Blue T-Shirt.jpeg */; };
+		5A713C701E658BAC00DAF256 /* French Connection Solid Men's Polo Neck White T-Shirt.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5A713C631E658BAC00DAF256 /* French Connection Solid Men's Polo Neck White T-Shirt.jpeg */; };
+		5A713C711E658BAC00DAF256 /* French Connection Solid Men's Round Neck Grey T-Shirt.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5A713C641E658BAC00DAF256 /* French Connection Solid Men's Round Neck Grey T-Shirt.jpeg */; };
+		5A713C721E658BAC00DAF256 /* HomeClothingMen's ClothingT-ShirtsArrow T-ShirtsArrow Striped Men's Polo Neck Light Green T-Shirt Arrow Striped Men's Polo Neck Light Green T-Shirt.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5A713C651E658BAC00DAF256 /* HomeClothingMen's ClothingT-ShirtsArrow T-ShirtsArrow Striped Men's Polo Neck Light Green T-Shirt Arrow Striped Men's Polo Neck Light Green T-Shirt.jpeg */; };
+		5A713C731E658BAC00DAF256 /* Leana Solid Men's Hooded Red, Black T-Shirt.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5A713C661E658BAC00DAF256 /* Leana Solid Men's Hooded Red, Black T-Shirt.jpeg */; };
+		5A713C741E658BAC00DAF256 /* Pepe Jeans Solid Men's Round Neck Blue T-shirt.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5A713C671E658BAC00DAF256 /* Pepe Jeans Solid Men's Round Neck Blue T-shirt.jpeg */; };
+		5A713C751E658BAC00DAF256 /* uzee Solid Men's Hooded Black T-Shirt.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5A713C681E658BAC00DAF256 /* uzee Solid Men's Hooded Black T-Shirt.jpeg */; };
+		5A713C7A1E658BD500DAF256 /* CAFeedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A713C781E658BD500DAF256 /* CAFeedManager.m */; };
+		5A713C7D1E658C7600DAF256 /* CAProductList.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A713C7C1E658C7600DAF256 /* CAProductList.m */; };
+		5A713C801E658CEE00DAF256 /* CAProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A713C7F1E658CEE00DAF256 /* CAProduct.m */; };
+		5A713C851E658F4400DAF256 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A713C841E658F4400DAF256 /* ViewController.m */; };
+		5A713C921E658FC200DAF256 /* CAECommerceShoppingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A713C8E1E658FC200DAF256 /* CAECommerceShoppingController.m */; };
+		5A713C931E658FC200DAF256 /* CAInStoreShoppingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A713C911E658FC200DAF256 /* CAInStoreShoppingController.m */; };
+		5A713C9A1E65957500DAF256 /* CAProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A713C991E65957500DAF256 /* CAProductCell.m */; };
+		5A713C9D1E6595FF00DAF256 /* CADataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A713C9C1E6595FF00DAF256 /* CADataManager.m */; };
+		5A713CA01E659F8700DAF256 /* barcode.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A713C9F1E659F8700DAF256 /* barcode.png */; };
+		5A713CA21E65A39D00DAF256 /* cart.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A713CA11E65A39D00DAF256 /* cart.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A713C371E65849C00DAF256 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A713C151E65849C00DAF256 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A713C1C1E65849C00DAF256;
+			remoteInfo = PyzeChameleonApp;
+		};
+		5A713C421E65849C00DAF256 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A713C151E65849C00DAF256 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A713C1C1E65849C00DAF256;
+			remoteInfo = PyzeChameleonApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A713C1D1E65849C00DAF256 /* PyzeChameleonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PyzeChameleonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A713C211E65849C00DAF256 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5A713C231E65849C00DAF256 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5A713C241E65849C00DAF256 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5A713C2A1E65849C00DAF256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A713C2C1E65849C00DAF256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A713C2F1E65849C00DAF256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A713C311E65849C00DAF256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A713C361E65849C00DAF256 /* PyzeChameleonAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PyzeChameleonAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A713C3A1E65849C00DAF256 /* PyzeChameleonAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PyzeChameleonAppTests.m; sourceTree = "<group>"; };
+		5A713C3C1E65849C00DAF256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A713C411E65849C00DAF256 /* PyzeChameleonAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PyzeChameleonAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A713C451E65849C00DAF256 /* PyzeChameleonAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PyzeChameleonAppUITests.m; sourceTree = "<group>"; };
+		5A713C471E65849C00DAF256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A713C581E6584EC00DAF256 /* PyzeE-Cart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "PyzeE-Cart.json"; sourceTree = "<group>"; };
+		5A713C5C1E658BAC00DAF256 /* Arrow New York Striped Men's Polo Neck Grey, Dark Blue T-shirt.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Arrow New York Striped Men's Polo Neck Grey, Dark Blue T-shirt.jpeg"; sourceTree = "<group>"; };
+		5A713C5D1E658BAC00DAF256 /* Arrow Solid Men's Polo Neck Blue T-shirt.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Arrow Solid Men's Polo Neck Blue T-shirt.jpeg"; sourceTree = "<group>"; };
+		5A713C5E1E658BAC00DAF256 /* Fabstone Solid Men's Henley Maroon T-Shirt.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fabstone Solid Men's Henley Maroon T-Shirt.jpeg"; sourceTree = "<group>"; };
+		5A713C5F1E658BAC00DAF256 /* Fila Printed Men's Polo Neck Dark Blue T-Shirt.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fila Printed Men's Polo Neck Dark Blue T-Shirt.jpeg"; sourceTree = "<group>"; };
+		5A713C601E658BAC00DAF256 /* Fila Striped Men's Henley White, Grey T-Shirt.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fila Striped Men's Henley White, Grey T-Shirt.jpeg"; sourceTree = "<group>"; };
+		5A713C611E658BAC00DAF256 /* Fila Striped Men's Polo Neck White, Blue, Pink T-Shirt.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fila Striped Men's Polo Neck White, Blue, Pink T-Shirt.jpeg"; sourceTree = "<group>"; };
+		5A713C621E658BAC00DAF256 /* French Connection Solid Men's Polo Neck Dark Blue T-Shirt.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "French Connection Solid Men's Polo Neck Dark Blue T-Shirt.jpeg"; sourceTree = "<group>"; };
+		5A713C631E658BAC00DAF256 /* French Connection Solid Men's Polo Neck White T-Shirt.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "French Connection Solid Men's Polo Neck White T-Shirt.jpeg"; sourceTree = "<group>"; };
+		5A713C641E658BAC00DAF256 /* French Connection Solid Men's Round Neck Grey T-Shirt.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "French Connection Solid Men's Round Neck Grey T-Shirt.jpeg"; sourceTree = "<group>"; };
+		5A713C651E658BAC00DAF256 /* HomeClothingMen's ClothingT-ShirtsArrow T-ShirtsArrow Striped Men's Polo Neck Light Green T-Shirt Arrow Striped Men's Polo Neck Light Green T-Shirt.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "HomeClothingMen's ClothingT-ShirtsArrow T-ShirtsArrow Striped Men's Polo Neck Light Green T-Shirt Arrow Striped Men's Polo Neck Light Green T-Shirt.jpeg"; sourceTree = "<group>"; };
+		5A713C661E658BAC00DAF256 /* Leana Solid Men's Hooded Red, Black T-Shirt.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Leana Solid Men's Hooded Red, Black T-Shirt.jpeg"; sourceTree = "<group>"; };
+		5A713C671E658BAC00DAF256 /* Pepe Jeans Solid Men's Round Neck Blue T-shirt.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pepe Jeans Solid Men's Round Neck Blue T-shirt.jpeg"; sourceTree = "<group>"; };
+		5A713C681E658BAC00DAF256 /* uzee Solid Men's Hooded Black T-Shirt.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "uzee Solid Men's Hooded Black T-Shirt.jpeg"; sourceTree = "<group>"; };
+		5A713C771E658BD500DAF256 /* CAFeedManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAFeedManager.h; sourceTree = "<group>"; };
+		5A713C781E658BD500DAF256 /* CAFeedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAFeedManager.m; sourceTree = "<group>"; };
+		5A713C7B1E658C7600DAF256 /* CAProductList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAProductList.h; sourceTree = "<group>"; };
+		5A713C7C1E658C7600DAF256 /* CAProductList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAProductList.m; sourceTree = "<group>"; };
+		5A713C7E1E658CEE00DAF256 /* CAProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAProduct.h; sourceTree = "<group>"; };
+		5A713C7F1E658CEE00DAF256 /* CAProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAProduct.m; sourceTree = "<group>"; };
+		5A713C831E658F4400DAF256 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5A713C841E658F4400DAF256 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5A713C8D1E658FC200DAF256 /* CAECommerceShoppingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAECommerceShoppingController.h; sourceTree = "<group>"; };
+		5A713C8E1E658FC200DAF256 /* CAECommerceShoppingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAECommerceShoppingController.m; sourceTree = "<group>"; };
+		5A713C901E658FC200DAF256 /* CAInStoreShoppingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAInStoreShoppingController.h; sourceTree = "<group>"; };
+		5A713C911E658FC200DAF256 /* CAInStoreShoppingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAInStoreShoppingController.m; sourceTree = "<group>"; };
+		5A713C981E65957500DAF256 /* CAProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAProductCell.h; path = ProductCell/CAProductCell.h; sourceTree = "<group>"; };
+		5A713C991E65957500DAF256 /* CAProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CAProductCell.m; path = ProductCell/CAProductCell.m; sourceTree = "<group>"; };
+		5A713C9B1E6595FF00DAF256 /* CADataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADataManager.h; sourceTree = "<group>"; };
+		5A713C9C1E6595FF00DAF256 /* CADataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADataManager.m; sourceTree = "<group>"; };
+		5A713C9F1E659F8700DAF256 /* barcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barcode.png; sourceTree = "<group>"; };
+		5A713CA11E65A39D00DAF256 /* cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cart.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A713C1A1E65849C00DAF256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A713C331E65849C00DAF256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A713C3E1E65849C00DAF256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A713C141E65849C00DAF256 = {
+			isa = PBXGroup;
+			children = (
+				5A713C1F1E65849C00DAF256 /* PyzeChameleonApp */,
+				5A713C391E65849C00DAF256 /* PyzeChameleonAppTests */,
+				5A713C441E65849C00DAF256 /* PyzeChameleonAppUITests */,
+				5A713C1E1E65849C00DAF256 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A713C1E1E65849C00DAF256 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A713C1D1E65849C00DAF256 /* PyzeChameleonApp.app */,
+				5A713C361E65849C00DAF256 /* PyzeChameleonAppTests.xctest */,
+				5A713C411E65849C00DAF256 /* PyzeChameleonAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A713C1F1E65849C00DAF256 /* PyzeChameleonApp */ = {
+			isa = PBXGroup;
+			children = (
+				5A713C761E658BD500DAF256 /* Manager */,
+				5A713C791E658BD500DAF256 /* Models */,
+				5A713C811E658F4400DAF256 /* ViewControllers */,
+				5A713C231E65849C00DAF256 /* AppDelegate.h */,
+				5A713C241E65849C00DAF256 /* AppDelegate.m */,
+				5A713C291E65849C00DAF256 /* Main.storyboard */,
+				5A713C2C1E65849C00DAF256 /* Assets.xcassets */,
+				5A713C2E1E65849C00DAF256 /* LaunchScreen.storyboard */,
+				5A713C311E65849C00DAF256 /* Info.plist */,
+				5A713C201E65849C00DAF256 /* Supporting Files */,
+			);
+			path = PyzeChameleonApp;
+			sourceTree = "<group>";
+		};
+		5A713C201E65849C00DAF256 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A713C531E6584DA00DAF256 /* Resources */,
+				5A713C211E65849C00DAF256 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A713C391E65849C00DAF256 /* PyzeChameleonAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A713C3A1E65849C00DAF256 /* PyzeChameleonAppTests.m */,
+				5A713C3C1E65849C00DAF256 /* Info.plist */,
+			);
+			path = PyzeChameleonAppTests;
+			sourceTree = "<group>";
+		};
+		5A713C441E65849C00DAF256 /* PyzeChameleonAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5A713C451E65849C00DAF256 /* PyzeChameleonAppUITests.m */,
+				5A713C471E65849C00DAF256 /* Info.plist */,
+			);
+			path = PyzeChameleonAppUITests;
+			sourceTree = "<group>";
+		};
+		5A713C531E6584DA00DAF256 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5A713C5B1E658BAC00DAF256 /* Images */,
+				5A713C571E6584EC00DAF256 /* JSON */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5A713C571E6584EC00DAF256 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				5A713C581E6584EC00DAF256 /* PyzeE-Cart.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		5A713C5B1E658BAC00DAF256 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5A713C9E1E659F8700DAF256 /* Icons */,
+				5A713C5C1E658BAC00DAF256 /* Arrow New York Striped Men's Polo Neck Grey, Dark Blue T-shirt.jpeg */,
+				5A713C5D1E658BAC00DAF256 /* Arrow Solid Men's Polo Neck Blue T-shirt.jpeg */,
+				5A713C5E1E658BAC00DAF256 /* Fabstone Solid Men's Henley Maroon T-Shirt.jpeg */,
+				5A713C5F1E658BAC00DAF256 /* Fila Printed Men's Polo Neck Dark Blue T-Shirt.jpeg */,
+				5A713C601E658BAC00DAF256 /* Fila Striped Men's Henley White, Grey T-Shirt.jpeg */,
+				5A713C611E658BAC00DAF256 /* Fila Striped Men's Polo Neck White, Blue, Pink T-Shirt.jpeg */,
+				5A713C621E658BAC00DAF256 /* French Connection Solid Men's Polo Neck Dark Blue T-Shirt.jpeg */,
+				5A713C631E658BAC00DAF256 /* French Connection Solid Men's Polo Neck White T-Shirt.jpeg */,
+				5A713C641E658BAC00DAF256 /* French Connection Solid Men's Round Neck Grey T-Shirt.jpeg */,
+				5A713C651E658BAC00DAF256 /* HomeClothingMen's ClothingT-ShirtsArrow T-ShirtsArrow Striped Men's Polo Neck Light Green T-Shirt Arrow Striped Men's Polo Neck Light Green T-Shirt.jpeg */,
+				5A713C661E658BAC00DAF256 /* Leana Solid Men's Hooded Red, Black T-Shirt.jpeg */,
+				5A713C671E658BAC00DAF256 /* Pepe Jeans Solid Men's Round Neck Blue T-shirt.jpeg */,
+				5A713C681E658BAC00DAF256 /* uzee Solid Men's Hooded Black T-Shirt.jpeg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		5A713C761E658BD500DAF256 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5A713C9B1E6595FF00DAF256 /* CADataManager.h */,
+				5A713C9C1E6595FF00DAF256 /* CADataManager.m */,
+				5A713C771E658BD500DAF256 /* CAFeedManager.h */,
+				5A713C781E658BD500DAF256 /* CAFeedManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		5A713C791E658BD500DAF256 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A713C7B1E658C7600DAF256 /* CAProductList.h */,
+				5A713C7C1E658C7600DAF256 /* CAProductList.m */,
+				5A713C7E1E658CEE00DAF256 /* CAProduct.h */,
+				5A713C7F1E658CEE00DAF256 /* CAProduct.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5A713C811E658F4400DAF256 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A713C8C1E658FC200DAF256 /* ECommerceShoppingController */,
+				5A713C8F1E658FC200DAF256 /* InStoreShoppingController */,
+				5A713C821E658F4400DAF256 /* HomepageController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5A713C821E658F4400DAF256 /* HomepageController */ = {
+			isa = PBXGroup;
+			children = (
+				5A713C831E658F4400DAF256 /* ViewController.h */,
+				5A713C841E658F4400DAF256 /* ViewController.m */,
+			);
+			path = HomepageController;
+			sourceTree = "<group>";
+		};
+		5A713C8C1E658FC200DAF256 /* ECommerceShoppingController */ = {
+			isa = PBXGroup;
+			children = (
+				5A713C941E65950E00DAF256 /* ProductCell */,
+				5A713C8D1E658FC200DAF256 /* CAECommerceShoppingController.h */,
+				5A713C8E1E658FC200DAF256 /* CAECommerceShoppingController.m */,
+			);
+			path = ECommerceShoppingController;
+			sourceTree = "<group>";
+		};
+		5A713C8F1E658FC200DAF256 /* InStoreShoppingController */ = {
+			isa = PBXGroup;
+			children = (
+				5A713C901E658FC200DAF256 /* CAInStoreShoppingController.h */,
+				5A713C911E658FC200DAF256 /* CAInStoreShoppingController.m */,
+			);
+			path = InStoreShoppingController;
+			sourceTree = "<group>";
+		};
+		5A713C941E65950E00DAF256 /* ProductCell */ = {
+			isa = PBXGroup;
+			children = (
+				5A713C981E65957500DAF256 /* CAProductCell.h */,
+				5A713C991E65957500DAF256 /* CAProductCell.m */,
+			);
+			name = ProductCell;
+			sourceTree = "<group>";
+		};
+		5A713C9E1E659F8700DAF256 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				5A713CA11E65A39D00DAF256 /* cart.png */,
+				5A713C9F1E659F8700DAF256 /* barcode.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A713C1C1E65849C00DAF256 /* PyzeChameleonApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A713C4A1E65849C00DAF256 /* Build configuration list for PBXNativeTarget "PyzeChameleonApp" */;
+			buildPhases = (
+				5A713C191E65849C00DAF256 /* Sources */,
+				5A713C1A1E65849C00DAF256 /* Frameworks */,
+				5A713C1B1E65849C00DAF256 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PyzeChameleonApp;
+			productName = PyzeChameleonApp;
+			productReference = 5A713C1D1E65849C00DAF256 /* PyzeChameleonApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A713C351E65849C00DAF256 /* PyzeChameleonAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A713C4D1E65849C00DAF256 /* Build configuration list for PBXNativeTarget "PyzeChameleonAppTests" */;
+			buildPhases = (
+				5A713C321E65849C00DAF256 /* Sources */,
+				5A713C331E65849C00DAF256 /* Frameworks */,
+				5A713C341E65849C00DAF256 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A713C381E65849C00DAF256 /* PBXTargetDependency */,
+			);
+			name = PyzeChameleonAppTests;
+			productName = PyzeChameleonAppTests;
+			productReference = 5A713C361E65849C00DAF256 /* PyzeChameleonAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5A713C401E65849C00DAF256 /* PyzeChameleonAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A713C501E65849C00DAF256 /* Build configuration list for PBXNativeTarget "PyzeChameleonAppUITests" */;
+			buildPhases = (
+				5A713C3D1E65849C00DAF256 /* Sources */,
+				5A713C3E1E65849C00DAF256 /* Frameworks */,
+				5A713C3F1E65849C00DAF256 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A713C431E65849C00DAF256 /* PBXTargetDependency */,
+			);
+			name = PyzeChameleonAppUITests;
+			productName = PyzeChameleonAppUITests;
+			productReference = 5A713C411E65849C00DAF256 /* PyzeChameleonAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A713C151E65849C00DAF256 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Robosoft Technologies Pvt. Ltd.";
+				TargetAttributes = {
+					5A713C1C1E65849C00DAF256 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					5A713C351E65849C00DAF256 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5A713C1C1E65849C00DAF256;
+					};
+					5A713C401E65849C00DAF256 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5A713C1C1E65849C00DAF256;
+					};
+				};
+			};
+			buildConfigurationList = 5A713C181E65849C00DAF256 /* Build configuration list for PBXProject "PyzeChameleonApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A713C141E65849C00DAF256;
+			productRefGroup = 5A713C1E1E65849C00DAF256 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A713C1C1E65849C00DAF256 /* PyzeChameleonApp */,
+				5A713C351E65849C00DAF256 /* PyzeChameleonAppTests */,
+				5A713C401E65849C00DAF256 /* PyzeChameleonAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A713C1B1E65849C00DAF256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A713CA01E659F8700DAF256 /* barcode.png in Resources */,
+				5A713C6F1E658BAC00DAF256 /* French Connection Solid Men's Polo Neck Dark Blue T-Shirt.jpeg in Resources */,
+				5A713C301E65849C00DAF256 /* LaunchScreen.storyboard in Resources */,
+				5A713C6E1E658BAC00DAF256 /* Fila Striped Men's Polo Neck White, Blue, Pink T-Shirt.jpeg in Resources */,
+				5A713C751E658BAC00DAF256 /* uzee Solid Men's Hooded Black T-Shirt.jpeg in Resources */,
+				5A713C741E658BAC00DAF256 /* Pepe Jeans Solid Men's Round Neck Blue T-shirt.jpeg in Resources */,
+				5A713C721E658BAC00DAF256 /* HomeClothingMen's ClothingT-ShirtsArrow T-ShirtsArrow Striped Men's Polo Neck Light Green T-Shirt Arrow Striped Men's Polo Neck Light Green T-Shirt.jpeg in Resources */,
+				5A713C731E658BAC00DAF256 /* Leana Solid Men's Hooded Red, Black T-Shirt.jpeg in Resources */,
+				5A713C2D1E65849C00DAF256 /* Assets.xcassets in Resources */,
+				5A713C2B1E65849C00DAF256 /* Main.storyboard in Resources */,
+				5A713C6C1E658BAC00DAF256 /* Fila Printed Men's Polo Neck Dark Blue T-Shirt.jpeg in Resources */,
+				5A713C711E658BAC00DAF256 /* French Connection Solid Men's Round Neck Grey T-Shirt.jpeg in Resources */,
+				5A713CA21E65A39D00DAF256 /* cart.png in Resources */,
+				5A713C591E6584EC00DAF256 /* PyzeE-Cart.json in Resources */,
+				5A713C6B1E658BAC00DAF256 /* Fabstone Solid Men's Henley Maroon T-Shirt.jpeg in Resources */,
+				5A713C701E658BAC00DAF256 /* French Connection Solid Men's Polo Neck White T-Shirt.jpeg in Resources */,
+				5A713C6D1E658BAC00DAF256 /* Fila Striped Men's Henley White, Grey T-Shirt.jpeg in Resources */,
+				5A713C691E658BAC00DAF256 /* Arrow New York Striped Men's Polo Neck Grey, Dark Blue T-shirt.jpeg in Resources */,
+				5A713C6A1E658BAC00DAF256 /* Arrow Solid Men's Polo Neck Blue T-shirt.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A713C341E65849C00DAF256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A713C3F1E65849C00DAF256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A713C191E65849C00DAF256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A713C851E658F4400DAF256 /* ViewController.m in Sources */,
+				5A713C7D1E658C7600DAF256 /* CAProductList.m in Sources */,
+				5A713C921E658FC200DAF256 /* CAECommerceShoppingController.m in Sources */,
+				5A713C251E65849C00DAF256 /* AppDelegate.m in Sources */,
+				5A713C9A1E65957500DAF256 /* CAProductCell.m in Sources */,
+				5A713C7A1E658BD500DAF256 /* CAFeedManager.m in Sources */,
+				5A713C221E65849C00DAF256 /* main.m in Sources */,
+				5A713C931E658FC200DAF256 /* CAInStoreShoppingController.m in Sources */,
+				5A713C9D1E6595FF00DAF256 /* CADataManager.m in Sources */,
+				5A713C801E658CEE00DAF256 /* CAProduct.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A713C321E65849C00DAF256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A713C3B1E65849C00DAF256 /* PyzeChameleonAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A713C3D1E65849C00DAF256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A713C461E65849C00DAF256 /* PyzeChameleonAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A713C381E65849C00DAF256 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A713C1C1E65849C00DAF256 /* PyzeChameleonApp */;
+			targetProxy = 5A713C371E65849C00DAF256 /* PBXContainerItemProxy */;
+		};
+		5A713C431E65849C00DAF256 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A713C1C1E65849C00DAF256 /* PyzeChameleonApp */;
+			targetProxy = 5A713C421E65849C00DAF256 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A713C291E65849C00DAF256 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A713C2A1E65849C00DAF256 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A713C2E1E65849C00DAF256 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A713C2F1E65849C00DAF256 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A713C481E65849C00DAF256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5A713C491E65849C00DAF256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A713C4B1E65849C00DAF256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PyzeChameleonApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.PyzeChameleonApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5A713C4C1E65849C00DAF256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PyzeChameleonApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.PyzeChameleonApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5A713C4E1E65849C00DAF256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PyzeChameleonAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.PyzeChameleonAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PyzeChameleonApp.app/PyzeChameleonApp";
+			};
+			name = Debug;
+		};
+		5A713C4F1E65849C00DAF256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PyzeChameleonAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.PyzeChameleonAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PyzeChameleonApp.app/PyzeChameleonApp";
+			};
+			name = Release;
+		};
+		5A713C511E65849C00DAF256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PyzeChameleonAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.PyzeChameleonAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PyzeChameleonApp;
+			};
+			name = Debug;
+		};
+		5A713C521E65849C00DAF256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PyzeChameleonAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pyze.PyzeChameleonAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PyzeChameleonApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A713C181E65849C00DAF256 /* Build configuration list for PBXProject "PyzeChameleonApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A713C481E65849C00DAF256 /* Debug */,
+				5A713C491E65849C00DAF256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A713C4A1E65849C00DAF256 /* Build configuration list for PBXNativeTarget "PyzeChameleonApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A713C4B1E65849C00DAF256 /* Debug */,
+				5A713C4C1E65849C00DAF256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5A713C4D1E65849C00DAF256 /* Build configuration list for PBXNativeTarget "PyzeChameleonAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A713C4E1E65849C00DAF256 /* Debug */,
+				5A713C4F1E65849C00DAF256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5A713C501E65849C00DAF256 /* Build configuration list for PBXNativeTarget "PyzeChameleonAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A713C511E65849C00DAF256 /* Debug */,
+				5A713C521E65849C00DAF256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A713C151E65849C00DAF256 /* Project object */;
+}

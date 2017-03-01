@@ -1,9 +1,12 @@
 
 #import <Foundation/Foundation.h>
+#import "PATravelInfo.h"
+#import "PAUser.h"
 
 @interface PAFeedManager : NSObject
 
-+ (void) fetchBlogList:(void (^)(NSArray * blogList)) completionHandler;
-+ (void) fetchBlogContentForId:(NSString *)blogId handler:(void (^)(NSString * blogList)) completionHandler;
++ (void) fetchUserDetailsForId:(NSString *)userId completionHandler:(void (^)(PAUser * user)) completionHandler;
++ (void) fetchLoginInfo:(void (^)(NSMutableArray * loginInfo)) completionHandler;
++ (void) fetchTravelInfo:(void (^)(PATravelInfo * travelInfo)) completionHandler;
 
 @end
