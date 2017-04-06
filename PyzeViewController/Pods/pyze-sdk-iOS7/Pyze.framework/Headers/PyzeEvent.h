@@ -263,9 +263,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  *  PyzeIdentity
- *  You can use this class to send the user's traits to Pyze.  This information is solely used to reachout to the user via channels you provide (email, SMS, MMS, Push Notifications, etc).  Pyze does not require or track user information.  Set the identifers you want to send and then call postIfChanged.
+ *  You can use this class to send the user’s traits to Pyze. You can identify a user using setUserIdentity method and reset the user’s identity using resetUserIdentity method
  
- *  - Since: v1.0.0
+ *  - Since: v3.2.3
  
  */
 @interface PyzeIdentity : NSObject
@@ -274,117 +274,63 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Set Identities Locally
 
 /**
- *  Set App specific User Identifer.  Use this to identify users by an app specific trait. Examples include: username, userid, hashedid.  It is highly recommended you do not send PII.  Call postIfChanged after setting all identifiers.
+ *  Use this to identify users. Examples include: username, userid, email address, phone number, or a hashedId. Call this when a user logs in, registers or signs up
  *
- *  @param appSpecificUserId An app specific user identifer
+ *  @param uniqueID An app specific user identifer
  
- *  - Since: v1.0.0
+ *  - Since: v3.2.3
  
- *  @see postIfChanged
  */
-+(void) setAppSpecificUserId:(nonnull NSString *) appSpecificUserId;
++(void) setUserIdentifer:(nonnull NSString *)uniqueID;
+
 
 /**
- *  Set user's Facebook Identifer. Call postIfChanged after setting all identifiers.
+ *  Resets App specific User Identifer. Call this when a user logs off.
  *
- *  @param fbId facebook identifer
  
- *  - Since: v1.0.0
+ *  - Since: v3.2.3
  
- *  @see postIfChanged
  */
-+(void) setFbID:(nonnull NSString *) fbId;
++(void) resetUserIdentifer;
+
 
 /**
- *  Set user's twitter Identifer. Call postIfChanged after setting all identifiers.
+ *  Post the user traits to Pyze.  Send user traits as a map/dictionary.  Here are some example traits you can use.
  *
- *  @param twitterId twitter identifer
- 
- *  - Since: v1.0.0
- 
- *  @see postIfChanged
- */
-+(void) setTwitterId: (nonnull NSString *) twitterId;
-
-/**
- *  Set user's email address if you use email to reachout to users. Call postIfChanged after setting all identifiers.
+ *  Send user traits as a map/dictionary.  For example
  *
- *  @param emailAddress Email address to reachout to users.
- 
- *  - Since: v1.0.0
- 
- *  @see postIfChanged
- */
-+(void) setEmail:(nonnull NSString *) emailAddress;
-
-/**
- *  Set user's phone number. Call postIfChanged after setting all identifiers.
+ *      -(void) postIdentityTraits
+ *      {
+ *          NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
+ *          attributes[@"address"] = @"585 Broadway Street, Redwood City, California 94063";
+ *          attributes[@"age"] = @"25";
+ *          attributes[@"avatar"] =  @"https://mark.com";
+ *          attributes[@"birthday"] =  @"01-04-1986";
+ *          attributes[@"createdAt"] = @"Date String";
+ *          attributes[@"description"] = @"Web Hosting Specialist";
+ *          attributes[@"email"] =  @"myEmail@gmail.com";
+ *          attributes[@"firstName"] =  @"Mark";
+ *          attributes[@"gender"] = @"male";
+ *          attributes[@"lastName"] =  @"Hive";
+ *          attributes[@"name"] =  @"Mark Hive";
+ *          attributes[@"phoneNumber"] = @"415 555 1212";
+ *          attributes[@"title"] = @"Web Hosting Specialist";
+ *          attributes[@"username"] =  @"markh";
+ *          attributes[@"website"] =  @"https://pyze.com";
+ *          attributes[@"facebookId"] = @"USER_facebookId";
+ *          attributes[@"twitterUsername"] = @"USER_twitterId";
+ *          attributes[@"snapchatUsername"] =  @"USER_snapchatId";
+ *          attributes[@"linkedInProfileId"] =  @"USER_linkedinId";
+ *          attributes[@"instagramUserId"] =  @"USER_instagramId";
  *
- *  @param phoneNumber Phone number to reachout.
+ *          [PyzeIdentity postTraits:attributes];
+ *      }
  
- *  - Since: v1.0.0
- 
- *  @see postIfChanged
- */
-+(void) setPhoneNumber:(nonnull NSString *) phoneNumber;
-
-/**
- *  Set user's push Notification Identifer. Call postIfChanged after setting all identifiers.
- *
- *  @param pushNotificationId Notification Identifer.
- 
- *  - Since: v1.0.0
- 
- *  @see postIfChanged
- */
-+(void) setPushNotificationRegistrationId:(nonnull NSString *) pushNotificationId;
-
-/**
- *  Set user's username. Call postIfChanged after setting all identifiers.
- *
- *  @param userName User name to track.
- 
- *  - Since: v1.0.0
- 
- *  @see postIfChanged
- */
-+(void) setUserName:(nonnull NSString *) userName;
-
-/**
- *  Set any custom information for user in key value pair format. Call postIfChanged after setting all identifiers.
- *
- *  @param value Custom value to add to identity object.
- *  @param key   Key for the custom value.
- 
- *  - Since: v1.0.0
- 
- *  @see postIfChanged
- */
-+(void) setCustomUserIdentifier:(nonnull NSString *) value forKey:(nonnull NSString *) key;
-
-#pragma mark - Retrieve Identities Set Locally
-
-/**
- *  Retrieving method for identities.
- *
- *  @return identities Set of key-value pairs of NSDictionary object containing Identities set or nil.
- 
- *  - Since: v1.0.0
+ *  - Since: v3.2.3
  
  */
-+(nullable NSDictionary *) identities;
 
-#pragma mark - Post Set Identities to Pyze
-
-/**
- *  Call this method after all the identifers are set.  This sends changed traits to Pyze Servers.
- 
- *  - Since: v1.0.0
- 
- *  @warning Call this to send traits to Pyze
- *  @see identities
- */
-+(void) postIfChanged; // call after the fields are set.
++ (void) postTraits:(NSDictionary *)dictionary;
 
 @end
 
@@ -2235,6 +2181,66 @@ typedef NS_ENUM(NSInteger, PyzeMessageType) {
 
 
 @end
+
+/**
+ *  ### PyzeSMS
+ *  Subclass of PyzeCustomEvent class used for supporting Short Message Service and Multimedia Messaging Service.
+ 
+ *  - Since: v3.1.0
+ 
+ */
+
+@interface PyzeSMS: PyzeCustomEvent
+
+/**
+ *  Send the device for registration with phone number.
+ *
+ *  @param phoneNumber Phone number as '1234567890'
+ *  @param countryCode Country code where the phone being used. For Example: e.g. “1” for US “91” for India
+ *  @param dictionary  Any additional attributes
+ 
+ *  - Since: v3.1.0
+ 
+ */
+
++(void) postRegisteredDevice:(NSString *) phoneNumber
+             withCountryCode:(NSString *) countryCode
+              withAttributes:(NSDictionary *) dictionary;
+
+/**
+ *  Post verification of the device.
+ *
+ *  @param phoneNumber Phone number as '1234567890'
+ *  @param verificationCode  Phone verification code received.
+ *  @param countryCode Country code where the phone being used. For Example: e.g. “1” for US “91” for India
+ *  @param dictionary  Any additional attributes
+ 
+ *  - Since: v3.1.0
+ 
+ */
+
++(void) postVerification:(NSString *) phoneNumber
+    withVerificationCode:(NSString *)verificationCode
+         withCountryCode:(NSString *) countryCode
+          withAttributes:(NSDictionary *) dictionary;
+
+/**
+ *  Send the device for unsubscribing with phone number.
+ *
+ *  @param phoneNumber Phone number as '1234567890'
+ *  @param countryCode Country code where the phone being used. For Example: e.g. “1” for US “91” for India
+ *  @param dictionary  Any additional attributes
+ 
+ *  - Since: v3.1.0
+ 
+ */
+
++(void) postUnsubscribeDevice:(NSString *) phoneNumber
+              withCountryCode:(NSString *) countryCode
+               withAttributes:(NSDictionary *) dictionary;
+
+@end
+
 
 /**
  *  ### PyzeTasks

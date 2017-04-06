@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4633FDA51E965F000032F258 /* Pyze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5BDFB91E52B1D900362990 /* Pyze.framework */; };
+		4633FDA61E965F000032F258 /* Pyze.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5BDFB91E52B1D900362990 /* Pyze.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5A3EA5D21E43092E0016A95B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3EA5D11E43092E0016A95B /* AppDelegate.swift */; };
 		5A3EA5D41E43092E0016A95B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3EA5D31E43092E0016A95B /* ViewController.swift */; };
 		5A3EA5D71E43092E0016A95B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3EA5D51E43092E0016A95B /* Main.storyboard */; };
@@ -29,7 +31,6 @@
 		5A3EA6A41E435C220016A95B /* InAppMessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3EA6A31E435C220016A95B /* InAppMessageManager.swift */; };
 		5A4E86E81E48546E00AAAB57 /* Pyze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A4E86E61E48544F00AAAB57 /* Pyze.framework */; };
 		5A4E86E91E48546E00AAAB57 /* Pyze.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A4E86E61E48544F00AAAB57 /* Pyze.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5A5BDFBA1E52B1D900362990 /* Pyze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5BDFB91E52B1D900362990 /* Pyze.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		4633FDA71E965F000032F258 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4633FDA61E965F000032F258 /* Pyze.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5A3EA61A1E43092F0016A95B /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,7 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A5BDFBA1E52B1D900362990 /* Pyze.framework in Frameworks */,
+				4633FDA51E965F000032F258 /* Pyze.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +282,7 @@
 				5A3EA5CB1E43092E0016A95B /* Frameworks */,
 				5A3EA5CC1E43092E0016A95B /* Resources */,
 				5A3EA61E1E43092F0016A95B /* Embed Watch Content */,
+				4633FDA71E965F000032F258 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

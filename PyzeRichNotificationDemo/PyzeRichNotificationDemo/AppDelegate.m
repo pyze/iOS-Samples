@@ -66,7 +66,9 @@
 
 -(void) getAppCategoriesFromPyze {
     // Use completion handlers to minimise the code that developers have to write as helper method.[From below line to line_numb 79]
-    [Pyze getPushCategoriesWithActionPayload:^(NSDictionary *payload) {
+    
+    
+ /*   [Pyze getPushCategoriesWithActionPayload:^(NSDictionary *payload) {
         self.apsDictionary = [NSDictionary dictionaryWithDictionary:payload];
         if (self.apsDictionary && self.apsDictionary.count) {
             NSString * category = [[self.apsDictionary objectForKey:@"aps"] objectForKey:@"category"];
@@ -94,7 +96,7 @@
                 }
             }
         }
-    }];
+    }]; */
 }
 
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)())completionHandler

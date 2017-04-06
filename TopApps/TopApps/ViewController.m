@@ -22,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view, typically from a nib.
     self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 66, 0);
     TopAppsManager * manager = [TopAppsManager sharedAppsManager];
