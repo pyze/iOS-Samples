@@ -20,9 +20,14 @@ NSString * const gActionTwo = @"ACTION_TWO";
 @implementation AppDelegate
 
 
+-(BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [Pyze initialize:@"plb7GPwDR6uLJk5-ABV_uw" withLogThrottling:PyzelogLevelAll];
+    return YES;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [Pyze initialize:@"plb7GPwDR6uLJk5-ABV_uw" withLogThrottling:PyzelogLevelAll];
+    
     
     // Override point for customization after application launch.
     UIMutableUserNotificationAction * action = [[UIMutableUserNotificationAction alloc] init];

@@ -19,11 +19,16 @@
 
 @implementation AppDelegate
 
+-(BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [Pyze initialize:@"vywbsks1RaKRnZ1GLL3hBA" withLogThrottling:PyzelogLevelMinimal];
+    return YES;
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [Pyze initialize:@"vywbsks1RaKRnZ1GLL3hBA" withLogThrottling:PyzelogLevelMinimal];
+    
     
     // #InteractivePushNotifications
     // Request for permissions to play sound and to display push notification.
