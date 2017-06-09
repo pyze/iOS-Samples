@@ -1,800 +1,569 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0F2443120F1F09F96C18C544</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-PyzeRichNotificationDemo/Pods-PyzeRichNotificationDemo-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>1B35B21726801017BD9080B9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-PyzeRichNotificationDemo.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-PyzeRichNotificationDemo/Pods-PyzeRichNotificationDemo.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>216F683D1875267DD95CC406</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-PyzeRichNotificationDemo.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-PyzeRichNotificationDemo/Pods-PyzeRichNotificationDemo.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>33FF3AD02D531C480EF11381</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>1B35B21726801017BD9080B9</string>
-				<string>216F683D1875267DD95CC406</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46A29BD81DE5BE5500577253</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>46A29BE31DE5BE5500577253</string>
-				<string>46A29BE21DE5BE5500577253</string>
-				<string>33FF3AD02D531C480EF11381</string>
-				<string>7F100E1DB8636C57DCC7A482</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46A29BD91DE5BE5500577253</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0800</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Pyze Inc.</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>46A29BE01DE5BE5500577253</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.0</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>46A29BDC1DE5BE5500577253</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>46A29BD81DE5BE5500577253</string>
-			<key>productRefGroup</key>
-			<string>46A29BE21DE5BE5500577253</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>46A29BE01DE5BE5500577253</string>
-			</array>
-		</dict>
-		<key>46A29BDC1DE5BE5500577253</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>46A29BF61DE5BE5500577253</string>
-				<string>46A29BF71DE5BE5500577253</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>46A29BDD1DE5BE5500577253</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>46A29BEC1DE5BE5500577253</string>
-				<string>46A29BE91DE5BE5500577253</string>
-				<string>46A29BE61DE5BE5500577253</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>46A29BDE1DE5BE5500577253</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>73FD58EA5F0BB1C66F07AF45</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>46A29BDF1DE5BE5500577253</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>46A29BF41DE5BE5500577253</string>
-				<string>46A29BF11DE5BE5500577253</string>
-				<string>46A29BFC1DE5DFFE00577253</string>
-				<string>46A29BEF1DE5BE5500577253</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>46A29BE01DE5BE5500577253</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>46A29BF81DE5BE5500577253</string>
-			<key>buildPhases</key>
-			<array>
-				<string>BE324347ACD354F2699B56E0</string>
-				<string>46A29BDD1DE5BE5500577253</string>
-				<string>46A29BDE1DE5BE5500577253</string>
-				<string>46A29BDF1DE5BE5500577253</string>
-				<string>0F2443120F1F09F96C18C544</string>
-				<string>DEDC9A8720DEA934D436BD49</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>PyzeRichNotificationDemo</string>
-			<key>productName</key>
-			<string>PyzeRichNotificationDemo</string>
-			<key>productReference</key>
-			<string>46A29BE11DE5BE5500577253</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>46A29BE11DE5BE5500577253</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>PyzeRichNotificationDemo.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>46A29BE21DE5BE5500577253</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>46A29BE11DE5BE5500577253</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46A29BE31DE5BE5500577253</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>46A29BE71DE5BE5500577253</string>
-				<string>46A29BE81DE5BE5500577253</string>
-				<string>46A29BEA1DE5BE5500577253</string>
-				<string>46A29BEB1DE5BE5500577253</string>
-				<string>46A29BED1DE5BE5500577253</string>
-				<string>46A29BE41DE5BE5500577253</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>PyzeRichNotificationDemo</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46A29BE41DE5BE5500577253</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>46A29BF01DE5BE5500577253</string>
-				<string>46A29BF21DE5BE5500577253</string>
-				<string>46A29BF51DE5BE5500577253</string>
-				<string>46A29BFB1DE5DFFE00577253</string>
-				<string>46A29BE51DE5BE5500577253</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46A29BE51DE5BE5500577253</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46A29BE61DE5BE5500577253</key>
-		<dict>
-			<key>fileRef</key>
-			<string>46A29BE51DE5BE5500577253</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>46A29BE71DE5BE5500577253</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46A29BE81DE5BE5500577253</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46A29BE91DE5BE5500577253</key>
-		<dict>
-			<key>fileRef</key>
-			<string>46A29BE81DE5BE5500577253</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>46A29BEA1DE5BE5500577253</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46A29BEB1DE5BE5500577253</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46A29BEC1DE5BE5500577253</key>
-		<dict>
-			<key>fileRef</key>
-			<string>46A29BEB1DE5BE5500577253</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>46A29BED1DE5BE5500577253</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>46A29BEE1DE5BE5500577253</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46A29BEE1DE5BE5500577253</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46A29BEF1DE5BE5500577253</key>
-		<dict>
-			<key>fileRef</key>
-			<string>46A29BED1DE5BE5500577253</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>46A29BF01DE5BE5500577253</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46A29BF11DE5BE5500577253</key>
-		<dict>
-			<key>fileRef</key>
-			<string>46A29BF01DE5BE5500577253</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>46A29BF21DE5BE5500577253</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>46A29BF31DE5BE5500577253</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46A29BF31DE5BE5500577253</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46A29BF41DE5BE5500577253</key>
-		<dict>
-			<key>fileRef</key>
-			<string>46A29BF21DE5BE5500577253</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>46A29BF51DE5BE5500577253</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46A29BF61DE5BE5500577253</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>46A29BF71DE5BE5500577253</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>46A29BF81DE5BE5500577253</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>46A29BF91DE5BE5500577253</string>
-				<string>46A29BFA1DE5BE5500577253</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>46A29BF91DE5BE5500577253</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>1B35B21726801017BD9080B9</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>PyzeRichNotificationDemo/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.pyze.PyzeRichNotificationDemo</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>46A29BFA1DE5BE5500577253</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>216F683D1875267DD95CC406</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>PyzeRichNotificationDemo/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.pyze.PyzeRichNotificationDemo</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>46A29BFB1DE5DFFE00577253</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>pyzeLogo.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46A29BFC1DE5DFFE00577253</key>
-		<dict>
-			<key>fileRef</key>
-			<string>46A29BFB1DE5DFFE00577253</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>73FD58EA5F0BB1C66F07AF45</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F5F7DC7C5C6F435937E58801</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7F100E1DB8636C57DCC7A482</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F5F7DC7C5C6F435937E58801</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE324347ACD354F2699B56E0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>DEDC9A8720DEA934D436BD49</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-PyzeRichNotificationDemo/Pods-PyzeRichNotificationDemo-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>F5F7DC7C5C6F435937E58801</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-PyzeRichNotificationDemo.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>46A29BD91DE5BE5500577253</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		467DDFED1EEA56420021470F /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 467DDFEC1EEA56420021470F /* NotificationService.m */; };
+		467DDFF11EEA56420021470F /* PyzeRichNotificationExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 467DDFE91EEA56420021470F /* PyzeRichNotificationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		46A29BE61DE5BE5500577253 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A29BE51DE5BE5500577253 /* main.m */; };
+		46A29BE91DE5BE5500577253 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A29BE81DE5BE5500577253 /* AppDelegate.m */; };
+		46A29BEC1DE5BE5500577253 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A29BEB1DE5BE5500577253 /* ViewController.m */; };
+		46A29BEF1DE5BE5500577253 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A29BED1DE5BE5500577253 /* Main.storyboard */; };
+		46A29BF11DE5BE5500577253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46A29BF01DE5BE5500577253 /* Assets.xcassets */; };
+		46A29BF41DE5BE5500577253 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A29BF21DE5BE5500577253 /* LaunchScreen.storyboard */; };
+		46A29BFC1DE5DFFE00577253 /* pyzeLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A29BFB1DE5DFFE00577253 /* pyzeLogo.png */; };
+		73FD58EA5F0BB1C66F07AF45 /* libPods-PyzeRichNotificationDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F7DC7C5C6F435937E58801 /* libPods-PyzeRichNotificationDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		467DDFEF1EEA56420021470F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46A29BD91DE5BE5500577253 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 467DDFE81EEA56420021470F;
+			remoteInfo = PyzeRichNotificationExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		467DDFF51EEA56420021470F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				467DDFF11EEA56420021470F /* PyzeRichNotificationExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1B35B21726801017BD9080B9 /* Pods-PyzeRichNotificationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PyzeRichNotificationDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PyzeRichNotificationDemo/Pods-PyzeRichNotificationDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		216F683D1875267DD95CC406 /* Pods-PyzeRichNotificationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PyzeRichNotificationDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PyzeRichNotificationDemo/Pods-PyzeRichNotificationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		467DDFE41EEA55F50021470F /* PyzeRichNotificationDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PyzeRichNotificationDemo.entitlements; sourceTree = "<group>"; };
+		467DDFE91EEA56420021470F /* PyzeRichNotificationExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PyzeRichNotificationExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		467DDFEB1EEA56420021470F /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		467DDFEC1EEA56420021470F /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		467DDFEE1EEA56420021470F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		467DDFF61EEA56920021470F /* PyzeRichNotificationExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PyzeRichNotificationExtension.entitlements; sourceTree = "<group>"; };
+		46A29BE11DE5BE5500577253 /* PyzeRichNotificationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PyzeRichNotificationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46A29BE51DE5BE5500577253 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		46A29BE71DE5BE5500577253 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		46A29BE81DE5BE5500577253 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		46A29BEA1DE5BE5500577253 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		46A29BEB1DE5BE5500577253 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		46A29BEE1DE5BE5500577253 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46A29BF01DE5BE5500577253 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46A29BF31DE5BE5500577253 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46A29BF51DE5BE5500577253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46A29BFB1DE5DFFE00577253 /* pyzeLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pyzeLogo.png; sourceTree = "<group>"; };
+		F5F7DC7C5C6F435937E58801 /* libPods-PyzeRichNotificationDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PyzeRichNotificationDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		467DDFE61EEA56420021470F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46A29BDE1DE5BE5500577253 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73FD58EA5F0BB1C66F07AF45 /* libPods-PyzeRichNotificationDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33FF3AD02D531C480EF11381 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B35B21726801017BD9080B9 /* Pods-PyzeRichNotificationDemo.debug.xcconfig */,
+				216F683D1875267DD95CC406 /* Pods-PyzeRichNotificationDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		467DDFEA1EEA56420021470F /* PyzeRichNotificationExtension */ = {
+			isa = PBXGroup;
+			children = (
+				467DDFF61EEA56920021470F /* PyzeRichNotificationExtension.entitlements */,
+				467DDFEB1EEA56420021470F /* NotificationService.h */,
+				467DDFEC1EEA56420021470F /* NotificationService.m */,
+				467DDFEE1EEA56420021470F /* Info.plist */,
+			);
+			path = PyzeRichNotificationExtension;
+			sourceTree = "<group>";
+		};
+		46A29BD81DE5BE5500577253 = {
+			isa = PBXGroup;
+			children = (
+				46A29BE31DE5BE5500577253 /* PyzeRichNotificationDemo */,
+				467DDFEA1EEA56420021470F /* PyzeRichNotificationExtension */,
+				46A29BE21DE5BE5500577253 /* Products */,
+				33FF3AD02D531C480EF11381 /* Pods */,
+				7F100E1DB8636C57DCC7A482 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		46A29BE21DE5BE5500577253 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46A29BE11DE5BE5500577253 /* PyzeRichNotificationDemo.app */,
+				467DDFE91EEA56420021470F /* PyzeRichNotificationExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46A29BE31DE5BE5500577253 /* PyzeRichNotificationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				467DDFE41EEA55F50021470F /* PyzeRichNotificationDemo.entitlements */,
+				46A29BE71DE5BE5500577253 /* AppDelegate.h */,
+				46A29BE81DE5BE5500577253 /* AppDelegate.m */,
+				46A29BEA1DE5BE5500577253 /* ViewController.h */,
+				46A29BEB1DE5BE5500577253 /* ViewController.m */,
+				46A29BED1DE5BE5500577253 /* Main.storyboard */,
+				46A29BE41DE5BE5500577253 /* Supporting Files */,
+			);
+			path = PyzeRichNotificationDemo;
+			sourceTree = "<group>";
+		};
+		46A29BE41DE5BE5500577253 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46A29BF01DE5BE5500577253 /* Assets.xcassets */,
+				46A29BF21DE5BE5500577253 /* LaunchScreen.storyboard */,
+				46A29BF51DE5BE5500577253 /* Info.plist */,
+				46A29BFB1DE5DFFE00577253 /* pyzeLogo.png */,
+				46A29BE51DE5BE5500577253 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F100E1DB8636C57DCC7A482 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5F7DC7C5C6F435937E58801 /* libPods-PyzeRichNotificationDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		467DDFE81EEA56420021470F /* PyzeRichNotificationExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 467DDFF21EEA56420021470F /* Build configuration list for PBXNativeTarget "PyzeRichNotificationExtension" */;
+			buildPhases = (
+				467DDFE51EEA56420021470F /* Sources */,
+				467DDFE61EEA56420021470F /* Frameworks */,
+				467DDFE71EEA56420021470F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PyzeRichNotificationExtension;
+			productName = PyzeRichNotificationExtension;
+			productReference = 467DDFE91EEA56420021470F /* PyzeRichNotificationExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		46A29BE01DE5BE5500577253 /* PyzeRichNotificationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46A29BF81DE5BE5500577253 /* Build configuration list for PBXNativeTarget "PyzeRichNotificationDemo" */;
+			buildPhases = (
+				BE324347ACD354F2699B56E0 /* [CP] Check Pods Manifest.lock */,
+				46A29BDD1DE5BE5500577253 /* Sources */,
+				46A29BDE1DE5BE5500577253 /* Frameworks */,
+				46A29BDF1DE5BE5500577253 /* Resources */,
+				0F2443120F1F09F96C18C544 /* [CP] Embed Pods Frameworks */,
+				DEDC9A8720DEA934D436BD49 /* [CP] Copy Pods Resources */,
+				467DDFF51EEA56420021470F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				467DDFF01EEA56420021470F /* PBXTargetDependency */,
+			);
+			name = PyzeRichNotificationDemo;
+			productName = PyzeRichNotificationDemo;
+			productReference = 46A29BE11DE5BE5500577253 /* PyzeRichNotificationDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46A29BD91DE5BE5500577253 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Pyze Inc.";
+				TargetAttributes = {
+					467DDFE81EEA56420021470F = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = PHFPDNQJ9X;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					46A29BE01DE5BE5500577253 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 46A29BDC1DE5BE5500577253 /* Build configuration list for PBXProject "PyzeRichNotificationDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46A29BD81DE5BE5500577253;
+			productRefGroup = 46A29BE21DE5BE5500577253 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46A29BE01DE5BE5500577253 /* PyzeRichNotificationDemo */,
+				467DDFE81EEA56420021470F /* PyzeRichNotificationExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		467DDFE71EEA56420021470F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46A29BDF1DE5BE5500577253 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A29BF41DE5BE5500577253 /* LaunchScreen.storyboard in Resources */,
+				46A29BF11DE5BE5500577253 /* Assets.xcassets in Resources */,
+				46A29BFC1DE5DFFE00577253 /* pyzeLogo.png in Resources */,
+				46A29BEF1DE5BE5500577253 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F2443120F1F09F96C18C544 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PyzeRichNotificationDemo/Pods-PyzeRichNotificationDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE324347ACD354F2699B56E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DEDC9A8720DEA934D436BD49 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PyzeRichNotificationDemo/Pods-PyzeRichNotificationDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		467DDFE51EEA56420021470F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				467DDFED1EEA56420021470F /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46A29BDD1DE5BE5500577253 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A29BEC1DE5BE5500577253 /* ViewController.m in Sources */,
+				46A29BE91DE5BE5500577253 /* AppDelegate.m in Sources */,
+				46A29BE61DE5BE5500577253 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		467DDFF01EEA56420021470F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 467DDFE81EEA56420021470F /* PyzeRichNotificationExtension */;
+			targetProxy = 467DDFEF1EEA56420021470F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46A29BED1DE5BE5500577253 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46A29BEE1DE5BE5500577253 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46A29BF21DE5BE5500577253 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46A29BF31DE5BE5500577253 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		467DDFF31EEA56420021470F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_ENTITLEMENTS = PyzeRichNotificationExtension/PyzeRichNotificationExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Robosoft IT (F8LAWA2A2K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Robosoft IT (F8LAWA2A2K)";
+				DEVELOPMENT_TEAM = PHFPDNQJ9X;
+				INFOPLIST_FILE = PyzeRichNotificationExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robosoft.in.richpush;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ff47bb10-1b6e-4d63-bc5a-d479765b2fbb";
+				PROVISIONING_PROFILE_SPECIFIER = Richpush;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		467DDFF41EEA56420021470F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_ENTITLEMENTS = PyzeRichNotificationExtension/PyzeRichNotificationExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Robosoft IT (F8LAWA2A2K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Robosoft IT (F8LAWA2A2K)";
+				DEVELOPMENT_TEAM = PHFPDNQJ9X;
+				INFOPLIST_FILE = PyzeRichNotificationExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robosoft.in.richpush;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ff47bb10-1b6e-4d63-bc5a-d479765b2fbb";
+				PROVISIONING_PROFILE_SPECIFIER = Richpush;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		46A29BF61DE5BE5500577253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46A29BF71DE5BE5500577253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46A29BF91DE5BE5500577253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B35B21726801017BD9080B9 /* Pods-PyzeRichNotificationDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PyzeRichNotificationDemo/PyzeRichNotificationDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Robosoft IT (F8LAWA2A2K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Robosoft IT (F8LAWA2A2K)";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = PyzeRichNotificationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robosoft.in;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "22f5d929-37c5-4885-bb2a-231e9c545dc7";
+				PROVISIONING_PROFILE_SPECIFIER = "Robosoft Internal Provisioning Profile";
+			};
+			name = Debug;
+		};
+		46A29BFA1DE5BE5500577253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 216F683D1875267DD95CC406 /* Pods-PyzeRichNotificationDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PyzeRichNotificationDemo/PyzeRichNotificationDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Robosoft IT (F8LAWA2A2K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Robosoft IT (F8LAWA2A2K)";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = PyzeRichNotificationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robosoft.in;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "22f5d929-37c5-4885-bb2a-231e9c545dc7";
+				PROVISIONING_PROFILE_SPECIFIER = "Robosoft Internal Provisioning Profile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		467DDFF21EEA56420021470F /* Build configuration list for PBXNativeTarget "PyzeRichNotificationExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				467DDFF31EEA56420021470F /* Debug */,
+				467DDFF41EEA56420021470F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		46A29BDC1DE5BE5500577253 /* Build configuration list for PBXProject "PyzeRichNotificationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46A29BF61DE5BE5500577253 /* Debug */,
+				46A29BF71DE5BE5500577253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46A29BF81DE5BE5500577253 /* Build configuration list for PBXNativeTarget "PyzeRichNotificationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46A29BF91DE5BE5500577253 /* Debug */,
+				46A29BFA1DE5BE5500577253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46A29BD91DE5BE5500577253 /* Project object */;
+}

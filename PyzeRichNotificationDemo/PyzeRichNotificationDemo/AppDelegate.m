@@ -14,13 +14,14 @@
 
 @property (nonatomic, strong) NSDictionary * apsDictionary;
 
--(void) getAppCategoresFromPyze;
+//-(void) getAppCategoresFromPyze;
 @end
 
 @implementation AppDelegate
 
 -(BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [Pyze initialize:@"vywbsks1RaKRnZ1GLL3hBA" withLogThrottling:PyzelogLevelMinimal];
+    
     return YES;
 }
 
@@ -33,12 +34,12 @@
     // #InteractivePushNotifications
     // Request for permissions to play sound and to display push notification.
     [[UNUserNotificationCenter currentNotificationCenter] requestAuthorizationWithOptions:UNAuthorizationOptionSound | UNAuthorizationOptionAlert completionHandler:^(BOOL granted, NSError * _Nullable error) {
-        if (!granted) {
-            NSLog(@"Access denied for notifications.");
+        if (!error) {
+            [[UIApplication sharedApplication] registerForRemoteNotifications];
         }
     }];
 
-    [self getAppCategoriesFromPyze];
+//    [self getAppCategoriesFromPyze];
     //    // #InteractivePushNotifications
     //    // Create a button: Learn More
     //    UNNotificationAction * learn = [UNNotificationAction actionWithIdentifier:@"Learn"
@@ -68,6 +69,28 @@
 
     return YES;
 }
+
+
+
+-(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    
+    NSLog(@"%s",__func__);
+    NSString *token = [[deviceToken description] stringByTrimmingCharactersInSet: [NSCharacterSet characterSetWithCharactersInString:@"<>"]];
+    token = [token stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSLog(@"DEVICE TOKEN : %@",token);
+}
+
+
+-(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    NSLog(@"%s",__func__);
+    NSLog(@"Error : %@",error.debugDescription);
+}
+
+-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    NSLog(@"%s",__func__);
+    NSLog(@"USERINFO : %@",userInfo);
+}
+
 
 -(void) getAppCategoriesFromPyze {
     // Use completion handlers to minimise the code that developers have to write as helper method.[From below line to line_numb 79]
