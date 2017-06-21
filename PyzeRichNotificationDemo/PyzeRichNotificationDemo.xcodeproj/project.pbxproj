@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4629DF641EFA7166007D14A4 /* PyzeNotificationServiceExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4629DF631EFA7166007D14A4 /* PyzeNotificationServiceExtension.m */; };
 		467DDFED1EEA56420021470F /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 467DDFEC1EEA56420021470F /* NotificationService.m */; };
 		467DDFF11EEA56420021470F /* PyzeRichNotificationExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 467DDFE91EEA56420021470F /* PyzeRichNotificationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		46A29BE61DE5BE5500577253 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A29BE51DE5BE5500577253 /* main.m */; };
@@ -46,6 +47,8 @@
 /* Begin PBXFileReference section */
 		1B35B21726801017BD9080B9 /* Pods-PyzeRichNotificationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PyzeRichNotificationDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PyzeRichNotificationDemo/Pods-PyzeRichNotificationDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		216F683D1875267DD95CC406 /* Pods-PyzeRichNotificationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PyzeRichNotificationDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PyzeRichNotificationDemo/Pods-PyzeRichNotificationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		4629DF621EFA7166007D14A4 /* PyzeNotificationServiceExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PyzeNotificationServiceExtension.h; sourceTree = "<group>"; };
+		4629DF631EFA7166007D14A4 /* PyzeNotificationServiceExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PyzeNotificationServiceExtension.m; sourceTree = "<group>"; };
 		467DDFE41EEA55F50021470F /* PyzeRichNotificationDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PyzeRichNotificationDemo.entitlements; sourceTree = "<group>"; };
 		467DDFE91EEA56420021470F /* PyzeRichNotificationExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PyzeRichNotificationExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		467DDFEB1EEA56420021470F /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
@@ -94,10 +97,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4629DF611EFA7166007D14A4 /* PNServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4629DF621EFA7166007D14A4 /* PyzeNotificationServiceExtension.h */,
+				4629DF631EFA7166007D14A4 /* PyzeNotificationServiceExtension.m */,
+			);
+			path = PNServiceExtension;
+			sourceTree = "<group>";
+		};
 		467DDFEA1EEA56420021470F /* PyzeRichNotificationExtension */ = {
 			isa = PBXGroup;
 			children = (
 				467DDFF61EEA56920021470F /* PyzeRichNotificationExtension.entitlements */,
+				4629DF611EFA7166007D14A4 /* PNServiceExtension */,
 				467DDFEB1EEA56420021470F /* NotificationService.h */,
 				467DDFEC1EEA56420021470F /* NotificationService.m */,
 				467DDFEE1EEA56420021470F /* Info.plist */,
@@ -324,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4629DF641EFA7166007D14A4 /* PyzeNotificationServiceExtension.m in Sources */,
 				467DDFED1EEA56420021470F /* NotificationService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,7 +392,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Robosoft IT (F8LAWA2A2K)";
 				DEVELOPMENT_TEAM = PHFPDNQJ9X;
 				INFOPLIST_FILE = PyzeRichNotificationExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robosoft.in.richpush;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -398,7 +412,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Robosoft IT (F8LAWA2A2K)";
 				DEVELOPMENT_TEAM = PHFPDNQJ9X;
 				INFOPLIST_FILE = PyzeRichNotificationExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robosoft.in.richpush;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -544,6 +558,7 @@
 				467DDFF41EEA56420021470F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46A29BDC1DE5BE5500577253 /* Build configuration list for PBXProject "PyzeRichNotificationDemo" */ = {
 			isa = XCConfigurationList;

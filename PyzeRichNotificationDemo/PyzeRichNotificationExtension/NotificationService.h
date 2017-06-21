@@ -6,8 +6,8 @@
 //  Copyright © 2017 Pyze Inc. All rights reserved.
 //
 
-#import <UserNotifications/UserNotifications.h>
+#import "PyzeNotificationServiceExtension.h"
 
-@interface NotificationService : UNNotificationServiceExtension
+@interface NotificationService : PyzeNotificationServiceExtension
 
 @end
