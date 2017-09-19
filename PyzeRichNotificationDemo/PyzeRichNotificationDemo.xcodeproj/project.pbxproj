@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4629DF641EFA7166007D14A4 /* PyzeNotificationServiceExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4629DF631EFA7166007D14A4 /* PyzeNotificationServiceExtension.m */; };
+		4641C0221F1360090027929F /* PyzeNotificationServiceExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4629DF631EFA7166007D14A4 /* PyzeNotificationServiceExtension.m */; };
 		467DDFED1EEA56420021470F /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 467DDFEC1EEA56420021470F /* NotificationService.m */; };
 		467DDFF11EEA56420021470F /* PyzeRichNotificationExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 467DDFE91EEA56420021470F /* PyzeRichNotificationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		46A29BE61DE5BE5500577253 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A29BE51DE5BE5500577253 /* main.m */; };
@@ -348,6 +349,7 @@
 			files = (
 				46A29BEC1DE5BE5500577253 /* ViewController.m in Sources */,
 				46A29BE91DE5BE5500577253 /* AppDelegate.m in Sources */,
+				4641C0221F1360090027929F /* PyzeNotificationServiceExtension.m in Sources */,
 				46A29BE61DE5BE5500577253 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
