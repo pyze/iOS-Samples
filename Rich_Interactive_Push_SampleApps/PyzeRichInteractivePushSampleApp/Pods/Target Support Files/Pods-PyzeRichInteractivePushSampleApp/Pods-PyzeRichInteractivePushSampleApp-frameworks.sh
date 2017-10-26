@@ -90,9 +90,11 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_ROOT}/pyze-sdk-iOS/Pyze.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/pyze-iOS-extensions/PyzeAppExtensions.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${PODS_ROOT}/pyze-sdk-iOS/Pyze.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/pyze-iOS-extensions/PyzeAppExtensions.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

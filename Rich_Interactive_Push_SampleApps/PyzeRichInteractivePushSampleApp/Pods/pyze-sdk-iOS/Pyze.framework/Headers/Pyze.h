@@ -784,7 +784,7 @@ typedef NS_ENUM(NSInteger, PyzeNotificationActionType) {
  *  Use this API to get the list of Pyze default notification categories available.
  *
  *  @return NSSet containing Push categories
- 
+
  *  - Since: 3.7.0
  */
 + (NSSet *) getPyzeDefaultNotificationCategories;
