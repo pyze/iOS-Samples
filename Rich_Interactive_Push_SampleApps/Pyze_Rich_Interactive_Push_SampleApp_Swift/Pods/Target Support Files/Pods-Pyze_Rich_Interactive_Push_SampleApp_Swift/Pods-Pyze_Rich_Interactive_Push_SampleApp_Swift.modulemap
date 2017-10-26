@@ -1,6 +1,0 @@
-framework module Pods_Pyze_Rich_Interactive_Push_SampleApp_Swift {
-  umbrella header "Pods-Pyze_Rich_Interactive_Push_SampleApp_Swift-umbrella.h"
-
-  export *
-  module * { export * }
-}

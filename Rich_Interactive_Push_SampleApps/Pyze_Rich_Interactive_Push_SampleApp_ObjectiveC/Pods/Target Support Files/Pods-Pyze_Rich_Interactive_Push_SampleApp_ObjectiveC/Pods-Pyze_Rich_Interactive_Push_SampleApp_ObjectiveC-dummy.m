@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_Pyze_Rich_Interactive_Push_SampleApp_ObjectiveC : NSObject
-@end
-@implementation PodsDummy_Pods_Pyze_Rich_Interactive_Push_SampleApp_ObjectiveC
-@end
