@@ -1,0 +1,6 @@
+framework module PyzeAppExtensions {
+  umbrella header "pyze-iOS-extensions-umbrella.h"
+
+  export *
+  module * { export * }
+}
