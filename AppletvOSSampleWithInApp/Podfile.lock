@@ -1,12 +1,16 @@
 PODS:
-  - pyze-sdk-tvOS (3.5.1)
+  - pyze-sdk-tvOS (5.2.2)
 
 DEPENDENCIES:
   - pyze-sdk-tvOS
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - pyze-sdk-tvOS
+
 SPEC CHECKSUMS:
-  pyze-sdk-tvOS: ead8977b9abc03f46a0ccda542a2ae94d087b5e4
+  pyze-sdk-tvOS: c85a47d40d3194c0f6135b4d7166fc3c6bf337fd
 
 PODFILE CHECKSUM: 0a36be763abe709766f81aa202c9dd80a9cfac82
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.5.3

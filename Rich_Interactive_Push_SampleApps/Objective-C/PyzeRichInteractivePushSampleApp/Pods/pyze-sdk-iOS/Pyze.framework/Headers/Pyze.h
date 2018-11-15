@@ -172,6 +172,23 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 + (void) initialize:(NSString *) pyzeAppKey;
 
 /**
+*  Initializes the Pyze library. Call this method in the app delegate's method
+*  application:willFinishLaunchingWithOptions. [Get Pyze App Key from growth.pyze.com](http://pyze.com/get-Pyze-App-Key.html)
+*  Include the 'Pyze App Key' in application's Info.plist with key name 'PYZE_APP_KEY'
+*
+*  Usage:
+*
+*     [Pyze initialize: PyzelogLevelMinimal];
+*
+*  @param logLevel Log level you would wish to see in the console.
+*  @warning *Important:* Get an app-specific key from [growth.pyze.com](http://pyze.com/get-Pyze-App-Key.html) asn save in info
+*
+*  - Since: 2.0.5
+*
+*/
++ (void) initializeWithLogLevel:(PyzeLogLevel) logLevel;
+
+/**
  *  Initializes the Pyze library and specify the log throttling level. Call this method in the app delegate's method
  *  application:willFinishLaunchingWithOptions. [Get Pyze App Key from growth.pyze.com](http://pyze.com/get-Pyze-App-Key.html)
  *
@@ -207,7 +224,25 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
  */
 +(void) logThrottling:(PyzeLogLevel) logLevel;
 
+/// @name  Opt out data collection
 
+/**
+ *  Will stop collecting all data
+ *
+ *  @param shouldOptout Boolean value to decide if data tracking should be stopped.
+ *
+ - Since: 5.0.2
+ */
++ (void) setUserOptOut:(BOOL)shouldOptout;
+
+/**
+ *  Will stop collecting all data and delete existing data from the server
+ *
+ *  @param shouldDelete Boolean value to decide if data collection should be stopped and delete existing data from the server
+ *
+ - Since: 5.0.2
+ */
++ (void) deleteUser:(BOOL)shouldDelete;
 
 /// @name  Create Timer Reference to use in Timed Custom Events using PyzeCustomEvent class
 
@@ -230,6 +265,14 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 +(double) timerReference;
 
 
+/**
+ *  Returns the Pyze instance identifier. If Pyze not initialized, returns an empty string.
+ *
+ *  @return Pyze Instance identifier
+ */
++ (NSString *) getPyzeAppInstanceId;
+
+
 
 /// @name Push notification helper APIs
 
@@ -243,6 +286,17 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
  *  - Since: 2.2.1
  */
 +(void) setRemoteNotificationDeviceToken:(NSData *) deviceToken;
+
+
+/**
+ *  Use this API to set the push notification device token. This will trigger Pyze to update the device token, which internally would be used to send the push notification. Call this API in Application's AppDelegate method application:didRegisterForRemoteNotificationsWithDeviceToken:.
+ *  The method accepts the token as NSStirng.
+ *
+ *  @param deviceToken device Token bytes received from the AppDelegate's method call.
+ 
+ *  - Since: 5.0.1
+ */
++(void) setRemoteNotificationDeviceTokenString:(NSString *) deviceToken;
 
 
 /**
@@ -268,6 +322,7 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 
 +(void) processReceivedRemoteNotificationWithId:(NSString *) identifer withUserInfo:(NSDictionary *) userInfo;
 
+
 /// @name In-App Notifications (using Built-in User Interface)
 
 /**
@@ -279,6 +334,7 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
  
  */
 +(void) addBadge:(UIControl *) control;
+
 
 
 /**
@@ -414,6 +470,8 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
  *  @return Pyze instance type.
  */
 + (Pyze*) sharedPyze;
+
+
 
 
 /**
@@ -801,16 +859,30 @@ typedef NS_ENUM(NSInteger, PyzeNotificationActionType) {
 
 
 /**
+ *  THIS METHOD IS DEPRECATED. USE 'parsePushNotificationResponseWithUserinfo:completionHandler:'
+ *
  *  Use this API to parse the push notification response.
  *
  *  @param userInfo User information received as a payload
  *  @param completionHandler Completion handler, with 'PyzeNotificationContent' as parameter
  *
  */
-+ (void) parsePushNotificatoinResponseWithUserinfo:(NSDictionary *)userInfo completionHandler:(void (^)(PyzeNotificationContent *pyzePushObject))completionHandler;
++ (void) parsePushNotificatoinResponseWithUserinfo:(NSDictionary *)userInfo completionHandler:(void (^)(PyzeNotificationContent *pyzePushObject))completionHandler DEPRECATED_ATTRIBUTE;
+    
+
+/**
+ *  Use this API to parse the push notification response.
+ *
+ *  @param userInfo User information received as a payload
+ *  @param completionHandler Completion handler, with 'PyzeNotificationContent' as parameter
+ *
+ */
++ (void) parsePushNotificationResponseWithUserinfo:(NSDictionary *)userInfo completionHandler:(void (^)(PyzeNotificationContent *pyzePushObject))completionHandler;
 
 
 /**
+ *  THIS METHOD IS DEPRECATED. USE 'parsePushNotificationResponseWithUserinfo:actionIdentifier:completionHandler:'
+ *
  *  Use this API to parse the push notification response.
  *  In addition to 'parsePushNotificatoinResponseWithUserinfo:completionHandler:', this method will provide 'PyzeNotificationContent.selectedAction' which is the user opted action and respective details.
  *
@@ -819,7 +891,19 @@ typedef NS_ENUM(NSInteger, PyzeNotificationActionType) {
  *  @param completionHandler Completion handler, with 'PyzeNotificationContent' as parameter
  *
  */
-+ (void) parsePushNotificatoinResponseWithUserinfo:(NSDictionary *)userInfo actionIdentifier:(NSString *)actionIdentifier completionHandler:(void (^)(PyzeNotificationContent *pyzePushObject))completionHandler;
++ (void) parsePushNotificatoinResponseWithUserinfo:(NSDictionary *)userInfo actionIdentifier:(NSString *)actionIdentifier completionHandler:(void (^)(PyzeNotificationContent *pyzePushObject))completionHandler DEPRECATED_ATTRIBUTE;
+    
+    
+/**
+ *  Use this API to parse the push notification response.
+ *  In addition to 'parsePushNotificationResponseWithUserinfo:completionHandler:', this method will provide 'PyzeNotificationContent.selectedAction' which is the user opted action and respective details.
+ *
+ *  @param userInfo User information received as a payload
+ *  @param actionIdentifier Identifier of user opted action.
+ *  @param completionHandler Completion handler, with 'PyzeNotificationContent' as parameter
+ *
+ */
++ (void) parsePushNotificationResponseWithUserinfo:(NSDictionary *)userInfo actionIdentifier:(NSString *)actionIdentifier completionHandler:(void (^)(PyzeNotificationContent *pyzePushObject))completionHandler;
 
 
 @end

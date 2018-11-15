@@ -17,6 +17,8 @@
 			<string>Copyright (c) 2013-2017, Pyze Inc.
 All rights reserved.
 </string>
+			<key>License</key>
+			<string>Commercial</string>
 			<key>Title</key>
 			<string>pyze-sdk-tvOS</string>
 			<key>Type</key>

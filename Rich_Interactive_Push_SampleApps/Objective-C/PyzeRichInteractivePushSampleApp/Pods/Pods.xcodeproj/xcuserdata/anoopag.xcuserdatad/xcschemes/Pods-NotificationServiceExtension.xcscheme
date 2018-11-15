@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3E0CC206DBAE964D2BE744BDD9741924'
-               BlueprintName = 'Pods-NotificationServiceExtension'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-NotificationServiceExtension.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "80375CA47E1E33EC39748A6251A168C8"
+               BlueprintName = "Pods-NotificationServiceExtension"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libPods-NotificationServiceExtension.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

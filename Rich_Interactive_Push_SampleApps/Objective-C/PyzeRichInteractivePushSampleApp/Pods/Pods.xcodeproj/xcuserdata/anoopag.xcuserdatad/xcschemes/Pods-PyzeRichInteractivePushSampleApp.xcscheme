@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5096098753B6B9DE103BF648A641DC32'
-               BlueprintName = 'Pods-PyzeRichInteractivePushSampleApp'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-PyzeRichInteractivePushSampleApp.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B5FDD93530887295F1D671C339773DE7"
+               BlueprintName = "Pods-PyzeRichInteractivePushSampleApp"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libPods-PyzeRichInteractivePushSampleApp.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

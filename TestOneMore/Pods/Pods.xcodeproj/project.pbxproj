@@ -1,1253 +1,603 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>01525A8FA0E0FBDCB3CC4C6E5A44F7BC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-WatchTest-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0520AA6ADC26DD313931FAE78FC9B7C3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB21402F2628AE5AD7FE931E3C014436</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0535E08616237837DA3F0C1E1E20CA9D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-WatchTest Extension-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0C12EE1A6BAC6A28C64593C88EB79B60</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-WatchTest-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0C5AC49A56DFCEEB747ACB593FB7334B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-WatchTest Extension-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>11F35BE9039681B51614538AAD0A357B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-WatchTest Extension.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>152200E5106659C686BC9BDD821164BD</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>806D27DAF9AA5C49FDFCC32553A4FD3B</string>
-			<key>buildPhases</key>
-			<array>
-				<string>223492BEA1BFCBF930087DD3D41B6B37</string>
-				<string>1EA57B22CE23A932332E31C35290E6E7</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-WatchTest</string>
-			<key>productName</key>
-			<string>Pods-WatchTest</string>
-			<key>productReference</key>
-			<string>52BD559C693B6C04C51F48E762F4753A</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>1EA57B22CE23A932332E31C35290E6E7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0520AA6ADC26DD313931FAE78FC9B7C3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>223492BEA1BFCBF930087DD3D41B6B37</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>88FEB6B57619D722575BBC753979163C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>2251DE3AABD2EAE09E122049D342DDB3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-WatchTest Extension-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>254439308E56725CE9CA79FF683C58CA</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>80E7621FAF2F147345F676207AB7B600</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>watchos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WATCHOS_DEPLOYMENT_TARGET</key>
-				<string>2.2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>26F9C39E7BC340A22D0172E36DD814C7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A136DB53B8E99DF02F7BC3BDCD940258</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2D1F89E2E6D345ED96AE417ACBF6F6FE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-WatchTest-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>A6DA4985635A6DCE8DD2474F29810890</string>
-				<string>B839463A183A092E64CD3F2C1C5D988C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>346E11CD014BCF2B199B16FEE1CB4A53</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-TestOneMore.a</string>
-			<key>path</key>
-			<string>libPods-TestOneMore.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>353F1D7D2573AC096A3ED2A49489C580</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>346E11CD014BCF2B199B16FEE1CB4A53</string>
-				<string>52BD559C693B6C04C51F48E762F4753A</string>
-				<string>97FC5760648A9C4946D3BD7D6EF10C51</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>35CCE261C24B9FC527F0A3A057DB2162</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>BA653074608944F56F802962116C5C0C</string>
-			<key>buildPhases</key>
-			<array>
-				<string>B2F805390928DAFCAB623ECFB85C988E</string>
-				<string>9C0016626934B02D736CA42E692856ED</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-WatchTest Extension</string>
-			<key>productName</key>
-			<string>Pods-WatchTest Extension</string>
-			<key>productReference</key>
-			<string>97FC5760648A9C4946D3BD7D6EF10C51</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>3F1482361CA88C3F87DF5925D463EB90</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>9692419F43FCC8BCA82C7A15D6ED85AB</string>
-				<string>5916E6744CEE260835BAC9F644F1BE64</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>452F4DBAE835CBB05624496F73B71676</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-WatchTest-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46E34F7C47C91710FAAD05641FADF49C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E6AEA23A6ED0C895969BF3752AB77FC8</string>
-				<string>0C12EE1A6BAC6A28C64593C88EB79B60</string>
-				<string>452F4DBAE835CBB05624496F73B71676</string>
-				<string>01525A8FA0E0FBDCB3CC4C6E5A44F7BC</string>
-				<string>2D1F89E2E6D345ED96AE417ACBF6F6FE</string>
-				<string>EEE7D5F15E77CCC10298EEEB637D171E</string>
-				<string>80E7621FAF2F147345F676207AB7B600</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-WatchTest</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-WatchTest</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>498EC1EC135EA5B62CDD15FC28E91C2F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-TestOneMore-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>52BD559C693B6C04C51F48E762F4753A</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-WatchTest.a</string>
-			<key>path</key>
-			<string>libPods-WatchTest.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>543409C651ACB70B5F7D8CC26BF7B2E7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-WatchTest Extension.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>54AEE9A141010A353B261AB91FBA5C81</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8A1DC3E714EF26BC78E13767C3E20AE9</string>
-				<string>46E34F7C47C91710FAAD05641FADF49C</string>
-				<string>7716F839958378CCAA865F879B11E5D3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>55B1DA628E2AD09D0C35014AA6982E8E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D916E6BF89F3269B153794757F55E8BE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>5916E6744CEE260835BAC9F644F1BE64</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>9F42516D790EF8EADF8310051985E69B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>66446925B1402B5A1A105C9F575E3CF4</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>path</key>
-			<string>Pyze.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6803BF6CFF22D6B85539BD2859502E8D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B1BD09A9396C4AD3F54E5F530B26E977</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>69F424F28F998CB5A06656DF8042A4CB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB21402F2628AE5AD7FE931E3C014436</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>watchOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6BCC4E2F072D698BC4951ACF51F57CE0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-TestOneMore.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>73B310CB457A42B0EA40C5A0B6D1CBCF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-TestOneMore-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7716F839958378CCAA865F879B11E5D3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>80FBE849336726B616CB54E852735873</string>
-				<string>0535E08616237837DA3F0C1E1E20CA9D</string>
-				<string>0C5AC49A56DFCEEB747ACB593FB7334B</string>
-				<string>2251DE3AABD2EAE09E122049D342DDB3</string>
-				<string>CCA785A745D6F553E89FDDD77BFF5DF7</string>
-				<string>11F35BE9039681B51614538AAD0A357B</string>
-				<string>543409C651ACB70B5F7D8CC26BF7B2E7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-WatchTest Extension</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-WatchTest Extension</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
-				<string>8F91EE078EA3977443D1BDC2601132EF</string>
-				<string>6803BF6CFF22D6B85539BD2859502E8D</string>
-				<string>353F1D7D2573AC096A3ED2A49489C580</string>
-				<string>54AEE9A141010A353B261AB91FBA5C81</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>806D27DAF9AA5C49FDFCC32553A4FD3B</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>B28720F76DC66E566EA587A8483366EE</string>
-				<string>254439308E56725CE9CA79FF683C58CA</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>80E7621FAF2F147345F676207AB7B600</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-WatchTest.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>80FBE849336726B616CB54E852735873</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-WatchTest Extension-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>87876E743926339DFA30BA7C2FBC3716</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>66446925B1402B5A1A105C9F575E3CF4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>88FEB6B57619D722575BBC753979163C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>452F4DBAE835CBB05624496F73B71676</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8A1DC3E714EF26BC78E13767C3E20AE9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BEC52FAD17AF4290B7E07DBEB228197B</string>
-				<string>498EC1EC135EA5B62CDD15FC28E91C2F</string>
-				<string>73B310CB457A42B0EA40C5A0B6D1CBCF</string>
-				<string>FB979638CA876180EF572A19716BF481</string>
-				<string>968F7614405571745B6EFC954CC6CAB3</string>
-				<string>6BCC4E2F072D698BC4951ACF51F57CE0</string>
-				<string>9F42516D790EF8EADF8310051985E69B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-TestOneMore</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-TestOneMore</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8A342AB6FA813108FE14D7CFF12DFF0C</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>11F35BE9039681B51614538AAD0A357B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>watchos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WATCHOS_DEPLOYMENT_TARGET</key>
-				<string>2.2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>8F91EE078EA3977443D1BDC2601132EF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>26F9C39E7BC340A22D0172E36DD814C7</string>
-				<string>69F424F28F998CB5A06656DF8042A4CB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>93A4A3777CF96A4AAC1D13BA6DCCEA73</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>text.script.ruby</string>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>968F7614405571745B6EFC954CC6CAB3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-TestOneMore-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9692419F43FCC8BCA82C7A15D6ED85AB</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>6BCC4E2F072D698BC4951ACF51F57CE0</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>97FC5760648A9C4946D3BD7D6EF10C51</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-WatchTest Extension.a</string>
-			<key>path</key>
-			<string>libPods-WatchTest Extension.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>9C0016626934B02D736CA42E692856ED</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EFAB48F4B2FECE6FA64B6CF9C74E0B1A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9F42516D790EF8EADF8310051985E69B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-TestOneMore.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A136DB53B8E99DF02F7BC3BDCD940258</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>A6DA4985635A6DCE8DD2474F29810890</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>POD_CONFIGURATION_DEBUG=1</string>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-				<key>WATCHOS_DEPLOYMENT_TARGET</key>
-				<string>2.2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>A7AA4B1CD76397768F4FB1C30962A63B</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>3F1482361CA88C3F87DF5925D463EB90</string>
-			<key>buildPhases</key>
-			<array>
-				<string>55B1DA628E2AD09D0C35014AA6982E8E</string>
-				<string>C87E58BD12C28AA7296168F7D5DFBEEF</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-TestOneMore</string>
-			<key>productName</key>
-			<string>Pods-TestOneMore</string>
-			<key>productReference</key>
-			<string>346E11CD014BCF2B199B16FEE1CB4A53</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>AB21402F2628AE5AD7FE931E3C014436</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.2.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>B1BD09A9396C4AD3F54E5F530B26E977</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>87876E743926339DFA30BA7C2FBC3716</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>pyze-sdk-iOS</string>
-			<key>path</key>
-			<string>pyze-sdk-iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B28720F76DC66E566EA587A8483366EE</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>EEE7D5F15E77CCC10298EEEB637D171E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>watchos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WATCHOS_DEPLOYMENT_TARGET</key>
-				<string>2.2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B2F805390928DAFCAB623ECFB85C988E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D0EC3C652B0899C4C8EAA7CC996BCF24</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B839463A183A092E64CD3F2C1C5D988C</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>POD_CONFIGURATION_RELEASE=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-				<key>WATCHOS_DEPLOYMENT_TARGET</key>
-				<string>2.2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>BA653074608944F56F802962116C5C0C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>8A342AB6FA813108FE14D7CFF12DFF0C</string>
-				<string>F1F2FCF91EBD411902FF6E0135647EC7</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>BEC52FAD17AF4290B7E07DBEB228197B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-TestOneMore-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C628A21AF7F326EC8397E474F2ECC85D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A136DB53B8E99DF02F7BC3BDCD940258</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C87E58BD12C28AA7296168F7D5DFBEEF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C628A21AF7F326EC8397E474F2ECC85D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CCA785A745D6F553E89FDDD77BFF5DF7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-WatchTest Extension-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D0EC3C652B0899C4C8EAA7CC996BCF24</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0C5AC49A56DFCEEB747ACB593FB7334B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D41D8CD98F00B204E9800998ECF8427E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>7DB346D0F39D3F0E887471402A8071AB</string>
-			<key>productRefGroup</key>
-			<string>353F1D7D2573AC096A3ED2A49489C580</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>A7AA4B1CD76397768F4FB1C30962A63B</string>
-				<string>152200E5106659C686BC9BDD821164BD</string>
-				<string>35CCE261C24B9FC527F0A3A057DB2162</string>
-			</array>
-		</dict>
-		<key>D916E6BF89F3269B153794757F55E8BE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>73B310CB457A42B0EA40C5A0B6D1CBCF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E6AEA23A6ED0C895969BF3752AB77FC8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-WatchTest-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EEE7D5F15E77CCC10298EEEB637D171E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-WatchTest.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EFAB48F4B2FECE6FA64B6CF9C74E0B1A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB21402F2628AE5AD7FE931E3C014436</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F1F2FCF91EBD411902FF6E0135647EC7</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>543409C651ACB70B5F7D8CC26BF7B2E7</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>watchos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WATCHOS_DEPLOYMENT_TARGET</key>
-				<string>2.2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FB979638CA876180EF572A19716BF481</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-TestOneMore-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D41D8CD98F00B204E9800998ECF8427E</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A841023F876218AD55C13C00A651D0B1 /* Pods-WatchTest Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5AC49A56DFCEEB747ACB593FB7334B /* Pods-WatchTest Extension-dummy.m */; };
+		BB903F2013EF9C9FB68DA54C54D16C9E /* Pods-WatchTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F4DBAE835CBB05624496F73B71676 /* Pods-WatchTest-dummy.m */; };
+		E2695EC5231B556E24AB8F056C2254C1 /* Pods-TestOneMore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B310CB457A42B0EA40C5A0B6D1CBCF /* Pods-TestOneMore-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01525A8FA0E0FBDCB3CC4C6E5A44F7BC /* Pods-WatchTest-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WatchTest-frameworks.sh"; sourceTree = "<group>"; };
+		0535E08616237837DA3F0C1E1E20CA9D /* Pods-WatchTest Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchTest Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		0C12EE1A6BAC6A28C64593C88EB79B60 /* Pods-WatchTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchTest-acknowledgements.plist"; sourceTree = "<group>"; };
+		0C5AC49A56DFCEEB747ACB593FB7334B /* Pods-WatchTest Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WatchTest Extension-dummy.m"; sourceTree = "<group>"; };
+		11F35BE9039681B51614538AAD0A357B /* Pods-WatchTest Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchTest Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		2251DE3AABD2EAE09E122049D342DDB3 /* Pods-WatchTest Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WatchTest Extension-frameworks.sh"; sourceTree = "<group>"; };
+		2D1F89E2E6D345ED96AE417ACBF6F6FE /* Pods-WatchTest-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WatchTest-resources.sh"; sourceTree = "<group>"; };
+		346E11CD014BCF2B199B16FEE1CB4A53 /* libPods-TestOneMore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TestOneMore.a"; path = "libPods-TestOneMore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		452F4DBAE835CBB05624496F73B71676 /* Pods-WatchTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WatchTest-dummy.m"; sourceTree = "<group>"; };
+		498EC1EC135EA5B62CDD15FC28E91C2F /* Pods-TestOneMore-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestOneMore-acknowledgements.plist"; sourceTree = "<group>"; };
+		52BD559C693B6C04C51F48E762F4753A /* libPods-WatchTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WatchTest.a"; path = "libPods-WatchTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		543409C651ACB70B5F7D8CC26BF7B2E7 /* Pods-WatchTest Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchTest Extension.release.xcconfig"; sourceTree = "<group>"; };
+		66446925B1402B5A1A105C9F575E3CF4 /* Pyze.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pyze.framework; sourceTree = "<group>"; };
+		6BCC4E2F072D698BC4951ACF51F57CE0 /* Pods-TestOneMore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestOneMore.debug.xcconfig"; sourceTree = "<group>"; };
+		73B310CB457A42B0EA40C5A0B6D1CBCF /* Pods-TestOneMore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TestOneMore-dummy.m"; sourceTree = "<group>"; };
+		80E7621FAF2F147345F676207AB7B600 /* Pods-WatchTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchTest.release.xcconfig"; sourceTree = "<group>"; };
+		80FBE849336726B616CB54E852735873 /* Pods-WatchTest Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WatchTest Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		968F7614405571745B6EFC954CC6CAB3 /* Pods-TestOneMore-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestOneMore-resources.sh"; sourceTree = "<group>"; };
+		97FC5760648A9C4946D3BD7D6EF10C51 /* libPods-WatchTest Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WatchTest Extension.a"; path = "libPods-WatchTest Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F42516D790EF8EADF8310051985E69B /* Pods-TestOneMore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestOneMore.release.xcconfig"; sourceTree = "<group>"; };
+		BEC52FAD17AF4290B7E07DBEB228197B /* Pods-TestOneMore-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestOneMore-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CCA785A745D6F553E89FDDD77BFF5DF7 /* Pods-WatchTest Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WatchTest Extension-resources.sh"; sourceTree = "<group>"; };
+		E6AEA23A6ED0C895969BF3752AB77FC8 /* Pods-WatchTest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WatchTest-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EEE7D5F15E77CCC10298EEEB637D171E /* Pods-WatchTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchTest.debug.xcconfig"; sourceTree = "<group>"; };
+		FB979638CA876180EF572A19716BF481 /* Pods-TestOneMore-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestOneMore-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0168E6440270BE8C590063B5A760B814 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4231AC412A96F739ED9DF99CA69A984E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70DFDF3B7FC715A258C85261875A82F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		353F1D7D2573AC096A3ED2A49489C580 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				346E11CD014BCF2B199B16FEE1CB4A53 /* libPods-TestOneMore.a */,
+				52BD559C693B6C04C51F48E762F4753A /* libPods-WatchTest.a */,
+				97FC5760648A9C4946D3BD7D6EF10C51 /* libPods-WatchTest Extension.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46E34F7C47C91710FAAD05641FADF49C /* Pods-WatchTest */ = {
+			isa = PBXGroup;
+			children = (
+				E6AEA23A6ED0C895969BF3752AB77FC8 /* Pods-WatchTest-acknowledgements.markdown */,
+				0C12EE1A6BAC6A28C64593C88EB79B60 /* Pods-WatchTest-acknowledgements.plist */,
+				452F4DBAE835CBB05624496F73B71676 /* Pods-WatchTest-dummy.m */,
+				01525A8FA0E0FBDCB3CC4C6E5A44F7BC /* Pods-WatchTest-frameworks.sh */,
+				2D1F89E2E6D345ED96AE417ACBF6F6FE /* Pods-WatchTest-resources.sh */,
+				EEE7D5F15E77CCC10298EEEB637D171E /* Pods-WatchTest.debug.xcconfig */,
+				80E7621FAF2F147345F676207AB7B600 /* Pods-WatchTest.release.xcconfig */,
+			);
+			name = "Pods-WatchTest";
+			path = "Target Support Files/Pods-WatchTest";
+			sourceTree = "<group>";
+		};
+		54AEE9A141010A353B261AB91FBA5C81 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A1DC3E714EF26BC78E13767C3E20AE9 /* Pods-TestOneMore */,
+				46E34F7C47C91710FAAD05641FADF49C /* Pods-WatchTest */,
+				7716F839958378CCAA865F879B11E5D3 /* Pods-WatchTest Extension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6803BF6CFF22D6B85539BD2859502E8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1BD09A9396C4AD3F54E5F530B26E977 /* pyze-sdk-iOS */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7716F839958378CCAA865F879B11E5D3 /* Pods-WatchTest Extension */ = {
+			isa = PBXGroup;
+			children = (
+				80FBE849336726B616CB54E852735873 /* Pods-WatchTest Extension-acknowledgements.markdown */,
+				0535E08616237837DA3F0C1E1E20CA9D /* Pods-WatchTest Extension-acknowledgements.plist */,
+				0C5AC49A56DFCEEB747ACB593FB7334B /* Pods-WatchTest Extension-dummy.m */,
+				2251DE3AABD2EAE09E122049D342DDB3 /* Pods-WatchTest Extension-frameworks.sh */,
+				CCA785A745D6F553E89FDDD77BFF5DF7 /* Pods-WatchTest Extension-resources.sh */,
+				11F35BE9039681B51614538AAD0A357B /* Pods-WatchTest Extension.debug.xcconfig */,
+				543409C651ACB70B5F7D8CC26BF7B2E7 /* Pods-WatchTest Extension.release.xcconfig */,
+			);
+			name = "Pods-WatchTest Extension";
+			path = "Target Support Files/Pods-WatchTest Extension";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				6803BF6CFF22D6B85539BD2859502E8D /* Pods */,
+				353F1D7D2573AC096A3ED2A49489C580 /* Products */,
+				54AEE9A141010A353B261AB91FBA5C81 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		87876E743926339DFA30BA7C2FBC3716 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66446925B1402B5A1A105C9F575E3CF4 /* Pyze.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A1DC3E714EF26BC78E13767C3E20AE9 /* Pods-TestOneMore */ = {
+			isa = PBXGroup;
+			children = (
+				BEC52FAD17AF4290B7E07DBEB228197B /* Pods-TestOneMore-acknowledgements.markdown */,
+				498EC1EC135EA5B62CDD15FC28E91C2F /* Pods-TestOneMore-acknowledgements.plist */,
+				73B310CB457A42B0EA40C5A0B6D1CBCF /* Pods-TestOneMore-dummy.m */,
+				FB979638CA876180EF572A19716BF481 /* Pods-TestOneMore-frameworks.sh */,
+				968F7614405571745B6EFC954CC6CAB3 /* Pods-TestOneMore-resources.sh */,
+				6BCC4E2F072D698BC4951ACF51F57CE0 /* Pods-TestOneMore.debug.xcconfig */,
+				9F42516D790EF8EADF8310051985E69B /* Pods-TestOneMore.release.xcconfig */,
+			);
+			name = "Pods-TestOneMore";
+			path = "Target Support Files/Pods-TestOneMore";
+			sourceTree = "<group>";
+		};
+		B1BD09A9396C4AD3F54E5F530B26E977 /* pyze-sdk-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				87876E743926339DFA30BA7C2FBC3716 /* Frameworks */,
+			);
+			name = "pyze-sdk-iOS";
+			path = "pyze-sdk-iOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		023570012FD3B4EED16BAA80F23952D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AEFCFEDDB75337277565F1023B6CBCC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D49AA714A7D38F7ADBF235027CEC8FA6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8B15B97186BDE3A2969E3B8B26B66E9F /* Pods-WatchTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F723DC0284D6A088F6DC1CE838F8AD09 /* Build configuration list for PBXNativeTarget "Pods-WatchTest" */;
+			buildPhases = (
+				D49AA714A7D38F7ADBF235027CEC8FA6 /* Headers */,
+				0463BC6ECA3BD5B9F398A23B13088F09 /* Sources */,
+				0168E6440270BE8C590063B5A760B814 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-WatchTest";
+			productName = "Pods-WatchTest";
+			productReference = 52BD559C693B6C04C51F48E762F4753A /* libPods-WatchTest.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E2F051706D0C049DBD9927B7122D9AD9 /* Pods-WatchTest Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C9042C4D81474BF740E2D8EB589E7CF /* Build configuration list for PBXNativeTarget "Pods-WatchTest Extension" */;
+			buildPhases = (
+				5AEFCFEDDB75337277565F1023B6CBCC /* Headers */,
+				DA1AA628FAE134173DF37BC7F32C33A3 /* Sources */,
+				4231AC412A96F739ED9DF99CA69A984E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-WatchTest Extension";
+			productName = "Pods-WatchTest Extension";
+			productReference = 97FC5760648A9C4946D3BD7D6EF10C51 /* libPods-WatchTest Extension.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F4200ED676177D6A7A940188A7CD4013 /* Pods-TestOneMore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FBC90A3BD457AC260BA1C0874ED16C6 /* Build configuration list for PBXNativeTarget "Pods-TestOneMore" */;
+			buildPhases = (
+				023570012FD3B4EED16BAA80F23952D5 /* Headers */,
+				4365A8F576CDDE4DB225A707819AE643 /* Sources */,
+				70DFDF3B7FC715A258C85261875A82F7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TestOneMore";
+			productName = "Pods-TestOneMore";
+			productReference = 346E11CD014BCF2B199B16FEE1CB4A53 /* libPods-TestOneMore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 353F1D7D2573AC096A3ED2A49489C580 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4200ED676177D6A7A940188A7CD4013 /* Pods-TestOneMore */,
+				8B15B97186BDE3A2969E3B8B26B66E9F /* Pods-WatchTest */,
+				E2F051706D0C049DBD9927B7122D9AD9 /* Pods-WatchTest Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0463BC6ECA3BD5B9F398A23B13088F09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB903F2013EF9C9FB68DA54C54D16C9E /* Pods-WatchTest-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4365A8F576CDDE4DB225A707819AE643 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2695EC5231B556E24AB8F056C2254C1 /* Pods-TestOneMore-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA1AA628FAE134173DF37BC7F32C33A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A841023F876218AD55C13C00A651D0B1 /* Pods-WatchTest Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		194970B8AAADEBF421E9C5DB962F2810 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80E7621FAF2F147345F676207AB7B600 /* Pods-WatchTest.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		65FA4FFE228DC37F709B50D7DBE1B4D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 543409C651ACB70B5F7D8CC26BF7B2E7 /* Pods-WatchTest Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		6865B99D63884644F261C917AF984ED9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		8C84419A6553E8E552999B3BC83976C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		A1F979FD6A97C75524D857E56AF8999A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BCC4E2F072D698BC4951ACF51F57CE0 /* Pods-TestOneMore.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACCDA445584C487A34ADA36CD7C5BFB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEE7D5F15E77CCC10298EEEB637D171E /* Pods-WatchTest.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		BF6D65E3542F77B7501FF5C2B948F9FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F42516D790EF8EADF8310051985E69B /* Pods-TestOneMore.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F64DC6BD6ADEF280419EBB0CB7292893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11F35BE9039681B51614538AAD0A357B /* Pods-WatchTest Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FBC90A3BD457AC260BA1C0874ED16C6 /* Build configuration list for PBXNativeTarget "Pods-TestOneMore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1F979FD6A97C75524D857E56AF8999A /* Debug */,
+				BF6D65E3542F77B7501FF5C2B948F9FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6865B99D63884644F261C917AF984ED9 /* Debug */,
+				8C84419A6553E8E552999B3BC83976C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C9042C4D81474BF740E2D8EB589E7CF /* Build configuration list for PBXNativeTarget "Pods-WatchTest Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F64DC6BD6ADEF280419EBB0CB7292893 /* Debug */,
+				65FA4FFE228DC37F709B50D7DBE1B4D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F723DC0284D6A088F6DC1CE838F8AD09 /* Build configuration list for PBXNativeTarget "Pods-WatchTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACCDA445584C487A34ADA36CD7C5BFB8 /* Debug */,
+				194970B8AAADEBF421E9C5DB962F2810 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

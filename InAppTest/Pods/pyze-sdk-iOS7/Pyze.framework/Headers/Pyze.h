@@ -195,7 +195,23 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 +(void) logThrottling:(PyzeLogLevel) logLevel;
 
 
+/**
+ *  Will stop collecting all data
+ *
+ *  @param shouldOptout Boolean value to decide if data tracking should be stopped.
+ *
+ - Since: 5.0.2
+ */
++ (void) setUserOptOut:(BOOL)shouldOptout;
 
+/**
+ *  Will stop collecting all data and delete existing data from the server
+ *
+ *  @param shouldDelete Boolean value to decide if data collection should be stopped and delete existing data from the server
+ *
+ - Since: 5.0.2
+ */
++ (void) deleteUser:(BOOL)shouldDelete;
 
 
 /// @name  Create Timer Reference to use in Timed Custom Events using PyzeCustomEvent class
@@ -218,6 +234,14 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
  */
 +(double) timerReference;
 
+/**
+ *  Returns the Pyze instance identifier. If Pyze not initialized, returns an empty string.
+ *
+ *  @return Pyze Instance identifier
+ */
++ (NSString *) getPyzeAppInstanceId;
+
+
 
 /// @name Push notification helper APIs
 
@@ -230,6 +254,16 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
  *  - Since: 2.2.1
  */
 +(void) setRemoteNotificationDeviceToken:(NSData *) deviceToken;
+
+/**
+ *  Use this API to set the push notification device token. This will trigger Pyze to update the device token, which internally would be used to send the push notification. Call this API in Application's AppDelegate method application:didRegisterForRemoteNotificationsWithDeviceToken:.
+ *  The method accepts the token as NSStirng.
+ *
+ *  @param deviceToken Device token string recieved.
+ 
+ *  - Since: 5.0.1
+ */
++(void) setRemoteNotificationDeviceTokenString:(NSString *) deviceToken;
 
 
 /**
@@ -610,5 +644,27 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
  *  @return Returns YES if all of the tags are found.
  */
 +(BOOL) areAllTagsSet:(NSArray *) tagsList;
+
+@end
+
+
+/**
+ *  PyzeAttribution
+ *  This class contains methods to post the attribution data to Pyze from attribution partners
+ */
+@interface PyzeAttribution : NSObject
+
+/**
+ *  Send Appsflyer attribution data to pyze.
+ *
+ *     -(void)onConversionDataReceived:(NSDictionary*) installData {
+ *          [PyzeAttribution postAppsFlyerAttribution:installData];
+ *      }
+ *
+ *  @param attributionData attribution/install data obtained from Appsflyer
+ *
+ *  - Since: 3.6.0
+ */
++ (void) postAppsFlyerAttribution:(NSDictionary *)attributionData;
 
 @end

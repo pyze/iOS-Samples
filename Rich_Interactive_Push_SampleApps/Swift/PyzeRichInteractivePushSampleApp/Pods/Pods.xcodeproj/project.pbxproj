@@ -7,96 +7,96 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		077CFB2101BF6395046F9811C9D0F764 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		3BBECC32E0604A4FF7B257252EEB454B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		47055350F616598B5A2729EC5DF8F925 /* PyzeAppExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = ED1E55682AF76346D329D67DC3A58E35 /* PyzeAppExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7925C5B43B1B6F80A80FA21B362F99C3 /* Pods-PyzeRichInteractivePushSampleApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E4F381160E9C8A598BB99638B2C1399 /* Pods-PyzeRichInteractivePushSampleApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C3008392EA02B5C1A7EF373EBA9847C /* pyze-iOS-extensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A460776E35A56D0101C82384630AC27D /* pyze-iOS-extensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		958D71A6D5FB5AA06C6758A8FA2E5BDB /* PyzeNotificationServiceExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3102BD8E850B988672C7C7FB07A51C1A /* PyzeNotificationServiceExtension.m */; };
-		9AFCDF4CEE7E80DEB10D933755B19A39 /* Pods-NotificationServiceExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DDC09C7EA38C37A2CEE7DF4B11BC9E8 /* Pods-NotificationServiceExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B3599F8D9695A51E7C434B3DFBCE555A /* PyzeNotificationServiceExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E850ED4F569309E939D308E58E93DB4 /* PyzeNotificationServiceExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE421D9CF2C70D1685F2706E14F5D344 /* Pods-NotificationServiceExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 104F6E80635C2939EB133DF512B9B3DD /* Pods-NotificationServiceExtension-dummy.m */; };
-		CA075CF41AFDAC1EA74A2A1FAADDD9C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		CED548FAF61C3F6BDC4BC75A82231A10 /* pyze-iOS-extensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8024F3FB6DF33BDF3F0721D07C899B /* pyze-iOS-extensions-dummy.m */; };
-		FC595FC89265465465BEECD1174C3C80 /* Pods-PyzeRichInteractivePushSampleApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 077C2E4574B9C94124BA666E50226B9A /* Pods-PyzeRichInteractivePushSampleApp-dummy.m */; };
+		0F391A5AF449B32D917E6986323DD0FF /* Pods-PyzeRichInteractivePushSampleApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC7070758DE5D5AEFDEC07D39419F4E /* Pods-PyzeRichInteractivePushSampleApp-dummy.m */; };
+		206BB2CF1E9F3E5172774FE8896C78FE /* Pods-NotificationServiceExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 359675508DC71495AD1D3ACE793585D3 /* Pods-NotificationServiceExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		385BC007E61F8B69A894EEB0A7F7E55A /* PyzeAppExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = ED1E55682AF76346D329D67DC3A58E35 /* PyzeAppExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C4349777E4598C6A6FBFC1016417DDF /* Pods-PyzeRichInteractivePushSampleApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B2CB94554298B03D993D06C4943DCC0 /* Pods-PyzeRichInteractivePushSampleApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F72872503A0393CEF6B34128CDB301D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		766867C385B5D9C0B81854F810C2489E /* PyzeNotificationServiceExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E850ED4F569309E939D308E58E93DB4 /* PyzeNotificationServiceExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2D5B8E1A1F3C79B3ED06361DD1F087D /* pyze-iOS-extensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30469B790FCA92A7A4A3579730ABE414 /* pyze-iOS-extensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAABDA314BDD5146F8B50E3D0B03F86A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		BD10C9FDCF49B2CE7FCD3CE622AAA962 /* Pods-NotificationServiceExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9349584ED9037276D4FC787856D7910D /* Pods-NotificationServiceExtension-dummy.m */; };
+		D0A2C0F1C423A54E89462A543C8C5431 /* PyzeNotificationServiceExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3102BD8E850B988672C7C7FB07A51C1A /* PyzeNotificationServiceExtension.m */; };
+		DDCF35395F1467E54E753830899918B1 /* pyze-iOS-extensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 739DE15E6F31E9550D150BC987C3D927 /* pyze-iOS-extensions-dummy.m */; };
+		FE1FB9A2B29F68D4233B9231900CA8D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		081A3BE32E50EB4CE5C29C2F5A4D99D1 /* PBXContainerItemProxy */ = {
+		48250FB18AB4BFFDD06BFCBA2B872A45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B446D1C51ADADF9E880249BEAF708341;
+			remoteGlobalIDString = 8F489E526D8673319EF38A82173165B7;
 			remoteInfo = "pyze-iOS-extensions";
 		};
-		4125460A91D8A08C12C1E6AC29AAB7D6 /* PBXContainerItemProxy */ = {
+		A8A7DDC0B53ADDA9A8A027630FA6514D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B446D1C51ADADF9E880249BEAF708341;
+			remoteGlobalIDString = 8F489E526D8673319EF38A82173165B7;
 			remoteInfo = "pyze-iOS-extensions";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		077C2E4574B9C94124BA666E50226B9A /* Pods-PyzeRichInteractivePushSampleApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PyzeRichInteractivePushSampleApp-dummy.m"; sourceTree = "<group>"; };
-		08A7825C2858214EAADE6FB6F9F0E814 /* Pods-NotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		00AE3B8FE3C03193FEC7B664B329F940 /* pyze-iOS-extensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "pyze-iOS-extensions.modulemap"; sourceTree = "<group>"; };
+		04C7B5FF4B1A199978F8B081579C84FD /* pyze-iOS-extensions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "pyze-iOS-extensions.xcconfig"; sourceTree = "<group>"; };
+		05CF4EB12934D6104E37539D5A10AC2F /* Pods-NotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		0707F6D5661CAC74EA0AACEA721B745B /* Pods-PyzeRichInteractivePushSampleApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PyzeRichInteractivePushSampleApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0A70A55C07C01F4C7436664E539606EE /* Pods_NotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NotificationServiceExtension.framework; path = "Pods-NotificationServiceExtension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E4F381160E9C8A598BB99638B2C1399 /* Pods-PyzeRichInteractivePushSampleApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PyzeRichInteractivePushSampleApp-umbrella.h"; sourceTree = "<group>"; };
-		0F8024F3FB6DF33BDF3F0721D07C899B /* pyze-iOS-extensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "pyze-iOS-extensions-dummy.m"; sourceTree = "<group>"; };
-		104F6E80635C2939EB133DF512B9B3DD /* Pods-NotificationServiceExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NotificationServiceExtension-dummy.m"; sourceTree = "<group>"; };
-		136A2C163566B29D5156793E9A150D2C /* Pods-NotificationServiceExtension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NotificationServiceExtension-resources.sh"; sourceTree = "<group>"; };
-		1DDC09C7EA38C37A2CEE7DF4B11BC9E8 /* Pods-NotificationServiceExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NotificationServiceExtension-umbrella.h"; sourceTree = "<group>"; };
+		111888D9B87FF917BB036AD56AEB074D /* Pods-PyzeRichInteractivePushSampleApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PyzeRichInteractivePushSampleApp-frameworks.sh"; sourceTree = "<group>"; };
+		1B2CB94554298B03D993D06C4943DCC0 /* Pods-PyzeRichInteractivePushSampleApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PyzeRichInteractivePushSampleApp-umbrella.h"; sourceTree = "<group>"; };
 		1E850ED4F569309E939D308E58E93DB4 /* PyzeNotificationServiceExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PyzeNotificationServiceExtension.h; path = PyzeAppExtensions/PyzeAppExtensions/PyzeNotificationServiceExtension.h; sourceTree = "<group>"; };
-		1F6305CD21E573707455F48B43D36544 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		225D1B2C0946F110247E754D334A4513 /* Pods-NotificationServiceExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NotificationServiceExtension.modulemap"; sourceTree = "<group>"; };
-		261F87FF384D957B69010CEA1D951E1E /* pyze-iOS-extensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "pyze-iOS-extensions.modulemap"; sourceTree = "<group>"; };
+		30469B790FCA92A7A4A3579730ABE414 /* pyze-iOS-extensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "pyze-iOS-extensions-umbrella.h"; sourceTree = "<group>"; };
 		3102BD8E850B988672C7C7FB07A51C1A /* PyzeNotificationServiceExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PyzeNotificationServiceExtension.m; path = PyzeAppExtensions/PyzeAppExtensions/PyzeNotificationServiceExtension.m; sourceTree = "<group>"; };
-		38A8BDA8703BB964F5CC259E3425C118 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4600B0C726AB0CE9EA9F997F226C0A87 /* Pods-NotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
-		50FDBC787D1CDBC4841BA82A8F9E93DA /* pyze-iOS-extensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "pyze-iOS-extensions-prefix.pch"; sourceTree = "<group>"; };
-		59B52DC4EBC639EE978FC139F7EEA13B /* Pods-PyzeRichInteractivePushSampleApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PyzeRichInteractivePushSampleApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		3216A0055BED33AC8CF9BEE691551AAB /* Pods-PyzeRichInteractivePushSampleApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PyzeRichInteractivePushSampleApp-resources.sh"; sourceTree = "<group>"; };
+		359675508DC71495AD1D3ACE793585D3 /* Pods-NotificationServiceExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NotificationServiceExtension-umbrella.h"; sourceTree = "<group>"; };
+		482F7F23FD562F22B65525A0CF02B7F7 /* pyze-iOS-extensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "pyze-iOS-extensions-prefix.pch"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5ACFB6645F2CBEE9A3409694DED34D19 /* PyzeAppExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PyzeAppExtensions.framework; path = "pyze-iOS-extensions.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		69FA2E5A0B112AD708F4D2098AF5839A /* Pods-NotificationServiceExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NotificationServiceExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6A638CDCDADD1FA436BB0CA576E34E4C /* Pods-NotificationServiceExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NotificationServiceExtension.modulemap"; sourceTree = "<group>"; };
+		705DCD17D35FDBA89FB828513295BD7B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7253D0CB7C56A28B969F939149E4A163 /* Pods-NotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		739DE15E6F31E9550D150BC987C3D927 /* pyze-iOS-extensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "pyze-iOS-extensions-dummy.m"; sourceTree = "<group>"; };
 		77A982D5B8624B2A6E229852C51A19F0 /* Pyze.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pyze.framework; sourceTree = "<group>"; };
-		8AFC12F5CFBB83FF7F504A3B280B89FF /* Pods-PyzeRichInteractivePushSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PyzeRichInteractivePushSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9349584ED9037276D4FC787856D7910D /* Pods-NotificationServiceExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NotificationServiceExtension-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D2FF6E1452FB2E2E2697F304E76735E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C8F61204DC1DEF78CBDBCEBDA9413A /* Pods-NotificationServiceExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NotificationServiceExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A2F73538ABB8B8602DFBC4643CE4B867 /* Pods_PyzeRichInteractivePushSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PyzeRichInteractivePushSampleApp.framework; path = "Pods-PyzeRichInteractivePushSampleApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A460776E35A56D0101C82384630AC27D /* pyze-iOS-extensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "pyze-iOS-extensions-umbrella.h"; sourceTree = "<group>"; };
-		C9AF08329567A6B6B2B2F88AC1F08368 /* Pods-PyzeRichInteractivePushSampleApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PyzeRichInteractivePushSampleApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C9BB0F1F92E0275146B6EC9FF6158DF5 /* Pods-PyzeRichInteractivePushSampleApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PyzeRichInteractivePushSampleApp-frameworks.sh"; sourceTree = "<group>"; };
-		CCFE6A20A4D49841AA8503DD66EA5374 /* Pods-PyzeRichInteractivePushSampleApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PyzeRichInteractivePushSampleApp.modulemap"; sourceTree = "<group>"; };
-		D3649A2A889857AEFFB059DE52834E76 /* pyze-iOS-extensions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "pyze-iOS-extensions.xcconfig"; sourceTree = "<group>"; };
-		E835ED842E837988B1CC6CEBC8830248 /* Pods-NotificationServiceExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NotificationServiceExtension-acknowledgements.plist"; sourceTree = "<group>"; };
-		EA0C5836658C48DED09F3F1F984054C9 /* Pods-PyzeRichInteractivePushSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PyzeRichInteractivePushSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		A84BAFF48D894C3B33DE9457973E7F72 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC57103632DE9A96200FC73CE20C5570 /* Pods-PyzeRichInteractivePushSampleApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PyzeRichInteractivePushSampleApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		C27197BF89E2C088546776F477AE1542 /* Pods-NotificationServiceExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NotificationServiceExtension-acknowledgements.plist"; sourceTree = "<group>"; };
+		CEC7070758DE5D5AEFDEC07D39419F4E /* Pods-PyzeRichInteractivePushSampleApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PyzeRichInteractivePushSampleApp-dummy.m"; sourceTree = "<group>"; };
+		E7A0590B336F698102E15DF2F5987F0C /* Pods-PyzeRichInteractivePushSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PyzeRichInteractivePushSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		E8EA610A195D81C0A296A3E4377BB41C /* Pods-PyzeRichInteractivePushSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PyzeRichInteractivePushSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EA561445FA516ED09A231845EEB3090A /* Pods-PyzeRichInteractivePushSampleApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PyzeRichInteractivePushSampleApp.modulemap"; sourceTree = "<group>"; };
 		ED1E55682AF76346D329D67DC3A58E35 /* PyzeAppExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PyzeAppExtensions.h; path = PyzeAppExtensions/PyzeAppExtensions/PyzeAppExtensions.h; sourceTree = "<group>"; };
-		F820CEF08B63B94D96B111B3F21C7B39 /* Pods-PyzeRichInteractivePushSampleApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PyzeRichInteractivePushSampleApp-resources.sh"; sourceTree = "<group>"; };
-		FA64672D6FCE8A9487D66F019932480F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2CFA842E71C1DE1E06DB102CD679FED /* Pods-NotificationServiceExtension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NotificationServiceExtension-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		30E8AB3221174FFAB3BA988FEBFD35DF /* Frameworks */ = {
+		1711D7C586D821917187829E45D60CEF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA075CF41AFDAC1EA74A2A1FAADDD9C2 /* Foundation.framework in Frameworks */,
+				5F72872503A0393CEF6B34128CDB301D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B8F37A7258C6C4ED0101884121E620F /* Frameworks */ = {
+		5CA30F74C1088E8C2E450223EC981F7A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BBECC32E0604A4FF7B257252EEB454B /* Foundation.framework in Frameworks */,
+				FE1FB9A2B29F68D4233B9231900CA8D1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA83B53B510C3BD4A5C3AB6DA48F0AF7 /* Frameworks */ = {
+		7D9C4109437FD76804745F51EC483CB1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				077CFB2101BF6395046F9811C9D0F764 /* Foundation.framework in Frameworks */,
+				BAABDA314BDD5146F8B50E3D0B03F86A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,10 +109,27 @@
 				ED1E55682AF76346D329D67DC3A58E35 /* PyzeAppExtensions.h */,
 				1E850ED4F569309E939D308E58E93DB4 /* PyzeNotificationServiceExtension.h */,
 				3102BD8E850B988672C7C7FB07A51C1A /* PyzeNotificationServiceExtension.m */,
-				ABC27E7029EC180BB7FDE20A50921BE8 /* Support Files */,
+				4FBABC7EF48F997E09F3CA50B79BB55A /* Support Files */,
 			);
 			name = "pyze-iOS-extensions";
 			path = "pyze-iOS-extensions";
+			sourceTree = "<group>";
+		};
+		2E16399D2A2F90BABAA3BA8F9B275B7D /* Pods-NotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A84BAFF48D894C3B33DE9457973E7F72 /* Info.plist */,
+				6A638CDCDADD1FA436BB0CA576E34E4C /* Pods-NotificationServiceExtension.modulemap */,
+				A1C8F61204DC1DEF78CBDBCEBDA9413A /* Pods-NotificationServiceExtension-acknowledgements.markdown */,
+				C27197BF89E2C088546776F477AE1542 /* Pods-NotificationServiceExtension-acknowledgements.plist */,
+				9349584ED9037276D4FC787856D7910D /* Pods-NotificationServiceExtension-dummy.m */,
+				F2CFA842E71C1DE1E06DB102CD679FED /* Pods-NotificationServiceExtension-resources.sh */,
+				359675508DC71495AD1D3ACE793585D3 /* Pods-NotificationServiceExtension-umbrella.h */,
+				05CF4EB12934D6104E37539D5A10AC2F /* Pods-NotificationServiceExtension.debug.xcconfig */,
+				7253D0CB7C56A28B969F939149E4A163 /* Pods-NotificationServiceExtension.release.xcconfig */,
+			);
+			name = "Pods-NotificationServiceExtension";
+			path = "Target Support Files/Pods-NotificationServiceExtension";
 			sourceTree = "<group>";
 		};
 		303109A716A6C8049D35376C45001DAD /* Products */ = {
@@ -134,22 +151,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		52E5E41A3EC4DED68089FCE65E8F1BF2 /* Pods-PyzeRichInteractivePushSampleApp */ = {
+		4FBABC7EF48F997E09F3CA50B79BB55A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				38A8BDA8703BB964F5CC259E3425C118 /* Info.plist */,
-				CCFE6A20A4D49841AA8503DD66EA5374 /* Pods-PyzeRichInteractivePushSampleApp.modulemap */,
-				C9AF08329567A6B6B2B2F88AC1F08368 /* Pods-PyzeRichInteractivePushSampleApp-acknowledgements.markdown */,
-				59B52DC4EBC639EE978FC139F7EEA13B /* Pods-PyzeRichInteractivePushSampleApp-acknowledgements.plist */,
-				077C2E4574B9C94124BA666E50226B9A /* Pods-PyzeRichInteractivePushSampleApp-dummy.m */,
-				C9BB0F1F92E0275146B6EC9FF6158DF5 /* Pods-PyzeRichInteractivePushSampleApp-frameworks.sh */,
-				F820CEF08B63B94D96B111B3F21C7B39 /* Pods-PyzeRichInteractivePushSampleApp-resources.sh */,
-				0E4F381160E9C8A598BB99638B2C1399 /* Pods-PyzeRichInteractivePushSampleApp-umbrella.h */,
-				8AFC12F5CFBB83FF7F504A3B280B89FF /* Pods-PyzeRichInteractivePushSampleApp.debug.xcconfig */,
-				EA0C5836658C48DED09F3F1F984054C9 /* Pods-PyzeRichInteractivePushSampleApp.release.xcconfig */,
+				9D2FF6E1452FB2E2E2697F304E76735E /* Info.plist */,
+				00AE3B8FE3C03193FEC7B664B329F940 /* pyze-iOS-extensions.modulemap */,
+				04C7B5FF4B1A199978F8B081579C84FD /* pyze-iOS-extensions.xcconfig */,
+				739DE15E6F31E9550D150BC987C3D927 /* pyze-iOS-extensions-dummy.m */,
+				482F7F23FD562F22B65525A0CF02B7F7 /* pyze-iOS-extensions-prefix.pch */,
+				30469B790FCA92A7A4A3579730ABE414 /* pyze-iOS-extensions-umbrella.h */,
 			);
-			name = "Pods-PyzeRichInteractivePushSampleApp";
-			path = "Target Support Files/Pods-PyzeRichInteractivePushSampleApp";
+			name = "Support Files";
+			path = "../Target Support Files/pyze-iOS-extensions";
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		67644FAD5DB0976518220EBB6508D553 /* Frameworks */ = {
@@ -180,41 +201,10 @@
 			);
 			sourceTree = "<group>";
 		};
-		A17A12C06B4A856665E13D1252BA27CF /* Pods-NotificationServiceExtension */ = {
-			isa = PBXGroup;
-			children = (
-				FA64672D6FCE8A9487D66F019932480F /* Info.plist */,
-				225D1B2C0946F110247E754D334A4513 /* Pods-NotificationServiceExtension.modulemap */,
-				69FA2E5A0B112AD708F4D2098AF5839A /* Pods-NotificationServiceExtension-acknowledgements.markdown */,
-				E835ED842E837988B1CC6CEBC8830248 /* Pods-NotificationServiceExtension-acknowledgements.plist */,
-				104F6E80635C2939EB133DF512B9B3DD /* Pods-NotificationServiceExtension-dummy.m */,
-				136A2C163566B29D5156793E9A150D2C /* Pods-NotificationServiceExtension-resources.sh */,
-				1DDC09C7EA38C37A2CEE7DF4B11BC9E8 /* Pods-NotificationServiceExtension-umbrella.h */,
-				08A7825C2858214EAADE6FB6F9F0E814 /* Pods-NotificationServiceExtension.debug.xcconfig */,
-				4600B0C726AB0CE9EA9F997F226C0A87 /* Pods-NotificationServiceExtension.release.xcconfig */,
-			);
-			name = "Pods-NotificationServiceExtension";
-			path = "Target Support Files/Pods-NotificationServiceExtension";
-			sourceTree = "<group>";
-		};
-		ABC27E7029EC180BB7FDE20A50921BE8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1F6305CD21E573707455F48B43D36544 /* Info.plist */,
-				261F87FF384D957B69010CEA1D951E1E /* pyze-iOS-extensions.modulemap */,
-				D3649A2A889857AEFFB059DE52834E76 /* pyze-iOS-extensions.xcconfig */,
-				0F8024F3FB6DF33BDF3F0721D07C899B /* pyze-iOS-extensions-dummy.m */,
-				50FDBC787D1CDBC4841BA82A8F9E93DA /* pyze-iOS-extensions-prefix.pch */,
-				A460776E35A56D0101C82384630AC27D /* pyze-iOS-extensions-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/pyze-iOS-extensions";
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -222,95 +212,89 @@
 		BFA934C7FF8FDEED59D31F7E19FC5B98 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A17A12C06B4A856665E13D1252BA27CF /* Pods-NotificationServiceExtension */,
-				52E5E41A3EC4DED68089FCE65E8F1BF2 /* Pods-PyzeRichInteractivePushSampleApp */,
+				2E16399D2A2F90BABAA3BA8F9B275B7D /* Pods-NotificationServiceExtension */,
+				FA17B6A79F744A9BCB1211965A7C8860 /* Pods-PyzeRichInteractivePushSampleApp */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		FA17B6A79F744A9BCB1211965A7C8860 /* Pods-PyzeRichInteractivePushSampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				705DCD17D35FDBA89FB828513295BD7B /* Info.plist */,
+				EA561445FA516ED09A231845EEB3090A /* Pods-PyzeRichInteractivePushSampleApp.modulemap */,
+				0707F6D5661CAC74EA0AACEA721B745B /* Pods-PyzeRichInteractivePushSampleApp-acknowledgements.markdown */,
+				BC57103632DE9A96200FC73CE20C5570 /* Pods-PyzeRichInteractivePushSampleApp-acknowledgements.plist */,
+				CEC7070758DE5D5AEFDEC07D39419F4E /* Pods-PyzeRichInteractivePushSampleApp-dummy.m */,
+				111888D9B87FF917BB036AD56AEB074D /* Pods-PyzeRichInteractivePushSampleApp-frameworks.sh */,
+				3216A0055BED33AC8CF9BEE691551AAB /* Pods-PyzeRichInteractivePushSampleApp-resources.sh */,
+				1B2CB94554298B03D993D06C4943DCC0 /* Pods-PyzeRichInteractivePushSampleApp-umbrella.h */,
+				E8EA610A195D81C0A296A3E4377BB41C /* Pods-PyzeRichInteractivePushSampleApp.debug.xcconfig */,
+				E7A0590B336F698102E15DF2F5987F0C /* Pods-PyzeRichInteractivePushSampleApp.release.xcconfig */,
 			);
-			name = iOS;
+			name = "Pods-PyzeRichInteractivePushSampleApp";
+			path = "Target Support Files/Pods-PyzeRichInteractivePushSampleApp";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1824924C4C2A702202FE1CB2094289C8 /* Headers */ = {
+		108894E109496B77B2AB8966302990E5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7925C5B43B1B6F80A80FA21B362F99C3 /* Pods-PyzeRichInteractivePushSampleApp-umbrella.h in Headers */,
+				5C4349777E4598C6A6FBFC1016417DDF /* Pods-PyzeRichInteractivePushSampleApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B59417F896D4EA5B36D06A73EC180C8 /* Headers */ = {
+		E7E76BA2E31B1D37BA405667BD0A859A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AFCDF4CEE7E80DEB10D933755B19A39 /* Pods-NotificationServiceExtension-umbrella.h in Headers */,
+				A2D5B8E1A1F3C79B3ED06361DD1F087D /* pyze-iOS-extensions-umbrella.h in Headers */,
+				385BC007E61F8B69A894EEB0A7F7E55A /* PyzeAppExtensions.h in Headers */,
+				766867C385B5D9C0B81854F810C2489E /* PyzeNotificationServiceExtension.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C86EEBCB30134837CD35201DBB3A181 /* Headers */ = {
+		F63AF9358CAF0CBF5C53D98BF346BAF9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C3008392EA02B5C1A7EF373EBA9847C /* pyze-iOS-extensions-umbrella.h in Headers */,
-				47055350F616598B5A2729EC5DF8F925 /* PyzeAppExtensions.h in Headers */,
-				B3599F8D9695A51E7C434B3DFBCE555A /* PyzeNotificationServiceExtension.h in Headers */,
+				206BB2CF1E9F3E5172774FE8896C78FE /* Pods-NotificationServiceExtension-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		25C59D5611F1A46B41AA0506D2029D18 /* Pods-PyzeRichInteractivePushSampleApp */ = {
+		78A3A75AC91A939C401BA65024DE0620 /* Pods-NotificationServiceExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D64E5798FE812FDE1D73A371D0911916 /* Build configuration list for PBXNativeTarget "Pods-PyzeRichInteractivePushSampleApp" */;
+			buildConfigurationList = B46C251D877B21EDCE587008CA74288B /* Build configuration list for PBXNativeTarget "Pods-NotificationServiceExtension" */;
 			buildPhases = (
-				7631E9D96499F3B38386C95B60709931 /* Sources */,
-				30E8AB3221174FFAB3BA988FEBFD35DF /* Frameworks */,
-				1824924C4C2A702202FE1CB2094289C8 /* Headers */,
+				F63AF9358CAF0CBF5C53D98BF346BAF9 /* Headers */,
+				95401A4FC153D39A6DF29AD7A12356F1 /* Sources */,
+				7D9C4109437FD76804745F51EC483CB1 /* Frameworks */,
+				C9A62DA1314E545282B9C32B64B13F89 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				58958A8F7202A84DF1F7DA7481E46469 /* PBXTargetDependency */,
-			);
-			name = "Pods-PyzeRichInteractivePushSampleApp";
-			productName = "Pods-PyzeRichInteractivePushSampleApp";
-			productReference = A2F73538ABB8B8602DFBC4643CE4B867 /* Pods_PyzeRichInteractivePushSampleApp.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		404FE144492AB4623A16BB2954877FAC /* Pods-NotificationServiceExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 92733EE21B08685BAFED43DE25887ACF /* Build configuration list for PBXNativeTarget "Pods-NotificationServiceExtension" */;
-			buildPhases = (
-				E24CE2D31E14699383286A5E1E2E5BCD /* Sources */,
-				8B8F37A7258C6C4ED0101884121E620F /* Frameworks */,
-				2B59417F896D4EA5B36D06A73EC180C8 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				68F3974D81CEFCD275333976565A0926 /* PBXTargetDependency */,
+				486573F08F10FD6A5D15998C6EF26F32 /* PBXTargetDependency */,
 			);
 			name = "Pods-NotificationServiceExtension";
 			productName = "Pods-NotificationServiceExtension";
 			productReference = 0A70A55C07C01F4C7436664E539606EE /* Pods_NotificationServiceExtension.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B446D1C51ADADF9E880249BEAF708341 /* pyze-iOS-extensions */ = {
+		8F489E526D8673319EF38A82173165B7 /* pyze-iOS-extensions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D340D00F390C0564CF3EE9AB4BDEDDA /* Build configuration list for PBXNativeTarget "pyze-iOS-extensions" */;
+			buildConfigurationList = 6980DA4ABDFB32B536341177157D3C0E /* Build configuration list for PBXNativeTarget "pyze-iOS-extensions" */;
 			buildPhases = (
-				47B113593F85B3727A4E749B0506BEC2 /* Sources */,
-				CA83B53B510C3BD4A5C3AB6DA48F0AF7 /* Frameworks */,
-				5C86EEBCB30134837CD35201DBB3A181 /* Headers */,
+				E7E76BA2E31B1D37BA405667BD0A859A /* Headers */,
+				F9BA391B0087272B49EB6EF96677A569 /* Sources */,
+				5CA30F74C1088E8C2E450223EC981F7A /* Frameworks */,
+				FC29D6AFA28913662C6BE29B1C94B2E9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -321,14 +305,33 @@
 			productReference = 5ACFB6645F2CBEE9A3409694DED34D19 /* PyzeAppExtensions.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		AA62D204B50AFB3729EF48748B8B6072 /* Pods-PyzeRichInteractivePushSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 277491D1FB6494728AD2A07B05815D78 /* Build configuration list for PBXNativeTarget "Pods-PyzeRichInteractivePushSampleApp" */;
+			buildPhases = (
+				108894E109496B77B2AB8966302990E5 /* Headers */,
+				224805F23D512357FAF22E7E86307A66 /* Sources */,
+				1711D7C586D821917187829E45D60CEF /* Frameworks */,
+				8FE29275B19F29D5F56B99F6304FF55C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B0791B049BEDE11A57BAB4A3CE1A631 /* PBXTargetDependency */,
+			);
+			name = "Pods-PyzeRichInteractivePushSampleApp";
+			productName = "Pods-PyzeRichInteractivePushSampleApp";
+			productReference = A2F73538ABB8B8602DFBC4643CE4B867 /* Pods_PyzeRichInteractivePushSampleApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -342,86 +345,175 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				404FE144492AB4623A16BB2954877FAC /* Pods-NotificationServiceExtension */,
-				25C59D5611F1A46B41AA0506D2029D18 /* Pods-PyzeRichInteractivePushSampleApp */,
-				B446D1C51ADADF9E880249BEAF708341 /* pyze-iOS-extensions */,
+				78A3A75AC91A939C401BA65024DE0620 /* Pods-NotificationServiceExtension */,
+				AA62D204B50AFB3729EF48748B8B6072 /* Pods-PyzeRichInteractivePushSampleApp */,
+				8F489E526D8673319EF38A82173165B7 /* pyze-iOS-extensions */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		8FE29275B19F29D5F56B99F6304FF55C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9A62DA1314E545282B9C32B64B13F89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC29D6AFA28913662C6BE29B1C94B2E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		47B113593F85B3727A4E749B0506BEC2 /* Sources */ = {
+		224805F23D512357FAF22E7E86307A66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED548FAF61C3F6BDC4BC75A82231A10 /* pyze-iOS-extensions-dummy.m in Sources */,
-				958D71A6D5FB5AA06C6758A8FA2E5BDB /* PyzeNotificationServiceExtension.m in Sources */,
+				0F391A5AF449B32D917E6986323DD0FF /* Pods-PyzeRichInteractivePushSampleApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7631E9D96499F3B38386C95B60709931 /* Sources */ = {
+		95401A4FC153D39A6DF29AD7A12356F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC595FC89265465465BEECD1174C3C80 /* Pods-PyzeRichInteractivePushSampleApp-dummy.m in Sources */,
+				BD10C9FDCF49B2CE7FCD3CE622AAA962 /* Pods-NotificationServiceExtension-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E24CE2D31E14699383286A5E1E2E5BCD /* Sources */ = {
+		F9BA391B0087272B49EB6EF96677A569 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE421D9CF2C70D1685F2706E14F5D344 /* Pods-NotificationServiceExtension-dummy.m in Sources */,
+				DDCF35395F1467E54E753830899918B1 /* pyze-iOS-extensions-dummy.m in Sources */,
+				D0A2C0F1C423A54E89462A543C8C5431 /* PyzeNotificationServiceExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		58958A8F7202A84DF1F7DA7481E46469 /* PBXTargetDependency */ = {
+		2B0791B049BEDE11A57BAB4A3CE1A631 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "pyze-iOS-extensions";
-			target = B446D1C51ADADF9E880249BEAF708341 /* pyze-iOS-extensions */;
-			targetProxy = 081A3BE32E50EB4CE5C29C2F5A4D99D1 /* PBXContainerItemProxy */;
+			target = 8F489E526D8673319EF38A82173165B7 /* pyze-iOS-extensions */;
+			targetProxy = A8A7DDC0B53ADDA9A8A027630FA6514D /* PBXContainerItemProxy */;
 		};
-		68F3974D81CEFCD275333976565A0926 /* PBXTargetDependency */ = {
+		486573F08F10FD6A5D15998C6EF26F32 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "pyze-iOS-extensions";
-			target = B446D1C51ADADF9E880249BEAF708341 /* pyze-iOS-extensions */;
-			targetProxy = 4125460A91D8A08C12C1E6AC29AAB7D6 /* PBXContainerItemProxy */;
+			target = 8F489E526D8673319EF38A82173165B7 /* pyze-iOS-extensions */;
+			targetProxy = 48250FB18AB4BFFDD06BFCBA2B872A45 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0BE9BF33EF1F17A86EE9AA9A7F6D4B9E /* Debug */ = {
+		142C662840A594A25EA62BE082535A9B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08A7825C2858214EAADE6FB6F9F0E814 /* Pods-NotificationServiceExtension.debug.xcconfig */;
+			baseConfigurationReference = 7253D0CB7C56A28B969F939149E4A163 /* Pods-NotificationServiceExtension.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-NotificationServiceExtension/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		501CF96BD021346A303033DAAF495832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7A0590B336F698102E15DF2F5987F0C /* Pods-PyzeRichInteractivePushSampleApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PyzeRichInteractivePushSampleApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PyzeRichInteractivePushSampleApp/Pods-PyzeRichInteractivePushSampleApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		92024F4165639D6FF9810999D96217CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8EA610A195D81C0A296A3E4377BB41C /* Pods-PyzeRichInteractivePushSampleApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PyzeRichInteractivePushSampleApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PyzeRichInteractivePushSampleApp/Pods-PyzeRichInteractivePushSampleApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -430,135 +522,166 @@
 			};
 			name = Debug;
 		};
-		1A41B15D3AA834993ADDD808FA9D8764 /* Release */ = {
+		96434B6C8FF320C976A10DAD7174A4BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		44093A719C59B5FA2716AABE4011FF11 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3649A2A889857AEFFB059DE52834E76 /* pyze-iOS-extensions.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/pyze-iOS-extensions/pyze-iOS-extensions-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/pyze-iOS-extensions/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/pyze-iOS-extensions/pyze-iOS-extensions.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = PyzeAppExtensions;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7D144F724433A09597E3476A57631255 /* Debug */ = {
+		D11C82AF2204B41B80412B8DC9C1D652 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		858F39F061A091EBAE19051B8512A713 /* Release */ = {
+		D708AC57A22B7C7C349013DD2D402F6D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3649A2A889857AEFFB059DE52834E76 /* pyze-iOS-extensions.xcconfig */;
+			baseConfigurationReference = 05CF4EB12934D6104E37539D5A10AC2F /* Pods-NotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NotificationServiceExtension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F328D792BB7009B1C57F2FC2BC207E3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04C7B5FF4B1A199978F8B081579C84FD /* pyze-iOS-extensions.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -566,69 +689,32 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/pyze-iOS-extensions/pyze-iOS-extensions-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/pyze-iOS-extensions/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/pyze-iOS-extensions/pyze-iOS-extensions.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_MODULE_NAME = PyzeAppExtensions;
 				PRODUCT_NAME = PyzeAppExtensions;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		B29F0AAFEDCED638EA0E9686978AA571 /* Debug */ = {
+		FC3F06FD8F94C030326C6D06BDDDCB58 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8AFC12F5CFBB83FF7F504A3B280B89FF /* Pods-PyzeRichInteractivePushSampleApp.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PyzeRichInteractivePushSampleApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PyzeRichInteractivePushSampleApp/Pods-PyzeRichInteractivePushSampleApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PyzeRichInteractivePushSampleApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C5E3FFBE5389C65A1D6A11AEA23585A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4600B0C726AB0CE9EA9F997F226C0A87 /* Pods-NotificationServiceExtension.release.xcconfig */;
+			baseConfigurationReference = 04C7B5FF4B1A199978F8B081579C84FD /* pyze-iOS-extensions.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -636,104 +722,63 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NotificationServiceExtension/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/pyze-iOS-extensions/pyze-iOS-extensions-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/pyze-iOS-extensions/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NotificationServiceExtension;
+				MODULEMAP_FILE = "Target Support Files/pyze-iOS-extensions/pyze-iOS-extensions.modulemap";
+				PRODUCT_MODULE_NAME = PyzeAppExtensions;
+				PRODUCT_NAME = PyzeAppExtensions;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
-		};
-		DCF5B42764820565379FE4C6E9F19594 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA0C5836658C48DED09F3F1F984054C9 /* Pods-PyzeRichInteractivePushSampleApp.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PyzeRichInteractivePushSampleApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PyzeRichInteractivePushSampleApp/Pods-PyzeRichInteractivePushSampleApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PyzeRichInteractivePushSampleApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		277491D1FB6494728AD2A07B05815D78 /* Build configuration list for PBXNativeTarget "Pods-PyzeRichInteractivePushSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92024F4165639D6FF9810999D96217CF /* Debug */,
+				501CF96BD021346A303033DAAF495832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7D144F724433A09597E3476A57631255 /* Debug */,
-				1A41B15D3AA834993ADDD808FA9D8764 /* Release */,
+				D11C82AF2204B41B80412B8DC9C1D652 /* Debug */,
+				96434B6C8FF320C976A10DAD7174A4BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D340D00F390C0564CF3EE9AB4BDEDDA /* Build configuration list for PBXNativeTarget "pyze-iOS-extensions" */ = {
+		6980DA4ABDFB32B536341177157D3C0E /* Build configuration list for PBXNativeTarget "pyze-iOS-extensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				44093A719C59B5FA2716AABE4011FF11 /* Debug */,
-				858F39F061A091EBAE19051B8512A713 /* Release */,
+				FC3F06FD8F94C030326C6D06BDDDCB58 /* Debug */,
+				F328D792BB7009B1C57F2FC2BC207E3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92733EE21B08685BAFED43DE25887ACF /* Build configuration list for PBXNativeTarget "Pods-NotificationServiceExtension" */ = {
+		B46C251D877B21EDCE587008CA74288B /* Build configuration list for PBXNativeTarget "Pods-NotificationServiceExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0BE9BF33EF1F17A86EE9AA9A7F6D4B9E /* Debug */,
-				C5E3FFBE5389C65A1D6A11AEA23585A9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D64E5798FE812FDE1D73A371D0911916 /* Build configuration list for PBXNativeTarget "Pods-PyzeRichInteractivePushSampleApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B29F0AAFEDCED638EA0E9686978AA571 /* Debug */,
-				DCF5B42764820565379FE4C6E9F19594 /* Release */,
+				D708AC57A22B7C7C349013DD2D402F6D /* Debug */,
+				142C662840A594A25EA62BE082535A9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

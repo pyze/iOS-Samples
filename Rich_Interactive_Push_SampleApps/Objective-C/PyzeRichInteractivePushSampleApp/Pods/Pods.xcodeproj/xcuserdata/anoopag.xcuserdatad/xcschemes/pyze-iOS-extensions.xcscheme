@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E7ABFCE7AE7AB27E67116EE8DE6FD45C'
-               BlueprintName = 'pyze-iOS-extensions'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libpyze-iOS-extensions.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D1A49A5BD8B679DAE0F4B354C8BD7C0A"
+               BlueprintName = "pyze-iOS-extensions"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libpyze-iOS-extensions.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

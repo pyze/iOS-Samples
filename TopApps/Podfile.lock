@@ -1,12 +1,16 @@
 PODS:
-  - pyze-sdk-iOS (3.5.1)
+  - pyze-sdk-iOS (5.2.2)
 
 DEPENDENCIES:
   - pyze-sdk-iOS
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - pyze-sdk-iOS
+
 SPEC CHECKSUMS:
-  pyze-sdk-iOS: 13d14b76ddf5e1272e74ea1b905271f7d88d42f2
+  pyze-sdk-iOS: 991f7d07e0cd55540c6edbe8fd95424b5069d871
 
 PODFILE CHECKSUM: ccfd6f0a7f7606a10f6a8248c78c79388aaa6c01
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.5.3

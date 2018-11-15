@@ -172,6 +172,23 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 + (void) initialize:(NSString *) pyzeAppKey;
 
 /**
+*  Initializes the Pyze library. Call this method in the app delegate's method
+*  application:willFinishLaunchingWithOptions. [Get Pyze App Key from growth.pyze.com](http://pyze.com/get-Pyze-App-Key.html)
+*  Include the 'Pyze App Key' in application's Info.plist with key name 'PYZE_APP_KEY'
+*
+*  Usage:
+*
+*     [Pyze initialize: PyzelogLevelMinimal];
+*
+*  @param logLevel Log level you would wish to see in the console.
+*  @warning *Important:* Get an app-specific key from [growth.pyze.com](http://pyze.com/get-Pyze-App-Key.html) asn save in info
+*
+*  - Since: 2.0.5
+*
+*/
++ (void) initializeWithLogLevel:(PyzeLogLevel) logLevel;
+
+/**
  *  Initializes the Pyze library and specify the log throttling level. Call this method in the app delegate's method
  *  application:willFinishLaunchingWithOptions. [Get Pyze App Key from growth.pyze.com](http://pyze.com/get-Pyze-App-Key.html)
  *
@@ -207,7 +224,25 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
  */
 +(void) logThrottling:(PyzeLogLevel) logLevel;
 
+/// @name  Opt out data collection
 
+/**
+ *  Will stop collecting all data
+ *
+ *  @param shouldOptout Boolean value to decide if data tracking should be stopped.
+ *
+ - Since: 5.0.2
+ */
++ (void) setUserOptOut:(BOOL)shouldOptout;
+
+/**
+ *  Will stop collecting all data and delete existing data from the server
+ *
+ *  @param shouldDelete Boolean value to decide if data collection should be stopped and delete existing data from the server
+ *
+ - Since: 5.0.2
+ */
++ (void) deleteUser:(BOOL)shouldDelete;
 
 /// @name  Create Timer Reference to use in Timed Custom Events using PyzeCustomEvent class
 
@@ -230,7 +265,17 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 +(double) timerReference;
 
 
+/**
+ *  Returns the Pyze instance identifier. If Pyze not initialized, returns an empty string.
+ *
+ *  @return Pyze Instance identifier
+ */
++ (NSString *) getPyzeAppInstanceId;
+
+
+
 /// @name Push notification helper APIs
+
 
 /**
  *  Use this API to set the push notification device token. This will trigger Pyze to update the device token, which internally would be used to send the push notification. Call this API in Application's AppDelegate method application:didRegisterForRemoteNotificationsWithDeviceToken:.
@@ -241,6 +286,17 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
  *  - Since: 2.2.1
  */
 +(void) setRemoteNotificationDeviceToken:(NSData *) deviceToken;
+
+
+/**
+ *  Use this API to set the push notification device token. This will trigger Pyze to update the device token, which internally would be used to send the push notification. Call this API in Application's AppDelegate method application:didRegisterForRemoteNotificationsWithDeviceToken:.
+ *  The method accepts the token as NSStirng.
+ *
+ *  @param deviceToken device Token bytes received from the AppDelegate's method call.
+ 
+ *  - Since: 5.0.1
+ */
++(void) setRemoteNotificationDeviceTokenString:(NSString *) deviceToken;
 
 
 /**
@@ -266,6 +322,7 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 
 +(void) processReceivedRemoteNotificationWithId:(NSString *) identifer withUserInfo:(NSDictionary *) userInfo;
 
+
 /// @name In-App Notifications (using Built-in User Interface)
 
 /**
@@ -277,6 +334,7 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
  
  */
 +(void) addBadge:(UIControl *) control;
+
 
 
 /**
@@ -308,7 +366,7 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
  *  completionhandler method will be called. The call-to-action (upto 3) button colors are defined in the UI on growth.pyze.com when creating an in-app message. The navigation text color to move between in-app messages e.g. '<' | '>' are defined using navigationTextColor parameter in this method.
  *
  *  @param messageType             The in-app message type you would want to see. Default is PyzeInAppTypeUnread.
- *  @param navigationTextColor     Navigation text color (Ex: 1 of 10) and chevrons.
+ *  @param textColor     Navigation text color (Ex: 1 of 10) and chevrons.
  *  @param completionhandler       Completion handler
  *
  *  - Since: 2.9.0
@@ -412,6 +470,8 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
  *  @return Pyze instance type.
  */
 + (Pyze*) sharedPyze;
+
+
 
 
 /**
@@ -623,3 +683,227 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
 
 @end
 
+
+/**
+ *  PyzeAttribution
+ *  This class contains methods to post the attribution data to Pyze from attribution partners
+ */
+@interface PyzeAttribution : NSObject
+
+/**
+ *  Send Appsflyer attribution data to pyze.
+ *
+ *     -(void)onConversionDataReceived:(NSDictionary*) installData {
+ *          [PyzeAttribution postAppsFlyerAttribution:installData];
+ *      }
+ *
+ *  @param attributionData attribution/install data obtained from Appsflyer
+ *
+ *  - Since: 3.6.0
+ */
++ (void) postAppsFlyerAttribution:(NSDictionary *)attributionData;
+
+@end
+
+#pragma mark - Pyze Notification
+
+/**
+ *  PyzeNotificationActionType
+ *  Type of actions available for Notification
+ *
+ *  - Since: 3.7.0
+ */
+typedef NS_ENUM(NSInteger, PyzeNotificationActionType) {
+    /**
+     *  Dismisses the notificatoin.
+     */
+    ePyzeNotificationActionTypeNone = 0,
+    /**
+     *  Opens home page of the app.
+     */
+    ePyzeNotificationActionTypeHome = 1,
+    /**
+     *  Opens a deeplink URL.
+     */
+    ePyzeNotificationActionTypeDeepLink = 2,
+    /**
+     *  Opens URL in Safari.
+     */
+    ePyzeNotificationActionTypeWebLink = 3,
+    /**
+     *  Opens share activity dialog.
+     */
+    ePyzeNotificationActionTypeShare = 4
+};
+
+
+/**
+ *  PyzeNotificationAction
+ *  This class contains informations related to the Pyze interactive notification action.
+ *
+ *  - Since: 3.7.0
+ */
+@interface PyzeNotificationAction : NSObject
+
+/**
+ *  Name of the notification action.
+ */
+@property (strong, nonatomic) NSString *buttonName;
+/**
+ *  Type of the notification action in readable string format
+ */
+@property (assign, nonatomic) NSString *buttonActionTypeString;
+/**
+ *  Type of the notification action.
+ */
+@property (assign, nonatomic) PyzeNotificationActionType buttonActionType;
+/**
+ *  Deep link url if the, available action type is 'ePyzeNotificationActionTypeDeepLink'
+ */
+@property (strong, nonatomic) NSURL *deepLinkURL;
+/**
+ *  Content text to share, available if the action type is 'ePyzeNotificationActionTypeShare'
+ */
+@property (strong, nonatomic) NSString *shareText;
+/**
+ *  Web page url, available if the action type is 'ePyzeNotificationActionTypeSafari'
+ */
+@property (strong, nonatomic) NSURL *webPageURL;
+/**
+ * Action identifier
+ */
+@property (strong, nonatomic) NSString *buttonActionIdentifier;
+
+@end
+
+/**
+ *  PyzeNotificationContent
+ *  This class contains information parsed from the push notification payload.
+ *
+ *  - Since: 3.7.0
+ */
+@interface PyzeNotificationContent : NSObject
+
+
+/**
+ *  Title of the notification
+ */
+@property (strong, nonatomic) NSString *title;
+/**
+ *  SubTitle of the notification
+ */
+@property (strong, nonatomic) NSString *subTitle;
+/**
+ *  Notification content text
+ */
+@property (strong, nonatomic) NSString *body;
+/**
+ *  Notificatoin category identifier
+ */
+@property (strong, nonatomic) NSString *categoryIdentifier;
+/**
+ *  Media attachment url, if its a rich push notification and 'nil' otherwise
+ */
+@property (strong, nonatomic) NSString *mediaURL;
+/**
+ *  Type/extension of notification attachment
+ */
+@property (strong, nonatomic) NSString *mediaType;
+/**
+ *  Array of all notification actions consisting of 'PyzeNotificationAction' objects
+ */
+@property (strong, nonatomic) NSMutableArray *allActions;
+/**
+ *  User selected notification action. selected action with buttonName 'com.apple.UNNotificationDefaultActionIdentifier' indicates the default notification tap.
+ */
+@property (strong, nonatomic) PyzeNotificationAction *selectedAction;
+
+@end
+
+
+
+
+
+/**
+ *  PyzeNotification
+ *  Use this class to define Pyze default notification categories, push payload and handle default notification actions provided by Pyze (Ex. Share/Deep link/Web page url).
+ *
+ *  - Since: 3.7.0
+ */
+@interface PyzeNotification : NSObject
+
+/**
+ *  Use this to pass as 'actionIdentifier' in order to handle the default notification tap.
+ */
+#define k_PyzeDefaultNotificationAction  @"com.apple.UNNotificationDefaultActionIdentifier"
+
+
+/**
+ *  Use this API to get the list of Pyze default notification categories available.
+ *
+ *  @return NSSet containing Push categories
+ 
+ *  - Since: 3.7.0
+ */
++ (NSSet *) getPyzeDefaultNotificationCategories;
+
+
+/**
+ *  This will perform the selected notification action as identified by 'actionIdentifier'
+ *
+ *  @param userInfo User info dictionary obtained from the notification receive callback method in AppDelegate
+ *  @param actionIdentifier Identifier of user opted action.
+ *
+ */
++ (void) handlePushNotificationResponseWithUserinfo:(NSDictionary *)userInfo actionIdentifier:(NSString *)actionIdentifier;
+
+
+/**
+ *  THIS METHOD IS DEPRECATED. USE 'parsePushNotificationResponseWithUserinfo:completionHandler:'
+ *
+ *  Use this API to parse the push notification response.
+ *
+ *  @param userInfo User information received as a payload
+ *  @param completionHandler Completion handler, with 'PyzeNotificationContent' as parameter
+ *
+ */
++ (void) parsePushNotificatoinResponseWithUserinfo:(NSDictionary *)userInfo completionHandler:(void (^)(PyzeNotificationContent *pyzePushObject))completionHandler DEPRECATED_ATTRIBUTE;
+    
+
+/**
+ *  Use this API to parse the push notification response.
+ *
+ *  @param userInfo User information received as a payload
+ *  @param completionHandler Completion handler, with 'PyzeNotificationContent' as parameter
+ *
+ */
++ (void) parsePushNotificationResponseWithUserinfo:(NSDictionary *)userInfo completionHandler:(void (^)(PyzeNotificationContent *pyzePushObject))completionHandler;
+
+
+/**
+ *  THIS METHOD IS DEPRECATED. USE 'parsePushNotificationResponseWithUserinfo:actionIdentifier:completionHandler:'
+ *
+ *  Use this API to parse the push notification response.
+ *  In addition to 'parsePushNotificatoinResponseWithUserinfo:completionHandler:', this method will provide 'PyzeNotificationContent.selectedAction' which is the user opted action and respective details.
+ *
+ *  @param userInfo User information received as a payload
+ *  @param actionIdentifier Identifier of user opted action.
+ *  @param completionHandler Completion handler, with 'PyzeNotificationContent' as parameter
+ *
+ */
++ (void) parsePushNotificatoinResponseWithUserinfo:(NSDictionary *)userInfo actionIdentifier:(NSString *)actionIdentifier completionHandler:(void (^)(PyzeNotificationContent *pyzePushObject))completionHandler DEPRECATED_ATTRIBUTE;
+    
+    
+/**
+ *  Use this API to parse the push notification response.
+ *  In addition to 'parsePushNotificationResponseWithUserinfo:completionHandler:', this method will provide 'PyzeNotificationContent.selectedAction' which is the user opted action and respective details.
+ *
+ *  @param userInfo User information received as a payload
+ *  @param actionIdentifier Identifier of user opted action.
+ *  @param completionHandler Completion handler, with 'PyzeNotificationContent' as parameter
+ *
+ */
++ (void) parsePushNotificationResponseWithUserinfo:(NSDictionary *)userInfo actionIdentifier:(NSString *)actionIdentifier completionHandler:(void (^)(PyzeNotificationContent *pyzePushObject))completionHandler;
+
+
+@end
